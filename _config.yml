@@ -23,10 +23,10 @@ footer-links:
   flickr:
   github: mmorejon
   instagram:
-  linkedin: https://www.linkedin.com/profile/view?id=197337637&trk=nav_responsive_tab_profile
+  linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter:  @morejon85
+  twitter:
   stackoverflow:  users/4142357/manuel-morejón # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
 
