@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: default_en
 ---
 
 <div class="posts">
-
-  {% assign posts_es = site.posts | where:"lang","es" %}
-  {% for post in posts_es %}
+  {% assign posts_en = site.posts | where:"lang","en" %}
+  {% for post in posts_en %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -14,7 +13,7 @@ layout: default
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer más ...</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
