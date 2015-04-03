@@ -4,6 +4,8 @@ title: Blog
 permalink: /blog/
 ---
 
+Este es el lugar donde comparto mis pensamientos sobre Gestión de Configuración.
+
 <div class="posts">
 
   {% assign posts_es = site.posts | where:"lang","es" %}
