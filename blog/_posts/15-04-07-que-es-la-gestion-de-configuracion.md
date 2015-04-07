@@ -3,8 +3,6 @@ layout: post
 title: ¿Qué es la Gestión de Configuración?
 ---
 
-## Introducción
-
 En el proceso de Ingeniería de Software (IS) existe una variable muy importante que entra en juego constantemente; **_el cambio_**.
 
 La primera Ley de la ingeniería de sistemas establece: “Sin importar en qué momento del ciclo de vida del sistema nos encontremos, el sistema cambiará y el deseo de cambiarlo persistirá a lo largo de todo el ciclo de vida”.
@@ -62,3 +60,22 @@ Conocida la definición y alcance de la GCS, se puede tener una idea acerca del 
 En ocasiones la GCS es confundida con la fase de mantenimiento. El mantenimiento es un conjunto de actividades de ingeniería de software que se producen después de que el software se haya entregado al cliente y esté en funcionamiento. La gestión de configuración del software es el conjunto de actividades de seguimiento y control que comienzan cuando se inicia el proyecto de ingeniería de software y termina sólo cuando el software sale fuera de circulación.
 
 La GCS no es simplemente controlar las versiones del software, ni tampoco un trabajo rutinario de oficina realizado sobre funciones dentro del desarrollo de software. Es una disciplina esencial dentro de las actividades diarias del desarrollo de software. Se encuentra presente en la definición de requerimientos, definiciones, codificación, compilación, pruebas y documentación del software.
+
+## Reflexiones finales
+
+El cambio es inevitable dentro del proceso de desarrollo de software. Estar preparados para el cambio y controlarlo es sinónimo de madurez para la organización.
+
+### Revisiones significativas
+
+* IEEE (1990): IEEE Standard for Software Configuration Management Plans. The Institute of Electrical and Electronics Engineers, Inc.
+* CLAUDIO, J. R. (2003): Gestión de Configuración de Productos de Software en Etapa del Desarrollo.
+* STEVE, B. (2004): Agile SCM – Patterns and Software Configuration Management.
+* ROGER, S. P. (2005): Ingeniería de Software. Un enfoque práctico.
+* LARS, B. (2005): Towards a Suite of Software Configuration Management Metrics.
+* ALAN, K. (2007): Configuration Management The Good, the Bad and the Ugly.
+* LAURA, W. (2007): High-level Best Practices in Software Configuration Management.
+* LUCAS, D. O. A. (2007): Evolving a Software Configuration Management Ontology.
+* GORDON, S. (2008): Handbook of Software Quality Assurance. Artech House.
+* CAPERS, J. (2010): Software Engineering Best Practices. McGraw-Hill.
+* CAROL, H. (2010): Evaluating Project Decisions.
+* SEBASTIAN, N. (2011): The Future of Software Engineering. Springer.
