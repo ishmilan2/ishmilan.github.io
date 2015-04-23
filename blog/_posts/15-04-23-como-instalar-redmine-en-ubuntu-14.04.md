@@ -261,7 +261,3 @@ http://SERVER_IP:3000/
 ## Reflexiones finales
 
 Siguiendo esta guía quedará instalado en su servidor la aplicación web Redmine. Este sistema le ayudara a tener identificados todos los artefactos importantes de sus proyectos. De igual forma podrá almacenar, controlar y auditar la gestión de sus proyectos.
-
-### Revisiones significativas
-
-* IEEE (1990): IEEE Standard for Software Configuration Management Plans. The Institute of Electrical and Electronics Engineers, Inc.
