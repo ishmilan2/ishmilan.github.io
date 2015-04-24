@@ -127,7 +127,7 @@ Para configurar la base de datos de Redmine se utiliza el fichero `database.yml`
 Se realiza una copia del fichero `database.yml.sample` para crear nuestro propio fichero `database.yml`. Para lograrlo se escribe lo siguiente:
 
 ```
-sudo cp database.yml.sample database.yml
+sudo cp database.yml.example database.yml
 ```
 
 A continuación debemos abrir el fichero para configurar el gestor de base de datos y las credenciales de acceso, para lo cual escribimos:
