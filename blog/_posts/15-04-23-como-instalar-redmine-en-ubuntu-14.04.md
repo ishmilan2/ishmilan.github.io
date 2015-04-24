@@ -181,7 +181,7 @@ ImageMagic va a permitir el manejo de imágenes. Por ejemplo exportar el diagram
 Para instalarlas escribimos el siguiente comando:
 
 ```
-sudo apt-get install libmysqlclient-dev libmagickcore-dev libmagickwand-dev libxslt1-dev
+sudo apt-get install libmysqlclient-dev libmagickcore-dev libmagickwand-dev libxslt1-dev imagemagick
 ```
 
 GNU Make es una herramienta que controla la generación de ejecutables y otros archivos que no sean fuente de un programa de archivos de código fuente del programa. Para instalarlas escribimos lo siguiente:
