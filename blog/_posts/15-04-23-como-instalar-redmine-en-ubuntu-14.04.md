@@ -208,7 +208,10 @@ En este punto han quedado instaladas todas las librerías necesarias para que fu
 
 Para realizarlo vamos a excluir las dependencias de PostgreSQL y SQLite porque vamos a utilizar MySQL. De igual forma se van a excluir las dependencias relacionadas con los entornos de desarrollo y testing.
 
+Primero nos posicionamos en la raíz proyecto Redmine y después realizamos la instalación de las gemas. Para lograrlo escribimos lo siguiente:
+
 ```
+cd /opt/redmine
 sudo bundle install --without development test postgresql sqlite
 ```
 
