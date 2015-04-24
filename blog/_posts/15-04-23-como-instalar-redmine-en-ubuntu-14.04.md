@@ -221,7 +221,6 @@ sudo bundle install --without development test postgresql sqlite
 Se inicializan los ficheros de estado. Para esto nos colocamos en la raíz de la carpeta Redmine y escribiendo lo siguiente:
 
 ```
-cd /opt/redmine/
 sudo rake generate_secret_token
 ```
 
