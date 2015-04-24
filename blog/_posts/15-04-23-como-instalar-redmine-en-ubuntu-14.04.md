@@ -70,7 +70,7 @@ mysql -u root -p
 
 La consola le pedirá introducir la contraseña que ha establecido previamente para el usuario `root` de MySQL durante su instalación. Una vez introducida se tendrá acceso a la consola de MySQL.
 
-Primeramete se crea una una base de datos independiente para que sea gestionada por Redmine. Esta base de datos puede ser llamada con cualquier nombre, pero recomendamos llamarle `redmine` porque es un nombre descriptivo y simple. Se introduce este comando para crear la base de datos:
+Primeramente se crea una una base de datos independiente para que sea gestionada por Redmine. Esta base de datos puede ser llamada con cualquier nombre, pero recomendamos llamarle `redmine` porque es un nombre descriptivo y simple. Se introduce este comando para crear la base de datos:
 
 ```
 CREATE DATABASE redmine CHARACTER SET utf8;
@@ -156,7 +156,7 @@ ctr x
 
 ## Paso 5 - Instalar RubyGems, Bundler y las dependencias
 
-Bundler es un gestor de dependencias para las Gemas de Ruby. Bundler simplifica el proceso de despliegue chequeando y asegurando que todas las dependencias estén correctamente intaladas.
+Bundler es un gestor de dependencias para las Gemas de Ruby. Bundler simplifica el proceso de despliegue chequeando y asegurando que todas las dependencias estén correctamente instaladas.
 
 Para poder utilizar Bundler tiene que estar instalado en el sistema la herramienta que gestiona las gemas de ruby. Entonces instalemos primero esta herramienta escribiendo lo siguiente:
 
@@ -211,7 +211,7 @@ sudo bundle install --without development test postgresql sqlite
 
 ## Paso 6 - Finalizando la instalación de Redmine
 
-Se inicializan los ficheros de estado. Para esto nos colocamos en la raiz de la carpeta Redmine y escribiendo lo siguiente:
+Se inicializan los ficheros de estado. Para esto nos colocamos en la raíz de la carpeta Redmine y escribiendo lo siguiente:
 
 ```
 cd /opt/redmine/
@@ -226,7 +226,7 @@ RAILS_ENV=production rake db:migrate
 
 ## Paso 7 - Crear un script para el servicio de Redmine
 
-Se debe crear un script para realizar, de forma sencilla, las acciones de iniciar, detener y reiniciar el sistema Redmine. Para lograrlo crearmos un fichero con el nombre `redmine.conf` en la carpeta `/etc/init/` escribiendo lo siguiente:
+Se debe crear un script para realizar, de forma sencilla, las acciones de iniciar, detener y reiniciar el sistema Redmine. Para lograrlo creamos un fichero con el nombre `redmine.conf` en la carpeta `/etc/init/` escribiendo lo siguiente:
 
 ```
 sudo nano /etc/init/redmine.conf
@@ -261,3 +261,8 @@ http://SERVER_IP:3000/
 ## Reflexiones finales
 
 Siguiendo esta guía quedará instalado en su servidor la aplicación web Redmine. Este sistema le ayudara a tener identificados todos los artefactos importantes de sus proyectos. De igual forma podrá almacenar, controlar y auditar la gestión de sus proyectos.
+
+### Revisiones significativas
+
+* http://www.redmine.org
+* ANDRIY, L. (2013) Mastering Redmine. Packt Publishing
