@@ -30,7 +30,11 @@ cd ~
 wget http://www.redmine.org/releases/redmine-3.0.1.tar.gz
 ```
 
-Esto va a descargar un fichero comprimido con los ficheros de Redmine hacia la ubicación raiz de nuestro usuario.
+Esto va a descargar un fichero comprimido con los ficheros de Redmine hacia la ubicación raiz de nuestro usuario. Este fichero debe ser extraído para poder trabajar con el contenido. Para lograrlo escribimos lo siguiente:
+
+```
+tar -zxvf redmine-3.0.1.tar.gz
+```
 
 A continuación vamos a renombrar la carpeta `redmine-3.0.1` a `redmine` y moverla hacia su ubicación final en el directorio `opt` escribiendo:
 
