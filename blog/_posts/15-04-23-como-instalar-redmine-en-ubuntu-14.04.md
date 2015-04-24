@@ -122,9 +122,9 @@ Para acceder a la carpeta escribimos:
 cd /opt/redmine/config/
 ```
 
-Para configurar la base de datos de Redmine se utiliza el fichero `database.yml`. Redmine incluye el fichero de ejemplo `database.yml.sample` para agilizar el proceso de creación y evitar errores de estructura.
+Para configurar la base de datos de Redmine se utiliza el fichero `database.yml`. Redmine incluye el fichero de ejemplo `database.yml.example` para agilizar el proceso de creación y evitar errores de estructura.
 
-Se realiza una copia del fichero `database.yml.sample` para crear nuestro propio fichero `database.yml`. Para lograrlo se escribe lo siguiente:
+Se realiza una copia del fichero `database.yml.example` para crear nuestro propio fichero `database.yml`. Para lograrlo se escribe lo siguiente:
 
 ```
 sudo cp database.yml.example database.yml
