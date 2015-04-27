@@ -47,7 +47,7 @@ El contenido que debe ser agregado es el siguiente:
 
 ```
 [commit]
-	template=/Users/usuario/.template.txt
+	template=/Users/<usuario>/.template.txt
 ```
 
 ## Reflexiones finales
