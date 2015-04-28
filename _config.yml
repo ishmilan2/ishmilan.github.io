@@ -6,7 +6,9 @@
 name: Manuel Morejón
 
 # Short bio or description (displayed in the header)
-description: La Gestor de Configuración de Software es el arte de maximizar la productividad minimizando errores.
+description: Gestor de Configuración de Software
+
+descriptionMeta: La Gestor de Configuración de Software es el arte de maximizar la productividad minimizando errores.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/5578317?v=3&s=460
