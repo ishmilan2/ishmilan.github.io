@@ -270,5 +270,5 @@ Siguiendo esta guía quedará instalado en su servidor la aplicación web Redmin
 
 ### Revisiones significativas
 
-* http://www.redmine.org
+* [Sitio de Redmine](http://www.redmine.org)
 * ANDRIY, L. (2013) Mastering Redmine. Packt Publishing
