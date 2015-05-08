@@ -77,7 +77,7 @@ Para incluir **Git-FTP** como una acción adicional en [SourceTree](http://sourc
 Crear una carpeta para colocar los scrips:
 
 ```
-cd 
+cd ~
 mkdir git-ftp-scripts
 ```
 
