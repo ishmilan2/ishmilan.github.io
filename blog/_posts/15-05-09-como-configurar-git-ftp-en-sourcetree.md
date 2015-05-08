@@ -123,7 +123,7 @@ Una vez realizadas las configuraciones se puede regresar a la vista del reposito
 
 Reducir el tiempo de despliegue de un sistema es una necesidad dentro del flujo de trabajo. Garantizar la calidad de este proceso es tan importante como reducir los tiempos.
 
-Ambos elementos pueden ser alcanzados realizando una buena configuración de las herramientas utilizadas durante el desarrollo de software como son: **Git** y **SourceTree**. Al Gestor de Configuración de Software le corresponde realizar esta tarea.
+Ambos elementos pueden ser alcanzados realizando una buena configuración de las herramientas utilizadas durante el desarrollo de software. Al Gestor de Configuración de Software le corresponde realizar esta tarea.
 
 ### Revisiones significativas
 
