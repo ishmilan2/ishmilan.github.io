@@ -45,7 +45,7 @@ Se refiere a la posibilidad, de forma práctica y legible, de gestionar la infor
 
 Las herramientas de código abierto llevan consigo la sombra de una difícil configuración. También sucede en ocasiones que una sola herramienta no logra resolver el problema, por tal motivo, hay que instalar más de una. Al contar con varias herramientas existe la posibilidad que las configuraciones entre ellas no sean compatibles.
 
-Elementos como los mencionadas hacen que el usuario o administrador del sistema prefiera adquirir sistemas de pago que cuenten con soluciones completas para su grupo de trabajo o empresa. Esta variante no es para nada incorrecta, _sencillamente es otra variante_. El inconveniente que tiene esta variante sería que: si el grupo o empresa es pequeño se estaría sobre cargando un flujo de trabajo con elementos no necesarios. La otra alternativa adoptada en ocasiones es no tener ningún tipo de herramientas, lo cual es aún peor.
+Elementos como los mencionadas hacen que el usuario o administrador del sistema prefiera adquirir sistemas de pago que cuenten con soluciones completas para su grupo de trabajo o empresa. Esta variante no es para nada incorrecta, _sencillamente es otra variante_. El inconveniente que tiene esta variante sería que: si el grupo o empresa es pequeño se estaría sobrecargando un flujo de trabajo con elementos no necesarios. La otra alternativa adoptada en ocasiones es no tener ningún tipo de herramientas, lo cual es aún peor.
 
 La **_GC_** cuenta con un amplio número de herramientas a su disposición. Cada una con sus ventajas y desventajas. En esta ocasión se mostrará **_la integración de herramientas de código abierto_** que permiten apoyar el desarrollo de grupos de trabajo de menor, mediana y alta composición.
 
