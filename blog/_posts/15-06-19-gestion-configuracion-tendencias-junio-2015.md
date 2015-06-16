@@ -30,7 +30,7 @@ Un poco más reciente, el autor **_Bob Aiello_** presenta en su libro **_"Config
 
 Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones más recientes.
 
-Cada actividad ha sido desglozada en secciones para poder ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="" target="_blank">Tendencias de Google</a> y de <a href="" target="_blank">StackoverFlow</a>.
+Cada actividad ha sido desglozada en secciones para poder ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
 
 ## 1. Gestión de Código fuente
 ### 1.1 Sistema de control de versiones
@@ -94,6 +94,9 @@ Las herramientas de construcción permiten orquestar los sistemas de compilació
 
 Esta área depende mucho del proyecto a utilizar y de las características de cada grupo de desarrollo. Por tal motivo no se le ha realizado el mismo análisis que al resto.
 
+Docker https://www.docker.com/
+VGrant https://www.vagrantup.com/
+
 ## 4 Control de Cambios
 ### 4.1 Gestión de proyectos
 En esta área se han analizado los sistemas de gestión de proyectos.
@@ -116,10 +119,9 @@ Los sistemas de integración contínua permiten, entre otras muchas actividades,
 **_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con más de 40 000 plugins que permiten la integración sistemas externos.
 
 ## Despliegue
-Docker
-VGrant
-Git-FTP
-FileZila
+
+Git-FTP https://github.com/git-ftp/git-ftp
+FileZila https://filezilla-project.org/
 
 #### Reflexiones finales
 
