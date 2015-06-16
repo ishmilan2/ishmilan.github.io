@@ -35,7 +35,8 @@ Cada actividad ha sido desglozada en secciones para poder ser más específico e
 ## 1. Gestión de Código fuente
 ### 1.1 Sistema de control de versiones
 **_Sistemas a analizados:_**
-<a target="_blank" href="https://subversion.apache.org/">Subversion</a>, <a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://mercurial.selenic.com/" target="_blank">Mercurial</a>, <a href="http://www.nongnu.org/cvs/" target="_blank">CVS</a>
+<a target="_blank" href="https://subversion.apache.org/">Subversion</a>, <a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://mercurial.selenic.com/" target="_blank">Mercurial</a>, <a href="http://www.nongnu.org/cvs/" target="_blank">CVS</a>.
+
 <img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git.png" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems.png" />
 
 **_Git_** muestra un mayor número de registro en ambas gráficas. Estos valores son el reflejo de la gran popularidad y aceptación que tiene este sistema de control de versiones.
@@ -44,7 +45,7 @@ Cada actividad ha sido desglozada en secciones para poder ser más específico e
 **_Git_** es el sistema de control de versiones más utilizado según las gráficas revisadas. Git no establece dentro de sus funcionalidades la gestión de permisos por roles y usuarios. Por tal motivo se adoptan estos sistemas, para garantizar la seguridad en los repositorios de código fuente.
 
 **_Sistemas analizados:_**
-<a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html" target="_blank">Gitolite</a>
+<a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html" target="_blank">Gitolite</a>.
 
 <img src="{{ site.baseurl }}/images/150619/gitolite-gitosis.png"/> <img src="{{ site.baseurl }}/images/150619/stackoverflow-gitolite-gitosis.png"/>
 
@@ -83,7 +84,7 @@ Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales c
 Las herramientas de construcción permiten orquestar los sistemas de compilación para generar productos de software. 
 
 **_Herramientas a analizar:_**
-<a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>
+<a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>.
 
 <img src="{{ site.baseurl }}/images/150619/make-ant-maven.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools.png"/>
 
@@ -104,7 +105,7 @@ Como elementos recomendados se muestran 2 sistemas que ayudan estandarizar y com
 En esta área se han analizado los sistemas de gestión de proyectos.
 
 **_Herramientas a analizar:_**
-<a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs" target="_blank">Visual Studio Team Foundation Server 2015 RC</a>
+<a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs" target="_blank">Visual Studio Team Foundation Server 2015 RC</a>.
 
 <img src="{{ site.baseurl }}/images/150619/redmine-jira-tfs.png"/>
 <img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-tfs.png"/>
@@ -116,7 +117,7 @@ En esta área se han analizado los sistemas de gestión de proyectos.
 Los sistemas de integración contínua permiten, entre otras muchas actividades, la ejecución de las siguientas tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código, generación de reportes.
 
 **_Herramientas a evaluar:_**
-<a href="http://cruisecontrolrb.thoughtworks.com/documentation" target="_blank">CruiseControl</a>, <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>
+<a href="https://github.com/thoughtworks/cruisecontrol.rb" target="_blank">CruiseControl</a>, <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
 <img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png"/>
 
@@ -130,7 +131,7 @@ Teniendo en cuenta las tendencias antes vistas _(Git, SourceTree, Git-Flow)_ rec
 Las variantes de despliegue manual se realizan utilizando las clásicos clientes FTP como por ejemplo <a href="https://filezilla-project.org/" target="_blank">FileZila</a>.
  
 
-#### Reflexiones finales
+### Reflexiones finales
 
 Las tendencias en la GCS brindan una visión del comportamiento de los métodos, herramientas y patrones. El en presente escrito se muestra a mayor profundidad el espacio de las herramientas.
 
@@ -138,7 +139,7 @@ La combinación de los elementos de mayor relevancia dentro del estudio realizad
 
 Tener en cuenta estás gráficas durante la **_selección de un entorno para el desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
 
-#### Revisiones significativas
+### Revisiones significativas
 * BOB, A. (2011): Configuration Management Best Practices. Practical Methods that work in the real world. Addison-Wesly.
 * PETER, S (2011): Software Build Systems. Principles and Experience. Addison-Wesly.
 * ROGER, S. P. (2005): Ingeniería de Software. Un enfoque práctico.
