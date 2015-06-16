@@ -44,7 +44,7 @@ Cada actividad ha sido desglozada en secciones para poder ser más específico e
 **_Git_** es el sistema de control de versiones más utilizado según las gráficas revisadas. Git no establece dentro de sus funcionalidades la gestión de permisos por roles y usuarios. Por tal motivo se adoptan estos sistemas, para garantizar la seguridad en los repositorios de código fuente.
 
 **_Sistemas analizados:_**
-<a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html">Gitolite</a>
+<a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html" target="_blank">Gitolite</a>
 
 <img src="{{ site.baseurl }}/images/150619/gitolite-gitosis.png"/> <img src="{{ site.baseurl }}/images/150619/stackoverflow-gitolite-gitosis.png"/>
 
@@ -75,8 +75,7 @@ Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales c
 * Integración de **_Git-Flow_** como propuesta de flujo de trabajo.
 * Integración con sistemas externos y ejecución de scripts.
 
-**_Sitios de referencia revisados durante la búsqueda:_**
-[10 Sitios de Referencia](http://www.freshtechtips.com/2015/03/git-client-windows-mac-linux.html), [Clientes para Mac OS X](http://www.slant.co/topics/465/~what-are-the-best-git-clients-for-mac-os-x).
+**_Sitios de referencia revisados durante la búsqueda:_** <a href="http://www.freshtechtips.com/2015/03/git-client-windows-mac-linux.html" target="_blank">10 Sitios de Referencia</a>, <a href="http://www.slant.co/topics/465/~what-are-the-best-git-clients-for-mac-os-x" target="_blank">Clientes para Mac OS X</a>.
 
 ## 2 Ingeniería de construcción
 
@@ -84,7 +83,7 @@ Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales c
 Las herramientas de construcción permiten orquestar los sistemas de compilación para generar productos de software. 
 
 **_Herramientas a analizar:_**
-<a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>
+<a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>
 
 <img src="{{ site.baseurl }}/images/150619/make-ant-maven.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools.png"/>
 
@@ -94,8 +93,11 @@ Las herramientas de construcción permiten orquestar los sistemas de compilació
 
 Esta área depende mucho del proyecto a utilizar y de las características de cada grupo de desarrollo. Por tal motivo no se le ha realizado el mismo análisis que al resto.
 
-Docker https://www.docker.com/
-VGrant https://www.vagrantup.com/
+Como elementos recomendados se muestran 2 sistemas que ayudan estandarizar y compartir la configuración de los entornos de trabajo de manera rápida y confiable: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
+
+<img src="{{ site.baseurl }}/images/150619/docker-vagrant.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant.png"/>
+
+**_Docker_** muestra mayores índices en las gráficas mostradas por lo cual se debería tener en cuenta para próximas configuraciones de los entornos de trabajo.
 
 ## 4 Control de Cambios
 ### 4.1 Gestión de proyectos
@@ -106,6 +108,8 @@ En esta área se han analizado los sistemas de gestión de proyectos.
 
 <img src="{{ site.baseurl }}/images/150619/redmine-jira-tfs.png"/>
 <img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-tfs.png"/>
+
+**_TFS_** y **_Jira_** muestran mayores niveles en las gráficas analizadas, sin embargo, es importante tener en cuenta que son sistemas que necesitan del pago de licencias. Este factor puede influir significativamente en la desición durante la selección.
 
 ## 5 Ingeniería de Liberación
 ### 5.1 Sistemas de integración contínua
@@ -118,13 +122,21 @@ Los sistemas de integración contínua permiten, entre otras muchas actividades,
 
 **_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con más de 40 000 plugins que permiten la integración sistemas externos.
 
-## Despliegue
+## 6 Despliegue
+El despliegue de los sistemas puede realizarse manual, semi-automático o automático completamente. Los despliegues automáticos frecuentemente se realizan utilizando herramientas de integración contínua como las descritas en el epígrafe anterior.
 
-Git-FTP https://github.com/git-ftp/git-ftp
-FileZila https://filezilla-project.org/
+Teniendo en cuenta las tendencias antes vistas _(Git, SourceTree, Git-Flow)_ recomiendo para variantes semi-automáticas <a href="https://github.com/git-ftp/git-ftp" target="_blank">Git-FTP</a>. Esta herramienta fue descrita en el artículo <a href="../como-configurar-git-ftp-en-sourcetree">Cómo configurar Git-FTP en SourceTree</a> mostrando sus beneficios al proceso de **_GCS_**.
+
+Las variantes de despliegue manual se realizan utilizando las clásicos clientes FTP como por ejemplo <a href="https://filezilla-project.org/" target="_blank">FileZila</a>.
+ 
 
 #### Reflexiones finales
 
+Las tendencias en la GCS brindan una visión del comportamiento de los métodos, herramientas y patrones. El en presente escrito se muestra a mayor profundidad el espacio de las herramientas.
+
+La combinación de los elementos de mayor relevancia dentro del estudio realizado permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de esto se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a> donde se muestra la combinación de estos sistemas.
+
+Tener en cuenta estás gráficas durante la **_selección de un entorno para el desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
 
 #### Revisiones significativas
 * BOB, A. (2011): Configuration Management Best Practices. Practical Methods that work in the real world. Addison-Wesly.
