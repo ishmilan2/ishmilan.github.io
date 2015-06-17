@@ -39,7 +39,7 @@ Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante
 **_Sistemas a analizados:_**
 <a target="_blank" href="https://subversion.apache.org/">Subversion</a>, <a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://mercurial.selenic.com/" target="_blank">Mercurial</a>, <a href="http://www.nongnu.org/cvs/" target="_blank">CVS</a>.
 
-<img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git.png" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems.png" />
+<img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git-cvs.png" title="Sistemas de control de versiones - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems.png" />
 
 **_Git_** muestra un mayor número de registro en ambas gráficas. Estos valores son el reflejo de la gran popularidad y aceptación que tiene este sistema de control de versiones.
 
@@ -107,19 +107,19 @@ Como elementos recomendados se muestran 2 sistemas que ayudan estandarizar y com
 En esta área se han analizado los sistemas de gestión de proyectos.
 
 **_Herramientas a analizar:_**
-<a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs" target="_blank">Visual Studio Team Foundation Server 2015 RC</a>.
+<a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.mantisbt.org/" target="_blank">Mantis BT</a>, <a href="http://trac.edgewall.org/" target="_blank">Trac</a>.
 
-<img src="{{ site.baseurl }}/images/150619/redmine-jira-tfs.png"/>
-<img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-tfs.png"/>
+<img src="{{ site.baseurl }}/images/150619/redmine-jira-mantis-trac.png"/>
+<img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-mantis-trac.png"/>
 
-**_TFS_** y **_Jira_** muestran mayores niveles en las gráficas analizadas, sin embargo, es importante tener en cuenta que son sistemas que necesitan del pago de licencias. Este factor puede influir significativamente en la decisión durante la selección.
+**_Jira_** y **_Redmine_** muestran mayores niveles en las gráficas analizadas, ambos sistemas cuentan con excelentes características. Mi experiencia personal trabajando con Redmine identifico muy buena adaptación (a través de plugins) con el resto de los sistemas mencionados en el artículo.
 
 ## 5 Ingeniería de Liberación
 ### 5.1 Sistemas de integración continua
 Los sistemas de integración continua permiten, entre otras muchas actividades, la ejecución de las siguientes tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código, generación de reportes.
 
 **_Herramientas a analizar:_**
-<a href="https://github.com/thoughtworks/cruisecontrol.rb" target="_blank">CruiseControl</a>, <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
+<a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
 <img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png"/>
 
