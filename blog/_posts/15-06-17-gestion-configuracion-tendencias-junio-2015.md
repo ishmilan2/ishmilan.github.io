@@ -70,13 +70,11 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 * <a href="http://www.gittiapp.com/" target="_blank">Gitti</a>
 * <a href="http://rowanj.github.io/gitx/" target="_blank">GitX-dev</a>
 
-Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales características que dan peso a mi decisión son: 
+**_Tower_** y **_SourceTree_** son las herramientas que a mi criterio muy buenos sistemas. Las principales características que dan peso a mi decisión son: 
 
 * Interfaz de usuario fácil e intuitiva.
 * Integración de **_Git-Flow_** como propuesta de flujo de trabajo.
 * Integración con sistemas externos y ejecución de scripts.
-
-**_Tower_** es una muy buena opción, sin embargo, es una herramienta de pago y no todos pueden tener acceso a sus bondades.
 
 **_Sitios de referencia revisados durante la búsqueda:_** <a href="http://www.freshtechtips.com/2015/03/git-client-windows-mac-linux.html" target="_blank">10 Sitios de Referencia</a>, <a href="http://www.slant.co/topics/465/~what-are-the-best-git-clients-for-mac-os-x" target="_blank">Clientes para Mac OS X</a>.
 
