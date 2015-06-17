@@ -28,9 +28,9 @@ Un poco más reciente, el autor **_Bob Aiello_** presenta en su libro **_"Config
 * Ingeniería de lanzamiento o liberación
 * Despliegue
 
-Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones más recientes.
+Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones más recientes para mostrar las herramientas analizadas.
 
-Cada actividad ha sido desglosada en secciones para poder ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
+Cada actividad ha sido desglosada en secciones para ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
 
 ## 1. Gestión de Código fuente
 ### 1.1 Sistema de control de versiones
@@ -75,6 +75,8 @@ Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales c
 * Interfaz de usuario intuitiva fácil e intuitiva.
 * Integración de **_Git-Flow_** como propuesta de flujo de trabajo.
 * Integración con sistemas externos y ejecución de scripts.
+
+**_Tower_** es una muy buena opción, sin embargo, es una herramienta de pago y no todos pueden tener acceso a sus bondades.
 
 **_Sitios de referencia revisados durante la búsqueda:_** <a href="http://www.freshtechtips.com/2015/03/git-client-windows-mac-linux.html" target="_blank">10 Sitios de Referencia</a>, <a href="http://www.slant.co/topics/465/~what-are-the-best-git-clients-for-mac-os-x" target="_blank">Clientes para Mac OS X</a>.
 
@@ -121,10 +123,10 @@ Los sistemas de integración continua permiten, entre otras muchas actividades, 
 
 <img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png"/>
 
-**_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con más de 40 000 plugins que permiten la integración sistemas externos.
+**_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con numerosos plugins que permiten la integración sistemas externos.
 
 ## 6 Despliegue
-El despliegue de los sistemas puede realizarse manual, semi-automático o automático completamente. Los despliegues automáticos frecuentemente se realizan utilizando herramientas de integración continua como las descritas en el epígrafe anterior.
+El despliegue de los sistemas puede realizarse de forma manual, semi-automático o automático completamente. Los despliegues automáticos frecuentemente se realizan utilizando herramientas de integración continua como las descritas en el epígrafe anterior.
 
 Teniendo en cuenta las tendencias antes vistas _(Git, SourceTree, Git-Flow)_ recomiendo para variantes semi-automáticas <a href="https://github.com/git-ftp/git-ftp" target="_blank">Git-FTP</a>. Esta herramienta fue descrita en el artículo <a href="../como-configurar-git-ftp-en-sourcetree">Cómo configurar Git-FTP en SourceTree</a> mostrando sus beneficios al proceso de **_GCS_**.
 
@@ -135,7 +137,7 @@ Las variantes de despliegue manual se realizan utilizando las clásicos clientes
 
 Las tendencias en la **_GCS_** brindan una visión del comportamiento de los métodos, herramientas y patrones. En el presente escrito se muestra a mayor profundidad las herramientas utilizadas en este proceso.
 
-Los elementos identificados de alta relevancia dentro del estudio permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de esto se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a> donde se muestra la combinación de estos sistemas. La colaboración y comunicación entre ellos es vital para el éxito del grupo.
+Los elementos identificados de alta relevancia dentro del estudio permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de la combinación de estos sistemas se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a>. La **_colaboración y comunicación_** entre ellos es vital para el éxito del grupo.
 
 Tener en cuenta estás gráficas durante la **_selección de un entorno para el desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
 
