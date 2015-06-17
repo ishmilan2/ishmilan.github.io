@@ -10,6 +10,10 @@ El **_proceso de Gestión de Configuración de Software_** (GCS) debe garantizar
 
 El presente escrito muestra el estado de algunas herramientas que apoyan la _GCS_.
 
+La inteción es mostrar el estado actual de las herramientas a partir de los datos obtenidos de las siguientes fuentes: <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
+
+Las **_herramientas analizadas_** fueron seleccionadas a parir de mi experiencia de trabajo como **_Gestor de Configuración de Software_**. Puede que alguna otra herramienta sea incluida posteriormente.
+
 ## Actividades de la Gestión de Configuración
 
 La definición clásica de actividades descritas por **_Roger S. Presman_** en su libro **_"Ingeniería de Software: Un enfoque práctico"_** son las siguientes:
@@ -29,8 +33,6 @@ Un poco más reciente, el autor **_Bob Aiello_** presenta en su libro **_"Config
 * Despliegue
 
 Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones más recientes para mostrar las herramientas analizadas.
-
-Cada actividad ha sido desglosada en secciones para ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
 
 ## 1. Gestión de Código fuente
 ### 1.1 Sistema de control de versiones
@@ -137,7 +139,7 @@ Las tendencias en la **_GCS_** brindan una visión del comportamiento de los mé
 
 Los elementos identificados de alta relevancia dentro del estudio permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de la combinación de estos sistemas se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a>. La **_colaboración y comunicación_** entre ellos es vital para el éxito del grupo.
 
-Tener en cuenta estás gráficas durante la **_selección de un entorno para el desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
+Los grupos de trabajo deben realizar la solución de las herramientas según su entorno pues las variantes son muchas. Sin embargo, tener en cuenta estás gráficas durante la **_selección de herramientas para un entorno de desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
 
 ### Revisiones significativas
 * SHRIKRISHNA, H. (2015): Orchestrating Docker.
