@@ -13,6 +13,8 @@ En paralelo se encuentran las herramientas que apoyan en la implementación de l
 
 En el siguiente artículo se mostrará el **Modelo de integración de herramientas de código abierto**. El objetivo es garantizar una correcta implementación de las tareas de GC en un entorno de código abierto. Se expondrá un resumen de las actividades abarcadas, así como de su relación como el modelo propuesto.
 
+El <a href="../gestion-configuracion-tendencias-junio-2015">análisis de tendencias de la GC</a> apoyan el uso de las herramientas mencionadas a continuación.
+
 <img src="{{ site.baseurl }}/images/deploy-diagram-scm.png" />
 
 ## Áreas de la Gestión de Configuración

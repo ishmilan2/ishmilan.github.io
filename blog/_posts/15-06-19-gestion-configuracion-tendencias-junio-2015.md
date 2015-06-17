@@ -30,7 +30,7 @@ Un poco más reciente, el autor **_Bob Aiello_** presenta en su libro **_"Config
 
 Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones más recientes.
 
-Cada actividad ha sido desglozada en secciones para poder ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
+Cada actividad ha sido desglosada en secciones para poder ser más específico en las herramientas mostradas. Las gráficas mostradas fueron obtenidas del sitio de <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
 
 ## 1. Gestión de Código fuente
 ### 1.1 Sistema de control de versiones
@@ -70,7 +70,7 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 * <a href="http://www.gittiapp.com/" target="_blank">Gitti</a>
 * <a href="http://rowanj.github.io/gitx/" target="_blank">GitX-dev</a>
 
-Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales características que dan peso a mi desición son: 
+Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales características que dan peso a mi decisión son: 
 
 * Interfaz de usuario intuitiva fácil e intuitiva.
 * Integración de **_Git-Flow_** como propuesta de flujo de trabajo.
@@ -110,13 +110,13 @@ En esta área se han analizado los sistemas de gestión de proyectos.
 <img src="{{ site.baseurl }}/images/150619/redmine-jira-tfs.png"/>
 <img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-tfs.png"/>
 
-**_TFS_** y **_Jira_** muestran mayores niveles en las gráficas analizadas, sin embargo, es importante tener en cuenta que son sistemas que necesitan del pago de licencias. Este factor puede influir significativamente en la desición durante la selección.
+**_TFS_** y **_Jira_** muestran mayores niveles en las gráficas analizadas, sin embargo, es importante tener en cuenta que son sistemas que necesitan del pago de licencias. Este factor puede influir significativamente en la decisión durante la selección.
 
 ## 5 Ingeniería de Liberación
-### 5.1 Sistemas de integración contínua
-Los sistemas de integración contínua permiten, entre otras muchas actividades, la ejecución de las siguientas tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código, generación de reportes.
+### 5.1 Sistemas de integración continua
+Los sistemas de integración continua permiten, entre otras muchas actividades, la ejecución de las siguientes tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código, generación de reportes.
 
-**_Herramientas a evaluar:_**
+**_Herramientas a analizar:_**
 <a href="https://github.com/thoughtworks/cruisecontrol.rb" target="_blank">CruiseControl</a>, <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
 <img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png"/>
@@ -124,7 +124,7 @@ Los sistemas de integración contínua permiten, entre otras muchas actividades,
 **_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con más de 40 000 plugins que permiten la integración sistemas externos.
 
 ## 6 Despliegue
-El despliegue de los sistemas puede realizarse manual, semi-automático o automático completamente. Los despliegues automáticos frecuentemente se realizan utilizando herramientas de integración contínua como las descritas en el epígrafe anterior.
+El despliegue de los sistemas puede realizarse manual, semi-automático o automático completamente. Los despliegues automáticos frecuentemente se realizan utilizando herramientas de integración continua como las descritas en el epígrafe anterior.
 
 Teniendo en cuenta las tendencias antes vistas _(Git, SourceTree, Git-Flow)_ recomiendo para variantes semi-automáticas <a href="https://github.com/git-ftp/git-ftp" target="_blank">Git-FTP</a>. Esta herramienta fue descrita en el artículo <a href="../como-configurar-git-ftp-en-sourcetree">Cómo configurar Git-FTP en SourceTree</a> mostrando sus beneficios al proceso de **_GCS_**.
 
@@ -133,14 +133,18 @@ Las variantes de despliegue manual se realizan utilizando las clásicos clientes
 
 ### Reflexiones finales
 
-Las tendencias en la GCS brindan una visión del comportamiento de los métodos, herramientas y patrones. El en presente escrito se muestra a mayor profundidad el espacio de las herramientas.
+Las tendencias en la **_GCS_** brindan una visión del comportamiento de los métodos, herramientas y patrones. En el presente escrito se muestra a mayor profundidad las herramientas utilizadas en este proceso.
 
-La combinación de los elementos de mayor relevancia dentro del estudio realizado permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de esto se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a> donde se muestra la combinación de estos sistemas.
+Los elementos identificados de alta relevancia dentro del estudio permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de esto se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a> donde se muestra la combinación de estos sistemas. La colaboración y comunicación entre ellos es vital para el éxito del grupo.
 
 Tener en cuenta estás gráficas durante la **_selección de un entorno para el desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
 
 ### Revisiones significativas
+* SHRIKRISHNA, H. (2015): Orchestrating Docker.
+* JOHN, F. (2012): Jenkins The Definitive Guide.
 * BOB, A. (2011): Configuration Management Best Practices. Practical Methods that work in the real world. Addison-Wesly.
 * PETER, S (2011): Software Build Systems. Principles and Experience. Addison-Wesly.
+* PAUL, M. (2007): Continuous Integration. Improving Software Quality
+and Reducing Risk
 * ROGER, S. P. (2005): Ingeniería de Software. Un enfoque práctico.
 * STEVE, B. (2002): Software Configuration Patterns: Effective Teamwork, Practical Integration. Addison-Wesly.
