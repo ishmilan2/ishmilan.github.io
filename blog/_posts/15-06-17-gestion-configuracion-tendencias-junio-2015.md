@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gestión de Configuración Tendencias Junio 2015
+title: Gestión de Configuración - Tendencias Junio 2015
 ---
 
 Las **_tendencias_** en la **_disciplina de Gestión de Configuración_** permiten enfocar y redefinir los **_estándares_** establecidos hasta el momento en los **_entornos de trabajo_**.
@@ -57,7 +57,7 @@ Cada actividad ha sido desglosada en secciones para ser más específico en las 
 
 ### 1.4 Herramientas de Interfaz
 **_Herramientas visuales a analizar:_**
-Las herramientas visuales ayudan a la gestión del código fuente garantizando altos niveles de usabilidad con relación el sistema **_Git_**. Estas herramientas permiten que todos los usuarios puedan utilizar de forma simple las bondades que brinda el sistema de control de versiones. De igual forma mejora el proceso de integración en el equipo de trabajo.
+Las herramientas visuales ayudan a la gestión del código fuente garantizando altos niveles de usabilidad con relación al sistema **_Git_**. Estas herramientas permiten que todos los usuarios puedan utilizar de forma simple las bondades que brinda el sistema de control de versiones. De igual forma mejora el proceso de integración en el equipo de trabajo.
 
 * <a href="https://windows.github.com/" target="_blank">GitHub for Windows</a> de GitHub.
 * <a href="https://mac.github.com/" target="_blank">GitHub for Mac OS X</a> de GitHub.
@@ -72,7 +72,7 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 
 Mi recomendación es utilizar la herramienta **_SourceTree_**. Las principales características que dan peso a mi decisión son: 
 
-* Interfaz de usuario intuitiva fácil e intuitiva.
+* Interfaz de usuario fácil e intuitiva.
 * Integración de **_Git-Flow_** como propuesta de flujo de trabajo.
 * Integración con sistemas externos y ejecución de scripts.
 
@@ -135,7 +135,7 @@ Las variantes de despliegue manual se realizan utilizando las clásicos clientes
 
 ### Reflexiones finales
 
-Las tendencias en la **_GCS_** brindan una visión del comportamiento de los métodos, herramientas y patrones. En el presente escrito se muestra a mayor profundidad las herramientas utilizadas en este proceso.
+Las tendencias en la **_GCS_** brindan una visión del comportamiento de los métodos, herramientas y patrones. En el presente escrito se muestra en mayor profundidad las herramientas utilizadas en este proceso.
 
 Los elementos identificados de alta relevancia dentro del estudio permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de la combinación de estos sistemas se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a>. La **_colaboración y comunicación_** entre ellos es vital para el éxito del grupo.
 
