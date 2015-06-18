@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -11,8 +11,15 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/computer-screen-152-202631.png">
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/computer-screen-144-202631.png">
+    <link rel="alternate" type="text/html" hreflang="es" href="{{ site.baseurl }}" title="Spanish">
+    <link rel="alternate" type="text/html" hreflang="en" href="{{ site.baseurl }}/en" title="English">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    {% include analytics.html %}
   </head>
 
   <body>
@@ -48,6 +55,7 @@
       </div>
     </div>
 
-    {% include analytics.html %}
+    
+    {% include sitelinks.html %}
   </body>
 </html>

@@ -287,3 +287,39 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+// Section for print
+@media print {
+
+  header, footer { 
+    display: none; 
+  }
+
+  body { 
+    background: #fff; color: #000; 
+  }
+
+  .wrapper { 
+    margin: 0 auto; 
+    font-size: 9pt; 
+    width: 100%; 
+    max-width: none; 
+    padding: 4%; 
+  }
+
+  a { 
+    text-decoration: none; 
+    font-weight: bold; 
+    color: #000; 
+  }
+
+  a:after { 
+    content: " [" attr(href) "] "; 
+    font-weight: normal; 
+  }
+
+  article .attachment-main_thumb { 
+    display: none; 
+  }
+}
