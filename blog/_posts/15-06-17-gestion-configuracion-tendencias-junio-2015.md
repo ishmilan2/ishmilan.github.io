@@ -8,11 +8,9 @@ Las **_tendencias_** en la **_disciplina de Gestión de Configuración_** permit
 ### Introducción
 El **_proceso de Gestión de Configuración de Software_** (GCS) debe garantizar las condiciones para que el desarrollo de software sea fácil. Una buena definición del proceso de _GCS_ hace posible que los programadores trabajen en equipo y de manera eficiente. El proceso incluye herramientas, patrones y estándares de uso propiamente definidos para la _GCS_.
 
-El presente escrito muestra el estado de algunas herramientas que apoyan la _GCS_.
+El presente escrito muestra el estado de algunas herramientas que apoyan la _GCS_ a partir de los datos obtenidos de las siguientes fuentes: <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a>.
 
-La inteción es mostrar el estado actual de las herramientas a partir de los datos obtenidos de las siguientes fuentes: <a href="https://www.google.com/trends/explore" target="_blank">Tendencias de Google</a> y de <a href="http://stackoverflow.com/" target="_blank">StackoverFlow</a>.
-
-Las **_herramientas analizadas_** fueron seleccionadas a parir de mi experiencia de trabajo como **_Gestor de Configuración de Software_**. Puede que alguna otra herramienta sea incluida posteriormente.
+Las **_herramientas analizadas_** fueron seleccionadas a partir de mi experiencia de trabajo como **_Gestor de Configuración de Software_**. Nuevas herramientas podrán ser incluidas posteriormente.
 
 ## Actividades de la Gestión de Configuración
 
@@ -32,16 +30,16 @@ Un poco más reciente, el autor **_Bob Aiello_** presenta en su libro **_"Config
 * Ingeniería de lanzamiento o liberación
 * Despliegue
 
-Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones más recientes para mostrar las herramientas analizadas.
+Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante el presente escrito se utilizarán las definiciones de **_Bob Aiello_** para mostrar las herramientas analizadas según su actividad.
 
 ## 1. Gestión de Código fuente
 ### 1.1 Sistema de control de versiones
 **_Sistemas a analizados:_**
 <a target="_blank" href="https://subversion.apache.org/">Subversion</a>, <a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://mercurial.selenic.com/" target="_blank">Mercurial</a>, <a href="http://www.nongnu.org/cvs/" target="_blank">CVS</a>.
 
-<img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git-cvs.png" title="Sistemas de control de versiones - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems.png" />
+<img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git-cvs.png" title="Sistemas de control de versiones - Google Trends" name="Sistemas de control de versiones - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems.png" title="Sistemas de control de versiones - StackOverflow" name="Sistemas de control de versiones - StackOverflow" />
 
-**_Git_** muestra un mayor número de registro en ambas gráficas. Estos valores son el reflejo de la gran popularidad y aceptación que tiene este sistema de control de versiones.
+**_Git_** muestra un mayor número de registro en ambas gráficas. Estos valores son el reflejo de la gran popularidad y aceptación que tiene este sistema de control de versiones. Dentro de las principales características de este sistema está la integridad de la información y su velocidad.
 
 ### 1.2 Control de Roles y Usuarios
 **_Git_** es el sistema de control de versiones más utilizado según las gráficas revisadas. Git no establece dentro de sus funcionalidades la gestión de permisos por roles y usuarios. Por tal motivo se adoptan estos sistemas, para garantizar la seguridad en los repositorios de código fuente.
@@ -49,13 +47,13 @@ Ambas definiciones son correctas a mi criterio, cada una con su enfoque. Durante
 **_Sistemas analizados:_**
 <a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html" target="_blank">Gitolite</a>.
 
-<img src="{{ site.baseurl }}/images/150619/gitolite-gitosis.png"/> <img src="{{ site.baseurl }}/images/150619/stackoverflow-gitolite-gitosis.png"/>
+<img src="{{ site.baseurl }}/images/150619/gitolite-gitosis.png" title="Gitolite-Gitosis - Google Trends" name="Gitolite-Gitosis - Google Trends" /> <img src="{{ site.baseurl }}/images/150619/stackoverflow-gitolite-gitosis.png" title="Gitolite-Gitosis - StackOverflow" name="Gitolite-Gitosis - StackOverflow" />
 
 **_Gitolite_** cuenta con mayores registros al realizar el análisis. El gran nivel de granularidad de este sistemas lo convierte en una poderosa herramienta cuando se desea establecer la seguridad de los repositorios de código fuente.
 
 ### 1.3 Flujo de Trabajo
 **_Git-flow_** establece la metodología recomendada para el uso de **_Git_**. El flujo de trabajo se adapta sin dificultades a diversos equipos y proyectos sin importar su tamaño o ubicación. Para mayor información de este flujo se debe revisar el <a target="_blank" href="http://nvie.com/posts/a-successful-git-branching-model/">siguiente enlace</a>: 
-<img src="{{ site.baseurl }}/images/150619/git-flow.png"/>
+<img src="{{ site.baseurl }}/images/150619/git-flow.png" title="Git-Flow" name="Git-Flow" />
 
 ### 1.4 Herramientas de Interfaz
 **_Herramientas visuales a analizar:_**
@@ -72,7 +70,7 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 * <a href="http://www.gittiapp.com/" target="_blank">Gitti</a>
 * <a href="http://rowanj.github.io/gitx/" target="_blank">GitX-dev</a>
 
-**_Tower_** y **_SourceTree_** son las herramientas que a mi criterio muy buenos sistemas. Las principales características que dan peso a mi decisión son: 
+**_Tower_** y **_SourceTree_** son las herramientas que recomiendo. Las principales características que dan peso a mi decisión son: 
 
 * Interfaz de usuario fácil e intuitiva.
 * Integración de **_Git-Flow_** como propuesta de flujo de trabajo.
@@ -83,24 +81,26 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 ## 2 Ingeniería de construcción
 
 ### 2.1 Herramientas de construcción
-Las herramientas de construcción permiten orquestar los sistemas de compilación para generar productos de software. 
+Las herramientas de construcción permiten organizar las dependencias y ejecutar las tareas necesarias para lograr crear el producto de software final.
 
 **_Herramientas a analizar:_**
 <a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>.
 
-<img src="{{ site.baseurl }}/images/150619/make-ant-maven.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools.png"/>
+<img src="{{ site.baseurl }}/images/150619/make-ant-maven.png" title="Sistemas de Construcción - Google Trends" name="Sistemas de Construcción - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools.png" title="Sistemas de Construcción - StackOverflow" name="Sistemas de Construcción - StackOverflow" />
 
-**_Maven_** cuenta desde hace algún tiempo con el mayor índice de popularidad. De todas formas recomiendo no perder de vista a **_Gradle_** la cual ha incrementado mucho los índices en los últimos años.
+**_Maven_** cuenta desde hace algún tiempo con el mayor índice de popularidad. Las cifras están dadas en gran medida a la posibilidad de modelar, de forma sencilla, la lógica que se desea construir. Como sugerencia recomiendo no perder de vista a **_Gradle_**. Esta herramienta ha sido adoptada por equipos como Eclipse para realizar sus construcciones.
 
 ## 3 Configuración del Entorno
 
 Esta área depende mucho del proyecto a utilizar y de las características de cada grupo de desarrollo. Por tal motivo no se le ha realizado el mismo análisis que al resto.
 
+De manera general la intención es lograr establecer el mismo escenario en: _máquinas de pogramadores, servidores de pruebas y servidores de finales del producto_. Cada escenario debería tener configurado los mismos paquetes, dependencias y aplicaciones en aras de evitar errores durante la fase de testing y despliegue.
+
 Como elementos recomendados se muestran 2 sistemas que ayudan estandarizar y compartir la configuración de los entornos de trabajo de manera rápida y confiable: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
 
-<img src="{{ site.baseurl }}/images/150619/docker-vagrant.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant.png"/>
+<img src="{{ site.baseurl }}/images/150619/docker-vagrant.png" title="Docker-Vagrant - Google Trends" name="Docker-Vagrant - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant.png" title="Docker-Vagrant - StackOverflow" name="Docker-Vagrant - StackOverflow" />
 
-**_Docker_** muestra mayores índices en las gráficas mostradas por lo cual se debería tener en cuenta para próximas configuraciones de los entornos de trabajo.
+**_Docker_** muestra mayores índices en las gráficas analizadas. _Docker_ viene siendo un sistema de control de versiones a nivel de sistema operativo. _Docker_ utiliza la filosofía de _Git_ pero a más bajo nivel. Si le gusta _Git_ estoy seguro que le gustará adoptar _Docker_. Recomiendo darle un vistaso a esta herramienta.
 
 ## 4 Control de Cambios
 ### 4.1 Gestión de proyectos
@@ -109,10 +109,10 @@ En esta área se han analizado los sistemas de gestión de proyectos.
 **_Herramientas a analizar:_**
 <a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.mantisbt.org/" target="_blank">Mantis BT</a>, <a href="http://trac.edgewall.org/" target="_blank">Trac</a>.
 
-<img src="{{ site.baseurl }}/images/150619/redmine-jira-mantis-trac.png"/>
-<img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-mantis-trac.png"/>
+<img src="{{ site.baseurl }}/images/150619/redmine-jira-mantis-trac.png" name="Control de Cambios - Google Trends" title="Control de Cambios - Google Trends" />
+<img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-mantis-trac.png" name="Control de Cambios - StackOverflow" title="Control de Cambios - StackOverflow" />
 
-**_Jira_** y **_Redmine_** muestran mayores niveles en las gráficas analizadas, ambos sistemas cuentan con excelentes características. Mi experiencia personal trabajando con Redmine identifico muy buena adaptación (a través de plugins) con el resto de los sistemas mencionados en el artículo.
+**_Jira_** y **_Redmine_** muestran mayores niveles en las gráficas analizadas, ambos sistemas cuentan con excelentes características. En mi experiencia personal trabajando con _Redmine_ identifico muy buena adaptación (a través de plugins) con el resto de los sistemas mencionados en el artículo.
 
 ## 5 Ingeniería de Liberación
 ### 5.1 Sistemas de integración continua
@@ -121,7 +121,7 @@ Los sistemas de integración continua permiten, entre otras muchas actividades, 
 **_Herramientas a analizar:_**
 <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
-<img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png"/><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png"/>
+<img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png" title="Integración continua - Google Trends" name="Integración continua - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png" title="Integración continua - StackOverflow" name="Integración continua - StackOverflow" />
 
 **_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con numerosos plugins que permiten la integración sistemas externos.
 
@@ -130,7 +130,7 @@ El despliegue de los sistemas puede realizarse de forma manual, semi-automático
 
 Teniendo en cuenta las tendencias antes vistas _(Git, SourceTree, Git-Flow)_ recomiendo para variantes semi-automáticas <a href="https://github.com/git-ftp/git-ftp" target="_blank">Git-FTP</a>. Esta herramienta fue descrita en el artículo <a href="../como-configurar-git-ftp-en-sourcetree">Cómo configurar Git-FTP en SourceTree</a> mostrando sus beneficios al proceso de **_GCS_**.
 
-Las variantes de despliegue manual se realizan utilizando las clásicos clientes FTP como por ejemplo <a href="https://filezilla-project.org/" target="_blank">FileZila</a>.
+Las variantes de despliegue manual se realizan utilizando los clásicos clientes FTP como por ejemplo <a href="https://filezilla-project.org/" target="_blank">FileZila</a>.
  
 
 ### Reflexiones finales
