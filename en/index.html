@@ -2,18 +2,9 @@
 layout: default_en
 ---
 
-<div class="posts">
-  {% assign posts_en = site.posts | where:"lang","en" %}
-  {% for post in posts_en %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<h2>Software Configuration Management</h2>
+How to deal with change is an art.
+<br><br>
+Configuration management is a discipline within Software Engineering that allows coordinate the development of software to minimize confusion. It is the art of identifying, organizing and controlling the changes undergone by the software.
+<br><br>
+The goal is always to maximize productivity by minimizing errors.
