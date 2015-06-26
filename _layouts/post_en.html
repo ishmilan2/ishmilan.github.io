@@ -5,13 +5,21 @@ layout: default_en
 <article class="post">
   <h1>{{ page.title }}</h1>
 
+  <div class="date">
+    Written on {{ page.date | date: "%d/%m/%Y" }}
+  </div>
+  
   <div class="entry">
     {{ content }}
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on {{ page.date | date: "%d/%m/%Y" }}
   </div>
+
+  <br>
+  {% include share-page.html %}
 
   {% include disqus.html %}
 </article>
+
