@@ -83,7 +83,7 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 ### 2.1 Herramientas de construcción
 Las herramientas de construcción permiten organizar las dependencias y ejecutar las tareas necesarias para lograr crear el producto de software final.
 
-**_Herramientas a analizar:_**
+**_Herramientas analizadas:_**
 <a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>.
 
 <img src="{{ site.baseurl }}/images/150619/make-ant-maven.png" title="Sistemas de Construcción - Google Trends" name="Sistemas de Construcción - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools.png" title="Sistemas de Construcción - StackOverflow" name="Sistemas de Construcción - StackOverflow" />
