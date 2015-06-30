@@ -14,7 +14,7 @@ This paper shows the status of some tools that support the **_SCM_** from the da
 
 ## Software Configuration Management Activities
 
-The classic definition of activities described by **_Roger S. Presman_** in his book **_"Ingeniería de Software: Un enfoque práctico"_** are:
+The classic definition of activities described by **_Roger S. Presman_** in his book **_"Software Engineering: A Practical Approach"_** are:
 
 * Configuration identification
 * Change control
@@ -37,7 +37,7 @@ Both definitions are correct in my opinion, each with its own focus. In this doc
 **_Systems analyzed:_**
 <a target="_blank" href="https://subversion.apache.org/">Subversion</a>, <a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://mercurial.selenic.com/" target="_blank">Mercurial</a>, <a href="http://www.nongnu.org/cvs/" target="_blank">CVS</a>.
 
-<img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git-cvs.png" title="Sistemas de control de versiones - Google Trends" name="Sistemas de control de versiones - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems.png" title="Sistemas de control de versiones - StackOverflow" name="Sistemas de control de versiones - StackOverflow" />
+<img src="{{ site.baseurl }}/images/150619/subversion-mercurial-git-cvs-en.png" title="Sistemas de control de versiones - Google Trends" name="Sistemas de control de versiones - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-versioncontrol-systems-en.png" title="Sistemas de control de versiones - StackOverflow" name="Sistemas de control de versiones - StackOverflow" />
 
 **_Git_** shows a greater number of registration in both graphs. These values reflect the popularity and acceptance of this system of version control. Among the main features of this system are its integrity of information and speed.
 
@@ -47,7 +47,7 @@ Both definitions are correct in my opinion, each with its own focus. In this doc
 **_Tools analyzed:_**
 <a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html" target="_blank">Gitolite</a>.
 
-<img src="{{ site.baseurl }}/images/150619/gitolite-gitosis.png" title="Gitolite-Gitosis - Google Trends" name="Gitolite-Gitosis - Google Trends" /> <img src="{{ site.baseurl }}/images/150619/stackoverflow-gitolite-gitosis.png" title="Gitolite-Gitosis - StackOverflow" name="Gitolite-Gitosis - StackOverflow" />
+<img src="{{ site.baseurl }}/images/150619/gitolite-gitosis-en.png" title="Gitolite-Gitosis - Google Trends" name="Gitolite-Gitosis - Google Trends" /> <img src="{{ site.baseurl }}/images/150619/stackoverflow-gitolite-gitosis-en.png" title="Gitolite-Gitosis - StackOverflow" name="Gitolite-Gitosis - StackOverflow" />
 
 **_Gitolite_** has the greatest records to perform the analysis. The high level of granularity of this system makes it a powerful tool when you want to establish the safety of source code repositories.
 
@@ -87,7 +87,7 @@ Construction tools allow agencies to organize and implement the necessary measur
 **_Tools analyzed:_**
 <a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>.
 
-<img src="{{ site.baseurl }}/images/150619/make-ant-maven.png" title="Sistemas de Construcción - Google Trends" name="Sistemas de Construcción - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools.png" title="Sistemas de Construcción - StackOverflow" name="Sistemas de Construcción - StackOverflow" />
+<img src="{{ site.baseurl }}/images/150619/make-ant-maven-en.png" title="Sistemas de Construcción - Google Trends" name="Sistemas de Construcción - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-buildtools-en.png" title="Sistemas de Construcción - StackOverflow" name="Sistemas de Construcción - StackOverflow" />
 
 **_Maven_** has for some time with the highest popularity. Figures are largely due to the posibility to simply modeling the logic to be constructed. As a suggestion recommend not to lose sight of **_Gradle_**. This tool has been adopted by teams like Eclipse to make their buildings.
 
@@ -99,7 +99,7 @@ In general the intention is to establish the same scenario: _programming machine
 
 As recommended elements 2 systems that help standardize and share settings work environments quickly and reliably shown: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
 
-<img src="{{ site.baseurl }}/images/150619/docker-vagrant.png" title="Docker-Vagrant - Google Trends" name="Docker-Vagrant - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant.png" title="Docker-Vagrant - StackOverflow" name="Docker-Vagrant - StackOverflow" />
+<img src="{{ site.baseurl }}/images/150619/docker-vagrant-en.png" title="Docker-Vagrant - Google Trends" name="Docker-Vagrant - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant-en.png" title="Docker-Vagrant - StackOverflow" name="Docker-Vagrant - StackOverflow" />
 
 **_Docker_** shows higher rates in the charts analyzed. _Docker_ a version control system at operating system level. _Docker_ uses the philosophy of _Git_ but at a lower level. If you like **_Git_** you will like to use **_Docker_**. I recommend to review this tool.
 
@@ -110,8 +110,8 @@ In this area we have analyzed the project management systems.
 **_Tools analyzed:_**
 <a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.mantisbt.org/" target="_blank">Mantis BT</a>, <a href="http://trac.edgewall.org/" target="_blank">Trac</a>.
 
-<img src="{{ site.baseurl }}/images/150619/redmine-jira-mantis-trac.png" name="Control de Cambios - Google Trends" title="Control de Cambios - Google Trends" />
-<img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-mantis-trac.png" name="Control de Cambios - StackOverflow" title="Control de Cambios - StackOverflow" />
+<img src="{{ site.baseurl }}/images/150619/redmine-jira-mantis-trac-en.png" name="Control de Cambios - Google Trends" title="Control de Cambios - Google Trends" />
+<img src="{{ site.baseurl }}/images/150619/stackoverflow-jira-redmine-mantis-trac-en.png" name="Control de Cambios - StackOverflow" title="Control de Cambios - StackOverflow" />
 
 **_Jira_** and **_Redmine_** show higher levels in the analyzed graphs, both systems have excellent features. In my personal experience working with **_Redmine_** I have identified a very good adaptation (through plugins) with the other systems mentioned in the article.
 
@@ -122,7 +122,7 @@ Continuous integration systems allow, among other activities, executing the foll
 **_Tools analyzed:_**
 <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
-<img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png" title="Integración continua - Google Trends" name="Integración continua - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png" title="Integración continua - StackOverflow" name="Integración continua - StackOverflow" />
+<img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo-en.png" title="Integración continua - Google Trends" name="Integración continua - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems-en.png" title="Integración continua - StackOverflow" name="Integración continua - StackOverflow" />
 
 **_Jenkins_** shows the largest number of activities in the graphs. This system has numerous plugins that allow integrating external systems.
 
