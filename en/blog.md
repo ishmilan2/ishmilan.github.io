@@ -1,15 +1,15 @@
 ---
-layout: page
+layout: page_en
 title: Blog
-permalink: /blog/
+permalink: /en/blog/
 ---
 
-Este es el lugar donde comparto mis pensamientos sobre Gestión de Configuración.
+This is where I share my thoughts on Configuration Management.
 
 <div class="posts">
 
-  {% assign posts_es = site.posts | where:"lang","es" %}
-  {% for post in posts_es %}
+  {% assign posts_en = site.posts | where:"lang","en" %}
+  {% for post in posts_en %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -19,7 +19,7 @@ Este es el lugar donde comparto mis pensamientos sobre Gestión de Configuració
       </div>
 
       <div class="date">
-        Publicado el {{ post.date | date: "%d/%m/%Y" }}
+        Published {{ post.date | date: "%B %e, %Y" }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer más ...</a>
