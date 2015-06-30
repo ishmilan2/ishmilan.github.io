@@ -19,7 +19,7 @@ This is where I share my thoughts on Configuration Management.
       </div>
 
       <div class="date">
-        Written on {{ post.date | date: "%d/%m/%Y" }}
+        Published {{ post.date | date: "%B %e, %Y" }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer más ...</a>

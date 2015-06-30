@@ -19,7 +19,7 @@ Este es el lugar donde comparto mis pensamientos sobre Gestión de Configuració
       </div>
 
       <div class="date">
-        Escrito el {{ post.date | date: "%d/%m/%Y" }}
+        Publicado el {{ post.date | date: "%d/%m/%Y" }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer más ...</a>
