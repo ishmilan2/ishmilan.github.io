@@ -106,7 +106,7 @@ Como elementos recomendados se muestran 2 sistemas que ayudan estandarizar y com
 ### 4.1 Gestión de proyectos
 En esta área se han analizado los sistemas de gestión de proyectos.
 
-**_Herramientas a analizar:_**
+**_Herramientas analizadas:_**
 <a href="http://www.redmine.org/" target="_blank">Redmine</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.mantisbt.org/" target="_blank">Mantis BT</a>, <a href="http://trac.edgewall.org/" target="_blank">Trac</a>.
 
 <img src="{{ site.baseurl }}/images/150619/redmine-jira-mantis-trac.png" name="Control de Cambios - Google Trends" title="Control de Cambios - Google Trends" />
@@ -118,7 +118,7 @@ En esta área se han analizado los sistemas de gestión de proyectos.
 ### 5.1 Sistemas de integración continua
 Los sistemas de integración continua permiten, entre otras muchas actividades, la ejecución de las siguientes tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código, generación de reportes.
 
-**_Herramientas a analizar:_**
+**_Herramientas analizadas:_**
 <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
 <img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png" title="Integración continua - Google Trends" name="Integración continua - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png" title="Integración continua - StackOverflow" name="Integración continua - StackOverflow" />
