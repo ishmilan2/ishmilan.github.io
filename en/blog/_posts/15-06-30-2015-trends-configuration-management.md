@@ -42,7 +42,7 @@ Both definitions are correct in my opinion, each with its own focus. In this doc
 **_Git_** shows a greater number of registration in both graphs. These values reflect the popularity and acceptance of this system of version control. Among the main features of this system are its integrity of information and speed.
 
 ### 1.2 Control of Roles and Users
-**_Git_** is the version control system most used according to revised charts. Git does not comprises management of roles and user permissions within its features. Therefore these tools are adopted to ensure safety in source code repositories.
+**_Git_** is the version control system most used according to revised charts. Git does not comprise management of roles and user permissions within its features. Therefore these tools are adopted to ensure safety in source code repositories.
 
 **_Tools analyzed:_**
 <a href="https://wiki.archlinux.org/index.php/Gitosis" target="_blank">Gitosis</a>, <a href="http://gitolite.com/gitolite/index.html" target="_blank">Gitolite</a>.
@@ -52,13 +52,13 @@ Both definitions are correct in my opinion, each with its own focus. In this doc
 **_Gitolite_** has the greatest records to perform the analysis. The high level of granularity of this system makes it a powerful tool when you want to establish the safety of source code repositories.
 
 ### 1.3 Work flow
-**_Git-flow_** provides the recommended methodology using **_Git_**. The work flow smoothly adapts to different teams and projects regardless of size or location. For more information about the flow the <a target="_blank" href="http://nvie.com/posts/a-successful-git-branching-model/">following link</a> should be checked:
+**_Git-flow_** provides the recommended methodology using **_Git_**. The work flow smoothly adapts to different teams and projects regardless size or location. For more information about the flow the <a target="_blank" href="http://nvie.com/posts/a-successful-git-branching-model/">following link</a> should be checked:
 <img src="{{ site.baseurl }}/images/150619/git-flow.png" title="Git-Flow" name="Git-Flow" />
 
 ### 1.4 UI tools
 **_UI tools analyzed:_**
 
-Visual tools help to manage the source code to ensure high levels of usability in relation to the **_Git_** system. These tools allow all users to use in a simple way the benefits provided by the version control system. It also improves the process of integration into the team.
+Visual tools help to manage the source code to ensure high levels of usability in relation to the **_Git_** system. These tools allow all users to use, in a simple way, the benefits provided by the version control system. It also improves the process of integration into the team.
 
 * <a href="https://windows.github.com/" target="_blank">GitHub for Windows</a> from GitHub.
 * <a href="https://mac.github.com/" target="_blank">GitHub for Mac OS X</a> from GitHub.
@@ -82,7 +82,7 @@ Visual tools help to manage the source code to ensure high levels of usability i
 ## 2 Build Engineering
 
 ### 2.1 Build tools
-Construction tools allow agencies to organize and implement the necessary measures to achieve create the final software product tasks.
+Construction tools allow you to organize dependencies and to run the necessary tasks to acheive the final software product.
 
 **_Tools analyzed:_**
 <a href="http://www.gnu.org/software/make/" target="_blank">Make</a>, <a href="http://ant.apache.org/" target="_blank">Ant</a>, <a href="http://www.scons.org/" target="_blank">Scons</a>, <a href="http://www.cmake.org/" target="_blank">CMake</a>, <a href="https://maven.apache.org/" target="_blank">Maven</a>, <a href="https://gradle.org/" target="_blank">Gradle</a>.
@@ -117,7 +117,7 @@ In this area we have analyzed the project management systems.
 
 ## 5 Release Engineering
 ### 5.1 Continuous systems integration
-Continuous integration systems allow, among other activities, executing the following tasks: Night buildings, integration testing, documentation generation, statistical code analysis, reporting.
+Continuous integration systems allow, among other activities, to execute the following tasks: Night buildings, integration testing, documentation generation, statistical code analysis, reporting.
 
 **_Tools analyzed:_**
 <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
@@ -135,7 +135,7 @@ Manual deployment variants are made using classic FTP clients such as <a href="h
 
 ### Final Thoughts
 
-Trends in the **_SCM_** provide an vision into the behavior of the methods, tools and patterns. In this paper is shown in greater detail the tools used in this process.
+Trends in the **_SCM_** provide an insight of the behavior of the methods, tools and patterns. In this paper, the tools used in the process are thoroughly examined.
 
 The highly relevant elements identified in the study allow us to establish a favorable environment for the development of software. An example of the combination of these systems is shown in <a href="{{ site.baseurl}}/blog/modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a>. **_Collaboration and communication_** among them is vital to the success of the group.
 
