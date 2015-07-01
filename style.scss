@@ -210,6 +210,36 @@ img {
   }
 }
 
+.profile-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+.profile-table-header {
+  color: $gray;
+  font-size: 16px;
+  padding-top: 5px;
+  text-align: right;
+  width: 100px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+.profile-table-info {
+  padding-left: 20px;
+}
+
+.profile-table {
+  margin-top: 10px;
+}
+
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
