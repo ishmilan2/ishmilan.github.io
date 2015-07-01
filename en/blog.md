@@ -22,7 +22,7 @@ This is where I share my thoughts on Configuration Management.
         Published {{ post.date | date: "%B %e, %Y" }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer más ...</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more ...</a>
     </article>
   {% endfor %}
 </div>
