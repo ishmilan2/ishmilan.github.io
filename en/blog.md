@@ -4,7 +4,7 @@ title: Blog
 permalink: /en/blog/
 ---
 
-This is where I share my thoughts on Configuration Management.
+Here is where I share my thoughts on Configuration Management.
 
 <div class="posts">
 
