@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 permalink: /blog/
+translate_en: /en/blog/
 ---
 
 Este es el lugar donde comparto mis pensamientos sobre Gestión de Configuración.

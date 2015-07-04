@@ -2,6 +2,7 @@
 layout: page_en
 title: Profile
 permalink: /en/profile/
+translate_es: /perfil/
 ---
 
 ## General Information

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
     {% include meta.html %}
 
@@ -39,6 +39,17 @@
         </header>
       </div>
     </div>
+
+    {% if page.translate_en %}
+    <div class="container">
+      <header class="translate clearfix">
+        <nav>
+          <a href="{{ page.url }}">ES</a> |
+          <a href="{{ page.translate_en }}">EN</a>
+        </nav>
+      </header>
+    </div>
+    {% endif %}
 
     <div id="main" role="main" class="container">
       {{ content }}

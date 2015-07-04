@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 15px 0 15px;
   padding: 0;
 
   @include mobile {
@@ -151,7 +151,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .masthead {
@@ -160,6 +160,35 @@ img {
 
   @include mobile {
     text-align: center;
+  }
+}
+
+.translate {
+  margin-top: -20px;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  nav {
+
+    @include mobile {
+      float: none;
+      margin-top: 20px;
+      display: block;
+      font-size: 16px;
+    }
+
+    a {
+      margin-left: 0px;
+      color: $darkGray;
+      text-align: center;
+
+      @include mobile {
+        margin: 0 10px;
+        color: $blue;
+    }
+    }
   }
 }
 
@@ -254,7 +283,7 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 10px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;

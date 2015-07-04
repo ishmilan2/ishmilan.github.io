@@ -2,6 +2,7 @@
 layout: page_en
 title: Blog
 permalink: /en/blog/
+translate_es: /blog/
 ---
 
 Here is where I share my thoughts on Configuration Management.
