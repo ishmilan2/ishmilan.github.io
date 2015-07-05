@@ -80,7 +80,7 @@ Visual tools help to manage the source code to ensure high levels of usability i
 
 **_Reference sites reviewed during the search:_** <a href="http://www.freshtechtips.com/2015/03/git-client-windows-mac-linux.html" target="_blank">10 Reference sites</a>, <a href="http://www.slant.co/topics/465/~what-are-the-best-git-clients-for-mac-os-x" target="_blank">Clientes para Mac OS X</a>.
 
-## 2 Build Engineering
+## 2. Build Engineering
 
 ### 2.1 Build tools
 Construction tools allow you to organize dependencies and to run the necessary tasks to acheive the final software product.
@@ -92,19 +92,19 @@ Construction tools allow you to organize dependencies and to run the necessary t
 
 **_Maven_** has for some time with the highest popularity. Figures are largely due to the posibility to simply modeling the logic to be constructed. As a suggestion recommend not to lose sight of **_Gradle_**. This tool has been adopted by teams like Eclipse to make their buildings.
 
-## 3 Environment Configuration
+## 3. Environment Configuration
 
 This area greatly depends on the project used and the characteristics of each development group. Therefore it has not been analyzed in the same way as the other ones.
 
 In general the intention is to establish the same scenario: _programming machines, test servers and final servers product_. Each scenario should be configured the same packages, dependencies and applications in order to avoid errors during the testing and deployment.
 
-As recommended elements 2 systems that help standardize and share settings work environments quickly and reliably shown: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
+As recommended elements two systems that help standardize and share settings work environments quickly and reliably shown: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
 
 <img src="{{ site.baseurl }}/images/150619/docker-vagrant-en.png" title="Docker-Vagrant - Google Trends" name="Docker-Vagrant - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant-en.png" title="Docker-Vagrant - StackOverflow" name="Docker-Vagrant - StackOverflow" />
 
 **_Docker_** shows higher rates in the charts analyzed. _Docker_ a version control system at operating system level. _Docker_ uses the philosophy of _Git_ but at a lower level. If you like **_Git_** you will like to use **_Docker_**. I recommend to review this tool.
 
-## 4 Change Control
+## 4. Change Control
 ### 4.1 Projects management
 In this area we have analyzed the project management systems.
 
@@ -116,7 +116,7 @@ In this area we have analyzed the project management systems.
 
 **_Jira_** and **_Redmine_** show higher levels in the analyzed graphs, both systems have excellent features. In my personal experience working with **_Redmine_** I have identified a very good adaptation (through plugins) with the other systems mentioned in the article.
 
-## 5 Release Engineering
+## 5. Release Engineering
 ### 5.1 Continuous systems integration
 Continuous integration systems allow, among other activities, to execute the following tasks: Night buildings, integration testing, documentation generation, statistical code analysis, reporting.
 
@@ -127,7 +127,7 @@ Continuous integration systems allow, among other activities, to execute the fol
 
 **_Jenkins_** shows the largest number of activities in the graphs. This system has numerous plugins that allow integrating external systems.
 
-## 6 Deployment
+## 6. Deployment
 The deployment of the systems can be carried out manually, semiautomatically or fully automatic. Automatic deploys are frequently performed using continuous integration tools as described in the previous section.
 
 Given the trends seen before _(Git, SourceTree, Git-Flow)_ I would recommend <a href="https://github.com/git-ftp/git-ftp" target="_blank">Git-FTP</a> for semiautomatically variants. This tool was described in the paper <a href="{{ site.baseurl}}/blog/como-configurar-git-ftp-en-sourcetree">Cómo configurar Git-FTP en SourceTree</a>, showing its benefits to the **_SCM_** process.

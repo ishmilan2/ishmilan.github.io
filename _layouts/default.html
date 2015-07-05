@@ -40,16 +40,16 @@
       </div>
     </div>
 
-    {% if page.translate_en %}
     <div class="container">
       <header class="translate clearfix">
         <nav>
-          <a href="{{ page.url }}">ES</a> |
-          <a href="{{ page.translate_en }}">EN</a>
+          {% if page.translate_en %}
+            <a href="{{ page.url }}">ES</a> |
+            <a href="{{ page.translate_en }}">EN</a>
+          {% endif %}
         </nav>
       </header>
     </div>
-    {% endif %}
 
     <div id="main" role="main" class="container">
       {{ content }}

@@ -7,7 +7,7 @@ Establecer un **proyecto web en el alojamiento (hosting) de producción** es el 
 
 ## Introducción
 
-Los proyectos en PHP son muy comunes y fáciles de implementar. Estos proyectos tienen que ser desplegados en un servidor web para su publicados.
+Los proyectos en PHP son muy comunes y fáciles de implementar. Estos proyectos tienen que ser desplegados en un servidor web para ser publicados.
 
 La mayoría de las empresas que brindan servicios de hosting a bajos precios no proporcionan acceso SSH, solamente FTP. Por tal motivo, es frecuente que el proceso de actualización de los proyectos se vuelva tedioso y largo al utilizar un cliente FTP.
 
@@ -43,7 +43,7 @@ Se descarga el repositorio desde GitHub:
 git clone https://github.com/mmorejon/git-ftp.git
 ```
 
-Al descargar el repositorio se crear una carpeta llamada `git-ftp` con todo el código sin compilar. Se accede a la carpeta `git-ftp` y se activa la rama `master` para posicionarnos en la versión estable.
+Al descargar el repositorio se crea una carpeta llamada `git-ftp` con todo el código sin compilar. Se accede a la carpeta `git-ftp` y se activa la rama `master` para posicionarnos en la versión estable.
 
 ```
 cd git-ftp
@@ -56,7 +56,7 @@ Se compila el código para crear el ejecutable.
 sudo make install
 ```
 
-Al compilar el código fuente se crear un ejecutable en la dirección `usr/local/bin/git-ftp`. Este fichero ejecutable puede ser accedido desde cualquier carpeta del sistema operativo para utilizar las funciones de **Git-FTP**.
+Al compilar el código fuente se crea un ejecutable en la dirección `usr/local/bin/git-ftp`. Este fichero ejecutable puede ser accedido desde cualquier carpeta del sistema operativo para utilizar las funciones de **Git-FTP**.
 
 ## Funcionalidades de Git-FTP
 
@@ -74,14 +74,14 @@ Para revisar todas las funcionalidades y opciones que brinda **Git-FTP** se pued
 
 Para incluir **Git-FTP** como una acción adicional en [SourceTree](http://sourcetreeapp.com/) debemos realizar los siguientes pasos:
 
-Crear una carpeta para colocar los scrips:
+Crear una carpeta para colocar los scripts:
 
 ```
 cd ~
 mkdir git-ftp-scripts
 ```
 
-Se crea el script para colocar los cambios en el servidor. Le vamos a llamar al scritp `git-ftp-push.sh` y colocaremos dentro el siguiente código:
+Se crea el script para colocar los cambios en el servidor. Le vamos a llamar al script `git-ftp-push.sh` y colocaremos dentro el siguiente código:
 
 ```
 #!/bin/sh
@@ -109,7 +109,7 @@ Se accede a las configuraciones del SourceTree, específicamente en _Acciones Pe
 
 <img src="{{ site.baseurl }}/images/add-custom-action.png" />
 
-Se selecciona el script creado para que sea ejecutado y en el campo _Parámetros_ se colocan la variables definidas el fichero separadas por un espacio. Quedaría de la siguiente forma:
+Se selecciona el script creado para que sea ejecutado. En el campo _Parámetros_ se colocan las variables definidas en el fichero separadas por un espacio. Quedaría de la siguiente forma:
 
 ```
 $REPO <usuario-ftp> <contraseña-ftp> ftp://<alojamiento-web>/

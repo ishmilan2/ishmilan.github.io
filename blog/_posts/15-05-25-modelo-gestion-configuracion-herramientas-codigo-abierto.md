@@ -9,7 +9,7 @@ Las **herramientas de código abierto** permiten establecer un **Modelo de Gesti
 
 La Gestión de Configuración (GC) establece un conjunto de tareas necesarias a implementar en la organización para garantizar la calidad del software. Cada tarea puede ser implementada de manera distinta según el proyecto en curso. Todo depende de las necesidades del grupo de trabajo, entorno de desarrollo y de la envergadura del proyecto.
 
-En paralelo se encuentran las herramientas que apoyan en la implementación de las tareas de GC. Son muchas las herramientas que existes, sin embargo, las de código abierto no son siempre las seleccionadas debido a múltiples factores que serán mencionados en breve.
+En paralelo se encuentran las herramientas que apoyan en la implementación de las tareas de GC. Son muchas las herramientas que existen, sin embargo, las de código abierto no son siempre las seleccionadas debido a múltiples factores que serán mencionados en breve.
 
 En el siguiente artículo se mostrará el **Modelo de integración de herramientas de código abierto**. El objetivo es garantizar una correcta implementación de las tareas de GC en un entorno de código abierto. Se expondrá un resumen de las actividades abarcadas, así como de su relación como el modelo propuesto.
 
@@ -59,7 +59,7 @@ La imagen muestra el diagrama de despliegue de las herramientas de **_GC_**.
 
 **_Git_**
 
-[Git](https://git-scm.com/) es un sistema gratuito y de código abierto de control de versiones distribuido diseñado para manejar todo, desde pequeños a grandes proyectos con rapidez y eficiencia.
+[Git](https://git-scm.com/) es un sistema gratuito y de código abierto de control de versiones distribuido y diseñado para manejar todo, desde pequeños a grandes proyectos con rapidez y eficiencia.
 
 Git garantiza la identificación y el control de cada **_EC_**. En **_Repositorios Git_** se encuentra el código fuente de todos los proyectos almacenados de forma centralizada. Los repositorios  contienen los registros de cada cambio aplicado a cada proyecto.
 
@@ -71,7 +71,7 @@ Los **_Repositorios Git_** son configurados para activar acciones de compilació
 
 Incorpora control de permisos por roles y usuarios en los **_Repositorios Git_**. Al agregar elementos de seguridad se garantiza tener el control de los cambios realizados en cada repositorio. Permite realizar auditorías en cada **_EC_**.
 
-Todos los nodos descritos en el **_Modelo_** obtienen el código fuente de los **_Repositorios Git_** pasando por la capa de seguridad que ofrece Gitolite. De esta forma se evita el acceso de usuario no deseados al código de la organización o empresa.
+Todos los nodos descritos en el **_Modelo_** obtienen el código fuente de los **_Repositorios Git_** pasando por la capa de seguridad que ofrece Gitolite. De esta forma se evita el acceso de usuarios no deseados al código de la organización o empresa.
 
 **_Redmine_**
 

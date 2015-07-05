@@ -17,7 +17,7 @@ Por tal motivo, el encargado de la Configuración de Software en un equipo debe 
 
 ## Herramienta SourceTree
 
-**[SourceTree](http://sourcetreeapp.com/)** es una cliente libre para los SCV Git y Mercurial. Permite gestionar todos tus repositorios, tanto locales como remotos a través de una simple interfaz.
+**[SourceTree](http://sourcetreeapp.com/)** es un cliente libre para los SCV Git y Mercurial. Permite gestionar todos tus repositorios, tanto locales como remotos a través de una simple interfaz.
 
 SourceTree simplifica el trabajo de equipos que utilizan SCV distribuidos. El aprendizaje es muy rápido y permite realizar acciones como clonar, crear y mezclar repositorio con un solo clic.
 
@@ -37,11 +37,11 @@ Dentro del fichero se coloca el mensaje que se desea mostrar. Un ejemplo del men
 
 `(# @0:10) Escriba el resumen del mensaje ... `
 
-Este mensaje corresponde con el formato utilizado por el sistema de gestión de proyectos **[Redmine](http://www.redmine.org)** para asociar un commit a una tarea y registar en ella las horas empleadas en realizarla.
+Este mensaje corresponde con el formato utilizado por el sistema de gestión de proyectos **[Redmine](http://www.redmine.org)** . Este se utiliza para asociar un commit a una tarea y registrar en ella las horas empleadas.
 
 ## Configuración del SourceTree
 
-La herramienta SourceTree crea en el directorio del usuario un fichero llamado `.gitconfig`. Este fichero tiene que ser editado para agregarle, en la sección del commit, la platilla que va a utilizar como mensaje por defecto.
+La herramienta SourceTree crea en el directorio del usuario un fichero llamado `.gitconfig`. Este fichero tiene que ser editado para agregarle, en la sección del commit, la plantilla que va a utilizar como mensaje por defecto.
 
 El contenido que debe ser agregado es el siguiente:
 

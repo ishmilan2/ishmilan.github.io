@@ -31,7 +31,7 @@ Un poco más reciente, **_Bob Aiello_** presenta en su libro **_"Configuration M
 * Ingeniería de lanzamiento o liberación
 * Despliegue
 
-Ambas definiciones son correctas a mi criterio, cada una con su enfoque. En el presente documento se utilizarán las definiciones de **_Aiello_** para mostrar las herramientas analizadas según su actividad.
+A mi criterio ambas definiciones son correctas, cada una con su enfoque. En el presente documento se utilizarán las definiciones de **_Aiello_** para mostrar las herramientas analizadas según su actividad.
 
 ## 1. Gestión de Código Fuente
 ### 1.1 Sistema de control de versiones
@@ -79,7 +79,7 @@ Las herramientas visuales ayudan a la gestión del código fuente garantizando a
 
 **_Sitios de referencia revisados durante la búsqueda:_** <a href="http://www.freshtechtips.com/2015/03/git-client-windows-mac-linux.html" target="_blank">10 Sitios de Referencia</a>, <a href="http://www.slant.co/topics/465/~what-are-the-best-git-clients-for-mac-os-x" target="_blank">Clientes para Mac OS X</a>.
 
-## 2 Ingeniería de Construcción
+## 2. Ingeniería de Construcción
 
 ### 2.1 Herramientas de construcción
 Las herramientas de construcción permiten organizar las dependencias y ejecutar las tareas necesarias para lograr crear el producto de software final.
@@ -91,19 +91,19 @@ Las herramientas de construcción permiten organizar las dependencias y ejecutar
 
 **_Maven_** cuenta desde hace algún tiempo con el mayor índice de popularidad. Las cifras están dadas en gran medida a la posibilidad de modelar, de forma sencilla, la lógica que se desea construir. Como sugerencia recomiendo no perder de vista a **_Gradle_**. Esta herramienta ha sido adoptada por equipos como Eclipse para realizar sus construcciones.
 
-## 3 Configuración del Entorno
+## 3. Configuración del Entorno
 
 Esta área depende mucho del proyecto a utilizar y de las características de cada grupo de desarrollo. Por tal motivo no se le ha realizado el mismo análisis que al resto.
 
-De manera general la intención es lograr establecer el mismo escenario en: _máquinas de pogramadores, servidores de pruebas y servidores de finales del producto_. Cada escenario debería tener configurado los mismos paquetes, dependencias y aplicaciones en aras de evitar errores durante la fase de testing y despliegue.
+De manera general la intención es lograr establecer el mismo escenario en: _máquinas de pogramadores, servidores de pruebas y servidores de finales del producto_. Cada escenario debería tener configurado los mismos paquetes, dependencias y aplicaciones en aras de evitar errores durante la fase de prueba y despliegue.
 
-Como elementos recomendados se muestran 2 sistemas que ayudan estandarizar y compartir la configuración de los entornos de trabajo de manera rápida y confiable: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
+Como elementos recomendados se muestran dos sistemas que ayudan a estandarizar y compartir la configuración de los entornos de trabajo de manera rápida y confiable: <a href="https://www.docker.com/">Docker</a> y <a href="https://www.vagrantup.com/">Vagrant</a>.
 
 <img src="{{ site.baseurl }}/images/150619/docker-vagrant.png" title="Docker-Vagrant - Google Trends" name="Docker-Vagrant - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-docker-vagrant.png" title="Docker-Vagrant - StackOverflow" name="Docker-Vagrant - StackOverflow" />
 
-**_Docker_** muestra mayores índices en las gráficas analizadas. _Docker_ viene siendo un sistema de control de versiones a nivel de sistema operativo. _Docker_ utiliza la filosofía de _Git_ pero a más bajo nivel. Si le gusta _Git_ le gustará adoptar _Docker_. Recomiendo darle un vistaso a esta herramienta.
+**_Docker_** muestra mayores índices en las gráficas analizadas. Este viene siendo un sistema de control de versiones a nivel de sistema operativo y utiliza la filosofía de _Git_ pero a más bajo nivel. Si le gusta _Git_ le gustará adoptar _Docker_. Recomiendo darle un vistazo a esta herramienta.
 
-## 4 Control de Cambios
+## 4. Control de Cambios
 ### 4.1 Gestión de proyectos
 En esta área se han analizado los sistemas de gestión de proyectos.
 
@@ -115,23 +115,23 @@ En esta área se han analizado los sistemas de gestión de proyectos.
 
 **_Jira_** y **_Redmine_** muestran mayores niveles en las gráficas analizadas, ambos sistemas cuentan con excelentes características. En mi experiencia personal trabajando con _Redmine_ he identificado muy buena adaptación (a través de plugins) con el resto de los sistemas mencionados en el artículo.
 
-## 5 Ingeniería de Liberación
+## 5. Ingeniería de Liberación
 ### 5.1 Sistemas de integración continua
-Los sistemas de integración continua permiten, entre otras muchas actividades, la ejecución de las siguientes tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código, generación de reportes.
+Los sistemas de integración continua permiten, entre otras muchas actividades, la ejecución de las siguientes tareas: construcciones nocturnas, pruebas de integración, generación de documentación, análisis estadístico del código y generación de reportes.
 
 **_Herramientas analizadas:_**
 <a href="http://hudson-ci.org/" target="_blank">Hudson</a>, <a href="https://jenkins-ci.org/" target="_blank">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo" target="_blank">Atlassian Bamboo</a>.
 
 <img src="{{ site.baseurl }}/images/150619/hudson-jenkins-bamboo.png" title="Integración continua - Google Trends" name="Integración continua - Google Trends" /><img src="{{ site.baseurl }}/images/150619/stackoverflow-ci-systems.png" title="Integración continua - StackOverflow" name="Integración continua - StackOverflow" />
 
-**_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con numerosos plugins que permiten la integración sistemas externos.
+**_Jenkins_** muestra en las gráficas el mayor número de actividad. Este sistema cuanta con numerosos plugins que permiten la integración con sistemas externos.
 
-## 6 Despliegue
+## 6. Despliegue
 El despliegue de los sistemas puede realizarse de forma manual, semiautomatizada o completamente automatizada. Los despliegues automáticos frecuentemente se realizan utilizando herramientas de integración continua como las descritas en el epígrafe anterior.
 
 Teniendo en cuenta las tendencias antes vistas _(Git, SourceTree, Git-Flow)_ recomendaría <a href="https://github.com/git-ftp/git-ftp" target="_blank">Git-FTP</a> para variantes semiautomatizadas. Esta herramienta fue descrita en el artículo <a href="../como-configurar-git-ftp-en-sourcetree">Cómo configurar Git-FTP en SourceTree</a> mostrando sus beneficios al proceso de **_GCS_**.
 
-Las variantes de despliegue manual se realizan utilizando los clásicos clientes FTP, como por ejemplo <a href="https://filezilla-project.org/" target="_blank">FileZila</a>.
+Las variantes de despliegue de forma manual se realizan utilizando los clásicos clientes FTP, como por ejemplo <a href="https://filezilla-project.org/" target="_blank">FileZila</a>.
  
 
 ### Reflexiones Finales
@@ -140,7 +140,7 @@ Las tendencias en la **_GCS_** brindan una visión del comportamiento de los mé
 
 Los elementos de alta relevancia identificados dentro del estudio permiten establecer un entorno favorable al desarrollo de software. Un ejemplo de la combinación de estos sistemas se muestra en el artículo <a href="../modelo-gestion-configuracion-herramientas-codigo-abierto">Modelo de Gestión de Configuración con herramientas código abierto</a>. La **_colaboración y comunicación_** entre ellos es vital para el éxito del grupo.
 
-Los grupos de trabajo deben realizar la selección de las herramientas según su entorno porque las variantes son muchas. Sin embargo, tener en cuenta estás gráficas durante la **_selección de herramientas para un entorno de desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
+Los grupos de trabajo deben realizar la selección de las herramientas según su entorno porque las variantes son muchas. Sin embargo, tener en cuenta estas gráficas durante la **_selección de herramientas para un entorno de desarrollo de software_** ayudará a elevar los **_niveles de productividad_** y se **_reducirán los errores_**.
 
 ### Revisiones significativas
 * SHRIKRISHNA, H. (2015): Orchestrating Docker.
