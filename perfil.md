@@ -27,7 +27,7 @@ La Habana | Cuba
 		<tr>
 		</tr>
 			<td class="profile-table-header"></td>
-			<td class="profile-table-info">Instituto Superior Politécnico José Antonio Echeverría</td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -46,7 +46,7 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Expedido por :</td>
-			<td class="profile-table-info">Instituto Superior Politécnico José Antonio Echeverría</td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
 		<tr>
 		</tr>
 			<td class="profile-table-header">Tema :</td>
@@ -67,11 +67,66 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Expedido por :</td>
-			<td class="profile-table-info">Instituto Superior Politécnico José Antonio Echeverría</td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
 		<tr>
 		</tr>
 			<td class="profile-table-header">Calificación :</td>
-			<td class="profile-table-info">4,58/5,0</td>
+			<td class="profile-table-info">4.58 / 5.0</td>
+		</tr>
+	</tbody>
+</table>
+
+## Experiencia Laboral
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Fechas :</td>
+			<td class="profile-table-info">2014 - actualidad</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Empleador :</td>
+			<td class="profile-table-info">Freelance</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Cargo :</td>
+			<td class="profile-table-info">Gestor de Configuración de Software</td>
+		<tr>
+		</tr>
+			<td class="profile-table-header">Actividades :</td>
+			<td class="profile-table-info">Gestión de código fuente, control de cambios, liberación y despliegue de productos, integración continua y construcción de productos.</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Fechas :</td>
+			<td class="profile-table-info">2009 - 2014 (5 años)</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Empleador :</td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Cargo :</td>
+			<td class="profile-table-info">Gestor de Configuración de Software y Docente</td>
+		<tr>
+		</tr>
+			<td class="profile-table-header">Actividades :</td>
+			<td class="profile-table-info">Como Gestor de Configuración de Software:<br>Gestión de código fuente, control de cambios, liberación y despliegue de productos, integración continua y construcción de productos.
+			<br><br>
+			Como Docente:<br>Profesor Instructor de las asignaturas: Estructuras de Datos, Diseño y Programación Orientada a Objetos, Control de Versiones y Cambios.</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Otros :</td>
+			<td class="profile-table-info">Contrato por 7 meses en el 2012 y por 3 meses en el 2013 como Analista, Diseñador y Desarrollador de Software en Venezuela.</td>
 		</tr>
 	</tbody>
 </table>
