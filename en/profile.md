@@ -127,8 +127,39 @@ Havana | Cuba
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Otros :</td>
+			<td class="profile-table-header">Others :</td>
 			<td class="profile-table-info">Contracted as software analyst & designer in Venezuela’s Ministry of Education in 2012 and 2013.</td>
+		</tr>
+	</tbody>
+</table>
+
+## Skills
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Software Engineer</td>
+			<td class="profile-table-info">Software Configuration Management, Agile Development Methodologies, Project Management and Design patterns.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Source code management</td>
+			<td class="profile-table-info">Git, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 and Git-Cola.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Change control</td>
+			<td class="profile-table-info">Redmine, Jira and MantisBT.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Build and Release</td>
+			<td class="profile-table-info">Ant, Maven, Jenkins and Git-FTP.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Lenguages</td>
+			<td class="profile-table-info">Java, C++, PHP and UML.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">CMS and ECommerces</td>
+			<td class="profile-table-info">Joomla, WorlPres, Plone and Prestashop.</td>
 		</tr>
 	</tbody>
 </table>

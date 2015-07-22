@@ -130,3 +130,34 @@ La Habana | Cuba
 		</tr>
 	</tbody>
 </table>
+
+## Habilidades
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Ingeniería de Software</td>
+			<td class="profile-table-info">Gestor de Configuración de Software, Metodologías Ágiles, Gestión de Proyecto y Patrones de Diseño.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Gestión de código fuente</td>
+			<td class="profile-table-info">Git, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 y Git-Cola.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Control de Cambios</td>
+			<td class="profile-table-info">Redmine, Jira y MantisBT.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Construcción y Liberación</td>
+			<td class="profile-table-info">Ant, Maven, Jenkins y Git-FTP.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Lenguajes</td>
+			<td class="profile-table-info">Java, C++, PHP y UML.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">CMS y Comercio electrónico</td>
+			<td class="profile-table-info">Joomla, WorlPres, Plone y Prestashop.</td>
+		</tr>
+	</tbody>
+</table>
