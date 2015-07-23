@@ -1,18 +1,24 @@
 
 .highlight {
   background-color: #efefef;
-  padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   margin: 20px 0 20px 0;
   overflow: auto;
   font-size: 14px;
+  pre{
+    padding: 7px;
+  }
+  code{
+    padding: 0;
+  }
 }
+
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   background-color: #efefef;
   font-size: 14px;
-  padding: 5px 5px 5px 5px;
+  padding: 7px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
