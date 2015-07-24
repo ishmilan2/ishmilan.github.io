@@ -54,7 +54,49 @@ mdadm --detail --scan > /mnt/etc/mdadm.conf
 # Se realiza cambiando toda la etiqueta LABEL por /dev/md0.
 sed -i 's/LABEL=[a-zA-Z\-]*/\/dev\/md0/' /mnt/etc/fstab
 
+# Falta descripcion
+mount --bind /dev /mnt/dev
+mount -t sysfs none /mnt/sys
+mount -t proc none /mnt/proc
 
+# Falta descripcion
+chroot /mnt /sbin/extlinux --install /boot
+
+dd if=/mnt/usr/share/syslinux/gptmbr.bin of=/dev/sdd
+
+chroot /mnt
+
+mkinitrd -v -f --theme=/usr/share/splash --without-multipath /boot/initrd-`uname -r`.img `uname -r`
+
+exit
+
+sed -i 's/LABEL=[a-zA-Z\-]*/\/dev\/md0/' /mnt/boot/extlinux.conf
+
+cd /mnt && extlinux --raid -i boot/
+
+sgdisk /dev/sdd --attributes=1:set:2
+
+cd
+umount /mnt/dev
+umount /mnt/sys
+umount /mnt/proc
+umount /mnt
+sync
+reboot
+```
+
+Reinicia el sistema por el disco B. Esta configuración se realiza en el BIOS.
+
+Una vez iniciado con el disco B se realizan los siguientes pasos:
+
+```
+sgdisk -R/dev/sda /dev/sdb
+
+sgdisk /dev/sda --attributes=1:set:2
+
+mdadm -a /dev/md0 /dev/sda1
+mdadm -a /dev/md1 /dev/sda2
+mdadm -a /dev/md2 /dev/sda3
 ```
 
 ## Reflexiones finales
