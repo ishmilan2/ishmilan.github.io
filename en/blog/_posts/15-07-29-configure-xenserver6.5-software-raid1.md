@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Configuración de XenServer 6.5 en RAID1 por Software
-translate_en: /en/blog/configure-xenserver6.5-software-raid1/
+layout: post_en
+title: Configure XenServer 6.5 on Software RAID1
+translate_es: /blog/configuracion-xenserver6.5-raid1-software/
 ---
 
-Al configurar **_XenServer 6.5_** en **_RAID1 por Software_** se incorpora una **_plataforma de virtualización_** sin depender del hardware y se **_evita la pérdida de información_** por roturas de discos.
+When configuring **_XenServer 6.5_** on **_Software RAID1_** is incorporated a virtualization platform without depend hardware and avoid lost data by ruptured discs.
 
-### Introducción
+### Introduction
 
-Las **_plataformas de virtualización_** permiten a los grupos de desarrollo convertir un servidor físico en muchos servidores virtuales. **_XenServer_** es una plataforma de virtualización de código abierto y constituye una muy buena alternativa para incorporarla en los **_grupos de desarrollo_**.
+**_The virtualization platforms_** allow development groups convert one physical server into many virtual servers. **_XenServer_** es una plataforma de virtualización de código abierto y constituye una muy buena alternativa para incorporarla en los **_grupos de desarrollo_**.
 
 Cuando se configura un servidor físico en **_RAID1_** se crea una copia exacta de la información existente en el disco duro hacia otro con igual capacidad. Los discos se mantienen **_sincronizados en todo momento_** y se **_evita la pérdida de información_** en caso de posibles roturas.
 
