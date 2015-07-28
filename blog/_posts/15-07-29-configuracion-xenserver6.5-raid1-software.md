@@ -15,7 +15,7 @@ Cuando se configura un servidor físico en **_RAID1_** se crea una copia exacta 
 La configuración de un servidor en **_RAID1_** puede ser muy costosa cuando se realiza por hardware. La alternativa a este problema es configurar el sistema en **_RAID1 por Software_**.
 
 ### Pre requisitos
-Tener instalado XenServer 6.5 sin seleccionar un repositorio de almacenamiento (Storage Repository, SR). En los pasos a seguir se utiliza `/dev/sda` para el disco donde se realizó la instalación y `/dev/sdb` para el segundo con igual tamaño.
+Tener instalado **_XenServer 6.5_** sin crear un repositorio de almacenamiento (en inglés **_Storage Repository, SR_**). En los pasos a seguir se utiliza `/dev/sda` para el disco donde se realizó la instalación y `/dev/sdb` para el segundo con igual tamaño.
 
 ## Convertir XenServer 6.5 a RAID1 por Software.
 
@@ -88,7 +88,7 @@ exit
 # Se realiza cambiando toda la etiqueta LABEL por /dev/md0.
 sed -i 's/LABEL=[a-zA-Z\-]*/\/dev\/md0/' /mnt/boot/extlinux.conf
 
-# Posicionarse en /mnt
+# Moverse a /mnt
 # Ejecuta extlinux para iniciar por boot/ en modo raid.
 cd /mnt
 extlinux --raid -i boot/
@@ -96,7 +96,7 @@ extlinux --raid -i boot/
 # Establece a /dev/sdb como sección de arranque o inicio de sistema.
 sgdisk /dev/sdb --attributes=1:set:2
 
-# Posicionarse en la carpeta de root y desmonta dev, sys, proc y mnt.
+# Moverse a la carpeta de root y desmontar dev, sys, proc y mnt.
 cd
 umount /mnt/dev
 umount /mnt/sys
@@ -132,7 +132,7 @@ mdadm -a /dev/md2 /dev/sda3
 reboot
 ```
 
-Una vez terminada la configuración del **_RAID1 por Software_** se debe crear un **_Repositorio de Almacenamiento_** (en inglés Storage Repository, SR). Para esto se utiliza el comando `xe sr-create` junto con el `UUID` de tu servidor.
+Una vez terminada la configuración del **_RAID1 por Software_** se debe crear un **_SR_**. Para esto se utiliza el comando `xe sr-create` junto con el `UUID` de tu servidor.
 
 ```
 xe sr-create content-type=user device-config:device=/dev/md2 host-uuid=<UUID del host xenserver> name-label="RAID 1" shared=false type=lvm
@@ -144,7 +144,7 @@ Con la secuencia de pasos mostradas en el artículo se puede establecer una **_p
 
 Entre los beneficios que tiene establecer esta configuración están: 
 
-- Protección de los datos de fallos físicos.
+- Protección de los datos cuando existen fallos físicos en los discos.
 - Reducción de los gastos en hardware.
 - Mayor aprovechamiento de los recursos físicos.
 - Establecimiento de múltiples sistemas virtuales independientes a partir de una máquina física.
@@ -153,4 +153,6 @@ Entre los beneficios que tiene establecer esta configuración están:
 - Citrix Systems. (2015): Citrix XenServer ® 6.5 Administrator's Guide
 - Gohar, A.(2013):Implementing Citrix XenServer Quickstarter
 - Dan, K. (2011): Virtualization: A Manager’s Guide
+- <a href="https://techblog.jeppson.org/2015/02/convert-xenserver-6-5-to-software-raid-1/" target="_blank">Technicus</a>
+- <a href="http://xenserver.org/" target="_blank">XenServer</a>
 
