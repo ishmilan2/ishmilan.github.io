@@ -10,16 +10,16 @@ When configuring **_XenServer 6.5_** on **_Software RAID1_**, a **_virtualizatio
 
 **_The virtualization platforms_** allow development groups convert one physical server into many virtual servers. **_XenServer_** is an **_open source virtualization platform_** and constitute a good choice for be adopted by **_developments groups_**.
 
-When configuring a physical server in **_RAID1_** is created an exact copy of the existing information in the hard disc to other with the same capacity. The discs stay **_synchronized all the time_** and thus **_avoiding lost information_** in case of ruptured discs.
+When configuring a physical server in **_RAID1_** an exacto copy is created of the existing information in the hard disc to other with the same capacity. The discs stay **_synchronized all the time_** and thus **_avoiding lost information_** in case of ruptured discs.
 
-Configure a server in **_RAID1_** may be expensive when is doing by hardware. The alternative to this problem is configuring the system in **_Software RAID1_**.
+Configuring a server in **_RAID1_** may be expensive when it's done by hardware. The alternative to this problem is configuring the system in **_Software RAID1_**.
 
 ### Prerequisites
-Be installing **_XenServer 6.5_** without create a **_Storage Repository (SR)_**. The following steps use `/dev/sda` for the instalation disc and `/dev/sdb` for the second disc with the same capacity.
+Having **_XenServer 6.5_** installed without create a **_Storage Repository (SR)_**. On the steps to follow, `/dev/sda` are used for the disc where the instalation was made and `/dev/sdb` for the second disc with the same size.
 
 ## Convert XenServer 6.5 to Software RAID1.
 
-The following steps can be copy and then paste into the terminal directly.
+The following steps can be copied and then paste into the terminal directly.
 
 ```
 # Prepare /dev/sdb removing GPT data structure.
@@ -109,9 +109,9 @@ reboot
 ```
 
 
-Once executed these steps reboot the system but ensuring start from disc B. The change can be done in machine BIOS or selecting the device when the system init.
+Once these steps are excute,d reboot the system but making sure a start will come from disc B. The change can be done in machine BIOS or selecting the device when the system init.
 
-Afer start the system from disc B, the following steps most be done in order to finish the configuration.
+Afer starting the system from disc B, these steps most be followed in order to finish the configuration.
 
 ```
 # Clone /dev/sdb to /dev/sda.
@@ -132,7 +132,7 @@ mdadm -a /dev/md2 /dev/sda3
 reboot
 ```
 
-Once finish Software RAID1 setup must be created a SR. Use `xe sr-create` command with the server `UUID`.
+Once finish Software **_RAID1_** setup must be created a SR. Use `xe sr-create` command with the server `UUID`.
 
 ```
 xe sr-create content-type=user device-config:device=/dev/md2 host-uuid=<UUID del host xenserver> name-label="RAID 1" shared=false type=lvm
@@ -140,14 +140,14 @@ xe sr-create content-type=user device-config:device=/dev/md2 host-uuid=<UUID del
 
 ## Final Thoughts
 
-With these steps must be establish a **_virtualizaton platform using XenServer 6.5_** over **_Software RAID1_** structure.
+With these steps a **_virtualizaton platform_** must be established using **_XenServer 6.5 over Software RAID1 structure_**.
 
-The benefits when set this configuration are: 
+The benefits that come with setting this configuration are: 
 
-- Data protection when exist ruptured discs.
+- Data protection when there are ruptured discs.
 - Reduced hardware costs.
 - Better use of physics resources.
-- Establish multiple independents virtual systems since one physical server.
+- Creation of multiple independent virtual systems from one physical server.
 
 ### Significant Revisions
 - Citrix Systems. (2015): Citrix XenServer ® 6.5 Administrator's Guide
