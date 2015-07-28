@@ -109,7 +109,7 @@ reboot
 ```
 
 
-Once these steps are excute,d reboot the system but making sure a start will come from disc B. The change can be done in machine BIOS or selecting the device when the system init.
+Once these steps are excuted reboot the system but making sure a start will come from disc B. The change can be done in machine BIOS or selecting the device when the system init.
 
 Afer starting the system from disc B, these steps most be followed in order to finish the configuration.
 
