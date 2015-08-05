@@ -182,7 +182,7 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Virtualización</td>
-			<td class="profile-table-info">XenServer, Citrix, Xen Orchestra, VMWare, MDADM</td>
+			<td class="profile-table-info">XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Lenguajes</td>
