@@ -183,6 +183,10 @@ Havana | Cuba
 			<td class="profile-table-info">Ant, Maven, Jenkins and Git-FTP.</td>
 		</tr>
 		<tr>
+			<td class="profile-table-header">Virtualization</td>
+			<td class="profile-table-info">XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
+		</tr>
+		<tr>
 			<td class="profile-table-header">Lenguages</td>
 			<td class="profile-table-info">Java, C++, PHP and UML.</td>
 		</tr>
