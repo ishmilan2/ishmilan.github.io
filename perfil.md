@@ -131,6 +131,35 @@ La Habana | Cuba
 	</tbody>
 </table>
 
+## Formación Adicional
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Postgrados Impartidos :</td>
+			<td class="profile-table-info">2013: Gestión de Configuración y Cambios.
+			<br>
+			2011: Java Empresarial y Arquitectura por Modelo MDA.
+			<br>
+			2010: Experto de Java y Arquitectura por Modelos para Java.
+			<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Postgrados Recibidos :</td>
+			<td class="profile-table-info">2011: Economía, Jurídica, Ética y Civil, Metodología de la Investigación Científica.
+			<br>
+			2010: Ingeniería de Software, Sistemas Informáticos Inteligentes, Arquitectura de Computadoras y Redes, Calidad de Software, Taller de Ingeniería y Gestión de Software, CMMI 1.2.</a>
+			<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Otros :</td>
+			<td class="profile-table-info">Ha sido Tribunal, Tutor y Oponente en Trabajos de Diplomas.</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Habilidades
 
 <table class="profile-table">
@@ -158,6 +187,41 @@ La Habana | Cuba
 		<tr>
 			<td class="profile-table-header">CMS y Comercio electrónico</td>
 			<td class="profile-table-info">Joomla, WorlPres, Plone y Prestashop.</td>
+		</tr>
+	</tbody>
+</table>
+
+## Investigación
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Publicaciones :</td>
+			<td class="profile-table-info">“Buenas Prácticas sobre Gestión de Configuración en proyectos que utilicen MDA”. <a href="http://rci.cujae.edu.cu/index.php/rci/article/view/115/pdf" target="_blank">Revista Cubana de Ingeniería en su volumen 3, número 2, 2012.</a>
+			<br>
+			“Incorporación de MDA en el desarrollo de la Capa de Presentación”. <a href="http://renia.cujae.edu.cu/index.php/revistacientifica/article/viewFile/14/8" target="_blank">Revista de Ingenieros y Arquitectos en su volumen 1, número 1, 2009.</a>
+			<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Eventos :</td>
+			<td class="profile-table-info">I Congreso Internacional de Ingeniería Informática y Sistemas de Información, Palacio de las Convenciones, La Habana, 2012.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+## Idiomas
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Nativo :</td>
+			<td class="profile-table-info">Español</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Otros :</td>
+			<td class="profile-table-info">Inglés</td>
 		</tr>
 	</tbody>
 </table>

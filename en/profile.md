@@ -133,6 +133,35 @@ Havana | Cuba
 	</tbody>
 </table>
 
+## Additional Formation
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Post grade courses given :</td>
+			<td class="profile-table-info">2013: Versioning and Revision Management.
+			<br>
+			2011: Enterprise Java and Model Driven Architecture.
+			<br>
+			2010: Expert Java and Model Driven Architecture.
+			<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Post grade courses received :</td>
+			<td class="profile-table-info">2011: Economy, Ethics, Scientific Investigation Methodology.
+			<br>
+			2010: Software Engineering, Intelligent Informatics’ Systems, Computer Architecture and Network, Software Quality, Engineer Workshop and Software Manage, CMMI 1.2.</a>
+			<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Others :</td>
+			<td class="profile-table-info">He has served as tribunal, tutor and opponent in diploma thesis.</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Skills
 
 <table class="profile-table">
@@ -160,6 +189,41 @@ Havana | Cuba
 		<tr>
 			<td class="profile-table-header">CMS and ECommerces</td>
 			<td class="profile-table-info">Joomla, WorlPres, Plone and Prestashop.</td>
+		</tr>
+	</tbody>
+</table>
+
+## Investigation
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Publications :</td>
+			<td class="profile-table-info">“Software Configuration Management Best Practices in project using MDA”. <a href="http://rci.cujae.edu.cu/index.php/rci/article/view/115/pdf" target="_blank">Engineering Cuban Magazine volume 3, number 2, 2012.</a>(only available in Spanish for the moment)
+			<br>
+			“MDA incorporation in Presentation Layer Development”. <a href="http://renia.cujae.edu.cu/index.php/revistacientifica/article/viewFile/14/8" target="_blank">Engineers and Architects Magazine volume 1, number 1, 2009.</a>(only available in Spanish for the moment)
+			<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Events :</td>
+			<td class="profile-table-info">I International Congress of Software Engineer and Information Systems, Palace of Conventions, Habana, 2012.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+## Languages
+
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Mother Language :</td>
+			<td class="profile-table-info">Spanish</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Others :</td>
+			<td class="profile-table-info">English</td>
 		</tr>
 	</tbody>
 </table>
