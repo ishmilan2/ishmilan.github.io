@@ -190,7 +190,7 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">CMS y Comercio electrónico</td>
-			<td class="profile-table-info">Joomla, WorlPres, Plone y Prestashop.</td>
+			<td class="profile-table-info">Joomla, WordPress, Plone y Prestashop.</td>
 		</tr>
 	</tbody>
 </table>

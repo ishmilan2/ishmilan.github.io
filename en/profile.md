@@ -192,7 +192,7 @@ Havana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">CMS and ECommerces</td>
-			<td class="profile-table-info">Joomla, WorlPres, Plone and Prestashop.</td>
+			<td class="profile-table-info">Joomla, WordPress, Plone and Prestashop.</td>
 		</tr>
 	</tbody>
 </table>
