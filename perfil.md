@@ -5,7 +5,7 @@ permalink: /perfil/
 translate_en: /en/profile/
 ---
 
-## Información general
+## Información General
 <p class="profile-description">MsC. Informática Aplicada, Gestor de Configuración de Software, Ingeniero Informático.
 <br>
 La Habana | Cuba
