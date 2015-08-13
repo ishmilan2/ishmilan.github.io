@@ -21,13 +21,27 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  text-align: justify;
 }
 
 .container {
   margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.content {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+}
+
+.sidebar {
+  max-width: 234px;
+  width: 100%;
+  float: right;
+  vertical-align: top;
 }
 
 h1, h2, h3, h4, h5, h6 {
