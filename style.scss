@@ -21,7 +21,6 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-  text-align: justify;
 }
 
 .container {
@@ -84,6 +83,7 @@ h4 {
 
 p {
   margin: 15px 0;
+  text-align: justify;
 }
 
 a {
@@ -158,6 +158,10 @@ img {
 
 .clearfix:after {
     clear: both;
+}
+
+.entry p {
+  text-align: justify;
 }
 
 /*********************/
@@ -254,6 +258,7 @@ img {
 
   @include mobile {
     margin: 3px 0;
+    text-align: center
   }
 }
 

@@ -52,13 +52,24 @@
     </div>
 
     <div class="container clearfix">
-      <div id="main" role="main" class="content">
-        {{ content }}
-      </div>
+      
+      {% if page.sidebar %}
 
-      <div class="sidebar">
-        adfafsssssssssssssssssssss
-      </div>
+        <div id="main" role="main" class="content">
+          {{ content }}
+        </div>
+
+        <div class="sidebar">
+          {% include sidebar.html %}
+        </div>
+
+      {% else %}
+
+        <div id="main" role="main" class="container">
+          {{ content }}
+        </div>
+        
+      {% endif %}
     </div>
 
     <div class="wrapper-footer">

@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 permalink: /blog/
+sidebar: sidebar
 translate_en: /en/blog/
 ---
 

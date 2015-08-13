@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ¿Cómo configurar el mensaje del commit por defecto en SourceTree?
+category: configuraciones
 ---
 
 Escribir el mensaje de cada commit puede volverse tedioso cuando se realiza varias veces en el día. Este estado pudiera empeorar si perteneces a una organización que cuenta con políticas establecidas para estructurar los formatos de los mensajes.
