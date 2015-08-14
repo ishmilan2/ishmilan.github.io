@@ -2,6 +2,7 @@
 layout: post_en
 title: 2015 Trends in Configuration Management
 translate_es: /blog/gestion-configuracion-tendencias-junio-2015/
+category: Configurations
 ---
 
 **_Trends_** in **_Software Configuration Management discipline_** allow you to focus and redefine the **_standards_** set so far in **_working environments_**.

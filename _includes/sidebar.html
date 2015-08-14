@@ -1,9 +1,9 @@
-Categorías
 
-<ul class="posts">
-{% for post in site.posts %}
-    {% if post.categories contains 'demography' %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
-{% endfor %}
-</ul>
+
+<h4>Categorías</h4>
+	
+  {% for cat in site.categories %}
+  	{% if cat[0] != 'blog' %}
+  		<li><a href="{{ site.baseurl }}/categories/#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a></li>
+  	{% endif %}
+  {% endfor %}
