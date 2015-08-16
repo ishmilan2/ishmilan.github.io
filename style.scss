@@ -31,16 +31,17 @@ body {
 }
 
 .content {
-  max-width: 740px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
   float: left;
 }
 
 .sidebar {
-  max-width: 234px;
+  max-width: 190px;
   width: 100%;
   float: right;
+  margin-top: -8px;
 
   @include mobile {
     display: none;
@@ -63,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  margin: 0px 0 15px;
   a {
     color: inherit;
   }
@@ -177,7 +179,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 20px 0 0px 0px;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {

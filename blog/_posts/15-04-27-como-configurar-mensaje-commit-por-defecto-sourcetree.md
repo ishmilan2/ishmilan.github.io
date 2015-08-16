@@ -1,7 +1,8 @@
 ---
 layout: post
 title: ¿Cómo configurar el mensaje del commit por defecto en SourceTree?
-category: Configuraciones
+category: articulo
+tags: [hola]
 permalink: /blog/como-configurar-mensaje-commit-por-defecto-sourcetree/
 ---
 

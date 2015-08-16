@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Modelo de Gestión de Configuración con herramientas código abierto 
+title: Modelo de Gestión de Configuración con herramientas código abierto
+category: articulo
 ---
 
 Las **herramientas de código abierto** permiten establecer un **Modelo de Gestión de Configuración de calidad**. Lo importante es lograr que **colaboren entre sí**.

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Gestión de Configuración - Tendencias 2015
-translate_en: /en/blog/2015-trends-configuration-management/ 
+translate_en: /en/blog/2015-trends-configuration-management/
+category: articulo
 ---
 
 Las **_tendencias_** en la **_disciplina de Gestión de Configuración_** permiten enfocar y redefinir los **_estándares_** establecidos hasta el momento en los **_entornos de trabajo_**.
