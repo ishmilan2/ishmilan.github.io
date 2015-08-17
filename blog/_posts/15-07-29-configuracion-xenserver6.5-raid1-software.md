@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Configuración de XenServer 6.5 en RAID1 por Software
+permalink: /blog/configuracion-xenserver6.5-raid1-software/
 translate_en: /en/blog/configure-xenserver6.5-software-raid1/
 category: articulo
+tags: [xenserver, raid]
 ---
 
 Al configurar **_XenServer 6.5_** en **_RAID1 por Software_** se incorpora una **_plataforma de virtualización_** sin depender del hardware y se **_evita la pérdida de información_** por roturas de discos.

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Modelo de Gestión de Configuración con herramientas código abierto
-category: articulo
+permalink: /blog/modelo-gestion-configuracion-herramientas-codigo-abierto/
+category: [articulo]
+tags: [uml, git, redmine, jenkins]
 ---
 
 Las **herramientas de código abierto** permiten establecer un **Modelo de Gestión de Configuración de calidad**. Lo importante es lograr que **colaboren entre sí**.

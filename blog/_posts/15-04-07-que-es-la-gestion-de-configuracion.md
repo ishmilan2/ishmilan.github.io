@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ¿Qué es la Gestión de Configuración?
+permalink: /blog/que-es-la-gestion-de-configuracion/
 category: articulo
 ---
 
