@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ¿Cómo actualizar los cambios desde Git hacia un FTP en SourceTree?
+permalink: /blog/como-configurar-git-ftp-en-sourcetree/
+category: [articulo]
+tags: [git, ftp, sourcetree]
 ---
 
 Establecer un **proyecto web en el alojamiento (hosting) de producción** es el paso final dentro del **flujo de trabajo**. Desplegar el sistema desde el **control de versiones Git** garantiza aumentar la **rapidez del proceso**; pues se actualizan solo los **cambios realizados** y se evita la manipulación de clientes **FTP**.

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ¿Qué es la Gestión de Configuración?
+permalink: /blog/que-es-la-gestion-de-configuracion/
+category: articulo
 ---
 
 En el proceso de Ingeniería de Software (IS) existe una variable muy importante que entra en juego constantemente; **_el cambio_**.

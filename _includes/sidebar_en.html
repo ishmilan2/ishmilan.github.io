@@ -1,0 +1,12 @@
+
+
+<h4>Categories</h4>
+
+<a href="{{ site.baseurl }}/en/blog/categories/#article" title="Article" rel="{{ site.categories.article.size }}">Article ({{ site.categories.article.size }})</a><br>
+
+<br>
+
+<h4>Tags</h4>
+  {% for tag in site.tags %}
+    <a href="{{ site.baseurl }}/en/blog/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
+  {% endfor %}

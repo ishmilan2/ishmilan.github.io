@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ¿Cómo instalar Redmine en Ubuntu 14.04?
+permalink: /blog/como-instalar-redmine-en-ubuntu-14.04/
+category: articulo
+tags: [redmine, ubuntu]
 ---
 
 El trabajo en equipo es una actividad necesaria durante el desarrollo de software. Cada miembro debe contribuir con sus habilidades y conocimientos en aras de alcanzar los objetivos propuestos. El éxito del grupo depende fundamentalmente de las habilidades de organización que tengan.
