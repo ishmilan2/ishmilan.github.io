@@ -368,6 +368,30 @@ footer {
   text-align: center;
 }
 
+
+/**
+ * Tags and Categories Style
+ */
+
+.tags-box{
+  li {
+    list-style: none;
+    font-weight: bold;
+    margin-top:10px;
+  }
+  .size{
+    font-size: 0.7em; font-weight: bold; vertical-align: super;
+  }
+}
+
+
+/*time style of tages and categories*/
+
+time{
+  margin-left: 15px;
+  font-style: italic;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

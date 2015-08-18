@@ -1,0 +1,23 @@
+---
+layout: page_en
+title: Categories
+permalink: /en/blog/categories/
+sidebar: yes
+translate_es: /blog/categorias/
+---
+
+Publications sorted by category.
+
+<ul class="tags-box">
+
+    <li id="articulo">Article</li>
+
+    {% for post in site.categories.article %}
+  
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
+
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
+    
+    {% endfor %}
+
+</ul>
