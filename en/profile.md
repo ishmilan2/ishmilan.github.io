@@ -187,6 +187,10 @@ Havana | Cuba
 			<td class="profile-table-info">XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
 		</tr>
 		<tr>
+			<td class="profile-table-header">LDAP</td>
+			<td class="profile-table-info">OpenLdap, phpLdapAdmin.</td>
+		</tr>
+		<tr>
 			<td class="profile-table-header">Lenguages</td>
 			<td class="profile-table-info">Java, C++, PHP and UML.</td>
 		</tr>
