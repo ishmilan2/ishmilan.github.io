@@ -5,9 +5,11 @@
   margin: 20px 0 20px 0;
   overflow: auto;
   font-size: 14px;
+  
   pre{
     padding: 7px;
   }
+  
   code{
     padding: 0;
   }
@@ -18,7 +20,7 @@ code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   background-color: #efefef;
   font-size: 14px;
-  padding: 7px;
+  padding: 4px 5px 4px 5px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
