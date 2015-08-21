@@ -20,4 +20,14 @@ Publicaciones ordenadas por categoría.
     
     {% endfor %}
 
+    <li id="articulo">Configuración</li>
+
+    {% for post in site.categories.configuracion %}
+
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
+
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
+    
+    {% endfor %}
+
 </ul>
