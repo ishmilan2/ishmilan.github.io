@@ -7,7 +7,7 @@ category: [configuration]
 tags: [phpmyadmin]
 ---
 
-The max file size that will be imported on phpMyAdmin can be changed easily.
+The **_max file size_** that will be imported on **_phpMyAdmin_** can be changed easily.
 
 ### Necessity
 

@@ -7,7 +7,7 @@ category: [configuration]
 tags: [phpmyadmin, apache2]
 ---
 
-The max file size that will be imported on phpMyAdmin can be changed easily.
+Enable **_block algorithms_** such as DES, TripleDES, Blowfish (default), 3-WAY, SAFER-SK64, SAFER-SK128, TWOFISH, TEA, RC2 and GOST with **_mcrypt_**.
 
 ### Necessity
 
