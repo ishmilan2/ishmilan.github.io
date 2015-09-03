@@ -173,8 +173,8 @@ La Habana | Cuba
 			<td class="profile-table-info">Git, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 y Git-Cola.</td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Control de Cambios</td>
-			<td class="profile-table-info">Redmine, Jira y MantisBT.</td>
+			<td class="profile-table-header">Gestión de Proyectos</td>
+			<td class="profile-table-info">Redmine, Jira, YouTrack y MantisBT.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Construcción y Liberación</td>
