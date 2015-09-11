@@ -175,8 +175,8 @@ Havana | Cuba
 			<td class="profile-table-info">Git, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 and Git-Cola.</td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Change control</td>
-			<td class="profile-table-info">Redmine, Jira and MantisBT.</td>
+			<td class="profile-table-header">Project Management</td>
+			<td class="profile-table-info">Redmine, Jira, YouTrack and MantisBT.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Build and Release</td>
