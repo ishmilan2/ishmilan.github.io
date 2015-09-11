@@ -8,7 +8,7 @@ translate_en: /en/blog/categories/
 
 Publicaciones ordenadas por categoría.
 
-<ul class="tags-box">
+<ul class="categories-tags-page">
 
     <li id="articulo">Arctículo</li>
 
