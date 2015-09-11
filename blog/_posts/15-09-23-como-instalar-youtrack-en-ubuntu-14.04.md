@@ -248,8 +248,6 @@ sudo service youtrack start
 
 Para confirmar su funcionamiento se abre el navegador y la aplicación se encontrará funcionando por el puerto que ha configurado. Por ejemplo: `http://<servidor>:<puerto>
 
-## Configurar YouTrack por el puerto 80
-
 ## Configurar el correo con Gmail
 
 **_YouTrack_** permite establecer la configuración de correo utilizando el protocolo `SMTP + SSL`. Para configurar el correo con su cuenta de **_Gmail_** debe llenar los campos de la siguiente forma.
@@ -297,6 +295,20 @@ Atributos LDAP
 ```
 
 ## Actualizar YouTrack
+
+Con las configuraciones realizadas hasta el momento será muy fácil actualizar el sistema YouTrack. Simplemente debe descargar la nueva versión desde el sitio oficial y reiniciar el servicio. Para lograrlo debe escribir el siguiente código:
+
+Primaro descargar el fichero `.jar`.
+
+```
+sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download.jetbrains.com/charisma/youtrack-<version>.jar"
+```
+
+Reiniciar el sistema
+
+```
+sudo service youtrack restart
+```
 
 ## Reflexiones finales
 
