@@ -31,14 +31,14 @@ body {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 780px;
   padding: 0 10px;
   width: 100%;
   float: left;
 }
 
 .sidebar {
-  max-width: 190px;
+  max-width: 220px;
   width: 100%;
   float: right;
   margin-top: -8px;
@@ -189,12 +189,15 @@ img {
 
 .translate {
   margin-top: -20px;
+  margin-bottom: 15px;
 
   @include mobile {
     text-align: center;
   }
 
   nav {
+
+    font-size: 14px;
 
     @include mobile {
       float: none;
@@ -373,7 +376,7 @@ footer {
  * Tags and Categories Style
  */
 
-.tags-box{
+.categories-tags-page{
   li {
     list-style: none;
     font-weight: bold;
@@ -383,6 +386,31 @@ footer {
     font-size: 0.7em; font-weight: bold; vertical-align: super;
   }
 }
+
+.category-tags-box {
+    background-color: #f2f2f2;
+    padding: 5px 10px 25px 10px;
+    margin-bottom: 30px;
+
+    a {
+      color: #333333;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 13px;
+      background-color: #fff;
+      padding: 5px 10px;
+      border: 0px 0px 0px 0px;
+      height: 28px;
+      line-height: 18px;
+      display: block;
+    }
+}
+
+.category-tags-box-field {
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+
 
 
 /*time style of tages and categories*/

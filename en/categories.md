@@ -8,7 +8,7 @@ translate_es: /blog/categorias/
 
 Publications sorted by category.
 
-<ul class="tags-box">
+<ul class="categories-tags-page">
 
     <li id="articulo">Article</li>
 

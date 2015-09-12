@@ -1,14 +1,20 @@
+<div class="category-tags-box clearfix">
+	
+	<h4>Categories</h4>
+	<div class="category-tags-box-field">
+		<a href="{{ site.baseurl }}/en/blog/categories/#article" title="Article" rel="{{ site.categories.article.size }}">Article ({{ site.categories.article.size }})</a>
+	</div>
 
+	<div class="category-tags-box-field">
+		<a href="{{ site.baseurl }}/en/blog/categories/#configuration" title="Configuration" rel="{{ site.categories.configuration.size }}">Configuration ({{ site.categories.configuration.size }})</a>
+	</div>
+</div>
 
-<h4>Categories</h4>
-
-<a href="{{ site.baseurl }}/en/blog/categories/#article" title="Article" rel="{{ site.categories.article.size }}">Article ({{ site.categories.article.size }})</a><br>
-
-<a href="{{ site.baseurl }}/en/blog/categories/#configuration" title="Configuration" rel="{{ site.categories.configuration.size }}">Configuration ({{ site.categories.configuration.size }})</a><br>
-
-<br>
-
-<h4>Tags</h4>
-  {% for tag in site.tags %}
-    <a href="{{ site.baseurl }}/en/blog/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
-  {% endfor %}
+<div class="category-tags-box clearfix">
+	<h4>Tags</h4>
+	{% for tag in site.tags %}
+		<div class="category-tags-box-field">
+			<a href="{{ site.baseurl }}/en/blog/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+		</div>
+	{% endfor %}
+</div>

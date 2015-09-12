@@ -8,7 +8,7 @@ translate_es: /blog/etiquetas/
 
 Publications sorted by tags.
 
-<ul class="tags-box">
+<ul class="categories-tags-page">
 	{% for tag in site.tags %}
 
 		{% assign posts_en = tag[1] | where:"lang","en" %}
