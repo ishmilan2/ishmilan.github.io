@@ -189,12 +189,15 @@ img {
 
 .translate {
   margin-top: -20px;
+  margin-bottom: 15px;
 
   @include mobile {
     text-align: center;
   }
 
   nav {
+
+    font-size: 14px;
 
     @include mobile {
       float: none;
