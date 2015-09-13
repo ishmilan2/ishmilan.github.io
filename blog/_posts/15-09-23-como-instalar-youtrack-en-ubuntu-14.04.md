@@ -4,18 +4,27 @@ title: ¿Cómo instalar YouTrack 6.5 en Ubuntu 14.04?
 permalink: /blog/como-instalar-youtrack-en-ubuntu-14.04/
 category: articulo
 tags: [youtrack, ubuntu]
-excerpt: YouTrack 6.5 instalación y configuración
+excerpt: Instalar y configurar YouTrack 6.5 le permitirá llevar la gestión de sus proyectos e incidencias de forma sencilla y amigable. Utilizando solamente el navegador web podrá llevar el control de su empresa.
 ---
 
-**_YouTrack_** es una 
+**_YouTrack_** es un sistema de gestión de proyectos y de registro de incidencias desarrollado por JetBrains. **_YouTrack_** está escrito en **_Java_** y es utilizado a través del navegador web. El sistema es propietario aunque tiene permitido hasta 10 usuarios libre de costo.
 
-### Introducción
+**_YouTrack_** contiene módulos que permiten su integración con sistemas de gestión de código fuentes, directorios de acceso a usuarios y sistemas de gestión de proyectos.
 
-Se asume que está utilizando un usuario que no es `root` y que cuenta con los privilegios `sudo`.
+Una vez terminado de leer este artículo usted contará con los siguientes beneficios:
+
+* Instalación de YouTrack 6.5 en Ubuntu 14.04.
+* Gestión de YouTrack como servicio para iniciar, detener y reiniciar el sistema.
+* Integrar YouTrack con Gmail.
+* Integrar YouTrack con OpenLDAP.
+
+### Pre requisitos
+
+Utilizar un usuario que no sea `root` y que cuente con los privilegios `sudo`.
 
 ## Paso 1 - Instalar JRE
 
-**_YouTrack_** ha sido desarrollado en **_Java_** y por lo tanto es necesario tener instalado en el sistema las bibliotecas estándares para su ejecución. Para lograrlo se utiliza el siguiente comando:
+**_YouTrack_** ha sido desarrollado en **_Java_** y por lo cual es necesario tener instalado en el sistema las bibliotecas estándares para su ejecución. Para lograrlo se utiliza el siguiente comando:
 
 ```
 sudo apt-get install openjdk-7-jre
@@ -312,7 +321,7 @@ sudo service youtrack restart
 
 ## Reflexiones finales
 
-
+**_Instalar y configurar YouTrack 6.5_** le permitirá llevar la **_gestión de sus proyectos e incidencias_** de forma sencilla y amigable. Utilizando solamente el navegador web podrá llevar el **_control de su empresa_**.
 
 ### Revisiones significativas
 

@@ -403,6 +403,10 @@ footer {
       height: 28px;
       line-height: 18px;
       display: block;
+      &:hover, &:active {
+        background-color: $blue;
+        color: $white;
+      }
     }
 }
 
