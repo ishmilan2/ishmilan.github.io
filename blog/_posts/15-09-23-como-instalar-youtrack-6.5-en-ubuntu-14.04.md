@@ -1,11 +1,14 @@
 ---
 layout: post
 title: ¿Cómo instalar YouTrack 6.5 en Ubuntu 14.04?
-permalink: /blog/como-instalar-youtrack-en-ubuntu-14.04/
+permalink: /blog/como-instalar-youtrack-6.5-en-ubuntu-14.04/
+translate_en: /en/blog/how-to-install-youtrack-6.5-on-ubuntu-14.04/
 category: articulo
 tags: [youtrack, ubuntu]
-excerpt: Instalar y configurar YouTrack 6.5 le permitirá llevar la gestión de sus proyectos e incidencias de forma sencilla y amigable. Utilizando solamente el navegador web podrá llevar el control de su empresa.
+excerpt: Instalar y configurar YouTrack 6.5 le permitirá administrar la gestión de sus proyectos e incidencias de forma sencilla y amigable. Utilizando solamente el navegador web podrá llevar el control de su empresa.
 ---
+
+### Introducción
 
 **_YouTrack_** es un sistema de gestión de proyectos y de registro de incidencias desarrollado por JetBrains. **_YouTrack_** está escrito en **_Java_** y es utilizado a través del navegador web. El sistema es propietario aunque tiene permitido hasta 10 usuarios libre de costo.
 
@@ -18,15 +21,21 @@ Una vez terminado de leer este artículo usted contará con los siguientes benef
 * Integrar YouTrack con Gmail.
 * Integrar YouTrack con OpenLDAP.
 
-### Pre requisitos
+## Prerequisitos
 
-Utilizar un usuario que no sea `root` y que cuente con los privilegios `sudo`.
+Para este tutorial necesitas:
 
-## Paso 1 - Instalar JRE
+* Un servidor con Ubuntu 14.04
+* Utilizar un usuario que no sea `root` y que cuente con los privilegios `sudo`.
 
-**_YouTrack_** ha sido desarrollado en **_Java_** y por lo cual es necesario tener instalado en el sistema las bibliotecas estándares para su ejecución. Para lograrlo se utiliza el siguiente comando:
+## Paso 1 - Instalar bibliotecas estándares de Java (JRE)
+
+**_YouTrack_** ha sido desarrollado en **_Java_** y por lo cual es necesario tener instalado en el sistema las bibliotecas estándares para su ejecución.
+
+Comience actualizando la caché de los paquetes locales y después instale `openjdk-7-jre`.
 
 ```
+sudo apt-get update
 sudo apt-get install openjdk-7-jre
 ```
 
@@ -44,17 +53,17 @@ OpenJDK Runtime Environment (IcedTea 2.5.4) (7u75-2.5.4-1~trusty1)
 OpenJDK 64-Bit Server VM (build 24.75-b04, mixed mode)
 ```
 
-## Paso 2 – Adicionar usuario
+## Paso 2 – Crear usuario para YouTrack
 
-Se crea el usuario `youtrack` en el sistema para gestionar los datos y servicios de **_YouTrack_**. El usuario no necesita tener una contraseña asociada, por lo tanto se utiliza el parámetro `--disabled-password` durante su creación.
+Se crea el usuario `youtrack`  para gestionar los datos y servicios de **_YouTrack_**. El usuario no necesita tener una contraseña asociada, por lo tanto se utiliza el parámetro `--disabled-password` durante su creación.
 
 ```
 sudo adduser youtrack --disabled-password
 ```
 
-## Paso 3 - Crear el directorio
+## Paso 3 - Crear el directorio para YouTrack
 
-Se crear el directorio `/usr/local/youtrack` para almacenar el script de ejecución, los ficheros de trazas y el ejecutable de **_YouTrack_**.
+Se crea el directorio `/usr/local/youtrack` para almacenar el script de ejecución, los ficheros de trazas y el ejecutable de **_YouTrack_**.
 
 ```
 sudo mkdir -p /usr/local/youtrack
@@ -244,10 +253,10 @@ sudo chmod +x /usr/local/youtrack/youtrack.sh
 Se descarga desde el sitio de **_YouTrack_** la última versión del sistema. En esta guía se ha utilizado la versión **_6.5_**. El fichero descargado tiene extensión `.jar`.
 
 ```
-sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download.jetbrains.com/charisma/youtrack-<version>.jar"
+sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download-cf.jetbrains.com/charisma/youtrack-6.5.16713.jar"
 ```
 
-## Paso 8 - Iniciar YouTrack
+## Paso 7 - Iniciar YouTrack
 
 Una vez terminadas las configuraciones anteriores el sistema YouTrack se encuentra listo para ser iniciado. Para esto se escribe lo siguiente:
 
@@ -257,7 +266,7 @@ sudo service youtrack start
 
 Para confirmar su funcionamiento se abre el navegador y la aplicación se encontrará funcionando por el puerto que ha configurado. Por ejemplo: `http://<servidor>:<puerto>
 
-## Configurar el correo con Gmail
+## (Opcional) Paso 8 - Configurar el correo con Gmail
 
 **_YouTrack_** permite establecer la configuración de correo utilizando el protocolo `SMTP + SSL`. Para configurar el correo con su cuenta de **_Gmail_** debe llenar los campos de la siguiente forma.
 
@@ -271,7 +280,7 @@ Select SSL key:
 Server 'from' email:
 ```
 
-## Autenticación utilizando OpenLDAP
+## (Opcional) Paso 9 - Autenticación utilizando OpenLDAP
 
 YouTrack permite la autenticación de usuarios desde directorios OpenLDAP. Para su configuración debe ser adicionado un nuevo módulo de Autenticación desde el panel de administración que sea de tipo LDAP.
 
