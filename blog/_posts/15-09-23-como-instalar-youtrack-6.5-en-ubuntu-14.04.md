@@ -77,7 +77,7 @@ sudo chown youtrack.youtrack /usr/local/youtrack
 
 ## Paso 4 - Crear script en init.d
 
-Se crea el script encargado de iniciar, detener y reiniciar el sistema **_YouTrack_**. El script se crea dentro de la carpeta `/etc/init.d/` de **_Ubuntu 14.04_** para ser gestionado como un servicio. El nombre del script es `youtrack`.
+Se crea el script encargado de iniciar, detener y reiniciar el sistema **_YouTrack_**. El script debe ser creado dentro de la carpeta `/etc/init.d/` para ser gestionado como un servicio. El nombre del script es `youtrack`.
 
 Para crear y abrir el fichero se ejecuta la siguiente línea:
 
