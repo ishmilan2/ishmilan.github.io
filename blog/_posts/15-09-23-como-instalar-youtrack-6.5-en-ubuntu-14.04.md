@@ -89,7 +89,7 @@ El fichero creado va a contener la siguiente información:
 
 * `HOME` variable para almacenar la referencia donde serán desplegados los ficheros del sistema YouTrack. 
 * `NAME` variable para utilizado para imprimir mensajes en el Terminal y para establecer la ruta del scritp de ejecución de YouTrack.
-* `SCRIPT` variable donde se almacena la rutal del script de ejecución de YouTrack.
+* `SCRIPT` variable donde se almacena la ruta del script de ejecución de YouTrack.
 * `d_start()` función para iniciar el servicio de YouTrack.
 * `d_stop()` función para detener el servicio de YouTrack.
 

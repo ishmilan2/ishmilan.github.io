@@ -77,23 +77,23 @@ sudo chown youtrack.youtrack /usr/local/youtrack
 
 ## Step 4 - Create init.d script
 
-You need to create the script responsible for starting, stopping and restarting **_YouTrack_** system. The script must be created inside the forlder `/etc/init.d/` to be managed as a service. The script name is `youtrack`.
+You need to create the script responsible for starting, stopping and restarting **_YouTrack_**. The script must be created inside the forlder `/etc/init.d/` to be managed as a service. The script name is `youtrack`.
 
-Para crear y abrir el fichero se ejecuta la siguiente línea:
+To better understand the information in paragraph below explaining their variables.
+
+* `HOME` variable to store the reference where YouTrack's files will be deployed. 
+* `NAME` variable used to print messages on the Terminal and to set the path of YouTrack execution scritp .
+* `SCRIPT` variable to the path of the script execution is stored.
+* `d_start()` function to start YouTrack service.
+* `d_stop()` function to stop YouTrack service.
+
+You can create and open the file typing:
 
 ```
 sudo nano /etc/init.d/youtrack
 ```
 
-El fichero creado va a contener la siguiente información:
-
-* `HOME` variable para almacenar la referencia donde serán desplegados los ficheros del sistema YouTrack. 
-* `NAME` variable para utilizado para imprimir mensajes en el Terminal y para establecer la ruta del scritp de ejecución de YouTrack.
-* `SCRIPT` variable donde se almacena la rutal del script de ejecución de YouTrack.
-* `d_start()` función para iniciar el servicio de YouTrack.
-* `d_stop()` función para detener el servicio de YouTrack.
-
-Una vez creado y abierto el fichero se inserta dentro la información correspondiente a la expliación del párrafo anterior:
+The file created containg the following information:
 
 ```
 #! /bin/sh
@@ -134,37 +134,39 @@ esac
 exit 0
 ```
 
-Después que se ha cerrado el fichero con la información adicionada se le asignan permisos de ejecución. Para lograrlo el código es el siguiente:
+After the file has been closed you must assigned execute permissions. To do this, the code is as follows:
 
 ```
 sudo chmod +x /etc/init.d/youtrack
 ```
 
-Se inserta un enlace del scritp `youtrack` al proceso de gestión de inicio del sistema operativo utilizando los valores por defecto. De esta forma YouTrack podrá iniciarse automáticamente. Para esto se escribe el siguiente código: 
+`youtrack` script is inserted at the beginning of the process using the operating system defaults. Thus **_YouTrack_** will start automatically. For this, enter the following code:
 
 ```
 sudo /usr/sbin/update-rc.d youtrack defaults
 ```
 
-## Paso 5 - Crear script de ejecución para YouTrack
+## Step 5 - Create execution script for YouTrack
 
-Se crea el script que va a contener la configuración de ejecución para YouTrack. El scritp se crea dentro de al carpeta `/usr/local/youtrack/`. El nombre del fichero es `youtrack.sh`. Para crearlo se utiliza el siguiente comando:
+The script is created with the runtime configuration for YouTrack. The scritp created inside the folder `/usr/local/youTrack/`. The file name is `youtrack.sh`. 
+
+To better understand the information in script below explaining their variables.
+
+* `NAME` variable to create trace files.
+* `PORT` variable to set the port to be used in the browser. This port can not be the **_80_**.
+* `USR` variable to set the position of YouTrack files.
+* `JAR` variable to set the route of YouTrack .jar file.
+* `LOG` variable to set the file name YouTrack trace.
+* `PID` variable to set the file name where the identifier of the process that started YouTrack is stored.* `d_start` función para iniciar YouTrack.
+* `d_stop` función para detener YouTrack.
+
+To create it using the following command:
 
 ```
 sudo nano /usr/local/youtrack/youtrack.sh
 ```
-El fichero establece contiene las siguientes variables y funciones:
 
-* `NAME` variable para crear los ficheros de trazas.
-* `PORT` variable para establecer el puerto que será utilizado en el navegador. Este puerto no puede ser el **_80_**.
-* `USR` variable para establecer la posición donde se encuentra la carpeta con los ficheros de YouTrack.
-* `JAR` variable para establecer la ruta del fichero .jar de YouTrack.
-* `LOG` variable para establecer el nombre del fichero de trazas una vez ejecutado YouTrack.
-* `PID` variable para establecer el nombre del fichero donde es almacena el identificador del proceso que ha iniciado YouTrack.
-* `d_start` función para iniciar YouTrack.
-* `d_stop` función para detener YouTrack.
-
-Una vez creado y abierto el fichero se inserta dentro la información correspondiente a la expliación del párrafo anterior:
+The file created containg the following information:
 
 ```
 #! /bin/sh
@@ -242,33 +244,34 @@ esac
 
 exit 0
 ```
-Después que se ha cerrado el fichero con la información adicionada se le asignan permisos de ejecución. Para lograrlo el código es el siguiente:
+
+After the file has been closed you must assigned execute permissions. To do this, the code is as follows:
 
 ```
 sudo chmod +x /usr/local/youtrack/youtrack.sh
 ```
 
-## Paso 6 - Descargar YouTrack
+## Step 6 - Download YouTrack
 
-Se descarga desde el sitio de **_YouTrack_** la última versión del sistema. En esta guía se ha utilizado la versión **_6.5_**. El fichero descargado tiene extensión `.jar`.
+**_YouTrack_** is downloaded from the official site. This guide has been used version **_6.5_**. The downloaded file has extension `.jar`.
 
 ```
 sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download-cf.jetbrains.com/charisma/youtrack-6.5.16713.jar"
 ```
 
-## Paso 7 - Iniciar YouTrack
+## Step 7 - Start YouTrack
 
-Una vez terminadas las configuraciones anteriores el sistema YouTrack se encuentra listo para ser iniciado. Para esto se escribe lo siguiente:
+Once finished the settings YouTrack system is ready to be started. For this, writes:
 
 ```
 sudo service youtrack start
 ```
 
-Para confirmar su funcionamiento se abre el navegador y la aplicación se encontrará funcionando por el puerto que ha configurado. Por ejemplo: `http://<servidor>:<puerto>
+To confirm operation the application will be running for the port you have set. For example: `http://<server>:<port>`.
 
-## Configurar el correo con Gmail
+## Configure Gmail
 
-**_YouTrack_** permite establecer la configuración de correo utilizando el protocolo `SMTP + SSL`. Para configurar el correo con su cuenta de **_Gmail_** debe llenar los campos de la siguiente forma.
+**_YouTrack_** allows for mail settings **_SMTP + SSL_** protocol. To configure your email account with **_Gmail_** should fill the fields as follows:
 
 ```
 SMTP host:
@@ -280,24 +283,24 @@ Select SSL key:
 Server 'from' email:
 ```
 
-## Autenticación utilizando OpenLDAP
+## Authentication using OpenLDAP
 
-YouTrack permite la autenticación de usuarios desde directorios OpenLDAP. Para su configuración debe ser adicionado un nuevo módulo de Autenticación desde el panel de administración que sea de tipo LDAP.
+**_YouTrack_** allows user authentication from OpenLDAP directories. For configuration you must be added a new authentication module from the panel of administration that is of type **_LDAP_**.
 
-Los datos que deben ser configurados son los siguientes:
+The data to be configured are:
 
-* **_Name:_** nombre del directorio
-* **_Server URL:_** dirección del directorio
-* **_DN Transform:_** ubicación donde serán buscados los usuarios dentro del directorio.
-* **_Filter:_** campo utilizado como filtro del usuario.
+* **_Name:_** directory name.
+* **_Server URL:_** directory url.
+* **_DN Transform:_** location where users are located within the directory.
+* **_Filter:_** field used as a filter of the user.
 
-Los atributos del OpenLDAP que deben ser llenados son los siguientes:
+OpenLDAP attributes that must be filled are:
 
-* **_Name:_** campo nombre del usuario en el Open LDAP.
-* **_Login:_** campo utilizado para registrarse el usuario en YouTrack.
-* **_Email:_** campo correo del usuario en OpenLDAP.
+* **_Name:_** user name field in the Open LDAP.
+* **_Login:_** field used to register the user in YouTrack.
+* **_Email:_** OpenLDAP user field in the mail.
 
-Un ejemplo de configuración sería la siguiente:
+A sample configuration is as follows:
 
 ```
 			Name: Company OpenLDAP
@@ -312,17 +315,17 @@ Atributos LDAP
 		   Email: mail
 ```
 
-## Actualizar YouTrack
+## Update YouTrack
 
-Con las configuraciones realizadas hasta el momento será muy fácil actualizar el sistema YouTrack. Simplemente debe descargar la nueva versión desde el sitio oficial y reiniciar el servicio. Para lograrlo debe escribir el siguiente código:
+With settings made so far will be very easy to upgrade the system YouTrack. Simply need to download the new version from the official site and restart the service. To achieve this you must enter the following code:
 
-Primaro descargar el fichero `.jar`.
+First downlonad `.jar` file.
 
 ```
 sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download.jetbrains.com/charisma/youtrack-<version>.jar"
 ```
 
-Reiniciar el sistema
+Restart system.
 
 ```
 sudo service youtrack restart
