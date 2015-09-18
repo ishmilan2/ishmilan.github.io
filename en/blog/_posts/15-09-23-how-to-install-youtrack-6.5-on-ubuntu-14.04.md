@@ -8,6 +8,8 @@ tags: [youtrack, ubuntu]
 excerpt: Install and configuring YouTrack 6.5 allow you to management your projects and incidents in a simple and friendly way. Only using a web browser you can take control of your company.
 ---
 
+<img src="{{ site.baseurl }}/images/banners/youtrack.gif" title="YouTrack" name="YouTrack" />
+
 ### Introduction
 
 **_YouTrack_** is a project management software and issue tracking system developed by **_JetBrains_**. YouTrack is a proprietary, commercial browser-based bug tracker written in Java. The system allow up to 10 users free of cost.
@@ -30,7 +32,7 @@ For this tutorial you need:
 
 ## Step 1 - Installing Java Runtime Environment (JRE)
 
-YouTrack has been develop in Java and therefore it is necessesary to install Java Runtime Environment.
+YouTrack has been developed in Java and therefore it is necessesary to install Java Runtime Environment.
 
 Begin by updating your local packages cache and then installing `openjdk-7-jre`.
 
@@ -55,7 +57,7 @@ OpenJDK 64-Bit Server VM (build 24.75-b04, mixed mode)
 
 ## Step 2 – Create YouTrack user account
 
-The user `youtrack` is created to manage **_YouTrack_** data and services. The user need not have an associated password, so the `--disabled-password` parameter is used during its creation. To do this, type:
+The user `youtrack` is created to manage **_YouTrack_** data and services. The user doesn´t need to have an associated password, so the `--disabled-password` parameter is used during its creation. To do this, type:
 
 ```
 sudo adduser youtrack --disabled-password
@@ -79,7 +81,7 @@ sudo chown youtrack.youtrack /usr/local/youtrack
 
 You need to create the script responsible for starting, stopping and restarting **_YouTrack_**. The script must be created inside the forlder `/etc/init.d/` to be managed as a service. The script name is `youtrack`.
 
-To better understand the information in paragraph below explaining their variables.
+To better understand the information in the paragraph below explaining their variables.
 
 * `HOME` variable to store the reference where YouTrack's files will be deployed. 
 * `NAME` variable used to print messages on the Terminal and to set the path of YouTrack execution scritp .
@@ -148,7 +150,7 @@ sudo /usr/sbin/update-rc.d youtrack defaults
 
 ## Step 5 - Create execution script for YouTrack
 
-The script is created with the runtime configuration for YouTrack. The scritp created inside the folder `/usr/local/youTrack/`. The file name is `youtrack.sh`. 
+The script is created with the runtime configuration for YouTrack. The script created inside the folder `/usr/local/youTrack/`. The file name is `youtrack.sh`. 
 
 To better understand the information in script below explaining their variables.
 
@@ -261,7 +263,7 @@ sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download-cf.jetbra
 
 ## Step 7 - Start YouTrack
 
-Once finished the settings YouTrack system is ready to be started. For this, writes:
+Once you´ve finished the settings, YouTrack system is ready to be started. For this, write:
 
 ```
 sudo service youtrack start
@@ -271,21 +273,21 @@ To confirm operation the application will be running for the port you have set. 
 
 ## Configure Gmail
 
-**_YouTrack_** allows for mail settings **_SMTP + SSL_** protocol. To configure your email account with **_Gmail_** should fill the fields as follows:
+**_YouTrack_** allows mail settings **_SMTP + SSL_** protocol. To configure your email account with **_Gmail_** the fields should be filled  as it follows:
 
 ```
-SMTP host:
-SMTP port:
-Mail protocol:
-SMTP login:
-SMTP password:
-Select SSL key:
-Server 'from' email:
+          SMTP host: smtp.gmail.com
+          SMTP port: 465
+      Mail protocol: SMTP+SSL
+         SMTP login: your_account@gmail.com
+      SMTP password: your_password
+     Select SSL key: Please select option
+Server 'from' email: your_account@gmail.com
 ```
 
 ## Authentication using OpenLDAP
 
-**_YouTrack_** allows user authentication from OpenLDAP directories. For configuration you must be added a new authentication module from the panel of administration that is of type **_LDAP_**.
+**_YouTrack_** allows user authentication from OpenLDAP directories. For configuration you must add a new authentication module from the panel of administration,type **_LDAP_**.
 
 The data to be configured are:
 
@@ -331,11 +333,10 @@ Restart system.
 sudo service youtrack restart
 ```
 
-## Reflexiones finales
+## Final Thoughts
 
-**_Instalar y configurar YouTrack 6.5_** le permitirá llevar la **_gestión de sus proyectos e incidencias_** de forma sencilla y amigable. Utilizando solamente el navegador web podrá llevar el **_control de su empresa_**.
+**_Installing and configuring You Track 6.5_** will allow you to manage your projects in a simple way. By simply using the web browser you will be able to control your enterprise.
 
-### Revisiones significativas
+### Significant Revisions
 
-* [Sitio de Redmine](http://www.redmine.org)
-* ANDRIY, L. (2013) Mastering Redmine. Packt Publishing
+* [Sitio de YouTrack](https://www.jetbrains.com/youtrack/)
