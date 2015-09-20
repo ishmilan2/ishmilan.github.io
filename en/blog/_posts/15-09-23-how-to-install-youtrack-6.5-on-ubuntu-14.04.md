@@ -23,16 +23,16 @@ Once you finished reading this article you will have the following benefits:
 * YouTrack integrated with Gmail.
 * YouTrack integrated with OpenLDAP.
 
-## Prerrequisites
+## Prerequisites
 
 For this tutorial you need:
 
 * A server running Ubuntu 14.04.
 * A user who is not `root` and that has privileges `sudo`.
 
-## Step 1 - Installing Java Runtime Environment (JRE)
+## Step 1 – Installing Java Runtime Environment (JRE)
 
-YouTrack has been developed in Java and therefore it is necessesary to install Java Runtime Environment.
+YouTrack has been developed in Java and therefore it is necessary to install Java Runtime Environment.
 
 Begin by updating your local packages cache and then installing `openjdk-7-jre`.
 
@@ -41,7 +41,7 @@ sudo apt-get update
 sudo apt-get install openjdk-7-jre
 ```
 
-To confirm the instalation was completed successfully using the following command:
+To confirm the installation was completed successfully using the following command:
 
 ```
 java -version
@@ -64,7 +64,7 @@ sudo adduser youtrack --disabled-password
 ```
 During the creation of `youtrack` user you must fill some extra fields.
 
-## Step 3 - Create YouTrack directory
+## Step 3 – Create YouTrack directory
 
 The directory `/usr/local/youtrack` is created to store scripts, trace files and executable **_YouTrack_** (.jar). You can create the directory by typing:
 
@@ -78,14 +78,14 @@ The directory created must be configured to belong to the user and group `youtra
 sudo chown youtrack.youtrack /usr/local/youtrack
 ```
 
-## Step 4 - Create init.d script
+## Step 4 – Create init.d script
 
-You need to create the script responsible for starting, stopping and restarting **_YouTrack_**. The script must be created inside the forlder `/etc/init.d/` to be managed as a service. The script name is `youtrack`.
+You need to create the script responsible for starting, stopping and restarting **_YouTrack_**. The script must be created inside the folder `/etc/init.d/` to be managed as a service. The script name is `youtrack`.
 
-To better understand the information in the paragraph below explaining their variables.
+To better understand the script `youtrack` in the paragraph below explaining their variables.
 
 * `HOME` variable to store the reference where YouTrack's files will be deployed. 
-* `NAME` variable used to print messages on the Terminal and to set the path of YouTrack execution scritp .
+* `NAME` variable used to print messages on the Terminal and to set the path of YouTrack execution script.
 * `SCRIPT` variable to the path of the script execution is stored.
 * `d_start()` function to start YouTrack service.
 * `d_stop()` function to stop YouTrack service.
@@ -96,7 +96,7 @@ You can create and open the file typing:
 sudo nano /etc/init.d/youtrack
 ```
 
-The file created containg the following information:
+Once the file was created and opening we must include the following information:
 
 ```
 #! /bin/sh
@@ -149,9 +149,9 @@ sudo chmod +x /etc/init.d/youtrack
 sudo /usr/sbin/update-rc.d youtrack defaults
 ```
 
-## Step 5 - Create execution script for YouTrack
+## Step 5 – Create execution script for YouTrack
 
-The script is created with the runtime configuration for YouTrack. The script created inside the folder `/usr/local/youTrack/`. The file name is `youtrack.sh`. 
+The script is created with the runtime configuration for **_YouTrack_**. The script created inside the folder `/usr/local/youTrack/`. The file name is `youtrack.sh`. 
 
 To better understand the information in script below explaining their variables.
 
@@ -160,8 +160,9 @@ To better understand the information in script below explaining their variables.
 * `USR` variable to set the position of YouTrack files.
 * `JAR` variable to set the route of YouTrack .jar file.
 * `LOG` variable to set the file name YouTrack trace.
-* `PID` variable to set the file name where the identifier of the process that started YouTrack is stored.* `d_start` función para iniciar YouTrack.
-* `d_stop` función para detener YouTrack.
+* `PID` variable to set the file name where the identifier of the process that started YouTrack is stored.
+* `d_start` function to start YouTrack service.
+* `d_stop` function to stop YouTrack service.
 
 To create it using the following command:
 
@@ -169,7 +170,7 @@ To create it using the following command:
 sudo nano /usr/local/youtrack/youtrack.sh
 ```
 
-The file created containg the following information:
+The file created contain the following information:
 
 ```
 #! /bin/sh
@@ -254,7 +255,7 @@ After the file has been closed you must assigned execute permissions. To do this
 sudo chmod +x /usr/local/youtrack/youtrack.sh
 ```
 
-## Step 6 - Download YouTrack
+## Step 6 – Download YouTrack
 
 **_YouTrack_** is downloaded from the official site. This guide has been used version **_6.5_**. The downloaded file has extension `.jar`.
 
@@ -262,7 +263,7 @@ sudo chmod +x /usr/local/youtrack/youtrack.sh
 sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download-cf.jetbrains.com/charisma/youtrack-6.5.16713.jar"
 ```
 
-## Step 7 - Start YouTrack
+## Step 7 – Start YouTrack
 
 Once you´ve finished the settings, YouTrack system is ready to be started. For this, write:
 
@@ -272,7 +273,7 @@ sudo service youtrack start
 
 To confirm operation the application will be running for the port you have set. For example: `http://<server>:<port>`.
 
-## Configure Gmail
+## (Optional) Step – 8 Configure Gmail
 
 **_YouTrack_** allows mail settings **_SMTP + SSL_** protocol. To configure your email account with **_Gmail_** the fields should be filled  as it follows:
 
@@ -286,9 +287,9 @@ To confirm operation the application will be running for the port you have set. 
 Server 'from' email: your_account@gmail.com
 ```
 
-## Authentication using OpenLDAP
+## (Optional) Step – 9 Authentication using OpenLDAP
 
-**_YouTrack_** allows user authentication from OpenLDAP directories. For configuration you must add a new authentication module from the panel of administration,type **_LDAP_**.
+**_YouTrack_** allows user authentication from OpenLDAP directories. For configuration you must add a new authentication module from the panel of administration, type **_LDAP_**.
 
 The data to be configured are:
 
@@ -318,11 +319,11 @@ Atributos LDAP
 		   Email: mail
 ```
 
-## Update YouTrack
+## (Optional) Step 10 – Update YouTrack
 
 With settings made so far will be very easy to upgrade the system YouTrack. Simply need to download the new version from the official site and restart the service. To achieve this you must enter the following code:
 
-First downlonad `.jar` file.
+First download `.jar` file.
 
 ```
 sudo su youtrack -l -c "cd /usr/local/youtrack && wget http://download.jetbrains.com/charisma/youtrack-<version>.jar"
@@ -340,4 +341,4 @@ sudo service youtrack restart
 
 ### Significant Revisions
 
-* [Sitio de YouTrack](https://www.jetbrains.com/youtrack/)
+* <a href="https://www.jetbrains.com/youtrack/" target="_blank">Sitio de YouTrack</a>
