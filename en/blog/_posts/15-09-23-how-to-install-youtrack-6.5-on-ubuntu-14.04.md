@@ -62,6 +62,7 @@ The user `youtrack` is created to manage **_YouTrack_** data and services. The u
 ```
 sudo adduser youtrack --disabled-password
 ```
+During the creation of `youtrack` user you must fill some extra fields.
 
 ## Step 3 - Create YouTrack directory
 

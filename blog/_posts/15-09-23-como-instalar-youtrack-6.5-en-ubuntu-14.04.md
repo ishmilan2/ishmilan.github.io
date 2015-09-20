@@ -14,7 +14,7 @@ excerpt: <strong><em>Instalar y configurar YouTrack 6.5</em></strong> le permiti
 
 **_YouTrack_** es un sistema de gestión de proyectos y de registro de incidencias desarrollado por JetBrains. **_YouTrack_** está escrito en **_Java_** y es utilizado a través del navegador web. El sistema es propietario aunque tiene permitido hasta 10 usuarios libre de costo.
 
-**_YouTrack_** contiene módulos que permiten su integración con sistemas de gestión de código fuentes, directorios de acceso a usuarios y sistemas de gestión de proyectos.
+**_YouTrack_** contiene módulos que permiten su integración con sistemas de gestión de código fuentes, directorios de acceso a usuarios **_(LDAP)_** y sistemas de gestión de proyectos.
 
 Una vez terminado de leer este artículo usted contará con los siguientes beneficios:
 
@@ -62,6 +62,7 @@ Se crea el usuario `youtrack`  para gestionar los datos y servicios de **_YouTra
 ```
 sudo adduser youtrack --disabled-password
 ```
+Durante la creación del usuario `youtrack` deberá llenar algunos datos adicionales.
 
 ## Paso 3 - Crear el directorio para YouTrack
 
