@@ -18,10 +18,10 @@ excerpt: <strong><em>Instalar y configurar YouTrack 6.5</em></strong> le permiti
 
 Una vez terminado de leer este artículo usted contará con los siguientes beneficios:
 
-* Instalación de YouTrack 6.5 en Ubuntu 14.04.
+* Instalación de **_YouTrack 6.5_** en **_Ubuntu 14.04_**.
 * Gestión de YouTrack como servicio para iniciar, detener y reiniciar el sistema.
 * Integrar YouTrack con Gmail.
-* Integrar YouTrack con OpenLDAP.
+* Integrar YouTrack con **_OpenLDAP_**.
 
 ## Pre requisitos
 
@@ -337,4 +337,4 @@ sudo service youtrack restart
 
 ### Revisiones significativas
 
-* <a href="https://www.jetbrains.com/youtrack/" target="_blank">Sitio de YouTrack</a>
+* <a href="https://www.jetbrains.com/youtrack/" target="_blank">Sitio Oficial de YouTrack</a>
