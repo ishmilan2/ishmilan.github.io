@@ -10,7 +10,28 @@
         <meta name="description" content="{{ site.description_meta }}">
         <meta property="og:description" content="{{ site.description_meta }}" />
     {% endif %}
-    
+
     <meta name="author" content="{{ site.name }}" />
 
-    
+    {% if page.title %}
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
+
+    {% if page.image %}
+      <meta property="og:image" content="{{ page.image }}">
+    {% else %}
+      <meta property="og:image" content="{{ site.avatar }}">
+    {% endif %}
+
+    {% if page.categories %}
+      {% for category in page.categories limit:1 %}
+        <meta property="article:section" content="{{ category }}">
+      {% endfor %}
+    {% endif %}
+
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <meta property="article:tag" content="{{ tag }}">
+      {% endfor %}
+    {% endif %}
