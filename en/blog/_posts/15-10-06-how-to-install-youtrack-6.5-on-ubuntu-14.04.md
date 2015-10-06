@@ -6,6 +6,7 @@ translate_es: /blog/como-instalar-youtrack-6.5-en-ubuntu-14.04/
 category: article
 tags: [youtrack, ubuntu]
 excerpt: <strong><em>Installing and configuring You Track 6.5</em></strong> will allow you to <strong><em>manage your projects</strong></em> in a simple way. By simply using the web browser you will be able to <strong><em>control your enterprise</strong></em>.
+image: /images/banners/youtrack.gif
 ---
 
 <img src="{{ site.baseurl }}/images/banners/youtrack.gif" title="YouTrack" name="YouTrack" />
