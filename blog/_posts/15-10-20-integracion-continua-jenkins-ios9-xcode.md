@@ -4,8 +4,11 @@ title: Integración contínua combinando Jenkins, iOS 9 y XCode 7.
 permalink: /blog/integracion-continua-jenkins-ios9-xcode/
 category: [articulo]
 tags: [jenkins, xcode, ios9]
+image: /images/banners/jenkins-og.jpeg
 excerpt: Automatizar las pruebas para proyectos en iOS 9 es posible. Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento simplifica el proceso de desarrollo.
 ---
+
+<img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
 ### Introducción
 
