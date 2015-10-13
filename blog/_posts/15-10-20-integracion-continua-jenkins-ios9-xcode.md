@@ -12,7 +12,7 @@ excerpt: Automatizar las pruebas para proyectos en iOS 9 es posible. Delegar la 
 
 ### Introducción
 
-La ejecución de pruebas al código fuente es un eslabón fundamental durante el proceso de desarrollo de software. Realizar todas las pruebas a un sistema significa emplear gran cantidad de recursos durante su ejecución y en ocasiones las pruebas pueden tomar algún tiempo en terminar.
+La ejecución de pruebas al código fuente es un eslabón fundamental durante el proceso de desarrollo de software. Realizar todas las pruebas a un sistema significa emplear gran cantidad de recursos durante su ejecución y en ocasiones las pruebas pueden tomar bastante tiempo en terminar.
 
 El equipo de desarrollo pudiera ver entorpecido su trabajo si tiene que esperar por el resultado de todas las pruebas ejecutadas cada vez que termina una tarea. Para evitar esta situación se delega la actividad de revisión a sistemas de integración continua con mayores capacidades de procesamiento. Estos sistemas pueden ser configurados para realizar tareas en los horarios menos activos para maximizar el rendimiento. Una vez terminada la tarea el sistema envía las notificaciones del resultado a los usuarios interesados.
 
@@ -54,7 +54,7 @@ JUnit Plugin: 1.9
 
 **_Jenkins_** puede ser configurado para realizar la ejecución de pruebas a los proyectos en **_iOS 9_**. En el repositorio de Jenkins existe el **_plugin XCode integration_** que nos permitirá compilar el código fuente y ejecutar las pruebas implementadas.
 
-El **_plugin XCode integration_** realiza la ejecución de la pruebas y el resultado se escribe en un fichero con **_formato XML_** dentro del proyecto. Este fichero tiene la misma estructura que se obtiene cuando se realizan las pruebas con **_JUnit_**. Por tal motivo se va a utilizar el **_plugin JUnit de Jenkins_** para mostrar el resultado de las pruebas ejectuadas en el proyecto de **_iOS 9_** y poder emitir gráficos asociados al mismo.
+El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_plugin XCode integration_</a> realiza la ejecución de la pruebas y el resultado se escribe en un fichero con **_formato XML_** dentro del proyecto. Este fichero tiene la misma estructura que se obtiene cuando se realizan las pruebas con **_JUnit_**. Por tal motivo se va a utilizar el **_plugin JUnit de Jenkins_** para mostrar el resultado de las pruebas ejectuadas en el proyecto de **_iOS 9_** y poder emitir gráficos asociados al mismo.
 
 Para instalarlos se accede al área de administración de Jenkins y se selecciona el enlace a la gestión de Plugins. Una vez dentro, se selecciona la etiqueta referente a los plugins disponibles.
 
@@ -90,7 +90,6 @@ Se muestran las pantallas que lanza XCode.
 
 ### Revisiones significativas
 
-* Sitio oficial de Jenkins.
-* Plugins de XCode para Jenkins.
-* Plugins de JUnit para Jenkins.
-
+* <a href="https://wiki.jenkins-ci.org" target="_blank">Sitio oficial de Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">Plugins de XCode para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">Plugins de JUnit para Jenkins.</a>
