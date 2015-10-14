@@ -56,20 +56,25 @@ JUnit Plugin: 1.9
 
 El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_plugin XCode integration_</a> realiza la ejecución de la pruebas y el resultado se escribe en un fichero con **_formato XML_** dentro del proyecto. Este fichero tiene la misma estructura que se obtiene cuando se realizan las pruebas con **_JUnit_**. Por tal motivo se va a utilizar el **_plugin JUnit de Jenkins_** para mostrar el resultado de las pruebas ejectuadas en el proyecto de **_iOS 9_** y poder emitir gráficos asociados al mismo.
 
-Para instalarlos se accede al área de administración de Jenkins y se selecciona el enlace a la gestión de Plugins. Una vez dentro, se selecciona la etiqueta referente a los plugins disponibles.
+Para instalarlos se realizan los siguientes pasos:
 
-Se buscan e instalan los siguientes plugins:
+* Abrir Jenkins en el navegador web.
+* Navegar por **_Administrar Jenkins_** > **_Administrar Plugins_**.
+* Seleccionar el panel **_Todos los plugins_**.
+* Filtrar **_Xcode integration_** y seleccionar para instalar. Repetir esta operación pero esta vez filtrando por **_JUnit Plugin_**.
+*  Después de tener los dos plugins seleccionados se selecciona el botón **_Instalar sin Reiniciar_**.
+*  Al terminar la instalación se tiene que **_reiniciar Jenkins_**.
 
-* XCode integration.
-* JUnit.
-
-Una vez instalados los plugins se debe reiniciar el sistema Jenkins. Después se debe volver a área de administración de los plugins y verificar que se hayan instalado y que coincidan con la versión que se describe en la sección Entorno.
+Después de haber reiniciado el sistema se debe volver al área de administración de los plugins y verificar que se hayan instalado correctamente. También se debe revisar la versión instalada con la descrita en la sección Entorno.
 
 ## Paso 2 - Crear tarea en Jenkins.
 
 Una vez instalados los componentes necesarios en Jenkins se puede pasar a crear una nueva tarea para la ejecución automática de las pruebas.
 
 ### Crear nueva tarea de Jenkins
+
+Seleccionar **_Nueva Tarea_** en la página de inicio de Jenkins.
+Llenar el campo **_Nombre de la Tarea_** con el valor que desee. En el ejemplo se ha puesto time-table.
 
 ### Obtener el código del proyecto.
 
