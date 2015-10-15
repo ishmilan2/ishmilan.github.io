@@ -132,12 +132,16 @@ La siguiente imagen muestra la configuración del plugins JUnit.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/junit-settings.jpg" title="Configuración plugins JUnit" name="Configuración plugins JUnit" />
 
-Hasta es punto ha quedado configurada la tarea. Ahora veremos los resultados que nos muestra su ejecución.
+Hasta es punto ha quedado configurada la tarea. Para registar los cambios se da clic en el botón **_Guardar_** al final de la pantalla.
 
 ## Paso 7 - Ejecutar tarea en Jenkins.
 
 Se ejectua la tarea y se muestra las principales partes del script de resultado en la consola.
 Se muestran las pantallas que lanza XCode.
+
+Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución.
+
+La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. Si se utilizó el código fuente 
 
 ## Paso 8 - Mostar los reportes.
 
