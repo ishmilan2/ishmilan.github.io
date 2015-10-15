@@ -31,6 +31,10 @@ Si el sistema de **_Integración Contínua Jenkins_** lo tiene instalado en una 
 * Tener una máquina con sistema operativo Mac 10.10.5.
 * Configuar la máquina de sistema operativo Mac como **_Nodo en Jenkins_** para la ejecución de tareas. Este Nodo deberá tener instalado la herramienta **_XCode 7_**.
 
+### Código fuente
+
+En caso de no tener creardo un proyecto con estas características puede acceder al <a href="https://github.com/mmorejon/time-table" target="_blank">código utilizado en este artículo</a>.
+
 ## Entorno
 
 La configuración del entorno donde fue desarrollado el artículo es la siguiente:
@@ -61,35 +65,81 @@ Para instalarlos se realizan los siguientes pasos:
 * Abrir Jenkins en el navegador web.
 * Navegar por **_Administrar Jenkins_** > **_Administrar Plugins_**.
 * Seleccionar el panel **_Todos los plugins_**.
-* Filtrar **_Xcode integration_** y seleccionar para instalar. Repetir esta operación pero esta vez filtrando por **_JUnit Plugin_**.
+* Filtrar **_Xcode integration_** y seleccionar el plugins para instalarlo. Repetir esta operación pero esta vez filtrando por **_JUnit Plugin_**.
 *  Después de tener los dos plugins seleccionados se selecciona el botón **_Instalar sin Reiniciar_**.
 *  Al terminar la instalación se tiene que **_reiniciar Jenkins_**.
 
 Después de haber reiniciado el sistema se debe volver al área de administración de los plugins y verificar que se hayan instalado correctamente. También se debe revisar la versión instalada con la descrita en la sección Entorno.
 
-## Paso 2 - Crear tarea en Jenkins.
-
-Una vez instalados los componentes necesarios en Jenkins se puede pasar a crear una nueva tarea para la ejecución automática de las pruebas.
-
-### Crear nueva tarea de Jenkins
+## Paso 2 - Crear nueva tarea de Jenkins
 
 Seleccionar **_Nueva Tarea_** en la página de inicio de Jenkins.
-Llenar el campo **_Nombre de la Tarea_** con el valor que desee. En el ejemplo se ha puesto time-table.
+Llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la opción **_Crear un proyecto de estilo libre_**.
 
-### Obtener el código del proyecto.
+En el ejemplo se ha puesto **_time-table_**.
 
-### Ejecutar la tarea solamente en el nodo de Mac OS X
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task.jpg" title="Crear nueva Tarea en Jenkins" name="Crear nueva Tarea en Jenkins" />
 
-### Configurar el plugins de XCode.
+Después de creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
 
-### Configurar el plugins de JUnit.
+## Paso 3 - (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS X
 
-## Paso 3 - Ejecutar tarea en Jenkins.
+Si la máquina que tiene instalado el sistema operativo Mac 10.10.5 es un nodo de Jenkins se tiene restringir la ejecución de la tarea a este nodo solamente. 
+
+Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejecutar este proyecto_**.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/nodo-mac.jpg" title="Nodo Mac para Jenkins" name="Nodo Mac para Jenkins" />
+
+## Paso 4 - Obtener el código del proyecto.
+
+La obtención del código fuente tiene que ser configurada. En el artículo se utilzó el plugins de Git para obtener el código fuente desde un servidor local donde se encuentra publicado.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
+
+## Paso 5 - Configurar el plugins de XCode.
+
+Para adicionar las funcionalidades del plugins de XCode se da clic en el botón **_Adicionar un Nuevo Paso_** y se selecciona la opción **_XCode_**.
+
+El plugins consta de cuatro secciones: General build settings, Code signing & OS X keychain options, Advanced Xcode build options y Versioning. En este artículo solo necesitaremos realizar ajustes en dos de ellos: **_General build settings_** y **_Advanced Xcode build options_**.
+
+**_Sección General build settings_**
+
+Se establece en el campo configuración al valor **_Debug_**. Por defecto el plugins establece el valor **_Release_**.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/general-build-settings.jpg" title="Sección General build settings" name="Sección General build settings" />
+
+**_Sección Advanced Xcode build options_**
+
+Se establece el esquema utilizado para realizar las pruebas. El campo **_Xcode Schema File_** es el encargado de almacenar este valor. En el ejemplo se estableció **_TimeTable_**.
+
+El campo **_Custom xcodebuild arguments_** se utiliza para agregar elementos personalizados a la ejecución. En este caso es obligatorio escribir `test` para que realice la ejecución de pruebas.
+
+De manera adicional se ha agregado el parámetro `-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0'` para que realice las pruebas en un dispositivo específico. En el ejemplo se utilizó **_iPhone 6_**.
+
+Las configuraciones descritas en esta sección se muestran en la siguiente imagen.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
+
+## Paso 6 - Configurar el plugins de JUnit.
+
+El plugins de JUnit es el encargado de mostrar los resultados de las pruebas realizadas en el proyecto. El **_plugins XCode_** genera un fichero `xml` dentro de la carpeta `test-reports` ubicado en la raiz del proyecto.
+
+Lo importante es indicarle al **_plugins JUnit_** el lugar donde se encuentra este fichero para que lo interprete y no los muestre en la web de Jenkins.
+
+Primero se da clic en el botón **_Añadir una acción_** y se selecciona la opción **_Publicar los resultados de test JUnit_**. Después se llena el campo Ficheros XML con los informes de tests con la ubicación del fichero `xml` generado por el plugins XCode.
+
+La siguiente imagen muestra la configuración del plugins JUnit.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/junit-settings.jpg" title="Configuración plugins JUnit" name="Configuración plugins JUnit" />
+
+Hasta es punto ha quedado configurada la tarea. Ahora veremos los resultados que nos muestra su ejecución.
+
+## Paso 7 - Ejecutar tarea en Jenkins.
 
 Se ejectua la tarea y se muestra las principales partes del script de resultado en la consola.
 Se muestran las pantallas que lanza XCode.
 
-## Paso 4 - Mostar los reportes.
+## Paso 8 - Mostar los reportes.
 
 ## Reflexiones finales
 
