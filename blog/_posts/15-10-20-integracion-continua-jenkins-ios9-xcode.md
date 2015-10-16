@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integración contínua combinando Jenkins, iOS 9 y XCode 7.
+title: Integración continua combinando Jenkins, iOS 9 y XCode 7.
 permalink: /blog/integracion-continua-jenkins-ios9-xcode/
 category: [articulo]
 tags: [jenkins, xcode, ios9]
@@ -16,17 +16,17 @@ La ejecución de pruebas al código fuente es un eslabón fundamental durante el
 
 El equipo de desarrollo pudiera ver entorpecido su trabajo si tiene que esperar por el resultado de todas las pruebas ejecutadas cada vez que termina una tarea. Para evitar esta situación se delega la actividad de revisión a sistemas de integración continua con mayores capacidades de procesamiento. Estos sistemas pueden ser configurados para realizar tareas en los horarios menos activos para maximizar el rendimiento. Una vez terminada la tarea el sistema envía las notificaciones del resultado a los usuarios interesados.
 
-En el presente artículo se muestra cómo configurar un proyecto de iOS 9 dentro del flujo de integración contínua utilizando el sistema Jenkins.
+En el presente artículo se muestra cómo configurar un proyecto de iOS 9 dentro del flujo de integración continua utilizando el sistema Jenkins.
 
 ### Pre requisitos
 
 Para realizar los pasos del artículo debera cumplir con los siguientes requerimientos:
 
-* Tener instalado el sistema de **_Integración Contínua Jenkins_**.
+* Tener instalado el sistema de **_Integración continua Jenkins_**.
 * Tener instalado la herramienta de programación **_XCode 7_**.
 * Desarrollar un proyecto en **_iOS 9_** con pruebas unitarias implementadas.
 
-Si el sistema de **_Integración Contínua Jenkins_** lo tiene instalado en una máquina con sistema operativo distinto a Mac OS deberá además cumplir con lo siguiente:
+Si el sistema de **_Integración continua Jenkins_** lo tiene instalado en una máquina con sistema operativo distinto a Mac OS deberá además cumplir con lo siguiente:
 
 * Tener una máquina con sistema operativo Mac 10.10.5.
 * Configuar la máquina de sistema operativo Mac como **_Nodo en Jenkins_** para la ejecución de tareas. Este Nodo deberá tener instalado la herramienta **_XCode 7_**.
@@ -41,10 +41,12 @@ La configuración del entorno donde fue desarrollado el artículo es la siguient
 
 ```
 ### Sistema de integración continua ###
-          SO: Ubuntu 14.04
-     Jenkins: 1.631
-XCode Plugin: 1.4.9
-JUnit Plugin: 1.9
+             SO: Ubuntu 14.04
+        Jenkins: 1.633
+   XCode Plugin: 1.4.9
+   JUnit Plugin: 1.9
+Test Results 
+Analyzer Plugin: 0.2.1
 
 ### Nodo de Jenkins ###
           SO: Mac OS 10.10.5
@@ -65,8 +67,8 @@ Para instalarlos se realizan los siguientes pasos:
 * Abrir Jenkins en el navegador web.
 * Navegar por **_Administrar Jenkins_** > **_Administrar Plugins_**.
 * Seleccionar el panel **_Todos los plugins_**.
-* Filtrar **_Xcode integration_** y seleccionar el plugins para instalarlo. Repetir esta operación pero esta vez filtrando por **_JUnit Plugin_**.
-*  Después de tener los dos plugins seleccionados se selecciona el botón **_Instalar sin Reiniciar_**.
+* Filtrar **_Xcode integration_** y seleccionar el plugins para instalarlo. Repetir esta operación pero esta vez filtrando por **_JUnit Plugin_** y después para **_Test Results Analyzer Plugin_**.
+*  Después de tener los tres plugins seleccionados se selecciona el botón **_Instalar sin Reiniciar_**.
 *  Al terminar la instalación se tiene que **_reiniciar Jenkins_**.
 
 Después de haber reiniciado el sistema se debe volver al área de administración de los plugins y verificar que se hayan instalado correctamente. También se debe revisar la versión instalada con la descrita en la sección Entorno.
@@ -139,16 +141,48 @@ Hasta es punto ha quedado configurada la tarea. Para registar los cambios se da 
 Se ejectua la tarea y se muestra las principales partes del script de resultado en la consola.
 Se muestran las pantallas que lanza XCode.
 
-Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución.
+Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
 
-La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. Si se utilizó el código fuente 
+Si se utiliza el código fuente para la ejecución se obtendrá un resultado exitoso. Durante el proceso la máquina utilizada (nodo) iniciará automáticamente el emulador de XCode para realizar las pruebas. El emulador mostrará la siguiente pantalla.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/screen.jpg" title="Emulador XCode" name="Emulador XCode" />
+
+También puede ser consultada la consola de salida para esta tarea y revisar los resultados. A continuación mostraremos algunos fragmentos mostrados en la consola.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-01.jpg" title="Pantallas de Salida Jenkins 01" name="Pantallas de Salida Jenkins 01" />
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
 ## Paso 8 - Mostar los reportes.
+
+Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-01.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+
+Para obtener una vista detallada de los resultados se selecciona **_Últimos resultados de tests_**.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+
+**_Mostrar resultados utilizando el plugins Test Result Analyzer_**
+
+Dar clic en la tarea y seleccionar el enlace **_Test Result Analyzer_**. 
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-01.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+
+Seleccionar Get Build Reports y se mostrará una tabla con los resultados de las pruebas.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+
+Si se desea mostar los resultados en gráficos se selecciona **_Generate Charts_** y aparecerá reportes similares a la siguiente imagen.
+
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-03.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+
 
 ## Reflexiones finales
 
 ### Revisiones significativas
 
 * <a href="https://wiki.jenkins-ci.org" target="_blank">Sitio oficial de Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">Plugins de XCode para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">Plugins de JUnit para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">XCode Plugin para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">JUnit Plugin para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Test Results Analyzer Plugin para Jenkins.</a>
