@@ -42,7 +42,7 @@ La configuración del entorno donde fue desarrollado el artículo es la siguient
 ```
 ### Sistema de integración continua ###
              SO: Ubuntu 14.04
-        Jenkins: 1.633
+        Jenkins: 1.631
    XCode Plugin: 1.4.9
    JUnit Plugin: 1.9
 Test Results 
