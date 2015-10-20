@@ -155,7 +155,7 @@ También puede ser consultada la **_consola de salida_** para esta tarea y revis
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
-## Paso 8 – Mostrar los reportes.
+## Paso 8 – Mostrar los reportes de la tarea.
 
 Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
 
@@ -186,6 +186,6 @@ Si se desea mostar los resultados en gráficos se selecciona **_Generate Charts_
 ### Revisiones significativas
 
 * <a href="https://wiki.jenkins-ci.org" target="_blank">Sitio oficial de Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">XCode Plugin para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">JUnit Plugin para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Test Results Analyzer Plugin para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">Plugin XCode para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">Plugin JUnit para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Plugin Test Results Analyzer para Jenkins.</a>

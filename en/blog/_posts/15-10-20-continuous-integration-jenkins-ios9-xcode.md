@@ -6,8 +6,10 @@ translate_es: /blog/integracion-continua-jenkins-ios9-xcode/
 category: [article]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
-excerpt: <strong><em>Automatizar las pruebas</em></strong> para proyectos en <strong><em>iOS 9 es posible</em></strong>. Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento simplifica el proceso de desarrollo.
+excerpt: <strong><em>Automating test for iOS 9 projects is posible!!!</em></strong>. Delegating the execution of test case to machines with highest performance <strong><em>simplify software development process</em></strong>.
 ---
+
+Automating test for iOS 9 projects is posible!!!. Delegating the execution of test case to machines with highest performance simplify software development process.
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
@@ -48,7 +50,7 @@ La configuración del entorno donde fue desarrollado el artículo es la siguient
 
 ```
 ### Continuous Integration System ###
-             SO: Ubuntu 14.04
+             OS: Ubuntu 14.04
         Jenkins: 1.631
    XCode Plugin: 1.4.9
    JUnit Plugin: 1.9
@@ -60,10 +62,10 @@ Analyzer Plugin: 0.2.1
        	  XCode: 7
 
 ### Project iOS 9 ###
-       Lengueje: Swift
+       Languege: Swift
 ```
 
-## Step 1 – Instalar plugins a Jenkins.
+## Step 1 – Install Jenkins' plugins.
 
 Para instalar los plugins se realizan los siguientes pasos:
 
@@ -76,7 +78,7 @@ Para instalar los plugins se realizan los siguientes pasos:
 
 Después de haber reiniciado el sistema se debe volver al área de **_Administrar Plugins_** y verificar que estén instalados correctamente. También se debe revisar la versión del plugin con la descrita en la sección Entorno.
 
-## Step 2 – Crear nueva tarea de Jenkins
+## Step 2 – Create new Jenkins' task
 
 Seleccionar **_Nueva Tarea_** en la página de inicio de Jenkins.
 Llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la opción **_Crear un proyecto de estilo libre_**.
@@ -95,25 +97,25 @@ Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejec
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/nodo-mac.jpg" title="Nodo Mac para Jenkins" name="Nodo Mac para Jenkins" />
 
-## Step 4 – Obtener el código del proyecto.
+## Step 4 – Get project's source code.
 
 La obtención del código fuente tiene que ser configurada. En el artículo se utilzó el **_plugin de Git_** para obtener el código fuente desde un servidor local donde se encuentra publicado.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
-## Step 5 – Configurar el Plugin XCode.
+## Step 5 – Configure XCode Plugin.
 
 Para adicionar las funcionalidades del plugins de XCode se da clic en el botón **_Adicionar un Nuevo Paso_** y se selecciona la opción **_XCode_**.
 
 El plugins consta de cuatro secciones: _General build settings_, _Code signing & OS X keychain options_, _Advanced Xcode build options_ y _Versioning_. En este artículo solo necesitaremos realizar ajustes en dos de ellos: **_General build settings_** y **_Advanced Xcode build options_**.
 
-**_Sección General build settings_**
+**_Section General build settings_**
 
 Se establece en el campo **_Configuration_** al valor `Debug`. Por defecto el plugin establece el valor `Release`.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/general-build-settings.jpg" title="Sección General build settings" name="Sección General build settings" />
 
-**_Sección Advanced Xcode build options_**
+**_Section Advanced Xcode build options_**
 
 Se establece el esquema utilizado para realizar las pruebas. El campo **_Xcode Schema File_** es el encargado de almacenar este valor. En el ejemplo se estableció `TimeTable`.
 
@@ -125,7 +127,7 @@ Las configuraciones descritas en esta sección se muestran en la siguiente image
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
-## Step 6 – Configurar el Plugin JUnit.
+## Step 6 – Configure JUnit Plugin.
 
 El plugin JUnit es el encargado de mostrar los resultados de las pruebas realizadas en el proyecto. El **_plugins XCode_** genera un fichero `xml` dentro de la carpeta `test-reports` ubicada en la raiz del proyecto.
 
@@ -141,7 +143,7 @@ Hasta este punto ha quedado configurada la tarea. Para registar los cambios se d
 
 **_Pongamos en marcha la tarea!!!_** Todo ha quedado listo para ver el resultado de la configuración.
 
-## Step 7 – Ejecutar tarea en Jenkins.
+## Step 7 – Run Jenkins' task.
 
 Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
 
@@ -155,7 +157,7 @@ También puede ser consultada la **_consola de salida_** para esta tarea y revis
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
-## Step 8 – Mostar los reportes.
+## Step 8 – Show task's reports.
 
 Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
 
@@ -185,7 +187,7 @@ Si se desea mostar los resultados en gráficos se selecciona **_Generate Charts_
 
 ### Significant Revisions
 
-* <a href="https://wiki.jenkins-ci.org" target="_blank">Sitio oficial de Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">XCode Plugin para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">JUnit Plugin para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Test Results Analyzer Plugin para Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org" target="_blank">Jenkins Official Site.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">XCode Plugin for Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">JUnit Plugin for Jenkins.</a>
+* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Test Results Analyzer Plugin for Jenkins.</a>
