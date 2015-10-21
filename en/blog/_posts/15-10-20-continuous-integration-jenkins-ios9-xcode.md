@@ -85,7 +85,7 @@ Llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la
 
 En el ejemplo se ha puesto `time-table`.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task.jpg" title="Crear nueva Tarea en Jenkins" name="Crear nueva Tarea en Jenkins" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task-en.jpg" title="Crear nueva Tarea en Jenkins" name="Crear nueva Tarea en Jenkins" />
 
 Después de creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
 
@@ -95,13 +95,13 @@ Si la máquina que tiene instalado el sistema operativo Mac 10.10.5 es un nodo d
 
 Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejecutar este proyecto_**. En el ejemplo se estableció `Mac OS` para el nombre del nodo.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/nodo-mac.jpg" title="Nodo Mac para Jenkins" name="Nodo Mac para Jenkins" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/nodo-mac-en.jpg" title="Nodo Mac para Jenkins" name="Nodo Mac para Jenkins" />
 
 ## Step 4 – Get project's source code.
 
 La obtención del código fuente tiene que ser configurada. En el artículo se utilzó el **_plugin de Git_** para obtener el código fuente desde un servidor local donde se encuentra publicado.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code-en.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
 ## Step 5 – Configure XCode Plugin.
 
@@ -113,7 +113,7 @@ El plugins consta de cuatro secciones: _General build settings_, _Code signing &
 
 Se establece en el campo **_Configuration_** al valor `Debug`. Por defecto el plugin establece el valor `Release`.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/general-build-settings.jpg" title="Sección General build settings" name="Sección General build settings" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/general-build-settings-en.jpg" title="Sección General build settings" name="Sección General build settings" />
 
 **_Section Advanced Xcode build options_**
 
@@ -125,7 +125,7 @@ De manera adicional se ha agregado el parámetro `-destination 'platform=iOS Sim
 
 Las configuraciones descritas en esta sección se muestran en la siguiente imagen.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build-en.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
 ## Step 6 – Configure JUnit Plugin.
 
@@ -137,7 +137,7 @@ Primero se da clic en el botón **_Añadir una acción_** y se selecciona la opc
 
 La siguiente imagen muestra la configuración del Plugin JUnit.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/junit-settings.jpg" title="Configuración plugins JUnit" name="Configuración plugins JUnit" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/junit-settings-en.jpg" title="Configuración plugins JUnit" name="Configuración plugins JUnit" />
 
 Hasta este punto ha quedado configurada la tarea. Para registar los cambios se da clic en el botón **_Guardar_** al final de la pantalla.
 
@@ -161,11 +161,11 @@ También puede ser consultada la **_consola de salida_** para esta tarea y revis
 
 Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-01.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-01-en.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
 Para obtener una vista detallada de los resultados se selecciona **_Últimos resultados de tests_**.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-02-en.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
 **_Mostrar resultados utilizando el plugins Test Result Analyzer_**
 
