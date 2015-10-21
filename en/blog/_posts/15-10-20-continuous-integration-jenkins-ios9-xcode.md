@@ -6,10 +6,8 @@ translate_es: /blog/integracion-continua-jenkins-ios9-xcode/
 category: [article]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
-excerpt: <strong><em>Automating test for iOS 9 projects is posible!!!</em></strong>. Delegating the execution of test case to machines with highest performance <strong><em>simplify software development process</em></strong>.
+excerpt: <strong><em>Automate testing for iOS projects 9 is possible!!!</em></strong>. Delegate the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
 ---
-
-Automating test for iOS 9 projects is posible!!!. Delegating the execution of test case to machines with highest performance simplify software development process.
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
