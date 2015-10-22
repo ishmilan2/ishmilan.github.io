@@ -29,8 +29,8 @@ El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_b
 
 Para realizar los pasos del artículo deberá cumplir con los siguientes requerimientos:
 
-* Tener instalado el sistema de **_Integración continua Jenkins_**.
-* Tener instalado la herramienta de programación **_XCode 7_**.
+* Tener instalado **_Jenkins (sistema de integración continua)_**.
+* Tener instalado **_XCode 7_**.
 * Desarrollar un proyecto en **_iOS 9_** con pruebas unitarias implementadas.
 
 **_Jenkins_** puede ser instalado en cualquier sistema operativo. Sin embargo, si se tiene instalado en una máquina con sistema operativo distinto a **_Mac OS_** deberá además incorporar los siguiente:
