@@ -29,13 +29,13 @@ El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_b
 
 To realize article' steps you must complete the following requirements:
 
-* Have installed **_Jenkins (continuous integration system)_**.
-* Having installed **_XCode 7_**.
-* Having develop an **_iOS 9_** project with unit test implemented.
+* Have installed <a href="https://jenkins-ci.org/" target="_blank">_Jenkins_</a>.
+* Have installed <a href="https://developer.apple.com/xcode/ide/" target="_blank">_XCode 7_</a>.
+* Have develop an **_iOS 9_** project with unit test implemented.
 
-**_Jenkins_** is a cross plataform system. However, if it is installed in a computer with different operating system to **_Mac OS_** then you must include the following:
+**_Jenkins_** is a cross platform system. However, if it have installed in a computer with a different operating system to **_Mac OS_** you must also include the following:
 
-* Tener una máquina con sistema operativo **_Mac 10.10.5_**.
+* Have a machine with operating system **_Mac OS 10.10.5_**.
 * Configuar la máquina de sistema operativo Mac como **_Nodo en Jenkins_** para la ejecución de tareas. Este Nodo deberá tener instalado la herramienta **_XCode 7_**.
 
 ### Source code
