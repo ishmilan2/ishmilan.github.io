@@ -6,7 +6,7 @@ translate_es: /blog/integracion-continua-jenkins-ios9-xcode/
 category: [article]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
-excerpt: <strong><em>Automate testing for iOS projects 9 is possible!!!</em></strong>. Delegate the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
+excerpt: <strong><em>Automate testing for iOS projects 9 is possible!!!</em></strong>. Delegating the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
@@ -29,22 +29,23 @@ El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_b
 
 To realize article' steps you must complete the following requirements:
 
-* Have installed <a href="https://jenkins-ci.org/" target="_blank">_Jenkins_</a>.
-* Have installed <a href="https://developer.apple.com/xcode/ide/" target="_blank">_XCode 7_</a>.
-* Have develop an **_iOS 9_** project with unit test implemented.
+* Having <a href="https://jenkins-ci.org/" target="_blank">_Jenkins_</a> installed.
+* Having  <a href="https://developer.apple.com/xcode/ide/" target="_blank">_XCode 7_</a> installed.
+* Having an **_iOS 9_** project created with unit test implemented.
 
 **_Jenkins_** is a cross platform system. However, if it have installed in a computer with a different operating system to **_Mac OS_** you must also include the following:
 
-* Have a machine with operating system **_Mac OS 10.10.5_**.
-* Configuar la máquina de sistema operativo Mac como **_Nodo en Jenkins_** para la ejecución de tareas. Este Nodo deberá tener instalado la herramienta **_XCode 7_**.
+* Having a machine with operating system **_Mac OS 10.10.5_**.
+* Configuring the **_Mac OS_** machine as **_Jenkins Node_** to execute jobs. 
+* Having **_XCode 7_** installed in Mac OS machine.
 
 ### Source code
 
-En caso de no tener creardo un proyecto con estas características puede acceder al <a href="https://github.com/mmorejon/time-table" target="_blank">código fuente utilizado en este artículo</a>.
+If you don't have an **_iOS 9_** project created, you can access to <a href="https://github.com/mmorejon/time-table" target="_blank">the source code used for the article</a>.
 
 ## Environment
 
-La configuración del entorno donde fue desarrollado el artículo es la siguiente:
+The environment configuration used for this article is the following:
 
 ```
 ### Continuous Integration System ###
@@ -56,38 +57,37 @@ Test Results
 Analyzer Plugin: 0.2.1
 
 ### Jenkins Node ###
-          	 SO: Mac OS 10.10.5
+          	 OS: Mac OS 10.10.5
        	  XCode: 7
 
 ### Project iOS 9 ###
        Languege: Swift
 ```
 
-## Step 1 – Install Jenkins' plugins.
+## Step One – Install Jenkins' plugins.
 
-Para instalar los plugins se realizan los siguientes pasos:
+You must follow these steps to install the plugins on Jenkins:
 
-* Abrir Jenkins en el navegador web.
-* Navegar por **_Administrar Jenkins_** > **_Administrar Plugins_**.
-* Seleccionar el panel **_Todos los plugins_**.
-* Filtrar **_Xcode integration_** y seleccionar el plugins para instalarlo. Repetir esta operación, pero filtrando primero por **_JUnit Plugin_** y después por **_Test Results Analyzer Plugin_**.
-*  Después de tener los tres plugins seleccionados se da clic en el botón **_Instalar sin Reiniciar_**.
-*  Al terminar la instalación se tiene que **_reiniciar Jenkins_**.
+* Open Jenkins in your web browser.
+* Navegate to **_Manage Jenkins > Manage Plugins_**.
+* Select **_Available_** panel.
+* Filter by **_Xcode integration_** and select it to install. Repeat this step using **_Junit Plugin_** and after **_Test Results Analyzer Plugin_**.
+* Do click on button **_Install without restart_** after having the plugins selected.
+* Do click on button **_Restart Jenkins_** when the installation is complete.
 
-Después de haber reiniciado el sistema se debe volver al área de **_Administrar Plugins_** y verificar que estén instalados correctamente. También se debe revisar la versión del plugin con la descrita en la sección Entorno.
+After restart you should go back to **_Manage Jenkins > Manage Plugins_** and verify that plugins were installed correctly. You should also verify the  plugins version with **_Environment_** section.
 
-## Step 2 – Create new Jenkins' task
+## Step Two – Create new Jenkins' job
 
-Seleccionar **_Nueva Tarea_** en la página de inicio de Jenkins.
-Llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la opción **_Crear un proyecto de estilo libre_**.
+Select **_New Item_** on Jenkins home page. After, fill the field **_Item name_** with the desired value and select **_Freestyle project_**.
 
 En el ejemplo se ha puesto `time-table`.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task-en.jpg" title="Crear nueva Tarea en Jenkins" name="Crear nueva Tarea en Jenkins" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task-en.jpg" title="Creating Jenkins' job." name="Creating Jenkins' job." />
 
 Después de creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
 
-## Step 3 – (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS X
+## Step Three – (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS
 
 Si la máquina que tiene instalado el sistema operativo Mac 10.10.5 es un nodo de Jenkins se tiene restringir la ejecución de la tarea a este nodo solamente. 
 
@@ -95,13 +95,13 @@ Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejec
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/nodo-mac-en.jpg" title="Nodo Mac para Jenkins" name="Nodo Mac para Jenkins" />
 
-## Step 4 – Get project's source code.
+## Step Four – Get project's source code.
 
 La obtención del código fuente tiene que ser configurada. En el artículo se utilzó el **_plugin de Git_** para obtener el código fuente desde un servidor local donde se encuentra publicado.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code-en.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
-## Step 5 – Configure XCode Plugin.
+## Step Five – Configure XCode Plugin.
 
 Para adicionar las funcionalidades del plugins de XCode se da clic en el botón **_Adicionar un Nuevo Paso_** y se selecciona la opción **_XCode_**.
 
@@ -125,7 +125,7 @@ Las configuraciones descritas en esta sección se muestran en la siguiente image
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build-en.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
-## Step 6 – Configure JUnit Plugin.
+## Step Six – Configure JUnit Plugin.
 
 El plugin JUnit es el encargado de mostrar los resultados de las pruebas realizadas en el proyecto. El **_plugins XCode_** genera un fichero `xml` dentro de la carpeta `test-reports` ubicada en la raiz del proyecto.
 
@@ -141,7 +141,7 @@ Hasta este punto ha quedado configurada la tarea. Para registar los cambios se d
 
 **_Pongamos en marcha la tarea!!!_** Todo ha quedado listo para ver el resultado de la configuración.
 
-## Step 7 – Run Jenkins' task.
+## Step Seven – Run Jenkins' task.
 
 Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
 
@@ -155,7 +155,7 @@ También puede ser consultada la **_consola de salida_** para esta tarea y revis
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
-## Step 8 – Show task's reports.
+## Step Eight – Show task's reports.
 
 Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
 
