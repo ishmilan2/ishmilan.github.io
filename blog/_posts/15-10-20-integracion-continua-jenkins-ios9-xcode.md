@@ -96,13 +96,13 @@ Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejec
 
 ## Paso Cuatro – Obtener el código del proyecto.
 
-La obtención del código fuente tiene que ser configurada. En el artículo se utilizó el **_plugin de Git_** para obtener el código fuente desde un servidor local donde se encuentra publicado.
+La sección **_Configurar el origen del código_** tiene que ser configurado. En el artículo se utilizó el **_plugin de Git_** para obtener el código fuente desde un servidor local donde se encuentra publicado.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
 ## Paso Cinco – Configurar el Plugin XCode.
 
-Para adicionar las funcionalidades del plugins de XCode se da clic en el botón **_Adicionar un Nuevo Paso_** y se selecciona la opción **_XCode_**.
+Para adicionar las funcionalidades del **_Plugin XCode_** se da clic en el botón **_Adicionar un Nuevo Paso_** y se selecciona la opción **_XCode_**.
 
 El plugin consta de cuatro secciones: _General build settings_, _Code signing & OS X keychain options_, _Advanced Xcode build options_ y _Versioning_. En este artículo solo necesitaremos realizar ajustes en dos de ellos: **_General build settings_** y **_Advanced Xcode build options_**.
 
@@ -114,7 +114,7 @@ Se establece en el campo **_Configuration_** al valor `Debug`. Por defecto el pl
 
 **_Sección Advanced Xcode build options_**
 
-Se establece el esquema utilizado para realizar las pruebas. El campo **_Xcode Schema File_** es el encargado de almacenar este valor. En el ejemplo se estableció `TimeTable`.
+El esquema donde se realizan las pruebas tiene que ser establecido. El campo **_Xcode Schema File_** es el encargado de almacenar este valor. En el ejemplo se estableció `TimeTable`.
 
 El campo **_Custom xcodebuild arguments_** se utiliza para agregar elementos personalizados a la ejecución. En este caso es obligatorio escribir `test` para que realice la ejecución de pruebas.
 

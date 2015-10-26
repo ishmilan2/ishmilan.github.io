@@ -89,33 +89,31 @@ Once the job has been created, select **_Configuration_** option to realize requ
 
 If the machine with **_Mac OS_** operating system is a **_Jenkins' Node_** then the job must be restricted only for this Node.
 
- 
-
-Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejecutar este proyecto_**. En el ejemplo se estableció `Mac OS` para el nombre del nodo.
+To accomplish, you must select **_Restrict where this project can be run_** option. We used `Mac OS` as node name for the example.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/nodo-mac-en.jpg" title="Nodo Mac para Jenkins" name="Nodo Mac para Jenkins" />
 
 ## Step Four – Get project's source code.
 
-La obtención del código fuente tiene que ser configurada. En el artículo se utilzó el **_plugin de Git_** para obtener el código fuente desde un servidor local donde se encuentra publicado.
+The section **_Source Code Management_** must be configured. We used **_Git Plugin_** to get the source code from local server.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/source-code-en.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
 ## Step Five – Configure XCode Plugin.
 
-Para adicionar las funcionalidades del plugins de XCode se da clic en el botón **_Adicionar un Nuevo Paso_** y se selecciona la opción **_XCode_**.
+To incorporate the functionalities of **_XCode Plugin_**  we do click on **_Add build step_** button and select **_Xcode_** option.
 
-El plugins consta de cuatro secciones: _General build settings_, _Code signing & OS X keychain options_, _Advanced Xcode build options_ y _Versioning_. En este artículo solo necesitaremos realizar ajustes en dos de ellos: **_General build settings_** y **_Advanced Xcode build options_**.
+The plugin have four sections: _General build settings_, _Code signing & OS X keychain options_, _Advanced Xcode build options_ and _Versioning_. In this article we are going to use only two of them: **_General build settings_** and **_Advanced Xcode build options_**.
 
-**_Section General build settings_**
+**_General build settings Section_**
 
-Se establece en el campo **_Configuration_** al valor `Debug`. Por defecto el plugin establece el valor `Release`.
+The **_Configuration_** field is set with `Debug` value. The plugin set the value `Release` by default.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/general-build-settings-en.jpg" title="Sección General build settings" name="Sección General build settings" />
 
-**_Section Advanced Xcode build options_**
+**_Advanced Xcode build options Section_**
 
-Se establece el esquema utilizado para realizar las pruebas. El campo **_Xcode Schema File_** es el encargado de almacenar este valor. En el ejemplo se estableció `TimeTable`.
+The scheme where the tests are performed must be established. The **_Xcode Schema File_** field is responsible for storing this value. We set `TimeTable` for the example.
 
 El campo **_Custom xcodebuild arguments_** se utiliza para agregar elementos personalizados a la ejecución. En este caso es obligatorio escribir `test` para que realice la ejecución de pruebas.
 
