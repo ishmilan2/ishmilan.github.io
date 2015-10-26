@@ -77,19 +77,19 @@ You must follow these steps to install the plugins on Jenkins:
 
 After restart you should go back to **_Manage Jenkins > Manage Plugins_** and verify that plugins were installed correctly. You should also verify the  plugins version with **_Environment_** section.
 
-## Step Two – Create new Jenkins' job
+## Step Two – Create new Jenkins' job.
 
-Select **_New Item_** on Jenkins home page. After, fill the field **_Item name_** with the desired value and select **_Freestyle project_**.
-
-En el ejemplo se ha puesto `time-table`.
+Select **_New Item_** on Jenkins home page. After, fill the field **_Item name_** with the desired value and select **_Freestyle project_**. We used `time-table` for the example.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task-en.jpg" title="Creating Jenkins' job." name="Creating Jenkins' job." />
 
-Después de creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
+Once the job has been created, select **_Configuration_** option to realize required settings inside.
 
-## Step Three – (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS
+## Step Three – (Optional) Executing the job on Mac OS Node.
 
-Si la máquina que tiene instalado el sistema operativo Mac 10.10.5 es un nodo de Jenkins se tiene restringir la ejecución de la tarea a este nodo solamente. 
+If the machine with **_Mac OS_** operating system is a **_Jenkins' Node_** then the job must be restricted only for this Node.
+
+ 
 
 Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejecutar este proyecto_**. En el ejemplo se estableció `Mac OS` para el nombre del nodo.
 
@@ -141,7 +141,7 @@ Hasta este punto ha quedado configurada la tarea. Para registar los cambios se d
 
 **_Pongamos en marcha la tarea!!!_** Todo ha quedado listo para ver el resultado de la configuración.
 
-## Step Seven – Run Jenkins' task.
+## Step Seven – Run Jenkins' job.
 
 Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
 
@@ -155,7 +155,7 @@ También puede ser consultada la **_consola de salida_** para esta tarea y revis
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
-## Step Eight – Show task's reports.
+## Step Eight – Show job's reports.
 
 Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
 

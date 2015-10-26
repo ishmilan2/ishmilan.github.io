@@ -77,20 +77,18 @@ Para instalar los plugins usted debe realizan los siguientes pasos:
 
 Después de haber reiniciado el sistema se debe volver a **_Administrar Jenkins > Administrar Plugins_** y verificar que los plugins estén instalados correctamente. También se debe revisar la versión del plugin con la descrita en la sección Entorno.
 
-## Paso Dos – Crear nueva tarea de Jenkins
+## Paso Dos – Crear nueva tarea de Jenkins.
 
 Seleccionar **_Nueva Tarea_** en la página de inicio de Jenkins. Después 
-llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la opción **_Crear un proyecto de estilo libre_**.
-
-En el ejemplo se ha puesto `time-table`.
+llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la opción **_Crear un proyecto de estilo libre_**. Para el ejemplo se ha utilizado `time-table`.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/create-task.jpg" title="Crear nueva Tarea en Jenkins" name="Crear nueva Tarea en Jenkins" />
 
-Después de creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
+Una vez creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
 
-## Paso Tres – (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS
+## Paso Tres – (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS.
 
-Si la máquina que tiene instalado el sistema operativo Mac OS 10.10.5 es un **_Nodo de Jenkins_** se tiene que restringir la ejecución de la tarea a este nodo solamente. 
+Si la máquina que tiene instalado el sistema operativo Mac OS es un **_Nodo de Jenkins_** se tiene que restringir la ejecución de la tarea a este Nodo solamente. 
 
 Para lograrlo tiene que seleccionar la opción **_Restringir donde se puede ejecutar este proyecto_**. En el ejemplo se estableció `Mac OS` para el nombre del nodo.
 
