@@ -17,7 +17,7 @@ La ejecución de **_pruebas al código fuente_** es un eslabón fundamental dura
 
 Cada vez que se termina una tarea deben realizarse todas las pruebas para garantizar la calidad. Si el programador tiene que ejecutar las pruebas, su trabajo se verá retrasado por la demora que implica este proceso. Para evitar esta situación se delega la actividad de revisión a **_sistemas de integración continua_** con mayores capacidades de procesamiento. Estos sistemas pueden ser configurados para realizar tareas en los horarios menos activos para maximizar el rendimiento. Una vez terminada la tarea el sistema envía las notificaciones del resultado a los usuarios interesados.
 
-En el presente artículo se muestra cómo configurar un **_proyecto de iOS 9_** dentro del **_flujo de integración continua_** utilizando el sistema **_Jenkins_**.
+En el presente artículo se muestra cómo configurar un **_proyecto de iOS 9_** dentro del **_flujo de integración continua_** utilizando **_Jenkins_**.
 
 ## ¿Cómo funciona?
 
@@ -142,9 +142,9 @@ Hasta este punto ha quedado configurada la tarea. Para registrar los cambios se 
 
 ## Paso Siete – Ejecutar tarea en Jenkins.
 
-Para comenzar su ejecución se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
+Para comenzar su ejecución se da clic en el botón **_Construir ahora_**. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
 
-Si se utiliza el código fuente propuesto por el artículo para la ejecución se obtendrá un resultado exitoso. Durante el proceso la máquina utilizada (nodo) iniciará automáticamente el **_emulador de XCode_** para realizar las pruebas. El emulador mostrará la siguiente pantalla.
+Si se utiliza el código fuente propuesto por el artículo para la ejecución se obtendrá un resultado exitoso. Durante el proceso el nodo va a iniciar automáticamente el **_emulador de XCode_** para realizar las pruebas. El emulador mostrará la siguiente pantalla.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/screen.jpg" title="Emulador XCode" name="Emulador XCode" />
 
@@ -156,7 +156,7 @@ También puede ser consultada la **_consola de salida_** para esta tarea y revis
 
 ## Paso Ocho – Mostrar los reportes de la tarea.
 
-Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
+Revisar el estado de las pruebas es importante. Se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-01.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 

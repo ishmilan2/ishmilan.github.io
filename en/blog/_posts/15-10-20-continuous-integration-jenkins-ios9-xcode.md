@@ -6,24 +6,26 @@ translate_es: /blog/integracion-continua-jenkins-ios9-xcode/
 category: [article]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
-excerpt: <strong><em>Automate testing for iOS projects 9 is possible!!!</em></strong>. Delegating the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
+excerpt: <strong><em>Automate testing for iOS 9 projects is possible!!!</em></strong>. Delegating the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
 ### Introduction
 
-La ejecución de **_pruebas al código fuente_** es un eslabón fundamental durante el proceso de desarrollo de software. Realizar todas las pruebas a un sistema significa emplear gran cantidad de recursos durante su ejecución y en ocasiones las pruebas pueden tomar bastante tiempo en terminar.
+The execution of tests to source code is a vital link in the software development process. Performing all test to system means using a lot of resources during the execution and sometimes the tests can take a long time to complete.
 
-El equipo de desarrollo pudiera ver entorpecido su trabajo si tiene que esperar por el resultado de todas las pruebas ejecutadas cada vez que termina una tarea. Para evitar esta situación se delega la actividad de revisión a **_sistemas de integración continua_** con mayores capacidades de procesamiento. Estos sistemas pueden ser configurados para realizar tareas en los horarios menos activos para maximizar el rendimiento. Una vez terminada la tarea el sistema envía las notificaciones del resultado a los usuarios interesados.
+The development team could see their work hampered by waiting the result of all tests run every time he finished a task. To avoid this situation the review activity is delegated to continuous integration systems with higher-performance. These systems can be configurated to perform activities in nightly hours for performance increase. Once the activity has been finished, the system send notifications to interested users.
 
-En el presente artículo se muestra cómo configurar un **_proyecto de iOS 9_** dentro del **_flujo de integración continua_** utilizando el sistema **_Jenkins_**.
+This article show how we can configurate an iOS 9 project with in continuous integration flow using Jenkins.
 
 ## Who does it work?
 
-**_Jenkins_** puede ser configurado para realizar la ejecución de pruebas a los proyectos en **_iOS 9_**. En el repositorio de Jenkins existe el **_plugin XCode integration_** que nos permitirá compilar el código fuente y ejecutar las pruebas implementadas.
+Jenkins can be configurated to perform tests on iOS 9 projects. In Jenkins's repository exist the **_XCode integration_** plugin that allow us compile the source code and execute tests.
 
-El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_plugin XCode integration_</a> realiza la ejecución de la pruebas y el resultado se escribe en un fichero con **_formato XML_** dentro del proyecto. El **_fichero XML_** generado tiene la misma estructura que se obtiene cuando se realizan las pruebas con **_JUnit_**. Por tal motivo se va a utilizar el <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">_plugin JUnit de Jenkins_</a> para mostrar el resultado de las pruebas ejectuadas en el proyecto de **_iOS 9_**. El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">_plugin Test Result Analyzer_</a> nos va a permitir mostar el resultados de los test en gráficos para un mejor entendimiento.
+The <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">XCode integration</a> plugin do the execution of the tests and the result is written in a file with XML format inside the project.
+
+The XML file generated can be read by JUnit. Thats why we are going to use the <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">JUnit plugin</a> to show the tests executed in the iOS 9 project. The <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Test Result Analyzer plugin</a> will show the results of the tests on graphics for a better understanding.
 
 ### Prerequisites
 
@@ -50,7 +52,7 @@ The environment configuration used for this article is the following:
 ```
 ### Continuous Integration System ###
              OS: Ubuntu 14.04
-        Jenkins: 1.631
+        Jenkins: 1.635
    XCode Plugin: 1.4.9
    JUnit Plugin: 1.9
 Test Results 
@@ -119,7 +121,7 @@ The field **_Custom xcodebuild arguments_** is used to add custom elements to th
 
 The `-destination` parameter has been also added to perform tests on a specific device. The example has been configurated for **_iPhone 6_** and the text for this device is the following: `-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0'`.
 
-In this section, the described configurations are shown in the following image.
+The configurations described abouve are shown in the following figure.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build-en.jpg" title="Custom xcodebuild arguments" name="Custom xcodebuild arguments" />
 
@@ -127,59 +129,59 @@ In this section, the described configurations are shown in the following image.
 
 JUnit plugin is the responsible to show the results of executed tests in the project. XCode plugin generete a file `xml` into the folder `test-reports` located in the root of project.
 
-JUnit plugin has to be configurated to interpret the file xml generated by XCode plugin. The results are shown on Jenkins web.
+The JUnit plugin has to be configured to interpret the XML file generated by the XCode plugin. The results are shown on the Jenkins web.
 
-Primero se da clic en el botón **_Añadir una acción_** y se selecciona la opción **_Publicar los resultados de test JUnit_**. Después se llena el campo **_Ficheros XML con los informes de tests_** con la ubicación del fichero **_XML_** generado por el Plugin XCode.
+First of all, click on **_Add post-build action_** button and select **_Publish Junit test result report_**. After, fill the **_Test report XMLs_** field with the location of XML file generated by the XCode plugin.
 
-La siguiente imagen muestra la configuración del Plugin JUnit.
+The following figure show the configuration of the Junit plugin.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/junit-settings-en.jpg" title="Configuración plugins JUnit" name="Configuración plugins JUnit" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/junit-settings-en.jpg" title="Junit plugin configuration" name="Junit plugin configuration" />
 
-Hasta este punto ha quedado configurada la tarea. Para registar los cambios se da clic en el botón **_Guardar_** al final de la pantalla.
+Until this point has been completed the task settings. To save changes click on Save button at the end of the screen.
 
-**_Pongamos en marcha la tarea!!!_** Todo ha quedado listo para ver el resultado de la configuración.
+**_Let's run the job!!!_** Everything is ready to see the configuration's result.
 
 ## Step Seven – Run Jenkins' job.
 
-Una vez terminadas las configuraciones se da clic al botón **_Construir ahora_** ubicado en la esquina superior izquierda para comenzar su ejecución. La ejecución puede terminar de manera exitosa o no dependiendo de las pruebas realizadas en el proyecto. 
+Once that configurations has been finished, click on **_Build Now_**. The execution can be finished successful or not depending of the tests created in the project.
 
-Si se utiliza el código fuente propuesto por el artículo para la ejecución se obtendrá un resultado exitoso. Durante el proceso la máquina utilizada (nodo) iniciará automáticamente el **_emulador de XCode_** para realizar las pruebas. El emulador mostrará la siguiente pantalla.
+If you use the source code proposed by this article the execution will be finished successful. During the process the node will launch automatically the XCode's emulator to perform the tests. The emulator displays the following screen.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/screen.jpg" title="Emulador XCode" name="Emulador XCode" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/screen.jpg" title="XCode's emulator" name="XCode's emulator" />
 
-También puede ser consultada la **_consola de salida_** para esta tarea y revisar los resultados. A continuación mostraremos algunos fragmentos mostrados en la consola.
+We can also inspect **_Console Output_** for this job and see the results. Console's fragments will be shown below.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-01.jpg" title="Pantallas de Salida Jenkins 01" name="Pantallas de Salida Jenkins 01" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-01.jpg" title="Console Output 01" name="Console Output 01" />
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/output-console-02.jpg" title="Console Output 02" name="Console Output 02" />
 
 ## Step Eight – Show job's reports.
 
-Para revisar el estado de las pruebas realizadas se da clic en la tarea creada y se mostrará un gráfico de tendencias de resultados.
+Reviewing the state of the tests is important. Click on the job created and will show a graphic with the trend of results.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-01-en.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-01-en.jpg" title="Graphic with the trend of results 01" name="Graphic with the trend of results 01" />
 
-Para obtener una vista detallada de los resultados se selecciona **_Últimos resultados de tests_**.
+Select **_Test Result_** to get a detailed view with the results.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-02-en.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-02-en.jpg" title="Graphic with the trend of results 02" name="Graphic with the trend of results 02" />
 
-**_Mostrar resultados utilizando el plugins Test Result Analyzer_**
+**_Show the results using Test Result Analyzer plugin_**
 
-Dar clic en la tarea y seleccionar el enlace **_Test Result Analyzer_**. 
+Click on the job and select **_Test Result Analyzer_**.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-01.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-01.jpg" title="Test result analyzer 01" name="Test result analyzer 01" />
 
-Seleccionar **_Get Build Reports_** y se mostrará una tabla con los resultados de las pruebas.
+Select **_Get Build Reports_** button and will be show a table with the result of the tests.
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-02.jpg" title="Test result analyzer 02" name="Test result analyzer 02" />
 
-Si se desea mostar los resultados en gráficos se selecciona **_Generate Charts_** y se mostrarán reportes similares a la siguiente imagen.
+If you want to see the results in a graph just select **_Generate Charts_** button and will be shown similar reports to the following figure:
 
-<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-03.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
+<img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-03.jpg" title="Test result analyzer 03" name="Test result analyzer 03" />
 
 ## Final Thoughts
 
-**_Automatizar las pruebas_** para proyectos en **_iOS 9 es posible_**. Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento **_simplifica el proceso de desarrollo software_**. **_Jenkins_** permite configurar nuestro entorno de trabajo para obtener estas metas, **_solo nos queda hacerlo_**.
+**_Automate testing for iOS 9 projects is possible_**. Delegating the execution of test cases to higher-performance machines **_simplifies the development process_**. Jenkins allow configure our environment to get these goals, **_we just need to do it_**.
 
 ### Significant Revisions
 
