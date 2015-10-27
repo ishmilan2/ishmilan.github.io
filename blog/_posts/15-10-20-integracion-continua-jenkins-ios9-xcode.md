@@ -86,7 +86,7 @@ llenar el campo **_Nombre de la Tarea_** con el valor que desee y seleccionar la
 
 Una vez creada la tarea se selecciona la opción **_Configuración_** para realizar los ajustes necesarios dentro de ella.
 
-## Paso Tres – (Opcional) Ejecutar la tarea solamente en el nodo de Mac OS.
+## Paso Tres – Ejecutar la tarea solamente en el nodo de Mac OS.
 
 Si la máquina que tiene instalado el sistema operativo Mac OS es un **_Nodo de Jenkins_** se tiene que restringir la ejecución de la tarea a este Nodo solamente. 
 
@@ -116,17 +116,17 @@ Se establece en el campo **_Configuration_** al valor `Debug`. Por defecto el pl
 
 El esquema donde se realizan las pruebas tiene que ser establecido. El campo **_Xcode Schema File_** es el encargado de almacenar este valor. En el ejemplo se estableció `TimeTable`.
 
-El campo **_Custom xcodebuild arguments_** se utiliza para agregar elementos personalizados a la ejecución. En este caso es obligatorio escribir `test` para que realice la ejecución de pruebas.
+El campo **_Custom xcodebuild arguments_** se utiliza para agregar elementos personalizados a la ejecución. En este caso, es obligatorio escribir `test` para ejecutar las pruebas del proyecto.
 
-De manera adicional se ha agregado el parámetro `-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0'` para que realice las pruebas en un dispositivo específico. En el ejemplo se configuró para **_iPhone 6_**.
+De manera adicional, el parámetro `-destination` se ha agregado para realizar las pruebas en un dispositivo específico. En el ejemplo se configuró para **_iPhone 6_** quedando de la siguiente manera: `-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0'`.
 
-Las configuraciones descritas en esta sección se muestran en la siguiente imagen.
+Las configuraciones descritas en esta sección son mostradas en la siguiente imagen.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/advance-xcode-build.jpg" title="Obtener código fuente en Jenkins" name="Obtener código fuente en Jenkins" />
 
 ## Paso Seis – Configurar el Plugin JUnit.
 
-El plugin JUnit es el encargado de mostrar los resultados de las pruebas realizadas en el proyecto. El **_plugins XCode_** genera un fichero `xml` dentro de la carpeta `test-reports` ubicada en la raiz del proyecto.
+El plugin JUnit es el encargado de mostrar los resultados de las pruebas realizadas en el proyecto. El **_plugin XCode_** genera un fichero `xml` dentro de la carpeta `test-reports` ubicada en la raiz del proyecto.
 
 Lo importante es indicarle al **_Plugin JUnit_** el lugar donde se encuentra este fichero para que lo interprete y no muestre los resultados en la web de Jenkins.
 
