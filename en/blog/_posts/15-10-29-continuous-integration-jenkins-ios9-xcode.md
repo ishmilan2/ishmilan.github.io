@@ -17,13 +17,13 @@ The execution of **_tests to source code_** is a vital link in the **_software d
 
 The development team could see their work hampered by waiting the result of all tests run every time he finished a task. To avoid this situation the review activity is delegated to **_continuous integration systems_** with higher-performance. These systems can be configured to perform activities in nightly hours for performance increase. Once the activity has been finished, the system send notifications to interested users.
 
-This article show how we can configure an **_iOS 9 project_** with in **_continuous integration flow_** using **_Jenkins_**.
+This article shows how we can configure an **_iOS 9 project_** with in **_continuous integration flow_** using **_Jenkins_**.
 
-### Who does it work?
+### How does it work?
 
-<a href="https://wiki.jenkins-ci.org" target="_blank">_Jenkins_</a> can be configured to perform tests on **_iOS 9 projects_**. In **_Jenkins’ repository_** exist the **_XCode integration_** plugin that allow us compile the source code and execute tests.
+<a href="https://wiki.jenkins-ci.org" target="_blank">_Jenkins_</a> can be configured to perform tests on **_iOS 9 projects_**. In **_Jenkins’ repository_** exist the **_XCode integration_** plugin that allows us compile the source code and execute tests.
 
-The <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_XCode integration_</a> plugin do the execution of the tests and the result is written in a file with **_XML_** format inside the project. The **_XML_** file generated can be read by **_JUnit_**. That’s why we are going to use the <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">_JUnit_</a> plugin to show the tests executed in the **_iOS 9 project_**. The <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">_Test Result Analyzer_</a> plugin will show the results of the **_tests on graphics_** for a better understanding.
+The <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_XCode integration_</a> plugin does the execution of the tests and the result is written in a file with **_XML_** format inside the project. The **_XML_** file generated can be read by **_JUnit_**. That’s why we are going to use the <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">_JUnit_</a> plugin to show the tests executed in the **_iOS 9 project_**. The <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">_Test Result Analyzer_</a> plugin will show the results of the **_tests on graphics_** for a better understanding.
 
 ### Prerequisites
 
