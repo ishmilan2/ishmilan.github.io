@@ -6,32 +6,32 @@ translate_en: /en/blog/continuous-integration-jenkins-ios9-xcode/
 category: [articulo]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
-excerpt: <strong><em>Automatizar las pruebas</em></strong> para proyectos en <strong><em>iOS 9 es posible</em></strong>. Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento simplifica el proceso de desarrollo.
+excerpt: <strong><em>Automatizar las pruebas en proyectos para iOS 9 es posible!!!</em></strong> Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento <strong><em>simplifica el proceso de desarrollo</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
 ### Introducción
 
-La ejecución de **_pruebas al código fuente_** es un eslabón fundamental durante el proceso de desarrollo de software. Realizar todas las pruebas a un sistema significa emplear gran cantidad de recursos durante su ejecución y en ocasiones las pruebas pueden tomar bastante tiempo en terminar.
+La ejecución de **_pruebas al código fuente_** es un eslabón fundamental durante el **_proceso de desarrollo de software_**. Realizar todas las pruebas a un sistema significa emplear gran cantidad de recursos durante su ejecución y en ocasiones las pruebas pueden tomar bastante tiempo en terminar.
 
 Cada vez que se termina una tarea deben realizarse todas las pruebas para garantizar la calidad. Si el programador tiene que ejecutar las pruebas, su trabajo se verá retrasado por la demora que implica este proceso. Para evitar esta situación se delega la actividad de revisión a **_sistemas de integración continua_** con mayores capacidades de procesamiento. Estos sistemas pueden ser configurados para realizar tareas en los horarios menos activos para maximizar el rendimiento. Una vez terminada la tarea el sistema envía las notificaciones del resultado a los usuarios interesados.
 
-En el presente artículo se muestra cómo configurar un **_proyecto de iOS 9_** dentro del **_flujo de integración continua_** utilizando **_Jenkins_**.
+En el presente artículo se muestra cómo configurar un **_proyecto para iOS 9_** dentro del **_flujo de integración continua_** utilizando **_Jenkins_**.
 
-## ¿Cómo funciona?
+### ¿Cómo funciona?
 
-**_Jenkins_** puede ser configurado para realizar la ejecución de pruebas a los proyectos en **_iOS 9_**. En el repositorio de Jenkins existe el **_plugin XCode integration_** que nos permitirá compilar el código fuente y ejecutar las pruebas implementadas.
+<a href="https://wiki.jenkins-ci.org" target="_blank">_Jenkins_</a> puede ser configurado para realizar la ejecución de pruebas a los **_proyectos para iOS 9_**. En el **_repositorio de Jenkins_** se encuentra el plugin **_XCode integration_** que nos permitirá compilar el código fuente y ejecutar las pruebas implementadas.
 
-El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_plugin XCode integration_</a> realiza la ejecución de la pruebas y el resultado se escribe en un fichero con **_formato XML_** dentro del proyecto. El **_fichero XML_** generado tiene la misma estructura que se obtiene cuando se realizan las pruebas con **_JUnit_**. Por tal motivo se va a utilizar el <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">_plugin JUnit de Jenkins_</a> para mostrar el resultado de las pruebas ejecutadas en el proyecto de **_iOS 9_**. El <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">_plugin Test Result Analyzer_</a> nos va a permitir mostrar el resultado de los test en gráficos para un mejor entendimiento.
+El plugin <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">_XCode integration_</a> realiza la ejecución de la pruebas y el resultado se escribe en un fichero con formato **_XML_** dentro del proyecto. El fichero **_XML_** generado tiene la misma estructura de los ficheros obtenidos al realizar pruebas con **_JUnit_**. Por tal motivo se va a utilizar el plugin <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">_JUnit_</a> para mostrar el resultado de las pruebas ejecutadas en el **_proyecto para iOS 9_**. El plugin <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">_Test Result Analyzer_</a> nos va a permitir mostrar el **_resultado de las pruebas en gráficos_** para un mejor entendimiento.
 
 ### Pre requisitos
 
 Para realizar los pasos del artículo deberá cumplir con los siguientes requerimientos:
 
-* Tener instalado **_Jenkins (sistema de integración continua)_**.
-* Tener instalado **_XCode 7_**.
-* Tener creado un proyecto en **_iOS 9_** con pruebas unitarias implementadas.
+* Tener instalado <a href="https://jenkins-ci.org/" target="_blank">_Jenkins_</a>.
+* Tener instalado <a href="https://developer.apple.com/xcode/ide/" target="_blank">_XCode 7_</a>.
+* Tener creado un **_proyecto para iOS 9 con pruebas unitarias_** implementadas.
 
 **_Jenkins_** puede ser instalado en cualquier sistema operativo. Sin embargo, si se tiene instalado en una máquina con sistema operativo distinto a **_Mac OS_** deberá además incorporar los siguiente:
 
@@ -41,16 +41,16 @@ Para realizar los pasos del artículo deberá cumplir con los siguientes requeri
 
 ### Código fuente
 
-En caso de no tener creado un proyecto con estas características puede acceder al <a href="https://github.com/mmorejon/time-table" target="_blank">código fuente utilizado en este artículo</a>.
+En caso de no tener creado un **_proyecto para iOS 9_** con estas características puede acceder al <a href="https://github.com/mmorejon/time-table" target="_blank">código fuente utilizado en este artículo</a>.
 
-## Entorno
+### Entorno
 
 La configuración del entorno donde fue desarrollado el artículo es la siguiente:
 
 ```
 ### Sistema de integración continua ###
              SO: Ubuntu 14.04
-        Jenkins: 1.631
+        Jenkins: 1.635
    XCode Plugin: 1.4.9
    JUnit Plugin: 1.9
 Test Results 
@@ -174,7 +174,7 @@ Seleccionar **_Get Build Reports_** y se mostrará una tabla con los resultados 
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-02.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
-Si se desea mostar los resultados en gráficos se selecciona **_Generate Charts_** y se mostrarán reportes similares a la siguiente imagen.
+Si se desea mostrar los resultados en gráficos se selecciona **_Generate Charts_** y se mostrarán reportes similares a la siguiente imagen.
 
 <img src="{{ site.baseurl }}/images/jenkins-ios9-xcode/test-result-analyzer-03.jpg" title="Pantallas de Salida Jenkins 02" name="Pantallas de Salida Jenkins 02" />
 
