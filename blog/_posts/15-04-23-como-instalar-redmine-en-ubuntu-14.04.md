@@ -4,9 +4,11 @@ title: ¿Cómo instalar Redmine en Ubuntu 14.04?
 permalink: /blog/como-instalar-redmine-en-ubuntu-14.04/
 category: articulo
 tags: [redmine, ubuntu]
+image: /images/redmine-ubuntu/redmine-og.jpeg
+excerpt: <strong><em>El trabajo en equipo es una actividad necesaria</em></strong> durante el desarrollo de software. Cada miembro debe contribuir con sus habilidades y conocimientos en aras de alcanzar los objetivos propuestos. <strong><em>El éxito del grupo depende fundamentalmente de las habilidades de organización que tengan.</em></strong>
 ---
 
-El trabajo en equipo es una actividad necesaria durante el desarrollo de software. Cada miembro debe contribuir con sus habilidades y conocimientos en aras de alcanzar los objetivos propuestos. El éxito del grupo depende fundamentalmente de las habilidades de organización que tengan.
+<img src="{{ site.baseurl }}/images/redmine-ubuntu/banner.png" title="Redmine en Ubuntu 14.04" name="Redmine en Ubuntu 14.04" />
 
 __Redmine__ es una aplicación web libre para la gestión de proyectos. Este sistema permite la gestión de múltiples proyectos, control de acceso basado en roles, seguimiento de tareas, calendario y diagramas de Gantt. Permite integrar al flujo de trabajo diferentes controles de versiones como Git, Subversion, Mercurial, Bazaar y Darcs. De igual forma incluye vistas de los repositorios y diferencias entre archivos. Redmine garantiza el envío de notificaciones por correo.
 
