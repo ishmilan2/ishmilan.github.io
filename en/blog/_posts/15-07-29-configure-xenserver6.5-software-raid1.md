@@ -33,11 +33,11 @@ sgdisk --zap-all /dev/sdb
 # Convert disc from GPT to MBR format.
 sgdisk --mbrtogpt --clear /dev/sdb
 
-# Clone particion table from /dev/sda to /dev/sdb. 
-# /dev/sdb have have three particions: /dev/sda1, /dev/sda2, /dev/sda3.
+# Clone partition table from /dev/sda to /dev/sdb. 
+# /dev/sdb have have three partitions: /dev/sda1, /dev/sda2, /dev/sda3.
 sgdisk -R /dev/sdb /dev/sda
 
-# Set type code for each particion. fd00 means Linux RAID.
+# Set type code for each partition. fd00 means Linux RAID.
 sgdisk --typecode=1:fd00 /dev/sdb
 sgdisk --typecode=2:fd00 /dev/sdb
 sgdisk --typecode=3:fd00 /dev/sdb
@@ -45,7 +45,7 @@ sgdisk --typecode=3:fd00 /dev/sdb
 # Add RAID module to the Kernel because it is not loaded by default.
 modprobe md_mod
 
-# Create new array with device metadata: two RAID1 particions.
+# Create new array with device metadata: two RAID1 partitions.
 # Create md0 (root), md1 (swap) y md2 (storage).
 mdadm --create /dev/md0 --level=1 --raid-devices=2 --metadata=0.90 /dev/sdb1 missing
 mdadm --create /dev/md1 --level=1 –-raid-devices=2 --metadata=0.90 /dev/sdb2 missing
@@ -77,7 +77,7 @@ mount -t proc none /mnt/proc
 # Change root to /mnt to execute /sbin/extlinux command to init the system by /boot.
 chroot /mnt /sbin/extlinux --install /boot
 
-# Copy output file to the particion /dev/sdb
+# Copy output file to the partition /dev/sdb
 dd if=/mnt/usr/share/syslinux/gptmbr.bin of=/dev/sdb
 
 # Change root position to /mnt.
