@@ -1,6 +1,6 @@
 ---
 layout: post_en
-title: Migrate Jenkins to a Docker Service is very easy.
+title: Migrate Jenkins to a Docker Service.
 permalink: /en/blog/migrate-jenkins-to-a-docker-container/
 translate_es: /blog/migrar-jenkins-hacia-un-contenedor-en-docker/
 category: [article]
