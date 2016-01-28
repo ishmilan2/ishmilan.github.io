@@ -6,21 +6,23 @@ translate_en: /en/blog/migrate-jenkins-to-a-docker-container/
 category: [articulo]
 tags: [docker, jenkins, ubuntu]
 image: /images/banners/docker-jenkins-og.png
-excerpt: Migrar tu actual servicio de Jenkins hacia un contenedor en Docker es bien sencillo.
+excerpt: Migrar tu actual <strong><em>Servicio de Jenkins</em></strong> hacia un <strong><em>contenedor en Docker</em></strong> es <strong><em>bien sencillo</em></strong>. El sistema Jenkins <strong><em>solo dejará de brindar servicios 5 segundos y sin perder información</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-docker.png" title="Migrar Jenkins hacia Docker" name="Migrar Jenkins hacia Docker" />
 
 ### Introducción
 
-Jenkins es un sistema de integración continua ampliamente utilizado por los grupos de desarrollo de software. Según el sitio web <a href="https://wappalyzer.com/">Wappalyzer</a>, existen más de X servidores con instancias de Jenkins ejecutándose. Por otra parte, Docker nos brinda una nueva forma muy novedosa de estructurar nuestros servicios.
+**_Jenkins_** es un sistema de integración continua utilizado ampliamente por los **_grupos de desarrollo de software_**. Por otra parte, **_Docker_** nos brinda una nueva forma de estructurar nuestros servicios.
 
-Migrar nuestro sistema Jenkins hacia la filosofía brindada por Docker puede ser un deseo o una meta de nuestro grupo de desarrollo. Sin embargo, existen preguntas a responder: 
+Migrar nuestro sistema **_Jenkins_** hacia la filosofía brindada por **_Docker_** puede ser un deseo o una meta de nuestro **_grupo de desarrollo_**. Sin embargo, existen preguntas a responder: 
 
 - _¿Se perderán las configuraciones establecidas hasta el momento?_
 - _¿Se perderán las estadísticas de las rutinas establecidas?_
 
-La respuesta a ambas preguntas es no. El objetivo del presente artículo es mostrar cómo modificar la estructura del sistema Jenkins sin tener que empezar desde cero. Todas las modificaciones fueron realizadas en el mismo servidor.
+La respuesta a ambas preguntas es **_no_**. El objetivo del presente artículo es mostrar cómo modificar la estructura del sistema **_Jenkins_** sin tener que empezar desde cero. 
+
+Las modificaciones mostradas en el artículo fueron realizadas todas en el mismo servidor aunque se puede utilizar un segundo alojamiento para el cambio.
 
 **_El sistema Jenkins solo dejó de brindar servicios 5 segundos._**
 
@@ -28,7 +30,7 @@ La respuesta a ambas preguntas es no. El objetivo del presente artículo es most
 
 Para realizar los pasos del artículo deberá cumplir con el siguiente requerimiento:
 
-- Tener instalado Jenkins.
+- Tener instalado **_Jenkins_**.
 
 ### Entorno
 
@@ -41,52 +43,198 @@ La configuración del entorno donde fue desarrollado el artículo es la siguient
     Dominio: jenkins.example.com
 ```
 
-En el dominio **_jenkins.example.com_** se encuentra el sistema Jenkins brindando servicios.
+En el dominio **_jenkins.example.com_** se encuentra el sistema **_Jenkins_** brindando servicios.
 
 ## Paso Uno – Instalar Docker.
 
-La información referente a la instalación de Docker se encuentra claramente descrita en su <a href="https://docs.docker.com/engine/installation/ubuntulinux/">Sitio Web Oficial</a>. Durante la instalación de Docker hay que tener en cuenta el sistema operativo instalado en nuestro servidor.
+La información referente a la instalación de **_Docker_** se encuentra claramente descrita en su <a target="_blank" href="https://docs.docker.com/engine/installation/ubuntulinux/">Sitio Web Oficial</a>. Durante la instalación de **_Docker_** hay que tener en cuenta el sistema operativo instalado en nuestro servidor.
 
-## Paso Dos – Iniciar el contenedor de Jenkins.
+## Paso Dos – Iniciar el servicio de Jenkins.
 
-- Ejecutar la imagen oficial de Jenkins.
-    + Crear carpeta para las configuraciones de jenkins llamada /home/user/docker-services/jenkins
-    + Para iniciar el servicio de jenkins utilizando docker se escribe: docker run -p 8080:8085 --name jenkins jenkins
-- Comprobar que funciona correctamente.
-    + el sito fue puede ser accedido a través de la siguiente dirección: jenkins.example.com:8085
-- Se detiene el servicio para continuar con las configuraciones. Ctrl-C
+**_Iniciar Jenkins_**
+
+Para iniciar **_Jenkins_** utilizando **_Docker_** se escribe lo siguiente:
+
+```
+docker run -p 8085:8080 --name jenkins jenkins
+```
+
+- _-p 8085:8080_: enlaza el puerto 8080 del contenedor jenkins al puerto 8085 del host.
+- _--name jenkins_: establece el nombre _jenkins_ al contenedor creado.
+
+**_Comprobar que funciona_**
+
+Para comprobar que Jenkins funciona correctamente accediendo a la siguiente dirección web:
+
+```
+http://jenkins.example.com:8085
+```
+
+<img src="{{ site.baseurl }}/images/migrate-docker-jenkins/welcome-jenkins.png" title="Bienvenido Jenkins" name="Bienvenido Jenkins" />
+
+**_Detener el servicio_**
+
+Es necesario detener el servicio para continuar con las configuraciones.
+
+```
+Ctrl-C
+```
 
 ## Paso Tres – Establecer un volumen para los datos.
 
-- Mostar el lugar donde Jenkins guarda sus datos.
-- Se crea la carpeta donde serán almacenados los datos de las configuraciones.
-- Se le dan los permisos de escritura a la carpeta.
-- Se inicia el servicio con utilizando el volumen de datos
-    + docker run -p 8080:8085 --name jenkins - v /home/user/docker-services/data:/.... jenkins
-- Se detiene el servicio.
-- Se puede observar que el contenido creado dentro de la carpeta son los ficheros de configuración de Jenkins.
+**_Crear estructura_**
+
+Crear las carpetas donde se almacenan los datos y configuraciones del servicio. Estas carpetas tienen que tener permisos **_777_** para permitir que el usuario **_jenkins_** escriba dentro de ellas.
+
+```
+sudo mkdir -p ~/jenkins/data
+sudo chmod -R 777 ~/jenkins/
+```
+
+- _carpeta jenkins_: almacena las configuraciones para Docker.
+- _carpeta data_: almacena los datos de Jenkins.
+
+**_Iniciar servicio con el volumen de datos_**
+
+Para iniciar el servicio utilizando la carpeta de volumen de datos creada se escribe lo siguiente:
+
+```
+docker run -d -p 8085:8080 --name jenkins-with-volume -v ~/jenkins/data:/var/jenkins_home jenkins
+```
+
+- _-d_: se utiliza para iniciar Jenkins como servicio.
+
+Se puede observar que el contenido creado dentro de la carpeta `~/jenkins/data` son los ficheros de configuración de Jenkins.
+
+**_Detener el servicio_**
+
+Es necesario detener el servicio para continuar con las configuraciones.
+
+```
+docker stop jenkins-with-volume
+```
+
 
 ## Paso Cuatro – Migrar la información hacia el contendor.
 
-- Copiar los ficheros del Jenkins actual.
-- Reiniciar servicio y revisar que los datos estén correctos.
+Después de creada la estructura de carpetas es muy sencillo migrar la infomación del sistema **_Jenkins_** que se encuentra actualmente en uso.
 
-## Paso Cinco – Utilizar Docker Compose en el proceso.
+Primero se borra toda la información creada por Jenkins en `~/jenkins/data`.
 
-La información referente a la instalación de Docker Compose se encuentra claramente descrita en su <a href="">Sitio Web Oficial</a>.
+```
+sudo rm -r ~/jenkins/data/*
+sudo rm -r ~/jenkins/data/.*
+```
 
-- Crear fichero YAML.
-    + Descripción de las secciones en el fichero yml.
-    + Se inserta el fichero.
-- Iniciar servicio.
-- Chequear que exista el contenedor de jenkins funcionando
-    + docker ps
+Después, se busca el valor de la variable de entorno **JENKINS_HOME** dentro del sitio de **_Jenkins_** en **_Jenkins > Manage Jenkins > System Information_**.
 
-## Paso Seis – Establecer solamente Jenkins como Servicio en Docker.
+<img src="{{ site.baseurl }}/images/migrate-docker-jenkins/jenkins-home.png" title="Jenkins Home" name="Jenkins Home" />
 
-- Modificar el puerto en el fichero yml.
-- Detener el servicio de Jenkins.
-- Reiniciar el servicio Jenkins en Docker.
+Una vez identificada la ubicación de los ficheros de Jenkis se realiza la copia hacia la carpeta `~/jenkins/data`.
+
+**_Iniciar el servicio_**
+
+Es necesario reiniciar el serivio y revisar que **_Jenkins_** tenga los mismos datos en la dirección web `http://jenkins.example.com:8085`.
+
+```
+docker start jenkins-with-volume
+```
+
+## Paso Cinco – Instalar Docker Compose.
+
+La información referente a la instalación de **_Docker Compose_** se encuentra claramente descrita en su <a target="_blank" href="https://docs.docker.com/compose/install/">Sitio Web Oficial</a>.
+
+## Paso Seis – Utilizar Docker Compose en el proceso.
+
+**_Crear fichero YAML_**
+
+Se crea el fichero `docker-compose.yml` en la carpeta `~/jenkins/`.
+
+```
+touch ~/jenkins/docker-compose.yml
+```
+
+Dentro del fichero se agrega la siguiente información:
+
+```
+app:
+  image: jenkins
+  ports:
+    - 8085:8080
+  volumes_from:
+    - data
+  restart: always
+
+data:
+  image: busybox
+  volumes:
+    - /home/user/jenkins/data:/var/jenkins_home:rw
+```
+
+- app: es el servicio de Jenkins.
+- data: el el contenedor para los datos de **_Jenkins_**.
+- _restart:always_: garantiza iniciar el servicio al reiniciar el host. 
+- Se utiliza `user` dentro de `/home/user/jenkins/data:/var/jenkins_home:rw por` y no `~` porque tiene que ser un camino físico.
+
+**_Detener el servicio_**
+
+El servicio de **_Docker_** detiene utilizando el siguiente comando:
+
+```
+docker stop jenkins-with-volume
+```
+
+**_Iniciar el servicio con Docker Compose_**
+
+El servicio de Jenkins se inicia utilizando **_Docker Compose_**. Para lograrlo se escribe lo siguiente:
+
+```
+cd ~/jenkins/
+docker-compose up -d
+```
+
+Revisar el correcto funcionamiento del sitio en `http://jenkins.example.com:8085`.
+
+## Paso Siete – Establecer solamente Jenkins como Servicio en Docker.
+
+**_Modificar el puerto en el fichero yml_**
+
+Se modifica el puerto del host en el fichero `docker-compose.yml` quedando de la siguiente forma:
+
+```
+app:
+  image: jenkins
+  ports:
+    - 80:8080
+  volumes_from:
+    - data
+  restart: always
+
+data:
+  image: busybox
+  volumes:
+    - /home/user/jenkins/data:/var/jenkins_home:rw
+```
+
+**_Detener el servicio de Jenkins_**
+
+Se detiene el servicio **_Jenkins_** utilizando el siguiente comando:
+
+```
+sudo service jenkins stop
+```
+
+**_Iniciar Jenkins como servicio de Docker_**
+
+Reiniciar el servicio **_Jenkins_** en **_Docker_**.
+
+```
+docker-compose up -d
+```
+
+Revisar el correcto funcionamiento del sitio en `http://jenkins.example.com`.
+
+**Listo!!! Migración terminada.**
 
 ## Reflexiones finales
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -97,5 +245,5 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ### Revisiones significativas
-- Sitio oficial del Docker.
-- Sitio oficial de Jenkins.
+- <a target="_blank" href="http://docker.com/">Docker - Sitio Web Oficial</a>.
+- <a target="_blank" href="https://jenkins-ci.org/">Jenkins - Sitio Web Oficial</a>.
