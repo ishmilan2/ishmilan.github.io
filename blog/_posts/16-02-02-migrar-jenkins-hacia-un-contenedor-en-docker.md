@@ -43,7 +43,7 @@ La configuración del entorno donde fue desarrollado el artículo es la siguient
     Dominio: jenkins.example.com
 ```
 
-En el dominio **_jenkins.example.com_** se encuentra el sistema **_Jenkins_** brindando servicios.
+El dominio **_jenkins.example.com_** se utiliza para acceder al sistema **_Jenkins_**.
 
 ## Paso Uno – Instalar Docker.
 
@@ -62,7 +62,7 @@ docker run -p 8085:8080 --name jenkins jenkins
 - _-p 8085:8080_: enlaza el puerto 8080 del contenedor jenkins al puerto 8085 del host.
 - _--name jenkins_: establece el nombre _jenkins_ al contenedor creado.
 
-**_Comprobar que funciona_**
+**_Comprobar que funciona Jenkins_**
 
 Para comprobar que Jenkins funciona correctamente accediendo a la siguiente dirección web:
 
@@ -237,12 +237,11 @@ Revisar el correcto funcionamiento del sitio en `http://jenkins.example.com`.
 **Listo!!! Migración terminada.**
 
 ## Reflexiones finales
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+La filosofía brindada por Docker para establecer Contenedores como Servicios (CaaS) es ampliamente aceptada por la cominidad del software. Por otra parte, Jenkins constituye una poderosa herramienta para garantizar los procesos de Integración Continua y Entrega Continua. En el presente artículo queda establecido lo siguiente:
+
+- Se establece Jenkins como servicio dentro de un Contenedor.
+- La migración del servicio de Jenkins permite conservar los datos y las configuraciones.
+- El servicio de Jenkins solo deja de funcionar por 5 segundos durante la migración.
 
 ### Revisiones significativas
 - <a target="_blank" href="http://docker.com/">Docker - Sitio Web Oficial</a>.
