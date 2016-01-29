@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Migrar Jenkins hacia un Contenedor en Docker.
+title: Migrar Jenkins hacia un Contenedor en Docker
 permalink: /blog/migrar-jenkins-hacia-un-contenedor-en-docker/
 translate_en: /en/blog/migrate-jenkins-to-a-docker-container/
 category: [articulo]
 tags: [docker, jenkins, ubuntu]
 image: /images/banners/docker-jenkins-og.png
-excerpt: Migrar tu actual <strong><em>Servicio de Jenkins</em></strong> hacia un <strong><em>contenedor en Docker</em></strong> es <strong><em>bien sencillo</em></strong>. El sistema Jenkins <strong><em>solo dejará de brindar servicios 5 segundos y sin perder información</em></strong>.
+excerpt: Migrar tu actual <strong><em>Servicio de Jenkins</em></strong> hacia un <strong><em>contenedor en Docker</em></strong> es <strong><em>bien sencillo</em></strong>. El sistema Jenkins <strong><em>solo dejará de brindar servicios durante 5 segundos y sin perder información</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/jenkins-docker.png" title="Migrar Jenkins hacia Docker" name="Migrar Jenkins hacia Docker" />
@@ -19,6 +19,7 @@ Migrar nuestro sistema **_Jenkins_** hacia la filosofía brindada por **_Docker_
 
 - _¿Se perderán las configuraciones establecidas hasta el momento?_
 - _¿Se perderán las estadísticas de las rutinas establecidas?_
+- _¿Que tiempo estará Jenkins sin brindar servicios?_
 
 La respuesta a ambas preguntas es **_no_**. El objetivo del presente artículo es mostrar cómo modificar la estructura del sistema **_Jenkins_** sin tener que empezar desde cero. 
 
@@ -64,7 +65,7 @@ docker run -p 8085:8080 --name jenkins jenkins
 
 **_Comprobar que funciona Jenkins_**
 
-Para comprobar que Jenkins funciona correctamente accediendo a la siguiente dirección web:
+Para comprobar que Jenkins funciona correctamente acceda al siguiente enlace web:
 
 ```
 http://jenkins.example.com:8085
@@ -84,19 +85,24 @@ Ctrl-C
 
 **_Crear estructura_**
 
-Crear las carpetas donde se almacenan los datos y configuraciones del servicio. Estas carpetas tienen que tener permisos **_777_** para permitir que el usuario **_jenkins_** escriba dentro de ellas.
+Crear las carpetas donde serán almacenados los datos y las configuraciones del servicio. 
 
 ```
 sudo mkdir -p ~/jenkins/data
+```
+
+Dar los permisos **_777_** a las carpetas creadas para que el usuario **_jenkins_** escriba dentro de ellas.
+
+```
 sudo chmod -R 777 ~/jenkins/
 ```
 
 - _carpeta jenkins_: almacena las configuraciones para Docker.
 - _carpeta data_: almacena los datos de Jenkins.
 
-**_Iniciar servicio con el volumen de datos_**
+**_Iniciar el servicio utilizando el volumen de datos_**
 
-Para iniciar el servicio utilizando la carpeta de volumen de datos creada se escribe lo siguiente:
+Para iniciar el servicio utilizando el volumen de datos se escribe lo siguiente:
 
 ```
 docker run -d -p 8085:8080 --name jenkins-with-volume -v ~/jenkins/data:/var/jenkins_home jenkins
@@ -128,9 +134,15 @@ sudo rm -r ~/jenkins/data/.*
 
 Después, se busca el valor de la variable de entorno **JENKINS_HOME** dentro del sitio de **_Jenkins_** en **_Jenkins > Manage Jenkins > System Information_**.
 
+**JENKINS_HOME** es el camino físico donde Jenkins tiene su información.
+
 <img src="{{ site.baseurl }}/images/migrate-docker-jenkins/jenkins-home.png" title="Jenkins Home" name="Jenkins Home" />
 
-Una vez identificada la ubicación de los ficheros de Jenkis se realiza la copia hacia la carpeta `~/jenkins/data`.
+Una vez identificada la ubicación de los ficheros de Jenkis se realiza la copia desde la ruta **JENKINS_HOME** hacia la carpeta `~/jenkins/data`.
+
+```
+sudo cp -r /var/lib/jenkins/* ~/jenkins/data/
+```
 
 **_Iniciar el servicio_**
 
@@ -172,13 +184,13 @@ data:
 ```
 
 - app: es el servicio de Jenkins.
-- data: el el contenedor para los datos de **_Jenkins_**.
+- data: es el contenedor para los datos de **_Jenkins_**.
 - _restart:always_: garantiza iniciar el servicio al reiniciar el host. 
 - Se utiliza `user` dentro de `/home/user/jenkins/data:/var/jenkins_home:rw por` y no `~` porque tiene que ser un camino físico.
 
 **_Detener el servicio_**
 
-El servicio de **_Docker_** detiene utilizando el siguiente comando:
+El servicio de **_Docker_** se detiene utilizando el siguiente comando:
 
 ```
 docker stop jenkins-with-volume
