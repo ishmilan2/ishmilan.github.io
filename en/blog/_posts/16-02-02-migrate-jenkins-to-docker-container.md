@@ -15,15 +15,15 @@ excerpt: Migrate your current <strong><em>Jenkins Service</em></strong> to a <st
 
 **_Jenkins_** is a continuous integration system used widely by **_software development groups_**. By the other hand, **_Docker_** show us a new way to structure ours services.
 
-Migrate our **_Jenkins_** system to the phylosopy provided by **_Docker_** can be a desire or a goal in our **_development group_**. However, you may have some questions or doubts:
+Migrate our **_Jenkins_** system to the philosophy provided by **_Docker_** can be a desire or a goal in our **_development group_**. However, you may have some questions or doubts:
 
 - _Will be lost the configurations made so far ?_
 - _Will be lost the statistics of jobs?_
 - _¿How many time the Jenkins service will be down?_
 
-The answer in both cases is **_no_**. The objetive of this article is show how modify our structure of service for **_Jenkins_** without start from the beginning.
+The answer in both cases is **_no_**. The objective of this article is show how modify our structure of service for **_Jenkins_** without start from the beginning.
 
-All modifications showed in the article where realized in the same server although you can user a second one.
+All modifications showed in the article where realized in the same server although you can use a second one.
 
 **_Jenkins just will be out of service during 5 seconds._**
 
@@ -43,7 +43,7 @@ The environment configuration used for this article is the following:
     Jenkins: 1.645
      Domain: jenkins.example.com
 ```
-The **_jenkins.example.com_** domain is used to access to the Jenkins system.
+The `jenkins.example.com` domain is used to access to the Jenkins system.
 
 ## Step One – Install Docker.
 
@@ -53,18 +53,18 @@ The best information related with **_Docker_** installation can be found on his 
 
 **_Start Jenkins_**
 
-To start **_Jenkins_** using **_Docker_** write the following command:
+To start **_Jenkins_** using **_Docker_** you must write the following command:
 
 ```
 docker run -p 8085:8080 --name jenkins jenkins
 ```
 
-- _-p 8085:8080_: link the port 8080 of jenkins container with the port 8085 of the host.
-- _--name jenkins_: establish _jenkins_ as the container name created.
+- `-p 8085:8080` link the port `8080` of jenkins container with the host port `8085`.
+- `--name jenkins` establish the name `jenkins` as the container name created.
 
 **_Check if Jenkins works_**
 
-To check if Jenkins works correctly access to the following web link.
+Access to the following web link to check if Jenkins works correctly.
 
 ```
 http://jenkins.example.com:8085
@@ -84,32 +84,32 @@ Ctrl-C
 
 **_Create structure_**
 
-Create foldes to store both, data and configurations for the service. 
+Create folders to store both, data and configurations for the service. 
 
 ```
 sudo mkdir -p ~/jenkins/data
 ```
 
-Establish the permission **_777_** to the created folders so that the jenkins user can write in them.
+Establish the permission `777` to the created folders so that the `jenkins` user can write in them.
 
 ```
 sudo chmod -R 777 ~/jenkins/
 ```
 
-- _jenkins folder_: store Docker's configurations.
-- _data folder_: store Jenkins' data. 
+- _jenkins folder_: store Docker configurations.
+- _data folder_: store Jenkins data. 
 
 **_Start the service using the data volume_**
 
-To start the service using the data volume write the following:
+Write the following command to start the service using the data volume:
 
 ```
 docker run -d -p 8085:8080 --name jenkins-with-volume -v ~/jenkins/data:/var/jenkins_home jenkins
 ```
 
-- _-d_: used to start Jenkins as a service.
+- We use `-d` to start Jenkins as a service.
 
-You can see the files created by Jenkins inside the folder `~/jenkins/data`. These files are Jenkins' configurations.
+You can see the files created by **_Jenkins_** inside the folder `~/jenkins/data`. These files are **_Jenkins_** configurations.
 
 **_Stop the service_**
 
@@ -122,7 +122,7 @@ docker stop jenkins-with-volume
 
 ## Step Four – Migrate the information to the container.
 
-Once the folders structure has been created, the migration of the Jenkins' information is very simple.
+Once the folders structure has been created, the migration of the **_Jenkins_** information is very simple.
 
 First, you must delete all the information located inside the folder `~/jenkins/data`.
 
@@ -132,13 +132,13 @@ sudo rm -r ~/jenkins/data/.*
 ```
 
 
-After, search the value of **JENKINS_HOME** inside the **_Jenkins_** website on: **_Jenkins > Manage Jenkins > System Information_**.
+After, search the value of `JENKINS_HOME` inside the **_Jenkins_** website on: **_Jenkins > Manage Jenkins > System Information_**.
 
-**JENKINS_HOME** is the physical path where Jenkins has his information.
+`JENKINS_HOME` is the physical path where Jenkins has his information.
 
 <img src="{{ site.baseurl }}/images/migrate-docker-jenkins/jenkins-home.png" title="Jenkins Home" name="Jenkins Home" />
 
-Once identified the path of Jenkins' information, you can copy those files to the folder `~/jenkins/data`.
+Once identified the path of **_Jenkins_** information, you can copy those files to the folder `~/jenkins/data`.
 
 ```
 sudo cp -r /var/lib/jenkins/* ~/jenkins/data/
@@ -156,7 +156,7 @@ docker start jenkins-with-volume
 
 The best information related with **_Docker Compose_** installation can be found on his <a target="_blank" href="https://docs.docker.com/compose/install/">Official Website</a>.
 
-## Step Six – Utilizar Docker Compose en el proceso.
+## Step Six – Use Docker Compose in the process.
 
 **_Create YAML file_**
 
@@ -183,9 +183,9 @@ data:
     - /home/user/jenkins/data:/var/jenkins_home:rw
 ```
 
-- app: is the Jenkins' service.
-- data: it is the container for **_Jenkins's_** data.
-- _restart:always_: assure start the service when the host restart.
+- `app` is the **_Jenkins_** service.
+- `data` is the container for **_Jenkins_** data.
+- `restart:always` assure to start the service when the host restart.
 - We use `user` inside the string `/home/user/jenkins/data:/var/jenkins_home:rw por` because must be a physical path.
 
 **_Stop the service_**
@@ -198,20 +198,20 @@ docker stop jenkins-with-volume
 
 **_Start the service using Docker Compose_**
 
-This time the Jenkins' service starts using **_Docker Compose_**. The command is the following:
+This time the Jenkins service starts using **_Docker Compose_**. To do this, type:
 
 ```
 cd ~/jenkins/
 docker-compose up -d
 ```
 
-Check the right behaviours on the link: `http://jenkins.example.com:8085`.
+Use this link: `http://jenkins.example.com:8085` to check the right behaviors.
 
 ## Step Seven – Establish Jenkins as a Docker Service.
 
 **_Modify the port inside the file yml_**
 
-Modify the host port in the file `docker-compose.yml`. The look like this now:
+Modify the host port in the file `docker-compose.yml`. The file look like this now:
 
 ```
 app:
@@ -228,9 +228,9 @@ data:
     - /home/user/jenkins/data:/var/jenkins_home:rw
 ```
 
-**_Stop the Jenkins' service_**
+**_Stop the Jenkins service_**
 
-The **_Jenkins'_** service is stopped using the following command:
+The **_Jenkins_** service is stopped using the following command:
 
 ```
 sudo service jenkins stop
@@ -238,23 +238,23 @@ sudo service jenkins stop
 
 **_Start Jenkins as a Docker service_**
 
-Restart the **_Jenkins'_** service with **_Docker_**.
+Restart the **_Jenkins_** service with **_Docker_**.
 
 ```
 docker-compose up -d
 ```
 
-Check the right behaviours using the link `http://jenkins.example.com`.
+ Use this link `http://jenkins.example.com` to check the right behaviours.
 
 **Ready!!! Migration finished.**
 
 ## Final Thoughts
 
-The phylosophy of Docker to establish Containers as a Services (PaaS) is widely accepted by software community. By the other hand, Jenkins constitude a powerfull tool for organize both process, Continuous Integration and Continuous Delivery. This article establish the following:
+The philosophy of **_Docker_** to establish **_Containers as a Services (CaaS)__** is widely accepted by software community. By the other hand, **_Jenkins_** constitute a powerful tool for organize both process, **_Continuous Integration and Continuous Delivery_**. This article establish the following:
 
 - Establish Jenkins as a service inside a container.
-- The migratio of Jenkins service allow keep the data and configurations.
-- The Jenkins service just will be out of service during 5 seconds during the migration.
+- The migration of Jenkins service allow keep the data and configurations.
+- The Jenkins service just will be out of service 5 seconds during the migration.
 
 ### Significant Revisions
 - <a target="_blank" href="http://docker.com/">Docker - Official Website</a>.
