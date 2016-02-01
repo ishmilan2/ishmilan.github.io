@@ -96,8 +96,8 @@ Establish the permission `777` to the created folders so that the `jenkins` user
 sudo chmod -R 777 ~/jenkins/
 ```
 
-- _jenkins folder_: store Docker configurations.
-- _data folder_: store Jenkins data. 
+- _jenkins folder_: store **_Docker_** configurations.
+- _data folder_: store **_Jenkins_** data. 
 
 **_Start the service using the data volume_**
 
@@ -107,7 +107,7 @@ Write the following command to start the service using the data volume:
 docker run -d -p 8085:8080 --name jenkins-with-volume -v ~/jenkins/data:/var/jenkins_home jenkins
 ```
 
-- We use `-d` to start Jenkins as a service.
+- We use `-d` to start **_Jenkins_** as a service.
 
 You can see the files created by **_Jenkins_** inside the folder `~/jenkins/data`. These files are **_Jenkins_** configurations.
 
@@ -252,9 +252,9 @@ docker-compose up -d
 
 The philosophy of **_Docker_** to establish **_Containers as a Services (CaaS)__** is widely accepted by software community. By the other hand, **_Jenkins_** constitute a powerful tool for organize both process, **_Continuous Integration and Continuous Delivery_**. This article establish the following:
 
-- Establish Jenkins as a service inside a container.
-- The migration of Jenkins service allow keep the data and configurations.
-- The Jenkins service just will be out of service 5 seconds during the migration.
+- Establish **_Jenkins_** as a service inside a container.
+- The migration of **_Jenkins_** service allow keep the data and configurations.
+- The **_Jenkins_** service just will be out of service 5 seconds during the migration.
 
 ### Significant Revisions
 - <a target="_blank" href="http://docker.com/">Docker - Official Website</a>.

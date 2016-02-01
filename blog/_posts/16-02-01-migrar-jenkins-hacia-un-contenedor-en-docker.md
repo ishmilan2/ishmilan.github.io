@@ -25,7 +25,7 @@ La respuesta a ambas preguntas es **_no_**. El objetivo del presente artículo e
 
 Las modificaciones mostradas en el artículo fueron realizadas todas en el mismo servidor aunque se puede utilizar un segundo alojamiento para el cambio.
 
-**_El sistema Jenkins solo dejó de brindar servicios 5 segundos._**
+**_El sistema Jenkins solo dejará de brindar servicios 5 segundos._**
 
 ### Pre requisito
 
@@ -97,8 +97,8 @@ Dar los permisos `777` a las carpetas creadas para que el usuario `jenkins` escr
 sudo chmod -R 777 ~/jenkins/
 ```
 
-- _carpeta jenkins_: almacena las configuraciones para Docker.
-- _carpeta data_: almacena los datos de Jenkins.
+- _carpeta jenkins_: almacena las configuraciones para **_Docker_**.
+- _carpeta data_: almacena los datos de **_Jenkins_**.
 
 **_Iniciar el servicio utilizando el volumen de datos_**
 
@@ -108,9 +108,9 @@ Para iniciar el servicio utilizando el volumen de datos se escribe lo siguiente:
 docker run -d -p 8085:8080 --name jenkins-with-volume -v ~/jenkins/data:/var/jenkins_home jenkins
 ```
 
-- `-d` se utiliza para iniciar Jenkins como servicio.
+- `-d` se utiliza para iniciar **_Jenkins_** como servicio.
 
-Se puede observar que el contenido creado dentro de la carpeta `~/jenkins/data` son los ficheros de configuración de Jenkins.
+Se puede observar que el contenido creado dentro de la carpeta `~/jenkins/data` son los ficheros de configuración de **_Jenkins_**.
 
 **_Detener el servicio_**
 
@@ -125,7 +125,7 @@ docker stop jenkins-with-volume
 
 Después de creada la estructura de carpetas es muy sencillo migrar la infomación del sistema **_Jenkins_** que se encuentra actualmente en uso.
 
-Primero se borra toda la información creada por Jenkins en `~/jenkins/data`.
+Primero se borra toda la información creada por **_Jenkins_** en `~/jenkins/data`.
 
 ```
 sudo rm -r ~/jenkins/data/*
@@ -251,9 +251,9 @@ Revisar el correcto funcionamiento del sitio en `http://jenkins.example.com`.
 ## Reflexiones finales
 La filosofía brindada por **_Docker_** para establecer **_Contenedores como Servicios (CaaS)_** es ampliamente aceptada por la comunidad del software. Por otra parte, **_Jenkins_** constituye una poderosa herramienta para garantizar los procesos de **_Integración Continua y Entrega Continua_**. En el presente artículo queda establecido lo siguiente:
 
-- Se establece Jenkins como servicio dentro de un Contenedor.
-- La migración del servicio de Jenkins permite conservar los datos y las configuraciones.
-- El servicio de Jenkins solo deja de funcionar 5 segundos durante la migración.
+- Se establece **_Jenkins_** como servicio dentro de un Contenedor.
+- La migración del servicio de **_Jenkins_** permite conservar los datos y las configuraciones.
+- El servicio de **_Jenkins_** solo deja de funcionar 5 segundos durante la migración.
 
 ### Revisiones significativas
 - <a target="_blank" href="http://docker.com/">Docker - Sitio Web Oficial</a>.
