@@ -30,4 +30,14 @@ Publications sorted by category.
     
     {% endfor %}
 
+    <li id="articulo">Diagram</li>
+
+    {% for post in site.categories.diagram %}
+  
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
+
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
+    
+    {% endfor %}
+
 </ul>
