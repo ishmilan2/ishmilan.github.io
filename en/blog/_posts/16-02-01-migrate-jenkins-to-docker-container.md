@@ -254,7 +254,7 @@ The philosophy of **_Docker_** to establish **_Containers as a Services (CaaS)__
 
 - Establish **_Jenkins_** as a service inside a container.
 - The migration of **_Jenkins_** service allow keep the data and configurations.
-- The **_Jenkins_** service just will be out of service 5 seconds during the migration.
+- The **_Jenkins_** service just will be out of service **_5 seconds_** during the migration.
 
 ### Significant Revisions
 - <a target="_blank" href="http://docker.com/">Docker - Official Website</a>.

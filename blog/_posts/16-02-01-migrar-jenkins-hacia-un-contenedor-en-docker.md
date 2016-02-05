@@ -253,7 +253,7 @@ La filosofía brindada por **_Docker_** para establecer **_Contenedores como Ser
 
 - Se establece **_Jenkins_** como servicio dentro de un Contenedor.
 - La migración del servicio de **_Jenkins_** permite conservar los datos y las configuraciones.
-- El servicio de **_Jenkins_** solo deja de funcionar 5 segundos durante la migración.
+- El servicio de **_Jenkins_** solo deja de funcionar **_5 segundos_** durante la migración.
 
 ### Revisiones significativas
 - <a target="_blank" href="http://docker.com/">Docker - Sitio Web Oficial</a>.
