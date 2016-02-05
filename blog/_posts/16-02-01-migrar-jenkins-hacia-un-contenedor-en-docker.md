@@ -5,7 +5,7 @@ permalink: /blog/migrar-jenkins-hacia-un-contenedor-en-docker/
 translate_en: /en/blog/migrate-jenkins-to-a-docker-container/
 category: [articulo]
 tags: [docker, jenkins, ubuntu]
-image: /images/banners/docker-jenkins-og.png
+image: /images/banners/docker-og.png
 excerpt: Migrar tu actual <strong><em>Servicio de Jenkins</em></strong> hacia un <strong><em>contenedor en Docker</em></strong> es <strong><em>bien sencillo</em></strong>. El sistema Jenkins <strong><em>solo dejará de brindar servicios durante 5 segundos y sin perder información</em></strong>.
 ---
 
