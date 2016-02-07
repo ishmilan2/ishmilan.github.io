@@ -13,7 +13,7 @@ Here is where I share my thoughts on Configuration Management.
   {% assign posts_en = site.posts | where:"lang","en" %}
   {% for post in posts_en %}
     <article class="post">
-    {{ post.sidebar }}
+    
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
