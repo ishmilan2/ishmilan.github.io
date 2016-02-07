@@ -3,6 +3,8 @@ layout: post
 title: Configuración de XenServer 6.5 en RAID1 por Software
 permalink: /blog/configuracion-xenserver6.5-raid1-software/
 translate_en: /en/blog/configure-xenserver6.5-software-raid1/
+lang: es
+sidebar: yes
 category: articulo
 tags: [xenserver, raid]
 image: /images/xenserver-raid1/xen-og.jpeg

@@ -2,6 +2,8 @@
 layout: post
 title: Modelo de Gestión de Configuración con herramientas código abierto
 permalink: /blog/modelo-gestion-configuracion-herramientas-codigo-abierto/
+lang: es
+sidebar: yes
 category: [articulo]
 tags: [uml, git, redmine, jenkins]
 ---

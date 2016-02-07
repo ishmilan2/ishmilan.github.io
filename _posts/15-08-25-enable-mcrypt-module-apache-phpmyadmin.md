@@ -3,6 +3,8 @@ layout: post_en
 title: Enable mcrypt module on Apache - phpMyAdmin
 permalink: /en/blog/enable-mcrypt-module-apache-phpmyadmin/
 translate_es: /blog/habilitar-modulo-mcrypt-apache-phpmyadmin/
+lang: en
+sidebar: yes
 category: [configuration]
 tags: [phpmyadmin, apache2]
 ---
