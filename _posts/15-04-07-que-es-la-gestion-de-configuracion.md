@@ -2,6 +2,8 @@
 layout: post
 title: ¿Qué es la Gestión de Configuración?
 permalink: /blog/que-es-la-gestion-de-configuracion/
+lang: es
+sidebar: yes
 category: articulo
 ---
 

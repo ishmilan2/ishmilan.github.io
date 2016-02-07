@@ -3,6 +3,8 @@ layout: post_en
 title: Deployment Diagram - PhpMyAdmin as a Service in Docker.
 permalink: /en/blog/deployment-diagram-phpmyadmin-docker/
 translate_es: /blog/diagrama-despliegue-phpmyadmin-docker/
+lang: en
+sidebar: yes
 category: [diagram]
 tags: [phpmyadmin, uml, docker]
 image: /images/banners/docker-og.png

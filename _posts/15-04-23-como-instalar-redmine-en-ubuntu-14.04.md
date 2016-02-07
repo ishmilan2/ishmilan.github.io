@@ -2,6 +2,8 @@
 layout: post
 title: ¿Cómo instalar Redmine en Ubuntu 14.04?
 permalink: /blog/como-instalar-redmine-en-ubuntu-14.04/
+lang: es
+sidebar: yes
 category: articulo
 tags: [redmine, ubuntu]
 image: /images/redmine-ubuntu/redmine-og.jpeg

@@ -3,6 +3,8 @@ layout: post
 title: Integración continua combinando Jenkins, iOS 9 y XCode 7.
 permalink: /blog/integracion-continua-jenkins-ios9-xcode/
 translate_en: /en/blog/continuous-integration-jenkins-ios9-xcode/
+lang: es
+sidebar: yes
 category: [articulo]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg

@@ -3,6 +3,8 @@ layout: post
 title: Aumentar el tamaño de los ficheros a importar en phpMyAdmin
 permalink: /blog/aumentar-tamano-ficheros-importar-phpmyadmin/
 translate_en: /en/blog/upload-max-file-size-import-phpmyadmin/
+lang: es
+sidebar: yes
 category: [configuracion]
 tags: [phpmyadmin]
 ---
