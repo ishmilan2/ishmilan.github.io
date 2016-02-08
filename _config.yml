@@ -54,26 +54,6 @@ url: http://mmorejon.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-defaults:
-  # Default language
-  -
-    scope:
-      path: ""
-    values:
-      lang: "es"
-  # Language for everything inside `/en`
-  -
-    scope:
-      path: "en"
-    values:
-      lang: "en"
-  # Language for English posts
-  -
-    scope:
-      path: "en/_posts"
-      type: "posts" # As of version 2.3.0, Jekyll uses plural keywords for type
-    values:
-      lang: "en"
 #
 # !! You don't need to change any of the configuration flags below !!
 #

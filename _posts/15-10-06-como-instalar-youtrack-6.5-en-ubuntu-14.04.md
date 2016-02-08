@@ -3,6 +3,8 @@ layout: post
 title: ¿Cómo instalar YouTrack 6.5 en Ubuntu 14.04?
 permalink: /blog/como-instalar-youtrack-6.5-en-ubuntu-14.04/
 translate_en: /en/blog/how-to-install-youtrack-6.5-on-ubuntu-14.04/
+lang: es
+sidebar: yes
 category: articulo
 tags: [youtrack, ubuntu]
 excerpt: <strong><em>Instalar y configurar YouTrack 6.5</em></strong> le permitirá administrar la <strong><em>gestión de sus proyectos e incidencias</strong></em> de forma sencilla y amigable. Utilizando solamente el navegador web podrá llevar el <strong><em>control de su empresa</strong></em>.

@@ -3,6 +3,8 @@ layout: post_en
 title: Upload max file size to import on phpMyAdmin
 permalink: /en/blog/upload-max-file-size-import-phpmyadmin/
 translate_es: /blog/aumentar-tamano-ficheros-importar-phpmyadmin/
+lang: en
+sidebar: yes
 category: [configuration]
 tags: [phpmyadmin]
 ---

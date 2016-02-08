@@ -2,6 +2,8 @@
 layout: post
 title: ¿Cómo actualizar los cambios desde Git hacia un FTP en SourceTree?
 permalink: /blog/como-configurar-git-ftp-en-sourcetree/
+lang: es
+sidebar: yes
 category: [articulo]
 tags: [git, ftp, sourcetree]
 ---

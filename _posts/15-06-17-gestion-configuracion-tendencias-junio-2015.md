@@ -3,6 +3,8 @@ layout: post
 title: Gestión de Configuración - Tendencias 2015
 permalink: /blog/gestion-configuracion-tendencias-junio-2015/
 translate_en: /en/blog/2015-trends-configuration-management/
+lang: es
+sidebar: yes
 category: [articulo]
 ---
 
