@@ -252,7 +252,7 @@ docker-compose up -d
 
 ## Final Thoughts
 
-The philosophy of **_Docker_** to establish **_Containers as a Services (CaaS)__** is widely accepted by software community. By the other hand, **_Jenkins_** constitute a powerful tool for organize both process, **_Continuous Integration and Continuous Delivery_**. This article establish the following:
+The philosophy of **_Docker_** to establish **_Containers as a Services (CaaS)_** is widely accepted by software community. By the other hand, **_Jenkins_** constitute a powerful tool for organize both process, **_Continuous Integration and Continuous Delivery_**. This article establish the following:
 
 - Establish **_Jenkins_** as a service inside a container.
 - The migration of **_Jenkins_** service allow keep the data and configurations.
