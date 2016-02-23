@@ -1,27 +1,36 @@
 ---
 layout: post
 title: Diagrama de Despliegue - Django con Docker
-permalink: /blog/diagrama-despliegue-docker-django-desarrollo-produccion/
-translate_en: /en/blog/deployment-diagram-docker-development-production/
+permalink: /blog/diagrama-despliegue-docker-django/
+translate_en: /en/blog/deployment-diagram-docker-django/
 lang: es
 sidebar: yes
 category: [diagrama]
 tags: [django, uml, docker]
 image: /images/banners/docker-og.png
-excerpt: Hola Django.
+excerpt: <strong><em>Diagrama de Despliegue</em></strong> mostrando similitudes y diferencias entre los <strong><em>entornos de desarrollo y producción</em></strong> para <strong><em>projectos con Django</em></strong> utilizando <strong><em>Docker</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
-## Diagrama de Despliegue para Desarrollo
+## Diagrama de Despliegue - Entorno de Desarrollo
 ____
-<img src="{{ site.baseurl }}/images/diagrams/docker-django-development.png" title="Docker - Django" name="Docker - Django" />
+<img src="{{ site.baseurl }}/images/diagrams/docker-django-development.png" title="Diagrama de Despliegue - Docker, Django" name="Diagrama de Despliegue - Docker, Django" />
 
-## Diagrama de Despliegue para Producción
+## Diagrama de Despliegue - Entorno de Producción
 ____
-<img src="{{ site.baseurl }}/images/diagrams/docker-django-wsgi-production.png" title="Docker - Django" name="Docker - Django" />
+<img src="{{ site.baseurl }}/images/diagrams/docker-django-wsgi-production.png" title="Diagrama de Despliegue - Docker, Django, WSGI" name="Diagrama de Despliegue - Docker, Django, WSGI" />
 
-### Análisis
+### Comunicación
 
 * Se muestra la estrucutra de imágenes necesarias para establecer el servicio de la aplicación en su primera versión (**_App:1.0_**). Durante la evolución del sistema la versión debe ir incrementando.
-* El 
+* El usuario accede desde su **_navegador web_** al alojamiento **_(host)_** a través del puerto **_80_**. La comunicación entre el alojamiento y la aplicación en **_Docker_** se puede establer utilizando cualquier puerto.
+
+### Volumen de datos
+Ambos diagramas utilizan un volumen de datos, pero con objetivos distintos.
+
+* **_Entorno de desarrollo:_** utiliza el **_volumen_** para almacenar la totalidad del **_código fuente_**. De esta forma los programadores pueden hacer los ajustes necesario y ver reflejados los cambios fácilmente.
+* **_Entorno de producción:_** utiliza el volumen solo para el almacenamiento de los ficheros de configuración porque el **_código fuente_** se copia hacia la imagen durante su contrucción. Los ficheros de configuración son los referentes al servidor web **_Nginx_**.
+
+### Base de datos
+La base de datos utilizada en el ejemplo fue **_SQLite_**. Esta base de datos se configura automáticamente durante la confección del proyecto. En el **_entorno de producción_** la base de datos forma parte del **_volumen de datos_** para la realización de salvas durante las actualizaciones.
