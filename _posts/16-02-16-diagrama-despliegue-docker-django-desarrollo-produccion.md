@@ -21,10 +21,7 @@ ____
 ____
 <img src="{{ site.baseurl }}/images/diagrams/docker-django-wsgi-production.png" title="Docker - Django" name="Docker - Django" />
 
-## Servicios de Docker
+### Análisis
 
-
-## Imágenes de Docker
-
-
-## Volumen de Docker
+* Se muestra la estrucutra de imágenes necesarias para establecer el servicio de la aplicación en su primera versión (**_App:1.0_**). Durante la evolución del sistema la versión debe ir incrementando.
+* El 
