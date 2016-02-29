@@ -21,14 +21,14 @@ excerpt: <strong><em>Deployment Diagram</em></strong> showing similitudes and di
 
 ### Communication
 
-* The diagrams shows the Docker images needed to set the application service in his first version (**_App:1.0_**). This version will be increasing during the system evolution.
-* The user access from his **_web_** browser to the **_host_** throw the port **_80_**. The communication between the host and the **_Docker container_** can be establish using any port.
+* These diagrams shows the Docker images needed to set the application service in his first version (**_App:1.0_**). The version number will be increasing during the system evolution.
+* The user access from his **_web browser_** to the **_host_** is through the port **_80_**. The communication between the host and the **_Docker container_** can be established using any port.
 
 ### Data Volumes
 Both diagrams use one data volume, but for different targets.
 
-* **_Development environment:_** use the **_volume_** to store all the **_source code_**. Doing this, the developers can make the necessaries adjustments and see the changes easily.
-* **_Production environment:_** use the **_volume_** only to store configuration files because all the **_source code_** is copied inside the **_Docker_** image during his build. The configuration files are referents to the webserver **_Nginx_**.
+* **_Development environment:_** uses the **_volume_** to store all the **_source code_**. Doing this, the developers can make the necessary adjustments and see the changes easily.
+* **_Production environment:_** uses the **_volume_** only to store configuration files because all the **_source code_** is copied inside the **_Docker_** image during his build. The configuration files are references to the web server **_Nginx_**.
 
 ### Database
-The database used for this example was **_SQLite_**. This database is configuring automatically during the project creation. The database is part of the **_data volume_** in the **_production environment_** in order to realize frequently backups.
+The database used for this example was **_SQLite_**. This database is configuring automatically during the project creation. The database is part of the **_data volume_** in the **_production environment_** in order to realize backups frequently.
