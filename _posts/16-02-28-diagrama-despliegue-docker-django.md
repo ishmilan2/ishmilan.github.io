@@ -13,10 +13,10 @@ excerpt: <strong><em>Diagrama de Despliegue</em></strong> mostrando similitudes 
 
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
-## Diagrama de Despliegue - Entorno de Desarrollo
+## Diagrama de Despliegue - Entorno de desarrollo
 <img src="{{ site.baseurl }}/images/diagrams/docker-django-development.png" title="Diagrama de Despliegue - Docker, Django" name="Diagrama de Despliegue - Docker, Django" />
 
-## Diagrama de Despliegue - Entorno de Producción
+## Diagrama de Despliegue - Entorno de producción
 <img src="{{ site.baseurl }}/images/diagrams/docker-django-wsgi-production.png" title="Diagrama de Despliegue - Docker, Django, WSGI" name="Diagrama de Despliegue - Docker, Django, WSGI" />
 
 ### Comunicación
@@ -32,3 +32,11 @@ Ambos diagramas utilizan un volumen de datos, pero con objetivos distintos.
 
 ### Base de datos
 La base de datos utilizada en el ejemplo fue **_SQLite_**. Esta base de datos se configura automáticamente durante la confección del proyecto. En el **_entorno de producción_** la base de datos forma parte del **_volumen de datos_** para la realización de salvas.
+
+### Código fuente
+
+Si desea iniciar un **_proyecto con Django_** y utilizar esta arquitectura puede descargar el <a target="_blank" href="https://github.com/mmorejon/docker-django">código fuente desde aquí</a>.
+
+### Revisiones significativas
+* <a target="_blank" href="https://docs.docker.com/compose/django/">Docker Compose con proyectos Django</a>
+* <a target="_blank" href="https://docs.djangoproject.com/es/1.9/intro/tutorial01/">Primeros pasos en projectos con Django</a>

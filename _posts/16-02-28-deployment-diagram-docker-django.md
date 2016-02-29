@@ -32,3 +32,10 @@ Both diagrams use one data volume, but for different targets.
 
 ### Database
 The database used for this example was **_SQLite_**. This database is configuring automatically during the project creation. The database is part of the **_data volume_** in the **_production environment_** in order to realize backups frequently.
+
+### Source Code
+If you want to start a Django project with this architecture, you can download <a target="_blank" href="https://github.com/mmorejon/docker-django">the source code using this link</a>.
+
+### Significant Revisions
+* <a target="_blank" href="https://docs.docker.com/compose/django/">Docker Compose with Django projects</a>
+* <a target="_blank" href="https://docs.djangoproject.com/es/1.9/intro/tutorial01/">First steps with Django projects</a>
