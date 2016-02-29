@@ -13,10 +13,10 @@ excerpt: <strong><em>Deployment Diagram</em></strong> showing similitudes and di
 
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
-## Deployment Diagram - Development Environment
+## Deployment Diagram - Development environment
 <img src="{{ site.baseurl }}/images/diagrams/docker-django-development.png" title="Deployment Diagram - Docker, Django" name="Deployment Diagram - Docker, Django" />
 
-## Deployment Diagram - Production Environment
+## Deployment Diagram - Production environment
 <img src="{{ site.baseurl }}/images/diagrams/docker-django-wsgi-production.png" title="Deployment Diagram - Docker, Django, WSGI" name="Deployment Diagram - Docker, Django, WSGI" />
 
 ### Communication
