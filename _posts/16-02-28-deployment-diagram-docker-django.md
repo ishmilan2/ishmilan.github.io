@@ -8,7 +8,7 @@ sidebar: yes
 category: [diagram]
 tags: [django, uml, docker]
 image: /images/banners/docker-og.png
-excerpt: <strong><em>Deployment Diagram</em></strong> showing similitudes and differences between <strong><em>development and production environments</em></strong> in <strong><em>Django projects</em></strong> using <strong><em>Docker</em></strong>.
+excerpt: <strong><em>Deployment Diagram</em></strong> showing similarities and differences between <strong><em>development and production environments</em></strong> in <strong><em>Django projects</em></strong> using <strong><em>Docker</em></strong>.
 ---
 
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
