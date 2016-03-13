@@ -15,11 +15,11 @@ excerpt: Connect you clients on <strong><em>Ubuntu 14.04</em></strong> with you 
 
 ## Necessity
 
-Autenticar los usuarios existentes en el directorio **_OpenLdap_** en las máquinas cno sistema operativo **_Ubuntu 14.04_**.
+Authenticate **_OpenLdap_** directory users into machine clients with operating system **_Ubuntu 14.04_**.
 
 ## Environment
 
-**_Clients maquines_**
+**_Clients machines_**
 
 ```
   OS: Ubuntu 14.04
@@ -34,7 +34,7 @@ User type: Posxit
 
 ## Solution
 
-Installing the following packages. During the instalation you should set the data referent with the OpenLdap system.
+Installing the following packages. During the installation you should set the data referent with the OpenLdap system.
 
 ```
 sudo apt-get update
@@ -67,10 +67,10 @@ Activating the module `libnss-ldap` by typing:
 sysv-rc-conf libnss-ldap on
 ```
 
-Reboot the opetaing system
+Reboot the operating system
 
 ```
 sudo reboot
 ```
 
-**_Done!!! Ubuntu 14.04 client has been configurated!!!_**
+**_Done!!! Ubuntu 14.04 client has been configured!!!_**
