@@ -1,32 +1,40 @@
 ---
 layout: post_en
-title: How to authenticate client computers using OpenLdap on Ubuntu 14.04
-permalink: /en/blog/how-to-authenticate-client-computers-using-openldap-on-ubuntu-14-04/
-translate_es: /blog/como-registar-computadoras-clientes-utilizando-openldap-en-ubuntu-14-04/
+title: How to authenticate OpenLdap users on Ubuntu 14.04
+permalink: /en/blog/how-to-authenticate-openldap-users-on-ubuntu-14-04/
+translate_es: /blog/como-autenticar-usuarios-openldap-en-ubuntu-14-04/
 lang: en
 sidebar: yes
 category: [configuration]
 tags: [openldap, ubuntu]
 image: /images/banners/docker-og.png
-excerpt: Hola
+excerpt: Connect you clients on <strong><em>Ubuntu 14.04</em></strong> with you <strong><em>OpenLdap</em></strong> directory in just <strong><em>5 steps!!!</em></strong>
 ---
 
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
 ## Necessity
 
-
+Autenticar los usuarios existentes en el directorio **_OpenLdap_** en las máquinas cno sistema operativo **_Ubuntu 14.04_**.
 
 ## Environment
 
+**_Clients maquines_**
+
 ```
   OS: Ubuntu 14.04
-Ldap: OpenLdap 
+```
+
+**_OpenLdap system_**
+
+```
+ OpenLdap: x
+User type: Posxit
 ```
 
 ## Solution
 
-Installing the following packages:
+Installing the following packages. During the instalation you should set the data referent with the OpenLdap system.
 
 ```
 sudo apt-get update
@@ -64,3 +72,5 @@ Reboot the opetaing system
 ```
 sudo reboot
 ```
+
+**_Done!!! Ubuntu 14.04 client has been configurated!!!_**
