@@ -7,7 +7,7 @@ lang: es
 sidebar: yes
 category: [configuracion]
 tags: [openldap, ubuntu]
-image: /images/banners/docker-og.png
+image: /images/banners/ubuntu-og.png
 excerpt: Conecte sus clientes en <strong><em>Ubuntu 14.04</em></strong> a su directorio <strong><em>OpenLdap</em></strong> con solo <strong><em>5 pasos!!!</em></strong>
 ---
 
