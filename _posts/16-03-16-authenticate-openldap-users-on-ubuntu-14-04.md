@@ -28,8 +28,8 @@ Authenticate **_OpenLdap_** directory users into machine clients with operating 
 **_OpenLdap system_**
 
 ```
- OpenLdap: x
-User type: Posxit
+ OpenLdap: 1.2.2
+Users type: posixAccount
 ```
 
 ## Solution
