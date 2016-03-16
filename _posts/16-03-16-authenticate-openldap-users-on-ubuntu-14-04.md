@@ -28,7 +28,7 @@ Authenticate **_OpenLdap_** directory users into machine clients with operating 
 **_OpenLdap system_**
 
 ```
- OpenLdap: 1.2.2
+  OpenLdap: 1.2.2
 Users type: posixAccount
 ```
 
