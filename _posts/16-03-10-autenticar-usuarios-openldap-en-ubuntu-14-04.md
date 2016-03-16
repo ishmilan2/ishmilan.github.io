@@ -11,7 +11,7 @@ image: /images/banners/docker-og.png
 excerpt: Conecte sus clientes en <strong><em>Ubuntu 14.04</em></strong> a su directorio <strong><em>OpenLdap</em></strong> con solo <strong><em>5 pasos!!!</em></strong>
 ---
 
-<img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
+<img src="{{ site.baseurl }}/images/banners/openldap-ubuntu.png" title="OpenLdap - Ubuntu Trusty" name="OpenLdap - Ubuntu Trusty" />
 
 ## Necesidad
 
