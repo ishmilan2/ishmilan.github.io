@@ -28,8 +28,8 @@ Autenticar los usuarios existentes en el directorio **_OpenLdap_** en las máqui
 **_Sistema OpenLdap_**
 
 ```
-OpenLdap: x
-Tipo de usuarios: Posxit
+OpenLdap: 1.2.2
+Tipo de usuarios: posixAccount
 ```
 
 ## Solución
