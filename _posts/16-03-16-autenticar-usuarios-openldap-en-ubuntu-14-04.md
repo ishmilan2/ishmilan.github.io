@@ -28,7 +28,7 @@ Autenticar los usuarios existentes en el directorio **_OpenLdap_** en las máqui
 **_Sistema OpenLdap_**
 
 ```
-OpenLdap: 1.2.2
+        OpenLdap: 1.2.2
 Tipo de usuarios: posixAccount
 ```
 
