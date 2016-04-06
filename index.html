@@ -15,6 +15,16 @@ La Gestión de Configuración es una disciplina dentro de la Ingeniería de Soft
 La meta es siempre maximizar la productividad minimizando errores.
 </p>
 
+<div class="home-recent-articles">
+	<h2>Publicaciones recientes</h2>
+	{% assign posts_es = site.posts | where:"lang","es"%}
+	{% for post in posts_es limit: 5%}
+		<div>
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		</div>
+	{% endfor %}
+</div>
+
 <div class="home-images">
 	<h2>Gestión de Código Fuente</h2>
 	<div class="home-images">
