@@ -15,6 +15,16 @@ Configuration management is a discipline within Software Engineering that allows
 The goal is always to maximize productivity by minimizing errors.
 </p>
 
+<div class="home-recent-articles">
+	<h2>Publicaciones recientes</h2>
+	{% assign posts_en = site.posts | where:"lang","en"%}
+	{% for post in posts_en limit: 5%}
+		<div>
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		</div>
+	{% endfor %}
+</div>
+
 <div class="home-images">
 	<h2>Source Code Management</h2>
 	<div class="home-images">
