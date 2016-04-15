@@ -20,13 +20,13 @@ Pasos para iniciar un proyecto con Django utilizando Docker dentro del flujo de 
 
 ### Código fuente
 
-Puede acceder al <a href="https://github.com/mmorejon/docker-django" target="_blank">código fuente utilizado en este artículo</a>.
+Puede descargar el <a href="https://github.com/mmorejon/docker-django" target="_blank">código fuente utilizado en este artículo</a>.
 
 ### Diagramas UML
 
 Puede consultar los diagramas de despliegue en este <a href="{{ site.baseurl }}/blog/diagrama-despliegue-docker-django/">enlace</a>.
 
-## Paso Uno - Establecer Estructura.
+## Paso Uno – Establecer Estructura.
 
 **_Descargar estructura del proyecto_**
 
