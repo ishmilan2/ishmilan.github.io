@@ -57,16 +57,15 @@ git init
 
 **_Create Docker image_**
 
-Se crea la imagen de Docker para el projecto. La imagen va a contener la instalación de los requerimientos establecidos en el fichero `requirements.txt`.
+You must create the Docker image for the project. The image contain the instalation requirements established into `requirements.txt` file.
 
-El fichero `requirements.txt` contiene los requisitos básicos para el inicio y despliegue de una aplicación con Django, si necesita adicionarle nuevos elementos este es un buen momento.
+The file `requirements.txt` include basic requirements to start and deploy our Django application. If you need add new elements now is a good moment.
 
 ```
 docker build -t projectname:1.0 .
 ```
 
-Siempre que modifique los elementos dentro del fichero `requirements.txt` tiene que repetir este paso.
-
+Every time thay you modify the elements inside `requirements.txt` file you should repeat this step.
 
 **_Docker Compose configuration_**
 
