@@ -59,7 +59,7 @@ git init
 
 You must create the Docker image for the project. The image contain the instalation requirements established into `requirements.txt` file.
 
-The file `requirements.txt` include basic requirements to start and deploy our Django application. If you need add new elements now is a good moment.
+The file `requirements.txt` include basic requirements to start and deploy our Django application. If you need add new elements now is a good moment. Use the following command to create the image:
 
 ```
 docker build -t projectname:1.0 .
@@ -69,7 +69,7 @@ Every time thay you modify the elements inside `requirements.txt` file you shoul
 
 **_Docker Compose configuration_**
 
-En el fichero `docker-compose.yml` se modifica el nombre de la imagen que será utilizada. El nombre de la imagen se ha establecido en el paso anterior. La zona que se modifica dentro del fichero es la siguiente:
+In the file `docker-compose.yml` is set the image name that will be used. The image name was setting in the previos step. In the file change the following line:
 
 ```
 image: projectname:1.0
@@ -78,20 +78,26 @@ image: projectname:1.0
 ## Step Three - Create Django Project
 
 **_Create project_**
-Se crea el proyecto utilizando los mismos comandos descritos por el sitio Django.
+
+The project is created using the same commands described into Django website.
 
 ```
 docker-compose run web django-admin startproject projectname .
 ```
 
-**_Probar el sistema_**
-Para probar si el sistema está funcionando correctamente se ejectua el siguiente comando. En el navegador se puede revisar la aplicación en la siguiente dirección `http://<ip-máquina:8000>`. El puerto de salida puede ser configurado en el fichero `docker-compose.yml`.
+**_Test the system_**
+
+Start the system typing this:
 
 ```
 docker-compose up
 ```
 
-**_Para el sistema_**
+The system can be tested writting in the browser the following: `http://<ip-máquina:8000>`. The port can be changed in the `docker-composer.yml` file.
+
+**_Stop the system_**
+
+
 Se detiene el sistema de ser necesario para continuar con las configuraciones.
 ```
 Ctrl-C
