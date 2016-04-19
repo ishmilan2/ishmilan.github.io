@@ -97,22 +97,23 @@ The system can be tested writting in the browser the following: `http://<ip-máq
 
 **_Stop the system_**
 
+The system is stopped to keep on the configurations typing this:
 
-Se detiene el sistema de ser necesario para continuar con las configuraciones.
 ```
 Ctrl-C
 ```
 
 ## Step Four - Create Application
 
-Para crear una aplicación dentro del proyecto Django se utiliza el siguiente comando:
+Use the following command to create an application inside Django project.
+
 ```
 docker-compose run web python manage.py startapp app
 ```
 
 ## Step Five - Create User
 
-Los usuarios se crean utilizando el mismo comando descrito en la documentación de Django.
+The users can be created using the same command line explained in Django documentation.
 
 ```
 docker-compose run web python manage.py createsuperuser
@@ -120,9 +121,7 @@ docker-compose run web python manage.py createsuperuser
 
 ## Step Six - Production Environment
 
-Para utilizar la aplicación en el entorno de producción se debe configurar el fichero `docker-compose.yml`. En este fichero se agrega el comando a ejecutar para que utilice la configuración del entorno de producción.
-
-La línea que se adiciona es `command: ./run-production.sh` quedando el fichero de la siguiente forma:
+If you desire take advantage of the application like production environment, you just need to configure the file `docker-compose.yml`. The change that you need to do is add this new line `command: ./run-production.sh`. The file should look like this:
 
 ```
 web:
@@ -133,6 +132,8 @@ web:
   ports:
     - "8000:80"
 ```
+
+The file `run-production.sh` include the nessesaries configurations to run your Django application like a production environment.
 
 ### Significant Revisions
 
