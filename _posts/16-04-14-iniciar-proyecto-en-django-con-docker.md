@@ -12,7 +12,9 @@ excerpt: Pasos para iniciar un proyecto con <strong><em>Django</em></strong> uti
 ---
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
-Pasos para iniciar un proyecto con Django utilizando Docker dentro del flujo de trabajo. Se utiliza `projectname` para hacer referencia al nombre del projecto.
+### Introducción
+
+Pasos para iniciar un proyecto con Django utilizando Docker dentro del flujo de trabajo. Se utiliza `projectname` para hacer referencia al nombre del proyecto.
 
 ### Pre requisito
 
@@ -57,7 +59,7 @@ git init
 
 **_Crear Imagen en Docker_**
 
-Se crea la imagen de Docker para el projecto. La imagen va a contener la instalación de los requerimientos establecidos en el fichero `requirements.txt`.
+Se crea la imagen de Docker para el proyecto. La imagen va a contener la instalación de los requerimientos establecidos en el fichero `requirements.txt`.
 
 El fichero `requirements.txt` contiene los requisitos básicos para el inicio y despliegue de una aplicación con Django, si necesita adicionarle nuevos elementos este es un buen momento.
 
@@ -133,4 +135,4 @@ web:
 ### Revisiones significativas
 
 * <a target="_blank" href="https://docs.docker.com/compose/django/">Docker Compose con proyectos Django</a>
-* <a target="_blank" href="https://docs.djangoproject.com/es/1.9/intro/tutorial01/">Primeros pasos en projectos con Django</a>
+* <a target="_blank" href="https://docs.djangoproject.com/es/1.9/intro/tutorial01/">Primeros pasos en proyectos con Django</a>

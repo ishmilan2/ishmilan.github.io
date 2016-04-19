@@ -12,11 +12,13 @@ excerpt: Steps to start <strong><em>Django</em></strong> projects using <strong>
 ---
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
+### Introduction
+
 Steps to start Django projects using Docker as a part of the workflow. We use `projectname` to refer the project name.
 
 ### Prerequisite
 
-* Having **Docker** installed. If you ar using on Mac OS X or Windows you should install **Docker Toolbox**.
+* Having **Docker** installed. If you are using on Mac OS X or Windows you should install **Docker Toolbox**.
 
 ### Source Code
 
@@ -57,7 +59,7 @@ git init
 
 **_Create Docker image_**
 
-You must create the Docker image for the project. The image contain the instalation requirements established into `requirements.txt` file.
+You must create the Docker image for the project. The image contain the installation requirements established into `requirements.txt` file.
 
 The file `requirements.txt` include basic requirements to start and deploy our Django application. If you need add new elements now is a good moment. Use the following command to create the image:
 
@@ -65,7 +67,7 @@ The file `requirements.txt` include basic requirements to start and deploy our D
 docker build -t projectname:1.0 .
 ```
 
-Every time thay you modify the elements inside `requirements.txt` file you should repeat this step.
+Every time that you modify the elements inside `requirements.txt` file you should repeat this step.
 
 **_Docker Compose configuration_**
 
@@ -93,7 +95,7 @@ Start the system typing this:
 docker-compose up
 ```
 
-The system can be tested writting in the browser the following: `http://<ip-máquina:8000>`. The port can be changed in the `docker-composer.yml` file.
+The system can be tested writing in the browser the following: `http://<machine-ip:8000>`. The port can be changed in the `docker-composer.yml` file.
 
 **_Stop the system_**
 
@@ -133,7 +135,7 @@ web:
     - "8000:80"
 ```
 
-The file `run-production.sh` include the nessesaries configurations to run your Django application like a production environment.
+The file `run-production.sh` include the necessaries configurations to run your Django application like a production environment.
 
 ### Significant Revisions
 
