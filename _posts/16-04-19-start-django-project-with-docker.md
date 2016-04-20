@@ -26,7 +26,7 @@ You can download <a href="https://github.com/mmorejon/docker-django" target="_bl
 
 ### UML Diagrams
 
-You can consult deployment diagrams related with this post in this <a href="{{ site.baseurl }}/en/blog/deployment-diagram-docker-django/">link</a>.
+You can consult deployment diagrams related to this post in this <a href="{{ site.baseurl }}/en/blog/deployment-diagram-docker-django/">link</a>.
 
 ## Step One - Setup the Structure.
 
@@ -59,9 +59,9 @@ git init
 
 **_Create Docker image_**
 
-You must create the Docker image for the project. The image contain the installation requirements established into `requirements.txt` file.
+You must create the Docker image for the project. The image contains the installation requirements established into `requirements.txt` file.
 
-The file `requirements.txt` include basic requirements to start and deploy our Django application. If you need add new elements now is a good moment. Use the following command to create the image:
+The file `requirements.txt` include basic requirements to start and deploy our Django application. If you need to add new elements now is a good moment. Use the following command to create the image:
 
 ```
 docker build -t projectname:1.0 .
@@ -71,7 +71,7 @@ Every time that you modify the elements inside `requirements.txt` file you shoul
 
 **_Docker Compose configuration_**
 
-In the file `docker-compose.yml` is set the image name that will be used. The image name was setting in the previos step. In the file change the following line:
+In the file `docker-compose.yml` is set the image name that will be used. The image name was setting in the previous step. In the file change the following line:
 
 ```
 image: projectname:1.0
@@ -123,7 +123,7 @@ docker-compose run web python manage.py createsuperuser
 
 ## Step Six - Production Environment
 
-If you desire take advantage of the application like production environment, you just need to configure the file `docker-compose.yml`. The change that you need to do is add this new line `command: ./run-production.sh`. The file should look like this:
+If you desire to take advantage of the application like production environment, you just need to configure the file `docker-compose.yml`. The change that you need to do is add this new line `command: ./run-production.sh`. The file should look like this:
 
 ```
 web:
