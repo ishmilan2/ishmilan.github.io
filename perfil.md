@@ -185,6 +185,10 @@ La Habana | Cuba
 			<td class="profile-table-info">Ansible.</td>
 		</tr>
 		<tr>
+			<td class="profile-table-header">Herramientas de Monitoreo</td>
+			<td class="profile-table-info">Check MK.</td>
+		</tr>
+		<tr>
 			<td class="profile-table-header">Virtualización</td>
 			<td class="profile-table-info">Docker, XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
 		</tr>
