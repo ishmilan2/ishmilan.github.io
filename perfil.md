@@ -170,15 +170,19 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Gestión de código fuente</td>
-			<td class="profile-table-info">Git, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 y Git-Cola.</td>
+			<td class="profile-table-info">Git, GitHub, GitLab, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 y Git-Cola.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Gestión de Proyectos</td>
-			<td class="profile-table-info">Redmine, Jira, YouTrack y MantisBT.</td>
+			<td class="profile-table-info">ZenHub ,Redmine, Jira, YouTrack y MantisBT.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Construcción y Liberación</td>
 			<td class="profile-table-info">Ant, Maven, Jenkins y Git-FTP.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Herramientas de Automatización</td>
+			<td class="profile-table-info">Ansible.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Virtualización</td>
@@ -189,12 +193,20 @@ La Habana | Cuba
 			<td class="profile-table-info">OpenLdap, phpLdapAdmin.</td>
 		</tr>
 		<tr>
+			<td class="profile-table-header">Sistema Operativo</td>
+			<td class="profile-table-info">Linux (Ubuntu, CoreOS), Machintosh</td>
+		</tr>
+		<tr>
 			<td class="profile-table-header">Lenguajes</td>
-			<td class="profile-table-info">Java, C++, PHP y UML.</td>
+			<td class="profile-table-info">Java, C++, PHP, Markdown y UML.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">CMS y Comercio electrónico</td>
 			<td class="profile-table-info">Joomla, WordPress, Plone y Prestashop.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Frameworks</td>
+			<td class="profile-table-info">Yii, Yii2.</td>
 		</tr>
 	</tbody>
 </table>

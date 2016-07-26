@@ -172,15 +172,19 @@ Havana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Source code management</td>
-			<td class="profile-table-info">Git, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 and Git-Cola.</td>
+			<td class="profile-table-info">Git, GitHub, GitLab, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 and Git-Cola.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Project Management</td>
-			<td class="profile-table-info">Redmine, Jira, YouTrack and MantisBT.</td>
+			<td class="profile-table-info">ZenHub, Redmine, Jira, YouTrack and MantisBT.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Build and Release</td>
 			<td class="profile-table-info">Ant, Maven, Jenkins and Git-FTP.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Automation Tools</td>
+			<td class="profile-table-info">Ansible.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Virtualization</td>
@@ -191,12 +195,20 @@ Havana | Cuba
 			<td class="profile-table-info">OpenLdap, phpLdapAdmin.</td>
 		</tr>
 		<tr>
+			<td class="profile-table-header">Operating Systems</td>
+			<td class="profile-table-info">Linux (Ubuntu, CoreOS), Machintosh</td>
+		</tr>
+		<tr>
 			<td class="profile-table-header">Lenguages</td>
-			<td class="profile-table-info">Java, C++, PHP and UML.</td>
+			<td class="profile-table-info">Java, C++, PHP, Markdown and UML.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">CMS and ECommerces</td>
 			<td class="profile-table-info">Joomla, WordPress, Plone and Prestashop.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Frameworks</td>
+			<td class="profile-table-info">Yii, Yii2.</td>
 		</tr>
 	</tbody>
 </table>
