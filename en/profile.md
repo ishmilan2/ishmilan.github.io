@@ -192,7 +192,7 @@ Havana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Virtualization</td>
-			<td class="profile-table-info">Docker, XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
+			<td class="profile-table-info">Docker, Vagrant, XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">LDAP</td>
