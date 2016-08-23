@@ -6,7 +6,7 @@ sidebar: yes
 translate_en: /en/blog/
 ---
 
-Este es el lugar donde comparto mis pensamientos sobre Gestión de Configuración.
+Este es el lugar donde comparto mis pensamientos sobre DevOps y Gestión de Configuración.
 
 <div class="posts">
 
