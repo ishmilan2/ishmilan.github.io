@@ -2,13 +2,12 @@
 layout: post_en
 title: Microservices - Example with Docker, Go and MongoDB
 permalink: /en/blog/microservices-example-with-docker-go-and-mongodb/
-translate_es: /blog/microservicios-ejemplo-con-docker-go-mongodb/
 lang: en
 sidebar: yes
 category: [articulo]
 tags: [docker, go, mongodb]
 image: /images/banners/docker-og.png
-excerpt: Steps to start <strong><em>Django</em></strong> projects using <strong><em>Docker</em></strong> as a part of the <strong><em>workflow</em></strong>.
+excerpt: <strong><em>Microservices, from theory to practice.</em></strong> Cinema is an <strong><em>example project</em></strong> written in <strong><em>Go</em></strong>, deployed with <strong><em>Docker</em></strong> and stored in <strong><em>MongoDB</em></strong> databases.
 ---
 <img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
@@ -24,7 +23,7 @@ The Cinema backend is powered by 4 microservices, all of witch happen to be writ
 
 **_The Cinema use case_** is based on the project written in Python by [umermansoor](https://github.com/umermansoor/microservices).
 
-The proyect structure is based in the knowledge learned in the book: **_Web
+The project structure is based in the knowledge learned in the book: **_Web
 Development with Go_** by **_Shiju Varghese_**, ISBN 978-1-4842-1053-6
 
 ### Prerequisite
@@ -55,7 +54,7 @@ You can download <a href="https://github.com/mmorejon/microservices-docker-go-mo
 docker-compose up -d
 ```
 
-## Stoping services
+## Stopping services
 
 ```
 docker-compose stop
@@ -71,7 +70,7 @@ docker-compose build
 
 ## Restore database information
 
-You can start using an empty database for all microservices, but if you want you can restore a preconfigured data following this steps:
+You can start using an empty database for all microservices, but if you want you can restore a configured data following this steps:
 
 **_Access to mongodb container typing:_**
 
@@ -135,6 +134,46 @@ Used to lookup booking information for users.
 * GET - _http://bookings.local/bookings_ : Get all bookings
 * POST - _http://bookings.local/bookings_ : Create booking
 
+### Exposed ports
+
+The port `27017` is exposed to be consulted by **_Robomongo_** system.
+The port `80` is exposed to be consulted by **_devices_**, **_web browsers_** or others **_microservices_**.
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/exposed-ports.png" title="Microservices - Exposed ports" name="Microservices - Exposed ports" />
+
+
+## Screenshots
+
+**_Starting services logs_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/starting-services.png" title="Microservices - Starting services" name="Microservices - Starting services" />
+
+**_Restoring database information_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/restoring-database-information.png" title="Microservices - Restoring database information" name="Microservices - Restoring database information" />
+
+**_Service - Get all users (Postman)_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/get-all-users.png" title="Microservices - Get all users" name="Microservices - Get all users" />
+
+**_Service - Get all movies (Postman)_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/get-all-movies.png" title="Microservices - Get all movies" name="Microservices - Get all movies" />
+
+**_Service - Get all showtimes (Postman)_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/get-all-showtimes.png" title="Microservices - Get all showtimes" name="Microservices - Get all showtimes" />
+
+**_Service - Get all bookings (Postman)_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/get-all-bookings.png" title="Microservices - Get all bookings" name="Microservices - Get all bookings" />
+
+**_Database big picture (Robomongo)_**
+
+<img src="{{ site.baseurl }}/images/microservices-cinema/database-big-picture.png" title="Microservices - Database big picture" name="Microservices - Database big picture" />
+
 ### Significant Revisions
 
+* [Microservices - Martin Fowler]()
+* [Web Development with Go]()
 * [umermansoor](https://github.com/umermansoor/microservices)
