@@ -20,7 +20,7 @@ excerpt: <strong><em>Microservicios, de la teoría a la práctica.</em></strong>
  * Servicio Show Times: Brinda información sobre la programación de las películas.
  * Servicio Booking: Brinda información sobre las reservaciones de los usuarios referente a la programación de las películas.
 
-El caso de uso Cinema está basado en el proyecto escrio en Python por [Umer Mansoor](https://github.com/umermansoor/microservices).
+El caso de uso Cinema está basado en el proyecto escrito en Python por [Umer Mansoor](https://github.com/umermansoor/microservices).
 
 La estructura del proyecto está basada en el conocimiento obtenido del libro **_Web Development with Go_** escrito por **_Shiju Varghese_**, ISBN 978-1-4842-1053-6
 
