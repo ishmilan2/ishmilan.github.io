@@ -5,7 +5,7 @@ permalink: /en/blog/start-django-project-with-docker/
 translate_es: /blog/iniciar-proyecto-en-django-con-docker/
 lang: en
 sidebar: yes
-category: [articulo]
+category: [article]
 tags: [django, docker]
 image: /images/banners/docker-og.png
 excerpt: Steps to start <strong><em>Django</em></strong> projects using <strong><em>Docker</em></strong> as a part of the <strong><em>workflow</em></strong>.
