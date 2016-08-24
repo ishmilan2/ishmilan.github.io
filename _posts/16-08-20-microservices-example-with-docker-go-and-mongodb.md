@@ -2,9 +2,10 @@
 layout: post_en
 title: Microservices - Example with Docker, Go and MongoDB
 permalink: /en/blog/microservices-example-with-docker-go-and-mongodb/
+translate_es: /blog/microservicios-ejemplo-con-docker-go-y-mongodb/
 lang: en
 sidebar: yes
-category: [articulo]
+category: [article]
 tags: [docker, go, mongodb]
 image: /images/banners/docker-og.png
 excerpt: <strong><em>Microservices, from theory to practice.</em></strong> Cinema is an <strong><em>example project</em></strong> written in <strong><em>Go</em></strong>, deployed with <strong><em>Docker</em></strong> and stored in <strong><em>MongoDB</em></strong> databases.
@@ -16,10 +17,10 @@ excerpt: <strong><em>Microservices, from theory to practice.</em></strong> Cinem
 **_Cinema is an example project_** which demonstrates the use of **_microservices_** for a fictional movie theater.
 The Cinema backend is powered by 4 microservices, all of witch happen to be written in **_Go_**, using **_MongoDB_** for manage the database and **_Docker_** to isolate and deploy the ecosystem.
 
+ * **_Users Service_**: Provides users information.
  * **_Movie Service_**: Provides information like movie ratings, title, etc.
  * **_Show Times Service_**: Provides show times information.
- * **_Booking Service_**: Provides booking information. 
- * **_Users Service_**: Provides movie suggestions for users by communicating with other services.
+ * **_Booking Service_**: Provides booking information.
 
 **_The Cinema use case_** is based on the project written in Python by [umermansoor](https://github.com/umermansoor/microservices).
 
@@ -144,7 +145,7 @@ The port `80` is exposed to be consulted by **_devices_**, **_web browsers_** or
 
 ## Screenshots
 
-**_Starting services logs_**
+**_Starting services_**
 
 <img src="{{ site.baseurl }}/images/microservices-cinema/starting-services.png" title="Microservices - Starting services" name="Microservices - Starting services" />
 
