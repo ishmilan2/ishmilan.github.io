@@ -10,7 +10,6 @@ tags: [docker, go, mongodb]
 image: /images/banners/docker-og.png
 excerpt: <strong><em>Microservicios, de la teoría a la práctica.</em></strong> Cinema es un <strong><em>proyecto ficticio</em></strong> escrito en <strong><em>Go</em></strong>, desplegado con <strong><em>Docker</em></strong> y utilizando <strong><em>MongoDB</em></strong> para almacenar la información.
 ---
-<img src="{{ site.baseurl }}/images/banners/django-docker.png" title="Docker - Django" name="Docker - Django" />
 
 ### Introducción
 
@@ -21,7 +20,7 @@ excerpt: <strong><em>Microservicios, de la teoría a la práctica.</em></strong>
  * Servicio Show Times: Brinda información sobre la programación de las películas.
  * Servicio Booking: Brinda información sobre las reservaciones de los usuarios referente a la programación de las películas.
 
-El caso de uso Cinema está basado en el proyecto escrio en Python por [umermansoor](https://github.com/umermansoor/microservices).
+El caso de uso Cinema está basado en el proyecto escrio en Python por [Umer Mansoor](https://github.com/umermansoor/microservices).
 
 La estructura del proyecto está basada en el conocimiento obtenido del libro **_Web Development with Go_** escrito por **_Shiju Varghese_**, ISBN 978-1-4842-1053-6
 
@@ -172,6 +171,6 @@ El puerto `27017` está expuesto para que sea consultado de manera local por el 
 
 ### Revisiones significativas
 
-* [Microservices - Martin Fowler]()
-* [Web Development with Go]()
-* [umermansoor](https://github.com/umermansoor/microservices)
+* [Microservices - Martin Fowler](http://martinfowler.com/articles/microservices.html)
+* [Web Development with Go](http://www.apress.com/9781484210536)
+* [Umer Mansoor - Cinema](https://github.com/umermansoor/microservices)
