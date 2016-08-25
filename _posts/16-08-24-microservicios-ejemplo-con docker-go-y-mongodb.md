@@ -10,6 +10,7 @@ tags: [docker, go, mongodb]
 image: /images/banners/docker-og.png
 excerpt: <strong><em>Microservicios, de la teoría a la práctica.</em></strong> Cinema es un <strong><em>proyecto ficticio</em></strong> escrito en <strong><em>Go</em></strong>, desplegado con <strong><em>Docker</em></strong> y utilizando <strong><em>MongoDB</em></strong> para almacenar la información.
 ---
+<img src="{{ site.baseurl }}/images/banners/microservices-docker.png" title="Microservicios - Cinema" name="Microservicios - Cinema" />
 
 ### Introducción
 
