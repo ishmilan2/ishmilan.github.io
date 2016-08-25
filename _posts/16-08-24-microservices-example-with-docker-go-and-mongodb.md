@@ -11,6 +11,8 @@ image: /images/banners/docker-og.png
 excerpt: <strong><em>Microservices, from theory to practice.</em></strong> Cinema is an <strong><em>example project</em></strong> written in <strong><em>Go</em></strong>, deployed with <strong><em>Docker</em></strong> and stored in <strong><em>MongoDB</em></strong> databases.
 ---
 
+<img src="{{ site.baseurl }}/images/banners/microservices-docker.png" title="Microservices - Cinema" name="Microservices - Cinema" />
+
 ### Introduction
 
 **_Cinema is an example project_** which demonstrates the use of **_microservices_** for a fictional movie theater.
