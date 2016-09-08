@@ -15,7 +15,7 @@ La Habana | Cuba
 	<tbody>
 		<tr>
 			<td class="profile-table-header">Actual :</td>
-			<td class="profile-table-info">Gestor de Configuración de Software</td>
+			<td class="profile-table-info">Gestor de Configuración de Software & DevOps</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header"></td>

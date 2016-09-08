@@ -14,7 +14,7 @@ Havana | Cuba
 	<tbody>
 		<tr>
 			<td class="profile-table-header">Current :</td>
-			<td class="profile-table-info">Software Configuration Management</td>
+			<td class="profile-table-info">Configuration Management & DevOps</td>
 		</tr>
 		<tr>
 			<td></td>

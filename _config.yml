@@ -6,8 +6,8 @@
 name: Manuel Morejón
 
 # Short bio or description (displayed in the header)
-description: Gestor de Configuración de Software
-description_en: Software Configuration Management
+description: DevOps & Gestor de Configuración de Software
+description_en: DevOps & Configuration Management
 
 # Short bio or description (displayed in meta information)
 description_meta: La Gestión de Configuración de Software es el arte de maximizar la productividad minimizando errores.
@@ -72,6 +72,7 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-github-metadata
 #  - jemoji # Transform text in images
 
 # Exclude these files from your production _site
