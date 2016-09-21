@@ -123,7 +123,15 @@ docker-compose run web python manage.py createsuperuser
 
 ## Step Six - Production Environment
 
-If you desire to take advantage of the application like production environment, you just need to configure the file `docker-compose.yml`. The change that you need to do is add this new line `command: ./run-production.sh`. The file should look like this:
+If you desire to take advantage of the application like production environment, you just need to configure the following files:
+
+Add the this line at the end of the `projectname/settings.py` file:
+
+```
+STATIC_ROOT = './static/'
+```
+
+Add this line `command: ./run-production.sh` in `docker-compose.yml` file. The file should look like this:
 
 ```
 web:
@@ -136,6 +144,8 @@ web:
 ```
 
 The file `run-production.sh` include the necessaries configurations to run your Django application like a production environment.
+
+Finally, change `projectname` by `your-app-name` in `conf/app.ini` file.
 
 ### Significant Revisions
 
