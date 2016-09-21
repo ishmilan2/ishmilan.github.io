@@ -149,7 +149,7 @@ La Habana | Cuba
 			<td class="profile-table-header">Postgrados Recibidos :</td>
 			<td class="profile-table-info">2011: Economía, Jurídica, Ética y Civil, Metodología de la Investigación Científica.
 			<br>
-			2010: Ingeniería de Software, Sistemas Informáticos Inteligentes, Arquitectura de Computadoras y Redes, Calidad de Software, Taller de Ingeniería y Gestión de Software, CMMI 1.2.</a>
+			2010: Ingeniería de Software, Sistemas Informáticos Inteligentes, Arquitectura de Computadoras y Redes, Calidad de Software, Taller de Ingeniería y Gestión de Software, CMMI 1.2.
 			<br><br>
 			</td>
 		</tr>

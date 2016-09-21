@@ -151,7 +151,7 @@ Havana | Cuba
 			<td class="profile-table-header">Post grade courses received :</td>
 			<td class="profile-table-info">2011: Economy, Ethics, Scientific Investigation Methodology.
 			<br>
-			2010: Software Engineering, Intelligent Informatics’ Systems, Computer Architecture and Network, Software Quality, Engineer Workshop and Software Manage, CMMI 1.2.</a>
+			2010: Software Engineering, Intelligent Informatics’ Systems, Computer Architecture and Network, Software Quality, Engineer Workshop and Software Manage, CMMI 1.2.
 			<br><br>
 			</td>
 		</tr>
