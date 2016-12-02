@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integración continua combinando: Pipeline, Jenkins 2.0, iOS 9 y .
+title: Construya Su Pipeline En Jenkins 2.0 como Código con iOS9 y XCode7.
 permalink: /blog/integracion-continua-pipeline-jenkins2-ios9-xcode/
 translate_en: /en/blog/continuous-integration-pipeline-jenkins2-ios9-xcode/
 lang: es
@@ -14,63 +14,128 @@ excerpt: <strong><em>Automatizar las pruebas en proyectos para iOS 9 es posible!
 <img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
 ### Introducción
-Build Your Pipeline In Jenkins 2.0 as Code with iOS 9 and XCode 7.
 
-Construya Su Pipeline en Jenkins 2.0 como Código con iOS 9 y XCode 7.
+Ya puedes definir tus procesos de CI/CD como si fuera código fuente con Jenkins 2.0 en tus proyectos de iOS 9. Compilar, pruebas, code coverage, check style, reportes 
+y notificaciones son actividades descritas en un solo fichero.
 
-Pipeline como código para la configuración del proceso de integración contínua (Jenkinsfile)
-Explicar un poco sobre jenkinsfile.
-Los elementos que incluye son: descargar el código de GitHub, complilarlo, pruebas, coverage, checkstyle.
-Mostrar los gráficos obtenidos.
+### Explicar cómo funciona
 
-### Pre requisitos
+Siempre ha sido una meta poder definir nuestros procesos de Integración Continua y Despliegue Continuo de manera tal que puedan ser documentados, descritos y modificados fácilmente.
 
-Para realizar los pasos del artículo deberá cumplir con los siguientes requerimientos:
+Jenkins a apoyado esta filosofía de trabajo al incluir el fichero `Jenkinsfile` junto al grupo de módulos <a target="_blank" href="https://jenkins.io/doc/book/pipeline/">Pipeline</a>. El fichero `Jenkinsfile` se utiliza para describir la secuencia de pasos que va a realizar el sistema a través de los módulos Pipeline. La información existente en el sitio <a target="_blank" href="https://jenkins.io/solutions/pipeline/">Jenkins.io</a> puede ser consultada para profundizar los detalles.
 
-* Tener instalado <a href="https://jenkins-ci.org/" target="_blank">_Jenkins_</a>.
-* Tener instalado <a href="https://developer.apple.com/xcode/ide/" target="_blank">_XCode 7_</a>.
-* Tener creado un **_proyecto para iOS 9 con pruebas unitarias_** implementadas.
+### Time Table: An example project
 
-**_Jenkins_** puede ser instalado en cualquier sistema operativo. Sin embargo, si se tiene instalado en una máquina con sistema operativo distinto a **_Mac OS_** deberá además incorporar los siguiente:
+Time Table es un proyecto de ejemplo para mostar como podemos estructurar nuestro proceso de CI/CD para un proyecto en iOS 9.
 
-* Tener una máquina con sistema operativo **_Mac OS 10.10.5_**.
-* Configurar la máquina **_Mac OS_** como **_Nodo en Jenkins_** para la ejecución de tareas. 
-* Tener instalado **_XCode 7_** en la máquina Mac OS.
+### Source Code
 
-### Código fuente
+El código fuente puede ser <a target="_blank" href="https://github.com/mmorejon/time-table">descargado o clonado desde Github</a>.
 
+## Configurando Jenkinsfile
 
-### Entorno
-
-La configuración del entorno donde fue desarrollado el artículo es la siguiente:
+A continuación le mostramos el código que usted necesita incluir en su proyecto para configurar su pipeline completamente. Cree un fichero en la raíz de su proyecto llamado 
+`Jenkinsfile` y `copie - pegue` el código que aparece a continuación. Si esto es lo que usted necesitaba, aquí va:
 
 ```
-### Sistema de integración continua ###
-             SO: Ubuntu 14.04
-        Jenkins: 1.635
-   XCode Plugin: 1.4.9
-   JUnit Plugin: 1.9
-Test Results 
-Analyzer Plugin: 0.2.1
+node('iOS Node') {
 
-### Nodo de Jenkins ###
-          	 SO: Mac OS 10.10.5
-       	  XCode: 7
+    stage('Checkout/Build/Test') {
 
-### Proyecto iOS 9 ###
-       Lengueje: Swift
+        // Checkout files.
+        checkout([
+            $class: 'GitSCM',
+            branches: [[name: 'master']],
+            doGenerateSubmoduleConfigurations: false,
+            extensions: [], submoduleCfg: [],
+            userRemoteConfigs: [[
+                name: 'github',
+                url: 'https://github.com/mmorejon/time-table.git'
+            ]]
+        ])
+
+        // Build and Test
+        sh 'xcodebuild -scheme "TimeTable" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 6,OS=9.3" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
+
+        // Publish test restults.
+        step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
+    }
+
+    stage('Analytics') {
+        
+        parallel Coverage: {
+            // Generate Code Coverage report
+            sh '/usr/local/bin/slather coverage --jenkins --html --scheme TimeTable TimeTable.xcodeproj/'
+    
+            // Publish coverage results
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'html', reportFiles: 'index.html', reportName: 'Coverage Report'])
+        
+            
+        }, Checkstyle: {
+
+            // Generate Checkstyle report
+            sh '/usr/local/bin/swiftlint lint --reporter checkstyle > checkstyle.xml || true'
+    
+            // Publish checkstyle result
+            step([$class: 'CheckStylePublisher', canComputeNew: false, defaultEncoding: '', healthy: '', pattern: 'checkstyle.xml', unHealthy: ''])
+        }, failFast: true|false   
+    }
+}
 ```
 
-## Paso Uno – Instalar plugins a Jenkins.
+## Comprendiendo Jenkinsfile
+
+*Especificar el nodo de Jenkins que va a ejecutar las tareas*
+
+```
+node('iOS Node') {	
+	......
+}
+```
+El nodo de Jenkins tiene que tener sistema operativo Mac OS con XCode 7.
 
 
+*Definición de trabajos*
 
-## Reflexiones finales
+Jenkins agrupa las tareas en `stage`. Las tareas pueden ser ejecutadas de manera secuencial o en paralledo según sea el caso. El fichero `Jenkinsfile` muestra ambos ejemplos.
+
+Tareas realizadas de manera secuencia: checkout code, build and test.
+```
+stage('Checkout/Build/Test') {
+	......
+}
+```
+
+Tareas a realizase en paralelo: code coverage and check style
+```
+stage('Analytics') {
+
+	parallel Coverage: {
+		......
+	}, Checkstyle: {
+		......
+	}, failFast: true|false
+
+}
+```
+
+Checkout source code
+
+```
+// Checkout files.
+checkout([
+    $class: 'GitSCM',
+    branches: [[name: 'master']],
+    doGenerateSubmoduleConfigurations: false,
+    extensions: [], submoduleCfg: [],
+    userRemoteConfigs: [[
+        name: 'github',
+        url: 'https://github.com/mmorejon/time-table.git'
+    ]]
+])
+```
 
 
-### Revisiones significativas
+Requisitos para su funcionamiento
 
-* <a href="https://wiki.jenkins-ci.org" target="_blank">Sitio oficial de Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xcode+Plugin" target="_blank">Plugin XCode para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin" target="_blank">Plugin JUnit para Jenkins.</a>
-* <a href="https://wiki.jenkins-ci.org/display/JENKINS/Test+Results+Analyzer+Plugin" target="_blank">Plugin Test Results Analyzer para Jenkins.</a>
+Conclusiones
