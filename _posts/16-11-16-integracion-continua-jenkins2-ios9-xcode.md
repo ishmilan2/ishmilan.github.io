@@ -11,7 +11,7 @@ image: /images/banners/jenkins-og.jpeg
 excerpt: <strong><em>Automatizar las pruebas en proyectos para iOS 9 es posible!!!</em></strong> Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento <strong><em>simplifica el proceso de desarrollo</em></strong>.
 ---
 
-<img src="{{ site.baseurl }}/images/banners/jenkins-ios9.png" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
+<img src="{{ site.baseurl }}/images/banners/jenkins2-pipeline.jpg" title="Jenkins, XCode 7 y iOS 9" name="Jenkins, XCode 7 y iOS 9" />
 
 ### Introducción
 
@@ -241,11 +241,16 @@ Branch Specifier: master
 
 Ejecute el trabajo en Jenkins y podrá obtener resultados similares a las imágenes que se muestran a continuación.
 
-Jenkins traditional UI
+* **_Jenkins traditional UI_**
+
+<img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-stage-view.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
+
+<img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-test-result.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
 
 <br><br>
 
-Jenkins Blue Ocean UI
+* **_Jenkins Blue Ocean UI_**
+
+<img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-blue-ocean.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
 
 
-## Conclusiones
