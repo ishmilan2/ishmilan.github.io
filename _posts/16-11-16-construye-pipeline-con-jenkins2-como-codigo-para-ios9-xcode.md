@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Construya Su Pipeline En Jenkins 2.0 como Código con iOS9 y XCode7.
-permalink: /blog/integracion-continua-pipeline-jenkins2-ios9-xcode/
-translate_en: /en/blog/continuous-integration-pipeline-jenkins2-ios9-xcode/
+title: Construya su Pipeline en Jenkins 2.0 como Código para iOS9 y XCode7.
+permalink: /blog/construye-pipeline-con-jenkins2-como-codigo-para-ios9-xcode/
+translate_en: /en/blog/build-pipeline-jenkins2-as-code-with-ios9-xcode7/
 lang: es
 sidebar: yes
 category: [articulo]
@@ -246,6 +246,8 @@ Ejecute el trabajo en Jenkins y podrá obtener resultados similares a las imáge
 <img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-stage-view.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
 
 <img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-test-result.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
+
+<img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-checkstyle.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
 
 <br><br>
 
