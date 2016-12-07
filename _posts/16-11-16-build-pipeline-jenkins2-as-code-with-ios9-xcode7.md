@@ -278,3 +278,7 @@ Jenkins traditional UI
 Jenkins Blue Ocean UI
 
 <img src="{{ site.baseurl }}/images/jenkins2-pipeline-ios9-xcode/jenkins2-pipeline-blue-ocean.jpg" title="Jenkins 2.0 Pipeline Configuration" name="Jenkins 2.0 Pipeline Configuration" />
+
+## Conclusion
+
+Now you know how to write your own **CI/CD** process using **Pipeline Modules** in **Jenkins 2.0**. It's your turn to build the  `Jenkinsfile`  that needs your team.
