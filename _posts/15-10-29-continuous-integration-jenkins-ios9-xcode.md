@@ -21,6 +21,12 @@ The development team could see their work hampered by waiting the result of all 
 
 This article shows how we can configure an **_iOS 9 project_** with in **_continuous integration flow_** using **_Jenkins_**.
 
+### Build Pipeline as Code
+
+Now you can define **Continuous Integration** and **Continuous Delivery** (CI/CD) process as code with **Jenkins 2.0** for your projects in **iOS 9**. Activities like to **build**, **test**, **code coverage**, **check style**, **reports** and **notifications** can be described in only one file.
+
+<a target="_blank" href="">If you want to know how, just follow this link and read the **second version** of the current article.</a>
+
 ### How does it work?
 
 <a href="https://wiki.jenkins-ci.org" target="_blank">_Jenkins_</a> can be configured to perform tests on **_iOS 9 projects_**. In **_Jenkins’ repository_** exist the **_XCode integration_** plugin that allows us compile the source code and execute tests.
