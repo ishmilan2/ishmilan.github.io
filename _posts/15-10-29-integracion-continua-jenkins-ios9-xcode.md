@@ -23,9 +23,9 @@ En el presente artículo se muestra cómo configurar un **_proyecto para iOS 9_*
 
 ### Construya su Pipeline como Código
 
-Ya puede definir sus procesos de **Integración Continua** y **Despliegue Continuo** (CI/CD) como si fuera código en **Jenkins 2.0** para sus proyectos en **iOS 9**. Tareas como **construir**, **pruebas**, **cobertura de código**, **estilo de código**, **reportes** y **notificaciones** pueden estar descritas en un solo fichero.
+Ya puede definir sus procesos de Integración Continua y Despliegue Continuo (CI/CD) como si fuera código en Jenkins 2.0 para sus proyectos en iOS 9. Tareas como construir, pruebas, cobertura de código, estilo de código, reportes y notificaciones pueden estar descritas en un solo fichero.
 
-<a target="_blank" href="">Si desea saber cómo hacerlo siga este enlace y lea la **segunda versión** del artículo actual.</a>
+<a target="_blank" href="">Si desea saber cómo hacerlo siga este enlace y lea la segunda versión del artículo actual.</a>
 
 ### ¿Cómo funciona?
 
