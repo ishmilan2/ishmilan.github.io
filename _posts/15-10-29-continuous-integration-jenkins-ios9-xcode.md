@@ -8,6 +8,7 @@ sidebar: yes
 category: [article]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
+updated: 16-12-08
 excerpt: <strong><em>Automate testing for iOS 9 projects is possible!!!</em></strong> Delegating the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
 ---
 

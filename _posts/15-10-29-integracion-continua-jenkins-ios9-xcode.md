@@ -8,6 +8,7 @@ sidebar: yes
 category: [articulo]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
+updated: 16-12-08
 excerpt: <strong><em>Automatizar las pruebas en proyectos para iOS 9 es posible!!!</em></strong> Delegar la ejecución de casos de pruebas a máquinas de mayor rendimiento <strong><em>simplifica el proceso de desarrollo</em></strong>.
 ---
 
