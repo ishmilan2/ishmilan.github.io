@@ -8,6 +8,9 @@ sidebar: yes
 
   	<div class="date">
     	Published {{ page.date | date: "%B %e, %Y" }}
+      {% if page.updated %}
+       - Updated {{ page.updated | date: "%B %e, %Y" }}
+      {% endif %}
    	</div>
   
   <div class="entry">
@@ -16,6 +19,9 @@ sidebar: yes
 
  	<div class="date">
     	Published {{ page.date | date: "%B %e, %Y" }}
+      {% if page.updated %}
+       - Updated {{ page.updated | date: "%B %e, %Y" }}
+      {% endif %}
    	</div>
 
   <br>
