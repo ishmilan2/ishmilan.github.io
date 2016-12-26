@@ -6,11 +6,11 @@
     {% if page.excerpt %}
         <meta name="description" content="{{ page.excerpt| strip_html }}" />
         <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-        <meta property="twitter:description" content="{{ page.excerpt| strip_html }}" />
+        <meta name="twitter:description" content="{{ page.excerpt| strip_html }}" />
     {% else %}
         <meta name="description" content="{{ site.description_meta }}">
         <meta property="og:description" content="{{ site.description_meta }}" />
-        <meta property="twitter:description" content="{{ site.description_meta }}" />
+        <meta name="twitter:description" content="{{ site.description_meta }}" />
     {% endif %}
 
     <meta name="author" content="{{ site.name }}" />
@@ -18,7 +18,7 @@
 
     {% if page.title %}
         <meta property="og:title" content="{{ page.title }}" />
-        <meta property="twitter:title" content="{{ page.title }}" />
+        <meta name="twitter:title" content="{{ page.title }}" />
     {% endif %}
 
     {% if page.date %}
@@ -28,9 +28,14 @@
 
     {% if page.image %}
       <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-      <meta property="twitter:image" content="{{ site.url }}{{ page.image }}">
+      <meta name="twitter:card" content="{{ site.url }}{{ page.image }}">
     {% else %}
-      <meta property="twitter:image" content="{{ site.avatar }}">
+      <meta property="og:image" content="{{ site.avatar }}">
+      <meta name="twitter:card" content="{{ site.avatar }}">
+    {% endif %}
+
+    {% if page.permalink %}
+      <meta property="og:url" content="{{ site.url }}{{ page.permalink }}">
     {% endif %}
 
     {% if page.categories %}
