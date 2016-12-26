@@ -28,8 +28,9 @@
 
     {% if page.image %}
       <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+      <meta property="twitter:image" content="{{ site.url }}{{ page.image }}">
     {% else %}
-      <meta property="og:image" content="{{ site.avatar }}">
+      <meta property="twitter:image" content="{{ site.avatar }}">
     {% endif %}
 
     {% if page.categories %}

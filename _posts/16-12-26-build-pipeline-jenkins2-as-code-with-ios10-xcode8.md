@@ -7,7 +7,7 @@ lang: en
 sidebar: yes
 category: [articulo]
 tags: [jenkins, xcode, ios10]
-image: /images/banners/jenkins-og.jpeg
+image: /images/banners/jenkins2-pipeline.jpg
 excerpt: Now you can define Continuous Integration and Continuous Delivery <strong>(CI/CD)</strong> process as code with <strong>Jenkins 2.0</strong> for your projects in <strong>iOS 10</strong>. Activities like to build, test, code coverage, check style, reports and notifications can be described in only one file.
 ---
 

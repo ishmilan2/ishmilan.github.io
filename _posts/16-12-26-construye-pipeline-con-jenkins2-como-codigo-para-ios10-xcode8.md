@@ -7,7 +7,7 @@ lang: es
 sidebar: yes
 category: [articulo]
 tags: [jenkins, xcode, ios10]
-image: /images/banners/jenkins-og.jpeg
+image: /images/banners/jenkins2-pipeline.jpg
 excerpt: Ya puedes definir tus procesos de Integración Continua y Despliegue Continuo <strong>(CI/CD)</strong> como si fuera código fuente con <strong>Jenkins 2.0</strong> para tus proyectos de <strong>iOS 10</strong>. Compilar, realizar pruebas, analizar cobertura y estilo de código, reportes y notificaciones son actividades descritas en un solo fichero.
 ---
 
