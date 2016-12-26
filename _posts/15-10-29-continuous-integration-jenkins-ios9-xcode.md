@@ -8,7 +8,7 @@ sidebar: yes
 category: [article]
 tags: [jenkins, xcode, ios9]
 image: /images/banners/jenkins-og.jpeg
-updated: 16-12-09
+updated: 16-12-26
 excerpt: <strong><em>Automate testing for iOS 9 projects is possible!!!</em></strong> Delegating the execution of test cases to higher-performance machines <strong><em>simplifies the development process</em></strong>.
 ---
 
@@ -26,7 +26,7 @@ This article shows how we can configure an **_iOS 9 project_** with in **_contin
 
 Now you can define Continuous Integration and Continuous Delivery (CI/CD) process as code with Jenkins 2.0 for your projects in iOS 9 Activities like to build, test, code coverage, check style, reports and notifications can be described in only one file.
 
-<a target="_blank" href="https://dzone.com/articles/build-your-pipeline-in-jenkins-20-as-code-with-ios">If you want to know how, just follow this link and read the second version of the current article.</a>
+<a href="/en/blog/build-pipeline-jenkins2-as-code-with-ios10-xcode8/">If you want to know how, just follow this link and read the second version of the current article.</a>
 
 ### How does it work?
 
@@ -51,6 +51,8 @@ To take the steps mentioned in this article you must complete the following requ
 ### Source code
 
 If you don’t have an **_iOS 9 project_** created, you can access <a href="https://github.com/mmorejon/time-table" target="_blank">the source code used for the article</a>.
+
+You should use code version 1.0.0.
 
 ### Environment
 
