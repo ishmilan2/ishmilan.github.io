@@ -1,6 +1,6 @@
 ---
 layout: post_en
-title: Build your Pipeline in Jenkins 2.0 as Code for iOS 10 and XCode 8
+title: Pipeline in Jenkins 2.0 as Code for iOS 10 and XCode 8
 permalink: /en/blog/build-pipeline-jenkins2-as-code-with-ios10-xcode8/
 translate_es: /blog/construye-pipeline-con-jenkins2-como-codigo-para-ios10-xcode8/
 lang: en
