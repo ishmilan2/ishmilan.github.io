@@ -26,7 +26,7 @@ Havana | Cuba
 		<tr>
 		</tr>
 			<td></td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">José Antonio Echeverría Institute of Technology</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -45,7 +45,7 @@ Havana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Issued by :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">José Antonio Echeverría Institute of Technology</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
 		<tr>
 		</tr>
 			<td class="profile-table-header">Subject :</td>
@@ -66,7 +66,7 @@ Havana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Issued by :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">José Antonio Echeverría Institute of Technology</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
 		<tr>
 		</tr>
 			<td class="profile-table-header">Qualification :</td>
@@ -106,7 +106,7 @@ Havana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Employer :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">José Antonio Echeverría Institute of Technology</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Job or Position :</td>

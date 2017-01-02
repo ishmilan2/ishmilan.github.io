@@ -27,7 +27,7 @@ La Habana | Cuba
 		<tr>
 		</tr>
 			<td class="profile-table-header"></td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Universidad Tecnológica de La Habana</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -46,7 +46,7 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Expedido por :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Universidad Tecnológica de La Habana</a></td>
 		<tr>
 		</tr>
 			<td class="profile-table-header">Tema :</td>
@@ -67,7 +67,7 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Expedido por :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Universidad Tecnológica de La Habana</a></td>
 		<tr>
 		</tr>
 			<td class="profile-table-header">Calificación :</td>
@@ -107,7 +107,7 @@ La Habana | Cuba
 		</tr>
 		<tr>
 			<td class="profile-table-header">Empleador :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Instituto Superior Politécnico José Antonio Echeverría</a></td>
+			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Universidad Tecnológica de La Habana</a></td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Cargo :</td>
