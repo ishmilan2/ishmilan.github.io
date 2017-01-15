@@ -14,7 +14,7 @@ Cáceres | España
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Actual:</td>
+			<td class="profile-table-header" rowspan="2">Actual:</td>
 		</tr>
 		<tr>
 			<td class="profile-table-info">Desarrollador en <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
