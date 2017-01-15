@@ -17,15 +17,15 @@ Cáceres | España
 			<td class="profile-table-header">Actual:</td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">Desarrollador en <a href="keepitech.com" target="_blank">KeepItTech</a></td>
+			<td class="profile-table-info">Desarrollador en <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">Co-fundador y escritor en <a href="colaboratorio.net" target="_blank">colaboratorio.net</a></td>
+			<td class="profile-table-info">Co-fundador y escritor en <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Anterior :</td>
 			<td class="profile-table-info">Asistente del servicio técnico en Atento.</td>
-		<tr>
+		</tr>
 	</tbody>
 </table>
 
