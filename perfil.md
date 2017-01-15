@@ -36,10 +36,10 @@ Cáceres | España
 		<tr>
 			<td class="profile-table-header">Formación:</td>
 		</tr>
-		<tr>
+		<tr><td></td>
 			<td class="profile-table-info">2017 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
 		</tr>
-		<tr>
+		<tr><td></td>
 			<td class="profile-table-header">✔ 2015 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
 		</tr>
 	</tbody>
