@@ -14,16 +14,16 @@ Cáceres | España
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header" rowspan="2">Actual:</td>
+			<td class="profile-table-header">Actual:</td>
 		</tr>
-		<tr>
+		<tr><td></td>
 			<td class="profile-table-info">Desarrollador en <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
 		</tr>
-		<tr>
+		<tr><td></td>
 			<td class="profile-table-info">Co-fundador y escritor en <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Anterior :</td>
+			<td class="profile-table-header">Anterior:</td>
 			<td class="profile-table-info">Asistente del servicio técnico en Atento.</td>
 		</tr>
 	</tbody>
@@ -34,7 +34,7 @@ Cáceres | España
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Formación :</td>
+			<td class="profile-table-header">Formación:</td>
 		</tr>
 		<tr>
 			<td class="profile-table-info">2017 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
@@ -68,10 +68,6 @@ Cáceres | España
 		<tr>
 			<td class="profile-table-header">Gestión de código fuente</td>
 			<td class="profile-table-info">Git, GitHub,Mercurial, SourceTree y Git-Cola.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Herramientas de Monitoreo</td>
-			<td class="profile-table-info">Check MK.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Lenguajes</td>
