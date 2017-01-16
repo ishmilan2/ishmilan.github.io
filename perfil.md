@@ -37,7 +37,7 @@ Cáceres | España
 			<td class="profile-table-header">Formación:</td>
 		</tr>
 		<tr><td></td>
-			<td class="profile-table-info">2017 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
+			<td class="profile-table-info">2017 - Técnico superior Desarrollador de Aplicaciones Web, IES Ágora</td>
 		</tr>
 		<tr><td></td>
 			<td class="profile-table-info">✔ 2015 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
@@ -68,6 +68,10 @@ Cáceres | España
 		<tr>
 			<td class="profile-table-header">Gestión de código fuente</td>
 			<td class="profile-table-info">Git, GitHub,Mercurial, SourceTree y Git-Cola.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Sistemas Operativos</td>
+			<td class="profile-table-info">Linux (Redhat, Fedora, Antergos, Manjaro y basadas en Debian), Microsoft Windows (XP, Vista, 7, 8 y 10)</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Lenguajes</td>

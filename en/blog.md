@@ -6,7 +6,7 @@ translate_es: /blog/
 sidebar: yes
 ---
 
-Here is where I share my thoughts on DevOps and Configuration Management.
+Aquí publicaré (en muy raras ocasiones) algunas cosillas relacionadas con la informática.
 
 <div class="posts">
 

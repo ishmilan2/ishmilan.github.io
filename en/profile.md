@@ -6,129 +6,59 @@ translate_es: /perfil/
 ---
 
 ## General Information
-<p class="profile-description">MSc. Applied Software, Software Configuration Management, Software Engineer.
+<p class="profile-description">Sysadmin and software developer.
 <br>
-Havana | Cuba
+Cáceres | Spain
 </p>
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Current :</td>
-			<td class="profile-table-info">Configuration Management & DevOps</td>
+			<td class="profile-table-header">Current:</td>
+		</tr>
+		<tr><td></td>
+			<td class="profile-table-info">Developer for<a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
+		</tr>
+		<tr><td></td>
+			<td class="profile-table-info">Co-founder and co-author of<a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td class="profile-table-info">Freelance</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Before :</td>
-			<td class="profile-table-info">Professor Instructor</td>
-		<tr>
-		</tr>
-			<td></td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
+			<td class="profile-table-header">Before:</td>
+			<td class="profile-table-info">Technical service assistant in Atento.</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Education
 
-<table class="profile-table">
-	<tbody>
-		<tr>
-			<td class="profile-table-header">Dates :</td>
-			<td class="profile-table-info">2009 - 2013</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Title :</td>
-			<td class="profile-table-info">Master in Applied Software</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Issued by :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
-		<tr>
-		</tr>
-			<td class="profile-table-header">Subject :</td>
-			<td class="profile-table-info">Software Configuration Management in open source environments.</td>
-		</tr>
-	</tbody>
-</table>
 
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Dates :</td>
-			<td class="profile-table-info">2004 - 2009</td>
+			<td class="profile-table-header">Training:</td>
 		</tr>
-		<tr>
-			<td class="profile-table-header">Title :</td>
-			<td class="profile-table-info">Software Engineer</td>
+		<tr><td></td>
+			<td class="profile-table-info">2017 - Advanced Technical Web Apps Developer, IES Ágora</td>
 		</tr>
-		<tr>
-			<td class="profile-table-header">Issued by :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
-		<tr>
-		</tr>
-			<td class="profile-table-header">Qualification :</td>
-			<td class="profile-table-info">4.58 / 5.0</td>
+		<tr><td></td>
+			<td class="profile-table-info">✔ 2015 - Advanced Technical Computer Systems in Network Adminstrator, IES Ágora</td>
 		</tr>
 	</tbody>
 </table>
+
 
 ## Professional Experience
 
-<table class="profile-table">
-	<tbody>
-		<tr>
-			<td class="profile-table-header">Dates :</td>
-			<td class="profile-table-info">2014 - current</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Employer :</td>
-			<td class="profile-table-info">Freelance</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Job or Position :</td>
-			<td class="profile-table-info">Software Configuration Management</td>
-		<tr>
-		</tr>
-			<td class="profile-table-header">Activities :</td>
-			<td class="profile-table-info">Source code management, change control, release and deploy management, continuous integration and build engineer.</td>
-		</tr>
-	</tbody>
-</table>
 
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Dates :</td>
-			<td class="profile-table-info">2009 - 2014 (5 years)</td>
+			<td class="profile-table-header">Formación:</td>
 		</tr>
-		<tr>
-			<td class="profile-table-header">Employer :</td>
-			<td class="profile-table-info"><a href="http://cujae.edu.cu/" target="_blank">Technological University of Havana</a></td>
+		<tr><td></td>
+			<td class="profile-table-info">2017 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
 		</tr>
-		<tr>
-			<td class="profile-table-header">Job or Position :</td>
-			<td class="profile-table-info">Software Configuration Management and Professor Instructor</td>
-		<tr>
-		</tr>
-			<td class="profile-table-header">Activities :</td>
-			<td class="profile-table-info">As Software Configuration Management:
-			<br>Source code management, change control, release and deploy management, continuous integration and build engineer.
-			<br><br>
-			As Professor Instructor:
-			<br>
-			Professor Instructor of the followings subjects: Data Structure, Object Oriented Design and Programing, Software Versioning Control.</td>
-		</tr>
-	</tbody>
-</table>
-
-<table class="profile-table">
-	<tbody>
-		<tr>
-			<td class="profile-table-header">Others :</td>
-			<td class="profile-table-info">Contracted as software analyst & designer in Venezuela’s Ministry of Education in 2012 and 2013.</td>
+		<tr><td></td>
+			<td class="profile-table-info">✔ 2015 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
 		</tr>
 	</tbody>
 </table>
@@ -138,26 +68,13 @@ Havana | Cuba
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Post grade courses given :</td>
-			<td class="profile-table-info">2013: Versioning and Revision Management.
-			<br>
-			2011: Enterprise Java and Model Driven Architecture.
-			<br>
-			2010: Expert Java and Model Driven Architecture.
-			<br><br>
-			</td>
+			<td class="profile-table-info">✔ 2014 - Creating and image editing with free software (27h), MiriadaX.net</td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Post grade courses received :</td>
-			<td class="profile-table-info">2011: Economy, Ethics, Scientific Investigation Methodology.
-			<br>
-			2010: Software Engineering, Intelligent Informatics’ Systems, Computer Architecture and Network, Software Quality, Engineer Workshop and Software Manage, CMMI 1.2.
-			<br><br>
-			</td>
+			<td class="profile-table-info">✔ 2013 - Creating WEB pages (240h), FormaciónyFuturo.com</td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Others :</td>
-			<td class="profile-table-info">He has served as tribunal, tutor and opponent in diploma thesis.</td>
+			<td class="profile-table-info">✔ 2011 - LINUX:operating system ,commands and utility (40h), SENAsofiaplus.edu.co</td>
 		</tr>
 	</tbody>
 </table>
@@ -167,72 +84,20 @@ Havana | Cuba
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Software Engineer</td>
-			<td class="profile-table-info">Software Configuration Management, Agile Development Methodologies, Project Management and Design patterns.</td>
-		</tr>
-		<tr>
 			<td class="profile-table-header">Source code management</td>
-			<td class="profile-table-info">Git, GitHub, GitLab, Git-Flow, Gitolite, Subversion, Mercurial, SourceTree, Kdiff3 and Git-Cola.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Project Management</td>
-			<td class="profile-table-info">ZenHub, Redmine, Jira, YouTrack and MantisBT.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Build and Release</td>
-			<td class="profile-table-info">Ant, Maven, Jenkins and Git-FTP.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Automation Tools</td>
-			<td class="profile-table-info">Ansible.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Monitoring Tools</td>
-			<td class="profile-table-info">Check MK.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Virtualization</td>
-			<td class="profile-table-info">Docker, Vagrant, XenServer, Citrix, Xen Orchestra, VMWare, MDADM.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">LDAP</td>
-			<td class="profile-table-info">OpenLdap, phpLdapAdmin.</td>
+			<td class="profile-table-info">Git, GitHub,Mercurial, SourceTree y Git-Cola.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Operating Systems</td>
-			<td class="profile-table-info">Linux (Ubuntu, CoreOS), Machintosh</td>
+			<td class="profile-table-info">Linux (Redhat, Fedora, Antergos, Manjaro and Based on Debian), Microsoft Windows (XP, Vista, 7, 8 and 10)</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Lenguages</td>
-			<td class="profile-table-info">Java, C++, PHP, Markdown and UML.</td>
+			<td class="profile-table-info">SQL,Javascript, PHP, Markdown, AWK, BASH, Python and Java.</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">CMS and ECommerces</td>
-			<td class="profile-table-info">Joomla, WordPress, Plone and Prestashop.</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Frameworks</td>
-			<td class="profile-table-info">Yii, Yii2.</td>
-		</tr>
-	</tbody>
-</table>
-
-## Investigation
-
-<table class="profile-table">
-	<tbody>
-		<tr>
-			<td class="profile-table-header">Publications :</td>
-			<td class="profile-table-info">“Software Configuration Management Best Practices in project using MDA”. <a href="http://rci.cujae.edu.cu/index.php/rci/article/view/115/pdf" target="_blank">Engineering Cuban Magazine volume 3, number 2, 2012.</a>(only available in Spanish for the moment)
-			<br>
-			“MDA incorporation in Presentation Layer Development”. <a href="http://renia.cujae.edu.cu/index.php/revistacientifica/article/viewFile/14/8" target="_blank">Engineers and Architects Magazine volume 1, number 1, 2009.</a>(only available in Spanish for the moment)
-			<br><br>
-			</td>
-		</tr>
-		<tr>
-			<td class="profile-table-header">Events :</td>
-			<td class="profile-table-info">I International Congress of Software Engineer and Information Systems, Palace of Conventions, Habana, 2012.
-			</td>
+			<td class="profile-table-info">Joomla, WordPress, and Prestashop.</td>
 		</tr>
 	</tbody>
 </table>

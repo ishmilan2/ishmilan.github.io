@@ -1,63 +1,50 @@
 ---
 layout: page_en
-title: DevOps & Software Configuration Management
-permalink: /en/
-translate_es: /
+title: Sysadmin & software developer
+permalink: /
+translate_en: /en/
 ---
 
-<p>
-How to deal with change is an art.
-</p>
-<p>
-Configuration management is a discipline within Software Engineering that allows to coordinate the development of software to minimize confusion. It is the art of identifying, organizing and controlling the changes undergone by the software.
-</p>
-<p>
-The goal is always to maximize productivity by minimizing errors.
-</p>
-
+<!--
 <div class="home-recent-articles">
 	<h2>Publicaciones recientes</h2>
-	{% assign posts_en = site.posts | where:"lang","en"%}
-	{% for post in posts_en limit: 5%}
+	{% assign posts_es = site.posts | where:"lang","es"%}
+	{% for post in posts_es limit: 5%}
 		<div>
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		</div>
 	{% endfor %}
 </div>
-
+-->
+<table class="profile-table">
+	<tbody>
+		<tr>
+			<td class="profile-table-header">Current:</td>
+		</tr>
+		<tr><td></td>
+			<td class="profile-table-info">Developer for<a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
+		</tr>
+		<tr><td></td>
+			<td class="profile-table-info">Co-founder and co-author of<a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Before:</td>
+			<td class="profile-table-info">Technical service assistant in Atento.</td>
+		</tr>
+	</tbody>
+</table>
+<table class="profile-table">
+	<tbody>
+			<td class="profile-table-header">Lenguages</td>
+			<td class="profile-table-info">SQL,Javascript, PHP, Markdown, AWK, BASH, Python and Java.</td>
+		</tr>
+	</tbody>
+</table>
 <div class="home-images">
 	<h2>Source Code Management</h2>
 	<div class="home-images">
 		<img src="{{ site.baseurl }}/images/home/git.png" title="Git" name="Git" />
-		<img src="{{ site.baseurl }}/images/home/gitflow.png" title="Git Flow" name="Git Flow" />
 		<img src="{{ site.baseurl }}/images/home/github.png" title="GitHub" name="GitHub" />
-		<img src="{{ site.baseurl }}/images/home/gitlab.png" title="GitLab" name="GitLab" />
 		<img src="{{ site.baseurl }}/images/home/sourcetree.png" title="Source Tree" name="Source Tree" />
-	</div>
-
-	<h2>Environment Configuration</h2>
-	<div class="home-images">
-		<img src="{{ site.baseurl }}/images/home/docker.png" title="Docker" name="Docker" />
-		<img src="{{ site.baseurl }}/images/home/vagrant.png" title="Vagrant" name="Vagrant" />
-		<img src="{{ site.baseurl }}/images/home/ansible.png" title="Ansible" name="Ansible" />
-		<img src="{{ site.baseurl }}/images/home/esxi.png" title="Esxi" name="Esxi" />
-		<img src="{{ site.baseurl }}/images/home/xenserver.png" title="XenServer" name="XenServer" />
-		<img src="{{ site.baseurl }}/images/home/orchestra.png" title="Orchestra" name="Orchestra" />
-		<img src="{{ site.baseurl }}/images/home/openldap.png" title="OpenLdap" name="OpenLdap" />
-	</div>
-
-	<h2>Change Control</h2>
-	<div class="home-images">
-		<img src="{{ site.baseurl }}/images/home/jira.png" title="Jira" name="Jira" />
-		<img src="{{ site.baseurl }}/images/home/zenhub.png" title="ZenHub" name="ZenHub" />
-		<img src="{{ site.baseurl }}/images/home/redmine.png" title="Redmine" name="Redmine" />
-		<img src="{{ site.baseurl }}/images/home/mantis.png" title="Mantis" name="Mantis" />
-	</div>
-
-	<h2>Build, Release and Deployment</h2>
-	<div class="home-images">
-		<img src="{{ site.baseurl }}/images/home/jenkins.png" title="Jenkins" name="Jenkins" />
-		<img src="{{ site.baseurl }}/images/home/travis.png" title="Travis" name="Travis" />
-		<img src="{{ site.baseurl }}/images/home/bamboo.png" title="Atlassian Bamboo" name="Atlassian Bamboo" />
 	</div>
 </div>
