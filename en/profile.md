@@ -16,7 +16,7 @@ Cáceres | Spain
 			<td class="profile-table-header">Current:</td>
 		</tr>
 		<tr><td></td>
-			<td class="profile-table-info">Developer for<a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
+			<td class="profile-table-info">Developer for <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
 		</tr>
 		<tr><td></td>
 			<td class="profile-table-info">Co-founder and co-author of <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
