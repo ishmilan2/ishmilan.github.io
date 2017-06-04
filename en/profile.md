@@ -18,7 +18,7 @@ Cáceres | Spain
 		</tr>
 		<tr><td class="profile-table-header"></td>
 			<td class="profile-table-info">Co-founder and co-author of <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
-		</tr>
+		</tr><tr>
 			<td class="profile-table-header">Before:</td>
 			<td class="profile-table-info">Technical service assistant in Atento.</td>
 		</tr>
