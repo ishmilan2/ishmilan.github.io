@@ -16,15 +16,15 @@ Cáceres | Spain
 			<td class="profile-table-header">Current:</td>
 			<td class="profile-table-info">Developer for <a href="http://modularbox.es" target="_blank">ModularBox</a></td>
 		</tr>
-		<tr><td class="profile-table-header">Current:</td>
-			<td class="profile-table-info">Developer for <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
-		</tr>
-		<tr><td class="profile-table-header">Current:</td>
+		<tr><td class="profile-table-header"></td>
 			<td class="profile-table-info">Co-founder and co-author of <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
-		</tr><tr>
+		</tr>
 			<td class="profile-table-header">Before:</td>
 			<td class="profile-table-info">Technical service assistant in Atento.</td>
 		</tr>
+		<tr><td class="profile-table-header"></td>
+			<td class="profile-table-info">Developer for <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
+		</tr><tr>
 	</tbody>
 </table>
 
