@@ -24,7 +24,7 @@ Cáceres | Spain
 		</tr>
 		<tr><td class="profile-table-header"></td>
 			<td class="profile-table-info">Developer for <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
-		</tr><tr>
+		</tr>
 	</tbody>
 </table>
 
