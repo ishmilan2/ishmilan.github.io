@@ -17,10 +17,11 @@ Cáceres | España
 			<td class="profile-table-header">Actual:</td>
 		</tr>
 		<tr><td></td>
-			<td class="profile-table-info">Desarrollador en <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
+			<td class="profile-table-info">Desarrollador en <a href="http://modularbox.es" target="_blank">ModularBox</a></td>
 		</tr>
 		<tr><td></td>
-			<td class="profile-table-info">Co-fundador y escritor en <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
+			<td class="profile-table-info">Desarrollador en <a href="http://keepitech.com" target="_blank">KeepItTech</a><br/>
+			Co-fundador y co-autor de <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">Anterior:</td>
