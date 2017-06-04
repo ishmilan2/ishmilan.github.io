@@ -14,12 +14,12 @@ Cáceres | Spain
 	<tbody>
 		<tr>
 			<td class="profile-table-header">Current:</td>
-		</tr>
-		<tr><td></td>
 			<td class="profile-table-info">Developer for <a href="http://modularbox.es" target="_blank">ModularBox</a></td>
 		</tr>
 		<tr><td></td>
-			<td class="profile-table-info">Developer for <a href="http://keepitech.com" target="_blank">KeepItTech</a><br/>
+			<td class="profile-table-info">Developer for <a href="http://keepitech.com" target="_blank">KeepItTech</a></td>
+		</tr>
+		<tr><td></td>
 			Co-founder and co-author of <a href="http://colaboratorio.net" target="_blank">colaboratorio.net</a></td>
 		<tr>
 			<td class="profile-table-header">Before:</td>

@@ -178,12 +178,13 @@ img {
 //
 
 .wrapper-masthead {
+  background:#263238;
   margin-bottom: 5px;
+  border-bottom: 2px solid #FF4D09;
 }
 
 .masthead {
   padding: 20px 0px 10px 0px;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -211,7 +212,7 @@ img {
 
     a {
       margin-left: 0px;
-      color: $darkGray;
+      color: #DCDCDC;
       text-align: center;
 
       @include mobile {
@@ -251,7 +252,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #DCDCDC;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -261,7 +262,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #DCDCDC;
   font-size: 16px;
 
   @include mobile {
@@ -388,15 +389,17 @@ nav {
 .wrapper-footer {
   postion: fixed;
   bottom:0px;
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  height: 150px;
 }
-
 footer {
   padding: 20px 0;
   text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #FF4D09;
+  left: 0px;
+  border-top: 2px solid #263238;
 }
 
 
@@ -475,34 +478,34 @@ time{
 // Section for print
 @media print {
 
-  header, footer { 
-    display: none; 
+  header, footer {
+    display: none;
   }
 
-  body { 
-    background: #fff; color: #000; 
+  body {
+    background: #fff; color: #000;
   }
 
-  .wrapper { 
-    margin: 0 auto; 
-    font-size: 9pt; 
-    width: 100%; 
-    max-width: none; 
-    padding: 4%; 
+  .wrapper {
+    margin: 0 auto;
+    font-size: 9pt;
+    width: 100%;
+    max-width: none;
+    padding: 4%;
   }
 
-  a { 
-    text-decoration: none; 
-    font-weight: bold; 
-    color: #000; 
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
   }
 
-  a:after { 
-    content: " [" attr(href) "] "; 
-    font-weight: normal; 
+  a:after {
+    content: " [" attr(href) "] ";
+    font-weight: normal;
   }
 
-  article .attachment-main_thumb { 
-    display: none; 
+  article .attachment-main_thumb {
+    display: none;
   }
 }
