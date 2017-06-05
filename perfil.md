@@ -38,7 +38,7 @@ Cáceres | España
 			<td class="profile-table-info"></td>
 			<td class="profile-table-info">2017 - Técnico superior Desarrollador de Aplicaciones Web, IES Ágora</td>
 		</tr>
-		<tr><td></td>
+		<tr>
 			<td class="profile-table-info">✔</td>
 			<td class="profile-table-info">2015 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
 		</tr>
