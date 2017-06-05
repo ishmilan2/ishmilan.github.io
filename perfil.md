@@ -76,7 +76,7 @@ Cáceres | España
 			<td class="profile-table-header">Sistemas Operativos</td>
 			<td class="profile-table-info">Linux (Redhat, Fedora, Antergos, Manjaro y basadas en Debian), Microsoft Windows (XP, Vista, 7, 8 y 10)</td>
 		</tr>
-		<tr
+		<tr>
 				<td class="profile-table-header">Lenguajes de programación y marcado</td>
 				<td class="profile-table-info">HTML5, CSS3, MD, SQL, Javascript, PHP, Markdown, AWK, BASH, Python y Java.</td>
 		</tr>
