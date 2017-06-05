@@ -318,15 +318,19 @@ nav {
 
   a {
     margin-left: 10px;
-    color: #DCDCDC;
+    color: $blue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    &:hover{
+      background-color: #DCDCDC;
+    }
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
+
   }
 }
 
@@ -335,7 +339,7 @@ nav {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4183C4;
+  background-color: $blue;
   color: #fff;
   font-size: 12px;
   border-radius: 13px;
