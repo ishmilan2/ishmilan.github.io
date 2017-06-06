@@ -178,7 +178,7 @@ img {
 //
 
 .wrapper-masthead {
-  background:#263238;
+  background:$bluegray;
   margin-bottom: 5px;
   border-bottom: 5px solid $orange;
 }
@@ -187,6 +187,7 @@ img {
   padding: 20px 0px 10px 0px;
 
   @include mobile {
+    padding: 5px 0px;
     text-align: center;
   }
 }
@@ -276,6 +277,7 @@ img {
     margin: auto;
     @include mobile {
       background-size: 7em;
+      height:1.7em;
     }
     &:hover{
       background-image: url("/images/logo0hover.png");
@@ -427,7 +429,7 @@ footer {
   width: 100%;
   background: $orange;
   left: 0px;
-  border-top: 5px solid #263238;
+  border-top: 5px solid $bluegray;
 }
 
 
