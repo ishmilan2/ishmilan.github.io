@@ -259,14 +259,11 @@ img {
   font-size: 28px;
   letter-spacing: 1px;
   a{
-    img{
-      max-height: 32px;
-      width: auto;
-    }
+    background-image: url("/images/logo0.png");
+    max-height: 32px;
+    width: auto;
     &:hover{
-      img{
-        src: url("/images/logo0hover.png");
-      }
+      background-image: url("/images/logo0hover.png");
     }
   }
 }
