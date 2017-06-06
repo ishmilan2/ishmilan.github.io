@@ -15,6 +15,7 @@ description_en: Sysadmin & software developer.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/logo1.png
+imgname: /images/logo0.png
 
 #
 # Flags below are optional
@@ -24,7 +25,7 @@ avatar: /images/logo1.png
 footer-links:
   dribbble:
   email:  ish.professional@gmail.com
-  facebook: 
+  facebook:
   flickr:
   github: ishmilan
   dockerhub:
@@ -52,7 +53,7 @@ url: http://ishmilan.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: 
+baseurl:
 repository: ishmilan/ishmilan.github.io
 
 #
