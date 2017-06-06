@@ -274,6 +274,9 @@ img {
     background-position: center center;
     padding:0px;
     margin: auto;
+    @include mobile {
+      background-size: 7em;
+    }
     &:hover{
       background-image: url("/images/logo0hover.png");
     }
