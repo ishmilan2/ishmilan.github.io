@@ -259,11 +259,12 @@ img {
   font-size: 28px;
   letter-spacing: 1px;
   a{
-    display: inline-block;
+    display: block;
     background-image: url("/images/logo0.png");
     background-repeat: no-repeat;
     height: 32px;
     width: auto;
+    min-width: 6em;
     padding:0px;
     &:hover{
       background-image: url("/images/logo0hover.png");
