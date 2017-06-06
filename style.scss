@@ -258,8 +258,17 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-  max-height: 32px;
-  width: auto;
+  a{
+    img{
+      max-height: 32px;
+      width: auto;
+    }
+    &:hover{
+      img{
+        src: url("/images/logo0hover.png");
+      }
+    }
+  }
 }
 
 .site-description {
