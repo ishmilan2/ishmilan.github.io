@@ -167,6 +167,17 @@ img {
 
 .entry {
   text-align: justify;
+  background-color: #f5f5f5;
+  border: none;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 8px 10px -5px rgba(0,0,0,0.2);
+  outline: none;
+  padding: 1em;
+  @include mobile {
+    box-sizing: border-box;
+    max-width: 100%;
+    box-shadow:none;
+    outline: none;
+  }
 }
 
 /*********************/
@@ -194,7 +205,8 @@ img {
 
 .translate {
   margin-top: -20px;
-  margin-bottom: 15px;
+  float: right;
+  display: inline-block;
 
   @include mobile {
     text-align: center;
@@ -279,7 +291,7 @@ img {
 }
 
 .site-description {
-  margin: 0 5px;
+  margin: -5px 5px;
   color: #DCDCDC;
   font-size: 18px;
   @include mobile {
