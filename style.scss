@@ -177,6 +177,7 @@ img {
     margin-top: 2em;
     @include mobile {
       box-sizing: border-box;
+      margin-top: 0.5em;
       max-width: 100%;
       box-shadow:none;
       outline: none;
