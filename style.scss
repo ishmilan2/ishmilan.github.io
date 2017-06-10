@@ -169,7 +169,7 @@ img {
   text-align: justify;
   background-color: #f5f5f5;
   border: none;
-  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 8px 10px -5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);;
   outline: none;
   padding: 1em;
   @include mobile {
@@ -192,7 +192,7 @@ img {
   background:$bluegray;
   margin-bottom: 5px;
   border-bottom: 5px solid $orange;
-  box-shadow: 2px 0px 2px $bluegray;
+  box-shadow: 0px 0px 5px $bluegray;
 }
 
 .masthead {
@@ -238,13 +238,12 @@ img {
 }
 
 .site-avatar {
-  display:inline-block;
+  display: block;
   float: none;
   width: 130px;
   height:130px;
   margin: 20px auto;
   @include mobile {
-    display: block;
     margin: 10px auto;
   }
   img {
@@ -426,7 +425,7 @@ nav {
 .wrapper-footer {
   postion: fixed;
   bottom:0px;
-  height: 150px;
+  height: 120px;
 }
 footer {
   padding: 8px 0;
@@ -434,9 +433,9 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  background: $orange;
   left: 0px;
-  border-top: 5px solid $bluegray;
+  background: $bluegray;
+  box-shadow: 0px 0px 5px $bluegray;
 }
 
 
