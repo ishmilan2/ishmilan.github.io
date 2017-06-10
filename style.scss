@@ -192,6 +192,7 @@ img {
   background:$bluegray;
   margin-bottom: 5px;
   border-bottom: 5px solid $orange;
+  box-shadow: 2px 0px 2px $bluegray;
 }
 
 .masthead {
@@ -237,19 +238,19 @@ img {
 }
 
 .site-avatar {
-  float: left;
-  width: 75px;
-  height: 75px;
-  margin-right: 10px;
+  float: none;
+  width: 130px;
+  height:130px;
+  margin: 20px auto;
   @include mobile {
-    float: none;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   img {
     border-radius: 50%;
     height: 100%;
     width: 100%;
+    border:solid 5px $orange;
   }
 }
 
@@ -313,9 +314,9 @@ img {
 .profile-table-header {
   color: $gray;
   font-size: 16px;
-  padding-top: 5px;
+  padding: 5px;
+  vertical-align: middle;
   text-align: right;
-  width: 120px;
 
   @include mobile {
     margin: 3px 0;
@@ -324,12 +325,13 @@ img {
 
 .profile-table-info {
   padding-left: 20px;
+  padding: 5px;
   vertical-align: middle;
   text-align:left;
 }
 
 .profile-table {
-  margin-top: 10px;
+  margin: 15px 5px;
 }
 
 nav {
