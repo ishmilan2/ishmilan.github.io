@@ -205,7 +205,16 @@ img {
     text-align: center;
   }
 }
-
+.menunav{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    @include mobile {
+        position: relative;
+        right: none;
+        top: none;
+    }
+}
 .translate {
   position: absolute;
   display: inline-block;
@@ -254,7 +263,6 @@ img {
     margin: 0 auto;
   }
 }
-
 .site-name {
   margin: 0;
   color: #DCDCDC;
@@ -269,10 +277,11 @@ img {
     background-repeat: no-repeat;
     height:2em;
     width:10em;
-    background-size: 9em;
+    background-size: 10em;
     background-position: center center;
     padding:0px;
     margin: auto;
+    box-sizing: border-box;
     @include mobile {
       background-size: 7em;
       height:1.7em;
