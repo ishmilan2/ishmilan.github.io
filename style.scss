@@ -205,34 +205,24 @@ img {
 }
 
 .translate {
-  margin-top: -20px;
+  position: absolute;
   float: right;
   display: inline-block;
-
-  @include mobile {
-    text-align: center;
-  }
-
+  top: -10px;
   nav {
-
-    font-size: 14px;
+    margin-top: 20px;
+    margin-right: 10px;
 
     @include mobile {
       float: none;
-      margin-top: 20px;
       display: block;
       font-size: 16px;
     }
-
     a {
-      margin-left: 0px;
-      color: $blue;
-      text-align: center;
-
-      @include mobile {
-        margin: 0 10px;
-        color: $blue;
-    }
+        margin: 0 0px;
+        color: #4183C4;
+        font-weight: bolder;
+        font-size: 16px;
     }
   }
 }

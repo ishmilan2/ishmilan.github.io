@@ -33,22 +33,19 @@
             <a href="{{ site.baseurl }}/perfil">Perfil</a>
           </nav>
         </header>
+        <header class="translate clearfix">
+            <nav>
+              {% if page.translate_en %}
+                <a href="{{ page.url }}">ES</a>
+                <a href="{{ page.translate_en }}">EN</a>
+              {% endif %}
+            </nav>
+        </header>
       </div>
     </div>
 
-    <div class="container">
-      <header class="translate clearfix">
-        <nav>
-          {% if page.translate_en %}
-            <a href="{{ page.url }}">ES</a> |
-            <a href="{{ page.translate_en }}">EN</a>
-          {% endif %}
-        </nav>
-      </header>
-    </div>
-
-    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
     <div class="container clearfix">
+        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
       {% if page.sidebar %}
 

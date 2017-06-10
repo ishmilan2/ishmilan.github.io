@@ -36,22 +36,20 @@
           </nav>
 
         </header>
+        <header class="translate clearfix">
+          <nav>
+            {% if page.translate_es %}
+              <a href="{{ page.translate_es }}">ES</a> |
+              <a href="{{ page.url }}">EN</a>
+            {% endif %}
+          </nav>
+        </header>
       </div>
     </div>
 
-    <a href="{{ site.baseurl }}/en" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-    <div class="container">
-      <header class="translate clearfix">
-        <nav>
-          {% if page.translate_es %}
-            <a href="{{ page.translate_es }}">ES</a> |
-            <a href="{{ page.url }}">EN</a>
-          {% endif %}
-        </nav>
-      </header>
-    </div>
 
     <div class="container clearfix">
+        <a href="{{ site.baseurl }}/en" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
       {% if page.sidebar %}
 
