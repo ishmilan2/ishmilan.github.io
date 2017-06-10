@@ -283,8 +283,9 @@ img {
     margin: auto;
     box-sizing: border-box;
     @include mobile {
-      background-size: 9em;
-      height:1.8em;
+      margin-top: 5px;
+      background-size: 7.5em;
+      height:1.6em;
     }
     &:hover{
       background-image: url("/images/logo0hover.png");
