@@ -211,8 +211,8 @@ img {
     top: 50px;
     @include mobile {
         position: relative;
-        right: none;
-        top: none;
+        right: 0px;
+        top: 0px;
     }
 }
 .translate {
@@ -355,7 +355,7 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     &:hover{
-      background-color: #DCDCDC;
+      color: #DCDCDC;
     }
 
     @include mobile {
