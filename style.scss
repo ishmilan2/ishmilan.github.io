@@ -276,15 +276,15 @@ img {
     background-image: url("/images/logo0.png");
     background-repeat: no-repeat;
     height:2em;
-    width:12em;
-    background-size: 11.8em;
+    width:11em;
+    background-size: 11em;
     background-position: center center;
     padding:0px;
     margin: auto;
     box-sizing: border-box;
     @include mobile {
-      background-size: 7em;
-      height:1.7em;
+      background-size: 9em;
+      height:1.8em;
     }
     &:hover{
       background-image: url("/images/logo0hover.png");
