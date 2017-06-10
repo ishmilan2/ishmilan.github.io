@@ -229,27 +229,20 @@ img {
   width: 75px;
   height: 75px;
   margin-right: 10px;
-
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
-
   img {
     border-radius: 50%;
-    border: solid 5px $orange;
     height: 100%;
     width: 100%;
-    &:hover{
-      border-color: $blue;
-    }
   }
 }
 
 .site-info {
   float: left;
-
   @include mobile {
     float: none;
     display: block;
@@ -286,10 +279,9 @@ img {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: 0 5px;
   color: #DCDCDC;
-  font-size: 16px;
-
+  font-size: 18px;
   @include mobile {
     margin: 3px 0;
     text-align: center
