@@ -10,8 +10,11 @@
 
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/images/favicon.png">
-    <meta name="msapplication-TileColor" content="#ffffff" />
+
+    <meta name="msapplication-TileColor" content="#f5f5f5" />
     <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/favicon.png">
+    <meta content="Ish Milan, sysadmin and software developer." name="description">
+    <meta content="{{ site.baseurl }}/images/favicon.png" itemprop="image">
 
     <link rel="alternate" type="text/html" hreflang="es" href="{{ page.translate_es }}" title="Spanish">
     <link rel="alternate" type="text/html" hreflang="en" href="{{ page.url }}" title="English">
@@ -69,6 +72,8 @@
       {% endif %}
     </div>
 
+    {% include scroll-to-top_en.html %}
+
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
@@ -79,6 +84,5 @@
 
     {% include sitelinks.html %}
 
-    {% include scroll-to-top_en.html %}
   </body>
 </html>
