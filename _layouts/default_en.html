@@ -1,51 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
-    {% include meta.html %}
+    {% include meta_en.html %}
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description_en }}" href="{{ site.baseurl }}/feed.xml" />
+
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/images/favicon.png">
 
     <meta name="msapplication-TileColor" content="#f5f5f5" />
     <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/favicon.png">
-    <meta content="Ish Milan, administrador de sistemas y desarrollador de software." name="description">
+    <meta content="Ish Milan, sysadmin and software developer." name="description">
     <meta content="{{ site.baseurl }}/images/favicon.png" itemprop="image">
-    <link rel="alternate" type="text/html" hreflang="es" href="{{ page.url }}" title="Spanish">
-    <link rel="alternate" type="text/html" hreflang="en" href="{{ page.translate_en }}" title="English">
+
+    <link rel="alternate" type="text/html" hreflang="es" href="{{ page.translate_es }}" title="Spanish">
+    <link rel="alternate" type="text/html" hreflang="en" href="{{ page.url }}" title="English">
 
     {% include analytics.html %}
   </head>
 
   <body>
-    <div class="wrapper-masthead" id="start">
+    <div class="wrapper-masthead"  id="start">
       <div class="container">
         <header class="masthead clearfix">
+
           <div class="site-info">
-            <h2 class="site-name"><a href="{{ site.baseurl }}/" >{{ site.name }}</a></h2>
+            <h2 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h2>
           </div>
+
           <nav class="menunav">
-            <a href="{{ site.baseurl }}/">Inicio</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-            <a href="{{ site.baseurl }}/perfil">Perfil</a>
+            <a href="{{ site.baseurl }}/en/">Home</a>
+            <a href="{{ site.baseurl }}/en/blog">Blog</a>
+            <a href="{{ site.baseurl }}/en/profile">Profile</a>
           </nav>
+
         </header>
         <header class="translate clearfix">
-            <nav>
-              {% if page.translate_en %}
-                <a href="{{ page.url }}">ES</a>
-                <a href="{{ page.translate_en }}">EN</a>
-              {% endif %}
-            </nav>
+          <nav>
+            {% if page.translate_es %}
+              <a href="{{ page.translate_es }}">ES</a> |
+              <a href="{{ page.url }}">EN</a>
+            {% endif %}
+          </nav>
         </header>
       </div>
     </div>
 
+
     <div class="container clearfix">
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+        <a href="{{ site.baseurl }}/en" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
       {% if page.sidebar %}
 
@@ -54,7 +60,7 @@
         </div>
 
         <div class="sidebar">
-          {% include sidebar.html %}
+          {% include sidebar_en.html %}
         </div>
 
       {% else %}
