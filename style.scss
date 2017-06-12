@@ -280,11 +280,12 @@ img {
     font-weight: normal;
     color:$bluegray;
     padding:0px;
-    margin: auto;
+    margin-left:20px;
     box-sizing: border-box;
     text-shadow: -6px -6px $orange, -6px 0px $orange, -6px 6px $orange, 0px 6px $orange, -6px 6px $orange, 6px 6px $orange, 6px 0px $orange, 6px -6px $orange, 0px -6px $orange;
     @include mobile {
-      margin-top: 5px;
+      margin:auto;
+      margin-top: 10px;
     }
     &:hover{
         text-shadow: -6px -6px $blue, -6px 0px $blue, -6px 6px $blue, 0px 6px $blue, -6px 6px $blue, 6px 6px $blue, 6px 0px $blue, 6px -6px $blue, 0px -6px $blue;
