@@ -202,7 +202,6 @@ img {
 }
 
 .masthead {
-  padding: 20px 0px 10px 0px;
 
   @include mobile {
     padding: 5px 0px;
@@ -279,7 +278,7 @@ img {
     font-size: 2em;
     font-weight: normal;
     color:$bluegray;
-    padding:0px;
+    padding:10px 0 0 0;
     margin-left:20px;
     box-sizing: border-box;
     text-shadow: -6px -6px $orange, -6px 0px $orange, -6px 6px $orange, 0px 6px $orange, -6px 6px $orange, 6px 6px $orange, 6px 0px $orange, 6px -6px $orange, 0px -6px $orange;
