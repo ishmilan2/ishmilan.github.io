@@ -1,13 +1,14 @@
 .svg-icon {
-    width: 40px;
-    height: 40px;
     border: 3px solid $orange;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: inline-block;
     box-sizing: content-box;
     background-position: center center;
-    background-size: 45px;
+    background-size: 55px;
     transform: scale(0.8);
+    margin-bottom: -8px;
     &:hover, &:active {
       border-color: $blue;
     }
