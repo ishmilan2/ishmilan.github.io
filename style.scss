@@ -244,11 +244,13 @@ img {
 .site-avatar {
   display: block;
   float: none;
-  width: 130px;
-  height:130px;
+  width: 150px;
+  height:150px;
   margin: 20px auto;
   @include mobile {
     margin: 10px auto;
+    width: 120px;
+    height:120px;
   }
   img {
     border-radius: 50%;
