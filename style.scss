@@ -95,7 +95,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $orange;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -243,7 +243,7 @@ button{
     }
     a {
         margin:auto 5px;
-        color: $blue;
+        color: $orange;
         font-weight: bolder;
         font-size: 16px;
     }
@@ -359,7 +359,7 @@ nav {
 
   a {
     margin:auto 10px;
-    color: $blue;
+    color: $orange;
     text-align:center;
     font-weight: bolder;
     letter-spacing: 1px;
@@ -367,12 +367,10 @@ nav {
     min-width: 10mm;
     height: 7mm;
     &:hover{
-      color: #DCDCDC;
+      color: $blue;
     }
-
     @include mobile {
       margin: 0 10px;
-      color: $blue;
     }
 
   }
@@ -476,7 +474,7 @@ footer {
     margin-bottom: 30px;
 
     a {
-      color: #333333;
+      color: $orange;
       text-decoration: none;
       font-size: 14px;
       border-radius: 13px;
@@ -487,8 +485,8 @@ footer {
       line-height: 18px;
       display: block;
       &:hover, &:active {
-        background-color: $blue;
-        color: $white;
+        background-color: $darkerGray;
+        color: $blue;
       }
     }
 }
