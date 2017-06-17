@@ -105,7 +105,9 @@ a {
 img[src="/images/404.jpg"]{
     width: 400px;
     display: block;
-    margin: auto;
+    margin: 25px auto auto;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14),0 3px 2px -2px rgba(0,0,0,0.12),0 1px 6px 0 rgba(0,0,0,0.2);
 }
 ul, ol {
   margin: 15px 0;
@@ -215,7 +217,7 @@ img {
 .menunav{
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 25px;
     @include mobile {
         position: relative;
         right: 0px;
@@ -276,15 +278,13 @@ button{
   }
 }
 .site-name {
-  margin: 10px auto;
-  cursor: pointer;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+    margin: 0px auto;
+    cursor: pointer;
+    letter-spacing: 1px;
   a{
     font-family:"Akashi";
     display: block;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: normal;
     color:$bluegray;
     padding:10px 0 0 0;
@@ -361,7 +361,7 @@ nav {
     margin:auto 10px;
     color: $blue;
     text-align:center;
-    font-weight: 300;
+    font-weight: bolder;
     letter-spacing: 1px;
     display: inline-block;
     min-width: 10mm;
