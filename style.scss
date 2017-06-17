@@ -237,10 +237,6 @@ button{
       font-size: 16px;
     }
     a {
-        display:inline-block;
-        text-align:center;
-        margin: 0 0px;
-        min-width:8mm;
         color: $blue;
         font-weight: bolder;
         font-size: 16px;
@@ -276,7 +272,7 @@ button{
   }
 }
 .site-name {
-  margin: 0;
+  margin: 10px auto;
   cursor: pointer;
   font-weight: 300;
   font-size: 28px;
@@ -358,11 +354,14 @@ nav {
   }
 
   a {
-    margin-left: 10px;
+    margin:auto 10px;
     color: $blue;
-    text-align: right;
+    text-align:center;
     font-weight: 300;
     letter-spacing: 1px;
+    display: inline-block;
+    min-width: 10mm;
+    height: 7mm;
     &:hover{
       color: #DCDCDC;
     }
