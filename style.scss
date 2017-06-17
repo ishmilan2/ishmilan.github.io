@@ -102,7 +102,11 @@ a {
     color: $blue;
   }
 }
-
+img[src="/images/404.jpg"]{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -229,11 +233,11 @@ button{
   right: 0px;
   nav {
     margin-top: 20px;
-    margin-right:0px;
-
+    margin-right: 10px;
     @include mobile {
       float: none;
       display: block;
+      margin-right:0px;
     }
     a {
         margin:auto 5px;
