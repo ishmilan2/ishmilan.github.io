@@ -374,12 +374,17 @@ nav {
 
   }
 }
-
+.title{
+    font-size: 32px;
+    text-align: center;
+    color: $bluegray;
+    text-shadow: 2px 2px 0px $gray;
+}
 #scroll-top{
     display:block;
     position: fixed;
     bottom: -80px;
-    right: 20px;
+    right: 30px;
     background-color: $orange;
     color: $white;
     font-size: 28px;
