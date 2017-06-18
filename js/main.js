@@ -7,7 +7,7 @@ window.addEventListener("load",function(){
     btn.appendChild(t);
     document.body.appendChild(btn);
     document.addEventListener("scroll",function() {
-        document.getElementById("scroll-top").style.bottom = "80px";
+        document.getElementById("scroll-top").style.bottom = "50px";
     });
     document.getElementById("scroll-top").addEventListener("click",function myFunction() {
         setTimeout(function() {document.getElementById("scroll-top").style.bottom = "-80px";},200);
