@@ -16,7 +16,7 @@ window.addEventListener("load",function(){
     document.getElementById("contact").addEventListener("click",function(e){
         e.preventDefault();
         var f=document.getElementById("footer");
-        if(!f.style.bottom=="0px"){
+        if !(f.style.bottom=="0px"){
             f.style.bottom="0px";
         }else{
             f.style.bottom="-80px"
