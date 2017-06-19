@@ -10,7 +10,9 @@ translate_es: /perfil/
 <br>
 Cáceres | Spain
 </p>
-<table class="profile-table">
+
+## Work Experience
+	<table class="profile-table">
 	<tbody>
 		<tr>
 			<td class="profile-table-header">Current:</td>
@@ -38,7 +40,7 @@ Cáceres | Spain
 	<tbody>
 		<tr>
 			<td class="profile-table-header"></td>
-			<td class="profile-table-info">2017 - Advanced Technical Web Apps Developer, IES Ágora</td>
+			<td class="profile-table-info">2018 - Advanced Technical Web Apps Developer, IES Ágora</td>
 		</tr>
 		<tr>
 			<td class="profile-table-header">✔</td>
