@@ -28,7 +28,7 @@ lang: es
 
 	<link rel="icon" type="image/x-icon" href="/cdn/logo1.png">
     <link rel="apple-touch-icon-precomposed" href="/cdn/logo1.png">
-	<link rel="stylesheet" href="/css/pmh.css">
+	<link rel="stylesheet" href="/cdn/css/pmh.css">
 </head>
 <body>
 	<header>
