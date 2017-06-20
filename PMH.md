@@ -1,7 +1,7 @@
 ---
 layout: blank
 title: Gestor de Paquetes | Ish Milan
-permalink: /pmh/
+permalink: /PMH/
 lang: es
 ---
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ lang: es
 
 	<link rel="icon" type="image/x-icon" href="/cdn/logo1.png">
     <link rel="apple-touch-icon-precomposed" href="/cdn/logo1.png">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="/cdn/PMH/main.css">
 <body>
 	<header>
 		<hgroup>
@@ -96,6 +96,6 @@ lang: es
 			<tr><td class="command">Eliminar repositorios</td><td id="removeRep"></td></tr>
 		</tbody></table>
 	</section>
-	<script src="main.js"></script>
+	<script src="/cdn/PMH/main.js"></script>
 </body>
 </html>
