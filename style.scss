@@ -14,7 +14,7 @@
 /**************/
 @font-face {
     font-family: "Akashi";
-    src: url("http://ishmilan.github.io/cdn/fonts/Akashi.ttf");
+    src: url("https://ishmilan.github.io/cdn/fonts/Akashi.ttf");
 }
 html {
   font-size: 100%;
@@ -286,14 +286,14 @@ img {
     padding:5px;
     margin: 0 0 -10px 30px;
     box-sizing: border-box;
-    text-shadow: -5px -5px #FF4D09,-5px 0px #FF4D09,-5px 5px #FF4D09,0px 5px #FF4D09,-5px 5px #FF4D09,5px 5px #FF4D09,5px 0px #FF4D09,5px -5px #FF4D09,0px -5px #FF4D09;
+    text-shadow: -5px -5px $orange,-5px 0px $orange,-5px 5px $orange,0px -5px $orange,0px 0px $orange,0px 5px $orange,5px -5px $orange,5px 0px $orange,5px 5px $orange;
     @include mobile {
       margin:auto;
       margin-top:5px;
       padding:0px;
     }
     &:hover{
-        text-shadow: -5px -5px $blue, -5px 0px $blue, -5px 5px $blue, 0px 5px $blue, -5px 5px $blue, 5px 5px $blue, 5px 0px $blue, 5px -5px $blue, 0px -5px $blue;
+        text-shadow: -5px -5px $blue, -5px 0px $blue, -5px 5px $blue, 0px -5px $blue, 0px 0px $blue, 0px 5px $blue, 5px -5px $blue, 5px 0px $blue, 5px 5px $blue;
     }
   }
 }
