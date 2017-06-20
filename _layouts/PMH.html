@@ -36,17 +36,17 @@
 				<div class="bar3"></div>
 			</a>
 			<a href="#" class="flotar-der" onclick="mostrarMensaje()">info</a>
-			<a href="https://ishmilan.github.io/" id="titulo" class="text-center">Package Manager Handbook</a>
+			<a href="https://ishmilan.github.io/" id="titulo" class="text-center">IshMilan - PMH</a>
 		</hgroup>
 	</header>
 	<section id="start">
 		<nav>
+            <div class="title">Package Manager Handbook</div>
 			<ul class="row-container margin-top margin-bottom" id="menu" style="display: flex;">
 				<li class="row-content">
-					<select id="gestores" onchange="llenarTabla(this.value);">
-						<option selected="selected">Seleccione un gestor de paquetes</option>
+					<select id="gestores">
 						<optgroup label="deb">
-							<option value="apt">apt(Debian y derivadas)</option>
+							<option value="apt" selected="selected">apt(Debian y derivadas)</option>
 						</optgroup>
 						<optgroup label="rpm">
 							<option value="zypper">zypper(openSUSE)</option>
