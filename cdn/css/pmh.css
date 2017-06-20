@@ -43,6 +43,7 @@ code{font-family:monospace;font-weight:bold;font-size:1.1em;}
 }
 @media(max-width:430px){
 	html{font-size:.8em}
+	.bar1,.bar2,.bar3{width:25px;height:3px;margin:4px 0;}
 }
 @media(max-width:350px){
 	body{width:350px !important;}
