@@ -31,7 +31,8 @@ lang: es
 
 	<link rel="icon" type="image/x-icon" href="/cdn/logo1.png">
     <link rel="apple-touch-icon-precomposed" href="/cdn/logo1.png">
-	<link rel="stylesheet" href="/cdn/PMH/main.css">
+	<link rel="stylesheet" href="/css/pmh.css">
+</head>
 <body>
 	<header>
 		<hgroup>
@@ -96,6 +97,6 @@ lang: es
 			<tr><td class="command">Eliminar repositorios</td><td id="removeRep"></td></tr>
 		</tbody></table>
 	</section>
-	<script src="/cdn/PMH/main.js"></script>
+	<script src="/js/pmh.js"></script>
 </body>
 </html>
