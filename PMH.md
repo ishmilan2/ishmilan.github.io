@@ -4,9 +4,6 @@ title: Gestor de Paquetes | Ish Milan
 permalink: /PMH/
 lang: es
 ---
-<!DOCTYPE html>
-<html lang="es">
-<head>
     <title>Gestor de Paquetes | Ish Milan</title>
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -99,4 +96,3 @@ lang: es
 	</section>
 	<script src="/js/pmh.js"></script>
 </body>
-</html>
