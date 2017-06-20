@@ -1,7 +1,7 @@
 ---
 layout: blank
 title: Gestor de Paquetes | Ish Milan
-permalink: /pmh/
+permalink: /cdn/pmh/
 lang: es
 sidebar: no
 ---

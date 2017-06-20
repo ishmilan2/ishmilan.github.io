@@ -94,5 +94,5 @@ lang: es
 			<tr><td class="command">Eliminar repositorios</td><td id="removeRep"></td></tr>
 		</tbody></table>
 	</section>
-	<script src="/js/pmh.js"></script>
+	<script src="/cdn/js/pmh.js"></script>
 </body>
