@@ -26,9 +26,9 @@
 
 	<link rel="icon" type="image/x-icon" href="/cdn/logo1.png">
     <link rel="apple-touch-icon-precomposed" href="/cdn/logo1.png">
-	<link rel="stylesheet" href="/cdn/css/pmh.css">
+	<link rel="stylesheet" href="/cdn/PMH/pmh.css">
 <body>
-	<header>
+	<header id="start">
 		<hgroup>
 			<a class="flotar-izq cambio" onclick="cambiar(this)">
 				<div class="bar1"></div>
@@ -36,7 +36,7 @@
 				<div class="bar3"></div>
 			</a>
 			<a href="#" class="flotar-der" onclick="mostrarMensaje()">info</a>
-			<a href="https://ishmilan.github.io/" id="titulo">Package Manager Handbook</a>
+			<a href="https://ishmilan.github.io/cdn/PMH/" id="titulo" class="text-center">Package Manager Handbook</a>
 		</hgroup>
 	</header>
 	<section>
@@ -51,7 +51,7 @@
 						<optgroup label="rpm">
 							<option value="zypper">zypper(openSUSE)</option>
 							<option value="yum">yum(Fedora, CentOS y derivadas)</option>
-							<option value="dnf" selected="selected">dnf(Fedora 23 y superiores)</option>
+							<option value="dnf">dnf(Fedora 23 y superiores)</option>
 							<option value="urpmi">urpmi(Mandriva y Mageia)</option>
 						</optgroup>
 						<optgroup label="distribuciones independientes">
@@ -91,6 +91,7 @@
 			<tr><td class="command">Eliminar repositorios</td><td id="removeRep"></td></tr>
 		</tbody></table>
 	</section>
-	<script src="/cdn/js/pmh.js"></script>
+	<script src="/cdn/PMH/pmh.js"></script>
+	<script src="/js/main.js"></script>
 </body>
 </html>
