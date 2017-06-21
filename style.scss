@@ -565,3 +565,23 @@ time{
     display: none;
   }
 }
+.project-box{
+    color: $black;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 16px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border:solid 1px $gray;
+    border-radius:4px;
+    max-width:calc(50% - 32px);
+    background:$white;
+    .project-title{font-size:22px;line-height: 1.5;}
+    .project-descrption{height:5.5em;overflow:auto;}
+    .demo{float:left;}
+    .repo{float:right;}
+    @include mobile {
+      max-width:calc(100% - 16px);
+    }
+}
+.clear-both{clear: both; float: none;}
