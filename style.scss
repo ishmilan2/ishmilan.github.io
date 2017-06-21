@@ -539,7 +539,10 @@ time{
   }
 
   body {
-    background: #fff; color: #000;
+    background: $white; color: $black;
+    @include mobile {
+      background:#f5f5f5;
+    }
   }
 
   .wrapper {
