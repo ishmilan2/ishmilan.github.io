@@ -206,7 +206,7 @@ img {
 .wrapper-masthead {
   background:$bluegray;
   margin-bottom: 5px;
-  box-shadow: 0px 0px 5px $bluegray;
+  box-shadow: 1px 1px 3px $bluegray;
 }
 
 .masthead {
@@ -456,7 +456,7 @@ footer {
   width:100%;
   left:  0px;
   background: $bluegray;
-  box-shadow: 0px 0px 5px $bluegray;
+  box-shadow: 1px -1px 3px $bluegray;
   margin-bottom: -5px;
   transition: all .4s;
 }
