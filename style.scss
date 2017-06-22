@@ -582,7 +582,7 @@ time{
     float:left;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14),0 3px 2px -2px rgba(0,0,0,0.12),0 1px 6px 0 rgba(0,0,0,0.2);
     .project-title{font-size:26px;line-height: 1.5;font-weight:bolder;text-align:center;
-        a{color:$bluegray;}
+        a{color:$bluegray; &:hover, &:active{color:$orange;}}
     }
     .project-license{font-family:monospace;font-size:12px;text-align:right;}
     .project-descrption{height:5.5em;overflow:auto;}
