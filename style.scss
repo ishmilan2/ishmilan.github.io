@@ -1,4 +1,4 @@
----
+'Roboto', sans-serif---
 ---
 
 //
@@ -22,7 +22,7 @@ html {
 
 body {
     background:$white;
-    font: 18px/1.4 $helvetica;
+    font: 18px/1.4 'Roboto', sans-serif;
     color: $black;
     @include mobile {
       background:#f5f5f5;
@@ -55,7 +55,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: 'Roboto', sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
@@ -350,7 +350,7 @@ img {
 nav {
   float: right;
   margin-top: 10px;
-  font-family: $helveticaNeue;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 
   @include mobile {
