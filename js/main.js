@@ -1,6 +1,6 @@
 window.addEventListener("load",function(){
 /*BORDER BOTTOM ACTUAL NAVIGATION*/
-document.querySelector('nav a[href="'+location.pathname+'"').style.borderBottom ="solid 3px #FF4D09"
+document.querySelector('.menunav a[href="'+location.pathname+'"').style.borderBottom ="solid 3px #FF4D09"
 /*SCROLL TOP*/
 var btn = document.createElement("a");
 btn.id="scroll-top";
