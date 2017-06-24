@@ -382,7 +382,10 @@ nav {
     letter-spacing: 1px;
     display: inline-block;
     min-width:8mm;
-    min-height: 7mm;
+    min-height: 7mm;min-height: 7mm;
+    padding: 1px 5px;
+    box-sizing: border-box;
+
     &:hover{
       color: $blue;
     }
