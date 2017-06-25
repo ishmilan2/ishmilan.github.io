@@ -239,11 +239,17 @@ img {
         position: relative;
         right: 0px;
         top: 0px;
-        margin: 0 auto -5px auto;
+        margin:0px;
+        margin-bottom:-5px;
+        display: table;
+        width:100%;
     }
     a{
       padding: 2px 8px;
       box-sizing: border-box;
+      @include mobile{
+        display:table-cell;
+      }
     }
 }
 .translate {
