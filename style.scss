@@ -239,7 +239,11 @@ img {
         position: relative;
         right: 0px;
         top: 0px;
-        margin: -5px auto;
+        margin: 0 auto -5px auto;
+    }
+    a{
+      padding: 1px 5px;
+      box-sizing: border-box;
     }
 }
 .translate {
@@ -382,9 +386,7 @@ nav {
     letter-spacing: 1px;
     display: inline-block;
     min-width:8mm;
-    min-height: 7mm;min-height: 7mm;
-    padding: 1px 5px;
-    box-sizing: border-box;
+    min-height: 7mm;
 
     &:hover{
       color: $blue;
