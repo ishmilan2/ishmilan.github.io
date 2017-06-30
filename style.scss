@@ -219,6 +219,8 @@ img {
 //
 
 .wrapper-masthead {
+  position: fixed;
+  width: 100%;
   background:$bluegray;
   margin-bottom: 5px;
   box-shadow: 1px 1px 3px $bluegray;
@@ -274,11 +276,16 @@ img {
     }
   }
 }
-
+#start{
+    padding-top:100px;
+    @include mobile {
+        padding-top:110px;
+    }
+}
 .site-avatar {
   display: block;
   float: none;
-  width: 150px;
+  width: 10px;
   height:150px;
   margin: 20px auto;
   @include mobile {
