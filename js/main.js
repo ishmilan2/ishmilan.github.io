@@ -1,6 +1,9 @@
 window.addEventListener("load",function(){
 /*BORDER BOTTOM ACTUAL NAVIGATION*/
-if(document.querySelector('.menunav a[href="'+location.pathname+'"')) document.querySelector('.menunav a[href="'+location.pathname+'"').style.borderBottom ="solid 3px #FF4D09"
+if(document.querySelector('.menunav a[href="'+location.pathname+'"')) document.querySelector('.menunav a[href="'+location.pathname+'"').style.borderBottom ="solid 3px #FF4D09";
+var tLinks=document.querySelectorAll(".translate nav a");
+if(location.pathname.substr(0,4)=="/en/") tLinks[1].style.borderTop ="solid 3px #FF4D09";
+else tLinks[2].style.borderTop ="solid 3px #FF4D09";
 /*SCROLL TOP*/
 var btn = document.createElement("a");
 btn.id="scroll-top";
