@@ -237,6 +237,7 @@ img {
     position: absolute;
     right: 10px;
     top: 20px;
+    margin-top: 8px;
     @include mobile {
         position: relative;
         right: 0px;
@@ -261,8 +262,7 @@ img {
   top: -10px;
   right: 0px;
   nav {
-    margin-top: 15px;
-    margin-right: calc(8px + 3mm);
+    margin-right:3mm;
     @include mobile {
       float: none;
       display: block;
@@ -273,11 +273,12 @@ img {
         color: $orange;
         font-weight: bolder;
         font-size: 16px;
+        padding: 3px 10px;
     }
   }
 }
 #start{
-    padding-top:100px;
+    padding-top:60px;
     @include mobile {
         padding-top:110px;
     }
@@ -285,8 +286,8 @@ img {
 .site-avatar {
   display: block;
   float: none;
-  width: 10px;
-  height:150px;
+  width: 180px;
+  height:180px;
   margin: 20px auto;
   @include mobile {
     margin: 10px auto;
