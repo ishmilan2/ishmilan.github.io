@@ -1,9 +1,20 @@
 window.addEventListener("load",function(){
-/*BORDER BOTTOM ACTUAL NAVIGATION*/
-if(document.querySelector('.menunav a[href="'+location.pathname+'"')) document.querySelector('.menunav a[href="'+location.pathname+'"').style.borderBottom ="solid 3px #FF4D09";
+/*BORDER CURRENT NAVIGATION*/
+var thisPage=document.querySelector('.menunav a[href="'+location.pathname+'"');
+if(thisPage){
+    thisPage.style.borderBottom ="solid 3px #FF4D09";
+    thisPage.setAttribute("class","disabled");
+}
 var tLinks=document.querySelectorAll(".translate nav a");
-if(location.pathname.substr(0,4)=="/en/") tLinks[1].style.borderTop ="solid 3px #FF4D09";
-else tLinks[2].style.borderTop ="solid 3px #FF4D09";
+if(tLinks){
+    if(location.pathname.substr(0,4)=="/en/"){
+        tLinks[1].style.borderTop ="solid 3px #FF4D09";
+        tLinks[1].setAttribute("class","disabled");
+    }else{
+        tLinks[0].style.borderTop ="solid 3px #FF4D09";
+        tLinks[0].setAttribute("class","disabled");
+    }
+}
 /*SCROLL TOP*/
 var btn = document.createElement("a");
 btn.id="scroll-top";

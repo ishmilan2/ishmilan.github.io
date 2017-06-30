@@ -69,7 +69,6 @@ body {
     display: none;
   }
 }
-
 h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
@@ -224,6 +223,10 @@ img {
   background:$bluegray;
   margin-bottom: 5px;
   box-shadow: 1px 1px 3px $bluegray;
+  .disabled{
+      pointer-events: none;
+      color: #f5f5f5;
+  }
 }
 
 .masthead {
