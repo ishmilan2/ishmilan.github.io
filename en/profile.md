@@ -12,7 +12,7 @@ Cáceres | Spain
 </p>
 
 ## Work Experience
-	<table class="profile-table">
+<table class="profile-table">
 	<tbody>
 		<tr>
 			<td class="profile-table-header">Current:</td>
