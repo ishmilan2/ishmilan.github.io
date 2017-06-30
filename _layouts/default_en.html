@@ -16,14 +16,12 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead"  id="start">
+    <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-
           <div class="site-info">
             <h2 class="site-name"><a href="{{ site.baseurl }}/en/">{{ site.name }}</a></h2>
           </div>
-
           <nav class="menunav">
             <a href="{{ site.baseurl }}/en/">Home</a>
             <a href="{{ site.baseurl }}/en/profile/">Profile</a>
@@ -44,7 +42,7 @@
 
 
     <div class="container clearfix">
-        <a href="{{ site.baseurl }}/en" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+        <a href="{{ site.baseurl }}/en" class="site-avatar"  id="start"><img src="{{ site.avatar }}" /></a>
 
       {% if page.sidebar %}
 
@@ -65,7 +63,6 @@
       {% endif %}
     </div>
     <div class="wrapper-footer">
-        <a href="{{ site.baseurl }}/en/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
         <footer id="footer">
           {% include svg-icons.html %}
         </footer>

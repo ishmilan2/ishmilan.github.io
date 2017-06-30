@@ -7,18 +7,16 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="icon" type="image/x-icon" href="{{ site.avatar }}">
     <link rel="apple-touch-icon-precomposed" href="{{ site.avatar }}">
-
     <meta name="msapplication-TileColor" content="#DCDCDC" />
     <meta name="msapplication-TileImage" content="{{ site.avatar }}">
     <meta content="{{ site.avatar }}" itemprop="image">
     <meta content="Ish Milan, administrador de sistemas y desarrollador de software." name="description">
     <link rel="alternate" type="text/html" hreflang="es" href="{{ page.url }}" title="Spanish">
     <link rel="alternate" type="text/html" hreflang="en" href="{{ page.translate_en }}" title="English">
-
   </head>
 
   <body>
-    <div class="wrapper-masthead" id="start">
+    <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <div class="site-info">
@@ -42,11 +40,11 @@
     </div>
 
     <div class="container clearfix">
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+        <a href="{{ site.baseurl }}/" class="site-avatar" id="start"><img src="{{ site.avatar }}" /></a>
 
       {% if page.sidebar %}
 
-        <div id="main" role="main" class="content">
+        <div id="main" role="main">
           {{ content }}
         </div>
 
@@ -63,7 +61,6 @@
       {% endif %}
     </div>
     <div class="wrapper-footer">
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
         <footer id="footer">
           {% include svg-icons.html %}
         </footer>
