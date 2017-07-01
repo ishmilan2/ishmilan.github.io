@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.5;
-  margin: 25px 0 15px;
+  margin: 25px 0;
   padding: 0;
 
   @include mobile {
@@ -382,8 +382,8 @@ img {
 
 .profile-description {
   margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  color: $blue;
+  text-align: right;
 
   @include mobile {
     margin: 3px 0;
@@ -391,7 +391,7 @@ img {
 }
 
 .profile-table-header {
-  color: $darkerGray;
+  color: $blue;
   padding: 5px;
   vertical-align: middle;
   text-align: right;
