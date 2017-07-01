@@ -2,13 +2,13 @@ window.addEventListener("load",function(){
 /* NAVIGATION WITH ID*/
 hashByID();
 function hashByID(){
-    if(location.hash != "" && document.querySelector("h2"+location.hash.replace("%C3%B3","ó"))){
-        var h2= document.querySelectorAll("h2");
-        for (var i = 0; i < h2.length; i++) {
-            if(h2[i].id==location.hash.replace("%C3%B3","ó").substring(1)) h2[i].style.paddingTop="70px";
-            else h2[i].style.paddingTop="15px";
-        }
+if(location.hash!="" && document.querySelector("h2"+location.hash.replace("%C3%B3","ó"))){
+    var h2= document.querySelectorAll(".page h2");
+    for (var i = 0; i < h2.length; i++) {
+        if(h2[i].id==location.hash.replace("%C3%B3","ó").substring(1)) h2[i].style.paddingTop="70px";
+        else h2[i].style.paddingTop="15px";
     }
+}
 }
 window.addEventListener("hashchange",hashByID);
 /*BUTTON SHOW NAV OPTIONS MOBILE*/
