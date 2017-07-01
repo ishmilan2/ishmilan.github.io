@@ -39,6 +39,8 @@ html {
 body {
     background:url("images/background.svg");
     background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font: 18px/1.4 'Roboto', sans-serif;
     color: $black;
     @include mobile {
