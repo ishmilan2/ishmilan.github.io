@@ -273,11 +273,15 @@ img {
         display: block;
         position: fixed;
         top: 5px;
+        left: 0px;
         font-size: 50px;
         font-family: "Akashi";
         font-weight: bolder;
         letter-spacing: -33px;
-        width: 60px;
+        width: 75px;
+        height: 60px;
+        padding: 0 10px;
+
     }
 }
 .translate {
