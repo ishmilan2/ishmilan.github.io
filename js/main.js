@@ -1,4 +1,14 @@
 window.addEventListener("load",function(){
+/* NAVIGATION WITH ID*/
+window.addEventListener("hashchange", function(){
+    if(location.hash != "" && document.querySelector("h2"+location.hash.replace("%C3%B3","ó"))){
+        var h2= document.querySelector("h2");
+        for (var i = 0; i < h2.length; i++) {
+            h2[i].style.paddingTop="15px";
+        }
+        document.querySelector("h2"+location.hash.replace("%C3%B3","ó")).style.paddingTop="70px";
+    }
+});
 /*BUTTON SHOW NAV OPTIONS MOBILE*/
 if(document.querySelector("#option-toggle")) document.querySelector("#option-toggle").addEventListener("click",function(){
     var so=document.querySelector('.site-options')
