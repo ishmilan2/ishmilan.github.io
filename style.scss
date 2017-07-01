@@ -263,6 +263,8 @@ img {
     display:inherit;
     @include mobile{
       display:none;
+      box-sizing: border-box;
+      padding: 5px 0px;
     }
 }
 .site-options-btn{
@@ -275,6 +277,7 @@ img {
         font-family: "Akashi";
         font-weight: bolder;
         letter-spacing: -33px;
+        width: 55px;
     }
 }
 .translate {
