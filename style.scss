@@ -221,6 +221,7 @@ img {
 .wrapper-masthead {
   position: fixed;
   width: 100%;
+  min-width: 340px;
   background:$bluegray;
   margin-bottom: 5px;
   box-shadow: 1px 1px 3px $bluegray;
@@ -281,8 +282,11 @@ img {
         letter-spacing: -33px;
         width: 75px;
         height: 60px;
-        padding: 0 10px;
-
+        padding: 0 15px;
+        text-shadow: 0px -1px 0px $orange,0px 1px 0px $orange;
+        &:hover{
+            text-shadow: 0px -1px 0px $blue,0px 1px 0px $blue;
+        }
     }
 }
 .translate {
