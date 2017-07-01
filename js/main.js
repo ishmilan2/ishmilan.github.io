@@ -4,9 +4,9 @@ window.addEventListener("hashchange", function(){
     if(location.hash != "" && document.querySelector("h2"+location.hash.replace("%C3%B3","ó"))){
         var h2= document.querySelectorAll("h2");
         for (var i = 0; i < h2.length; i++) {
-            h2[i].style.paddingTop="15px";
+            if(h2[i].id==location.hash.replace("%C3%B3","ó").substring(1)) h2[i].style.paddingTop="70px";
+            else h2[i].style.paddingTop="15px";
         }
-        document.querySelector("h2"+location.hash.replace("%C3%B3","ó")).style.paddingTop="70px";
     }
 });
 /*BUTTON SHOW NAV OPTIONS MOBILE*/
