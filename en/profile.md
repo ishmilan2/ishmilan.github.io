@@ -54,15 +54,15 @@ Cáceres | Spain
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2014 - Creating and image editing with free software (27h), MiriadaX.net</td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2013 - Creating WEB pages (240h), FormaciónyFuturo.com</td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2011 - LINUX:operating system ,commands and utility (40h), SENAsofiaplus.edu.co</td>
 		</tr>
 	</tbody>
@@ -103,9 +103,9 @@ Cáceres | Spain
 
 <table class="profile-table">
 	<tbody>
-		<tr><td class="profile-table-info">✔</td><td class="profile-table-info">Participated in Free Software ExtremaduraSkills 2014.</td></tr>
-		<tr><td class="profile-table-info">✔</td><td class="profile-table-info">Participated in Free Software SpainSkills 2015, obtaining second place.</td></tr>
-		<tr><td class="profile-table-info">✔</td><td class="profile-table-info">Was part of the CoderDojo-Cáceres initiative as one of the senseis in 2015/2016</td></tr>
+		<tr><td class="profile-table-header">✔</td><td class="profile-table-info">Participated in Free Software ExtremaduraSkills 2014.</td></tr>
+		<tr><td class="profile-table-header">✔</td><td class="profile-table-info">Participated in Free Software SpainSkills 2015, obtaining second place.</td></tr>
+		<tr><td class="profile-table-header">✔</td><td class="profile-table-info">Was part of the CoderDojo-Cáceres initiative as one of the senseis in 2015/2016</td></tr>
 	</tbody>
 </table>
 

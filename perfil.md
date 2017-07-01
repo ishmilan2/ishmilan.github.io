@@ -40,7 +40,7 @@ Cáceres | España
 			<td class="profile-table-info">2018 - Técnico superior Desarrollador de Aplicaciones Web, IES Ágora</td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2015 - Técnico superior Administrador de Sistemas Informáticos en Red, IES Ágora</td>
 		</tr>
 	</tbody>
@@ -51,15 +51,15 @@ Cáceres | España
 <table class="profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2014 - Creación y retoque de imágenes con software libre (27h), MiriadaX.net</td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2013 - Creación de páginas WEB (240h), FormaciónyFuturo.com</td>
 		</tr>
 		<tr>
-			<td class="profile-table-info">✔</td>
+			<td class="profile-table-header">✔</td>
 			<td class="profile-table-info">2011 - LINUX:sistema operativo,comandos y utilidad (40h), SENAsofiaplus.edu.co</td>
 		</tr>
 	</tbody>
@@ -100,9 +100,9 @@ Cáceres | España
 
 <table class="profile-table">
 	<tbody>
-		<tr><td class="profile-table-info">✔</td><td class="profile-table-info">Participé en las ExtremaduraSkills 2014 en Software Libre.</td></tr>
-		<tr><td class="profile-table-info">✔</td><td class="profile-table-info">Participé en las SpainSkills 2015 en Software Libre, obteniendo el segundo puesto.</td></tr>
-		<tr><td class="profile-table-info">✔</td><td class="profile-table-info">Formé parte de la iniciativa CoderDojo-Cáceres como uno de los senseis en 2015/2016</td></tr>
+		<tr><td class="profile-table-header">✔</td><td class="profile-table-info">Participé en las ExtremaduraSkills 2014 en Software Libre.</td></tr>
+		<tr><td class="profile-table-header">✔</td><td class="profile-table-info">Participé en las SpainSkills 2015 en Software Libre, obteniendo el segundo puesto.</td></tr>
+		<tr><td class="profile-table-header">✔</td><td class="profile-table-info">Formé parte de la iniciativa CoderDojo-Cáceres como uno de los senseis en 2015/2016</td></tr>
 	</tbody>
 </table>
 
