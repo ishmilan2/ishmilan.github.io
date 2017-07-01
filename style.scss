@@ -276,18 +276,18 @@ img {
     @include mobile{
         display: block;
         position: fixed;
-        top: 5px;
+        top: 0px;
         left: 0px;
-        font-size: 48px;
-        font-family: "Akashi";
-        font-weight: bolder;
-        letter-spacing: -33px;
         width: 75px;
         height: 60px;
-        padding: 0 15px;
-        text-shadow: 0px -1px 0px $orange,0px 1px 0px $orange;
+        padding: 8px 15px;
+        div{
+            background: $orange;
+        }
         &:hover{
-            text-shadow: 0px -1px 0px $blue,0px 1px 0px $blue;
+            div{
+                background: $blue;
+            }
         }
     }
 }
@@ -383,7 +383,7 @@ img {
 .profile-description {
   margin: -5px 0 0 0;
   color: $blue;
-  text-align: right;
+  text-align: center;
 
   @include mobile {
     margin: 3px 0;
