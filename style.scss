@@ -114,7 +114,7 @@ p {
   text-align: justify;
 }
 
-#option-toggle,a {
+a {
   color: $orange;
   text-decoration: none;
 	cursor: pointer;
@@ -282,6 +282,9 @@ img {
         height: 60px;
         padding: 8px 15px;
         div{
+            width: 100%;
+            height: 6px;
+            margin: 8px auto;
             background: $orange;
         }
         &:hover{
