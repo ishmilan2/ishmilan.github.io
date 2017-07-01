@@ -115,7 +115,7 @@ p {
   color: $orange;
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
+  &:hover{
     color: $blue;
   }
 }
@@ -277,7 +277,7 @@ img {
         font-family: "Akashi";
         font-weight: bolder;
         letter-spacing: -33px;
-        width: 55px;
+        width: 60px;
     }
 }
 .translate {
