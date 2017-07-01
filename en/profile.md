@@ -70,24 +70,42 @@ Cáceres | Spain
 
 ## Skills
 
-<table class="profile-table">
+<table class = "profile-table">
 	<tbody>
 		<tr>
-			<td class="profile-table-header">Source code management</td>
-			<td class="profile-table-info">Git, GitHub, SourceTree, Gitkraken, GitG & Git-Cola.</td>
+			<td class = "profile-table-header"> Source Code Management </td>
+			<td class = "profile-table-info"> Git, GitHub, SourceTree, Gitkraken, GitG and Git-Cola </td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Operating Systems</td>
-			<td class="profile-table-info">Linux (Redhat, Fedora, Antergos, Manjaro and Based on Debian), Microsoft Windows (XP, Vista, 7, 8 and 10)</td>
+			<td class = "profile-table-header"> Programming languages ​​and tagging </td>
+			<td class = "profile-table-info"> HTML5, CSS3, MD, SQL, Javascript, PHP, Markdown, AWK, BASH, Python and Java. </td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Programming and markup lenguages</td>
-			<td class="profile-table-info">HTML5, CSS3, MD, SQL,Javascript, PHP, Markdown, AWK, BASH, Python and Java.</td>
+			<td class = "profile-table-header"> Libraries and Frameworks </td>
+			<td class = "profile-table-info"> jQuery, Skeleton, Bootstrap and CodeIgniter. </td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">CMS and ECommerces</td>
-			<td class="profile-table-info">Joomla, WordPress, and Prestashop.</td>
+			<td class = "profile-table-header"> Operating Systems </td>
+			<td class = "profile-table-info"> Linux (Redhat, Fedora, Antergos, Manjaro and Debian-based), Microsoft Windows (XP, Vista, 7, 8 and 10) or ReactOS. </td>
 		</tr>
+		<tr>
+			<td class = "profile-table-header"> Service Management </td>
+			<td class = "profile-table-info"> IIS, BIND9, ISC-DHCP, SQUID, Apache, and nGinX. </td>
+		</tr>
+		<tr>
+			<td class = "profile-table-header"> CMS and CRM Administration </td>
+			<td class = "profile-table-info"> Joomla, Wordpress, Moodle, Prestashop and Odoo. </td>
+		</tr>
+	</tbody>
+</table>
+
+## Achievements
+
+<table class="profile-table">
+	<tbody>
+		<tr><td class="profile-table-info">Participated in Free Software ExtremaduraSkills 2014.</td></tr>
+		<tr><td class="profile-table-info">Participated in Free Software SpainSkills 2015, obtaining second place.</td></tr>
+		<tr><td class="profile-table-info">Was part of the CoderDojo-Cáceres initiative as one of the senseis in 2015/2016</td></tr>
 	</tbody>
 </table>
 

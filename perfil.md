@@ -74,13 +74,35 @@ Cáceres | España
 			<td class="profile-table-info">Git, GitHub, SourceTree, Gitkraken, GitG y Git-Cola</td>
 		</tr>
 		<tr>
-			<td class="profile-table-header">Sistemas Operativos</td>
-			<td class="profile-table-info">Linux (Redhat, Fedora, Antergos, Manjaro y basadas en Debian), Microsoft Windows (XP, Vista, 7, 8 y 10)</td>
+			<td class="profile-table-header">Lenguajes de programación y marcado</td>
+			<td class="profile-table-info">HTML5, CSS3, MD, SQL, Javascript, PHP, Markdown, AWK, BASH, Python y Java.</td>
 		</tr>
 		<tr>
-				<td class="profile-table-header">Lenguajes de programación y marcado</td>
-				<td class="profile-table-info">HTML5, CSS3, MD, SQL, Javascript, PHP, Markdown, AWK, BASH, Python y Java.</td>
+			<td class="profile-table-header">Bibliotecas y Frameworks</td>
+			<td class="profile-table-info">jQuery, Skeleton, Bootstrap y CodeIgniter.</td>
 		</tr>
+		<tr>
+			<td class="profile-table-header">Sistemas Operativos</td>
+			<td class="profile-table-info">Linux (Redhat, Fedora, Antergos, Manjaro y basadas en Debian), Microsoft Windows (XP, Vista, 7, 8 y 10) o ReactOS.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Administración de Servicios</td>
+			<td class="profile-table-info">IIS, BIND9, ISC-DHCP, SQUID, Apache y nGinX.</td>
+		</tr>
+		<tr>
+			<td class="profile-table-header">Administración de CMS y CRM</td>
+			<td class="profile-table-info">Joomla, Wordpress, Moodle, Prestashop y Odoo.</td>
+		</tr>
+	</tbody>
+</table>
+
+## Logros
+
+<table class="profile-table">
+	<tbody>
+		<tr><td class="profile-table-info">Participé en las ExtremaduraSkills 2014 en Software Libre.</td></tr>
+		<tr><td class="profile-table-info">Participé en las SpainSkills 2015 en Software Libre, obteniendo el segundo puesto.</td></tr>
+		<tr><td class="profile-table-info">Formé parte de la iniciativa CoderDojo-Cáceres como uno de los senseis en 2015/2016</td></tr>
 	</tbody>
 </table>
 
