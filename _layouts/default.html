@@ -22,20 +22,23 @@
           <div class="site-info">
             <h2 class="site-name"><a href="{{ site.baseurl }}/" >{{ site.name }}</a></h2>
           </div>
-          <nav class="menunav">
-            <a href="{{ site.baseurl }}/">Inicio</a>
-            <a href="{{ site.baseurl }}/perfil/">Perfil</a>
-            <a href="{{ site.baseurl }}/blog/">Blog</a>
-            <a href="#" id="contact">Contacto</a>
-          </nav>
         </header>
-        <header class="translate clearfix">
-            <nav>
-              {% if page.translate_en %}
-                <a href="{{ page.url }}">ES</a> <a href="{{ page.translate_en }}">EN</a>
-              {% endif %}
+        <div class="site-options">
+            <nav class="menunav">
+              <a href="{{ site.baseurl }}/">Inicio</a>
+              <a href="{{ site.baseurl }}/perfil/">Perfil</a>
+              <a href="{{ site.baseurl }}/blog/">Blog</a>
+              <a href="#" id="contact">Contacto</a>
             </nav>
-        </header>
+            <header class="translate clearfix">
+                <nav>
+                  {% if page.translate_en %}
+                    <a href="{{ page.url }}">ES</a> <a href="{{ page.translate_en }}">EN</a>
+                  {% endif %}
+                </nav>
+            </header>
+        </div>
+        <div class="site-options-btn"><a id="option-toggle" href="#">☰☰</a></div>
       </div>
     </div>
 

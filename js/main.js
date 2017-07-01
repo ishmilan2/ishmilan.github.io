@@ -1,4 +1,10 @@
 window.addEventListener("load",function(){
+/*BUTTON SHOW NAV OPTIONS MOBILE*/
+if(document.querySelector("#option-toggle")) document.querySelector("#option-toggle").addEventListener("click",function(){
+    var so=document.querySelector('.site-options')
+    if(so.style.display!="none")so.style.display="none";
+    else so.style.display="inherit";
+})
 /*BORDER CURRENT NAVIGATION*/
 var thisPage=document.querySelector('.menunav a[href="'+location.pathname+'"');
 if(thisPage){

@@ -259,6 +259,24 @@ img {
       }
     }
 }
+.site-options{
+    display:inherit;
+    @include mobile{
+      display:none;
+    }
+}
+.site-options-btn{
+    display: none;
+    @include mobile{
+        display: block;
+        position: fixed;
+        top: 5px;
+        font-size: 50px;
+        font-family: "Akashi";
+        font-weight: bolder;
+        letter-spacing: -33px;
+    }
+}
 .translate {
   position: absolute;
   display: inline-block;
