@@ -6,14 +6,7 @@ translate_en: /en/
 ---
 
 <h2 class="text-right">Administrador de Sistemas &amp; desarrollador de software.<br>Cáceres, España.</h2>
-<div class="text-center">
-	<a class="button buttonToProfile" href="/perfil/">Trabajo</a>
-	<a class="button buttonToProfile" href="/perfil/">Educación</a>
-	<a class="button buttonToProfile" href="/perfil/">Formación</a>
-	<a class="button buttonToProfile" href="/perfil/">Habilidades</a>
-	<a class="button buttonToProfile" href="/perfil/">Logros</a>
-	<a class="button buttonToProfile" href="/perfil/">Idiomas</a>
-</div>
+<div class="text-center" id="links"></div>
 <table class="profile-table">
 	<thead><tr><th class="title text-center" colspan="2">Experiencia laboral</th></tr></thead>
 	<tbody>
@@ -54,3 +47,6 @@ translate_en: /en/
 	<div class="clear-both"></div>
 </div>
 <div class="clear-both"></div>
+<script>
+document.querySelector("#links").innerHTML='\n\t<a class="button buttonToProfile" href="/perfil/#experiencia-laboral">Trabajo</a>\n\t<a class="button buttonToProfile" href="/perfil/#educación">Educación</a>\n\t<a class="button buttonToProfile" href="/perfil/#formación-adicional">Formación</a>\n\t<a class="button buttonToProfile" href="/perfil/#habilidades">Habilidades</a>\n\t<a class="button buttonToProfile" href="/perfil/#logros">Logros</a>\n\t<a class="button buttonToProfile" href="/perfil/#idiomas">Idiomas</a>\n';
+</script>
