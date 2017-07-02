@@ -392,7 +392,7 @@ img {
     margin: 3px 0;
   }
 }
-.buttonToProfile {
+.button{
     display: inline-block;
     color: $white;
     background: $orange;
@@ -403,11 +403,13 @@ img {
     box-sizing: border-box;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-    @@include mobile{
-        width: calc(50% - 18px);
-    }
     &:hover{
         background:$blue;
+    }
+}
+.buttonToProfile {
+    @@include mobile{
+        width: calc(50% - 18px);
     }
 }
 
@@ -665,10 +667,7 @@ time{
     }
     .project-license{font-family:monospace;font-size:12px;text-align:right;}
     .project-descrption{height:5.5em;overflow:auto;}
-    .demo,.repo{width:calc(50% - 24px);display:inline-block;padding:10px;text-align:center;font-weight:bolder;text-transform:uppercase;color:$white;background-color:$orange;
-        border-radius:3px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);transition: box-shadow .28s cubic-bezier(0.4,0.0,0.2,1);
-        &:hover, &:active{color:$white;background-color:$blue;}
-    }
+    .demo,.repo{width:calc(50% - 24px);}
     .demo{float:left;}
     .repo{float:right;}
     @include mobile {
