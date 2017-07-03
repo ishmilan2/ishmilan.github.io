@@ -337,6 +337,10 @@ img {
     height: 100%;
     width: 100%;
     border:solid 5px $orange;
+    transition:0.4s;
+    &:hover{
+        transform: scale(1.15);
+    }
   }
 }
 
